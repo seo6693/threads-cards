@@ -9,5 +9,7 @@
     "https://raw.githubusercontent.com/seo6693/threads-cards/main/projects/living/cards/2026-09-27-1732-9065762462/card2_product.jpg",
     "https://raw.githubusercontent.com/seo6693/threads-cards/main/projects/living/cards/2026-09-27-1732-9065762462/card3_reviews.jpg"
   ],
-  "reply": "🛒 구매 링크 → https://link.coupang.com/a/hnQpuUACbc\n※ 가격·쿠폰은 시점마다 달라질 수 있어요"
+  "reply": "🛒 구매 링크 → https://link.coupang.com/a/hnQpuUACbc\n※ 가격·쿠폰은 시점마다 달라질 수 있어요",
+  "published_at": "2026-09-27T08:32:58+0000",
+  "error": "POST 29273644168909137/threads -> HTTP 500: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"type\":\"OAuthException\",\"is_transient\":true,\"code\":2,\"fbtrace_id\":\"AIE1SnJUqcIMpTeQEOoTCua\"}}"
 }
