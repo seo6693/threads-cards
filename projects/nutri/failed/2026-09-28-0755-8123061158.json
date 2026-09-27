@@ -9,5 +9,7 @@
     "https://raw.githubusercontent.com/seo6693/threads-cards/main/projects/nutri/cards/2026-09-28-0755-8123061158/card2_product.jpg",
     "https://raw.githubusercontent.com/seo6693/threads-cards/main/projects/nutri/cards/2026-09-28-0755-8123061158/card3_reviews.jpg"
   ],
-  "reply": "🛒 구매 링크 → https://link.coupang.com/a/hoP8580t2G\n※ 가격·쿠폰은 시점마다 달라질 수 있어요"
+  "reply": "🛒 구매 링크 → https://link.coupang.com/a/hoP8580t2G\n※ 가격·쿠폰은 시점마다 달라질 수 있어요",
+  "published_at": "2026-09-27T22:56:03+0000",
+  "error": "POST 26386715651026150/threads -> HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AYm7fzeesv6xdgQaUAsCBVU\"}}"
 }
