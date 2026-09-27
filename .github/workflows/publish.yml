@@ -1,0 +1,45 @@
+name: Publish Threads posts
+
+on:
+  push:
+    branches: [main]
+    paths: ["posts/queue/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Publish queued posts
+        id: run
+        continue-on-error: true
+        env:
+          THREADS_TOKEN_NUTRI: ${{ secrets.THREADS_TOKEN_NUTRI }}
+          THREADS_TOKEN_FOOD: ${{ secrets.THREADS_TOKEN_FOOD }}
+          THREADS_TOKEN_LIVING: ${{ secrets.THREADS_TOKEN_LIVING }}
+        run: python scripts/publish.py
+
+      - name: Record results
+        run: |
+          git config user.name "threads-bot"
+          git config user.email "threads-bot@users.noreply.github.com"
+          git add -A posts
+          git diff --cached --quiet || git commit -m "Record publish results [skip ci]"
+          git push
+
+      - name: Fail if any post failed
+        if: steps.run.outcome == 'failure'
+        run: exit 1
