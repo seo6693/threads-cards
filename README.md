@@ -23,3 +23,10 @@
 - 순서는 `RUNBOOK.md` 참고
 - 토큰은 저장소 Secrets(`THREADS_TOKEN_NUTRI`, `THREADS_TOKEN_LIVING`)에만 있어요
 - 토큰 확인(게시 없음): `checks/request` 파일을 바꿔서 push하면 `checks/result.json`에 결과가 기록돼요
+
+## 토큰 자동 갱신
+- 매주 수요일 12:17(KST)에 두 계정 토큰을 갱신하고 새 토큰을 Secrets에 다시 저장해요 (`.github/workflows/token-refresh.yml`)
+- 필요한 것: Secrets에 `SECRETS_PAT` (이 저장소 "Secrets: Read and write" 권한만 있는 GitHub 접근 키)
+- 만료일 기록: `checks/token_status.json` (토큰 값은 저장하지 않아요)
+- 실패하면 저장소에 이슈가 열리고 GitHub가 이메일로 알려줘요
+- 즉시 점검: `checks/refresh-request`에 `dry-run`이라고 써서 push

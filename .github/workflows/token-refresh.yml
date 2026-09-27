@@ -1,0 +1,68 @@
+name: Refresh Threads tokens
+
+# Weekly (Wed 12:17 KST). Tokens last 60 days and can be refreshed once
+# they are 24h old, so weekly keeps a large margin.
+# Push a change to checks/refresh-request to run on demand:
+#   "dry-run" -> only checks tokens and secret write access
+#   anything else -> real refresh
+on:
+  schedule:
+    - cron: "17 3 * * 3"
+  push:
+    branches: [main]
+    paths: ["checks/refresh-request"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh tokens
+        id: run
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.SECRETS_PAT }}
+          THREADS_TOKEN_NUTRI: ${{ secrets.THREADS_TOKEN_NUTRI }}
+          THREADS_TOKEN_FOOD: ${{ secrets.THREADS_TOKEN_FOOD }}
+          THREADS_TOKEN_LIVING: ${{ secrets.THREADS_TOKEN_LIVING }}
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] && grep -qi "dry" checks/refresh-request; then
+            python scripts/refresh_tokens.py --dry-run
+          else
+            python scripts/refresh_tokens.py
+          fi
+
+      - name: Record status
+        if: always()
+        run: |
+          git config user.name "threads-bot"
+          git config user.email "threads-bot@users.noreply.github.com"
+          git add checks/token_status.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "Record token status [skip ci]"
+          git pull --rebase origin main && git push
+
+      - name: Open an issue if refresh failed
+        if: steps.run.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "⚠️ Threads 토큰 갱신 실패 $(date -u +%F)" \
+            --body "자동 토큰 갱신이 실패했어요. 그대로 두면 토큰 만료일에 자동 게시가 멈춰요.
+          실행 기록: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
+          상태 파일: checks/token_status.json"
+          exit 1
