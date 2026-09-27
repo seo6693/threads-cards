@@ -3,5 +3,10 @@
     "label": "영양제 (꿀템짱)",
     "user_id": "26386715651026150",
     "token_env": "THREADS_TOKEN_NUTRI"
+  },
+  "living": {
+    "label": "생활용품 (박도도 @bagdodo6)",
+    "user_id": "29273644168909137",
+    "token_env": "THREADS_TOKEN_LIVING"
   }
 }
