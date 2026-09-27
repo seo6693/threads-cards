@@ -132,6 +132,13 @@ set `reply_note` to `※ 가격·쿠폰은 시점마다 달라질 수 있어요 
    `projects/<project>/done/<slug>.json` or `failed/<slug>.json` exists on origin/main,
    then read it.
 
+**One run = at most one post.** If the result lands in `failed/`:
+- transient/5xx error → move that same file back to `queue/` (drop `error`/`published_at`), push, and wait once more;
+- anything else → stop and report.
+Never pick or queue a second product in the same run, even if the first one failed.
+Before queueing, check `projects/<project>/done/` for a file created in the last 90 minutes
+(by name time or `published_at`); if one exists, another run already posted this slot — stop and report.
+
 ## 7. Report (last message of the run)
 One short Korean summary: 계정, 상품명, 가격, 게시물 주소(permalink), 첫 댓글 성공 여부.
 If it failed, the reason. Nothing else.
