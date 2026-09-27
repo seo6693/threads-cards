@@ -7,6 +7,8 @@ Each file in posts/queue/*.json describes one post:
   "images": ["https://...jpg", ...],  # 0 = text post, 1 = image, 2-20 = carousel
   "reply": "첫 댓글 (선택)"
 }
+To add only a comment to an already published post, use
+{"account": ..., "reply_to_media_id": "<id>", "reply": "..."}.
 
 Tokens come from environment variables named in accounts.json
 (GitHub Actions secrets). After publishing, the file is moved to
@@ -59,10 +61,26 @@ def wait_ready(cid, token, timeout=300):
     raise RuntimeError(f"container {cid} not ready after {timeout}s")
 
 
-def create_and_publish(uid, token, **params):
+def create_and_publish(uid, token, retries=1, **params):
     cid = call("POST", f"{uid}/threads", token, **params)["id"]
     wait_ready(cid, token)
-    return call("POST", f"{uid}/threads_publish", token, creation_id=cid)["id"]
+    for attempt in range(retries):
+        try:
+            return call("POST", f"{uid}/threads_publish", token, creation_id=cid)["id"]
+        except RuntimeError as e:
+            # "Media Not Found" right after creating a container is usually
+            # transient on Threads' side; wait and retry.
+            if "4279009" not in str(e) or attempt == retries - 1:
+                raise
+            time.sleep(20)
+
+
+def reply(uid, token, media_id, text):
+    # Replying immediately after the parent is published often fails with
+    # "Media Not Found"; give Threads time to finish processing the parent.
+    time.sleep(30)
+    return create_and_publish(uid, token, retries=4, media_type="TEXT",
+                              text=text, reply_to_id=media_id)
 
 
 def publish(spec, accounts):
@@ -71,6 +89,10 @@ def publish(spec, accounts):
     token = os.environ.get(acc["token_env"])
     if not token:
         raise RuntimeError(f"secret {acc['token_env']} is not set")
+
+    # Reply-only job: attach a comment to an already published post.
+    if spec.get("reply_to_media_id"):
+        return {"reply_id": reply(uid, token, spec["reply_to_media_id"], spec["reply"])}
 
     text = spec.get("text", "")
     if len(text) > 500:
@@ -97,8 +119,7 @@ def publish(spec, accounts):
 
     if spec.get("reply"):
         try:
-            result["reply_id"] = create_and_publish(
-                uid, token, media_type="TEXT", text=spec["reply"], reply_to_id=media_id)
+            result["reply_id"] = reply(uid, token, media_id, spec["reply"])
         except Exception as e:  # post is already live; record and continue
             result["reply_error"] = str(e)
     return result
