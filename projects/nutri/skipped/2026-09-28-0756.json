@@ -1,0 +1,6 @@
+{
+  "account": "nutri",
+  "skipped_at": "2026-09-28T07:56:25+09:00",
+  "slot": "2026-09-28T07:52:00+09:00",
+  "reason": "Threads API 접근 차단(OAuthException 200: API access blocked)"
+}
