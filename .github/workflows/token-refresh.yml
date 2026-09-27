@@ -55,6 +55,16 @@ jobs:
           git diff --cached --quiet || git commit -m "Record token status [skip ci]"
           git pull --rebase origin main && git push
 
+      - name: Close earlier failure issues once tokens are healthy
+        if: steps.run.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "토큰 갱신 실패 in:title" --json number --jq '.[].number' |
+          while read -r n; do
+            gh issue close "$n" --repo "$GITHUB_REPOSITORY" --comment "이후 점검에서 두 계정 토큰이 모두 정상으로 확인돼서 자동으로 닫아요."
+          done
+
       - name: Open an issue if refresh failed
         if: steps.run.outcome == 'failure'
         env:
