@@ -1,5 +1,7 @@
 # threads-cards
 
+**운영판: https://seo6693.github.io/threads-cards/** (폰·PC 어디서든, 5분마다 자동 새로고침)
+
 쿠팡파트너스 상품을 Threads 계정에 자동으로 올리는 저장소예요.
 **프로젝트 하나 = Threads 계정 하나**라서 폴더만 보면 어느 계정 글인지 바로 알 수 있어요.
 
