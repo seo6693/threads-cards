@@ -136,8 +136,17 @@ set `reply_note` to `※ 가격·쿠폰은 시점마다 달라질 수 있어요 
 - transient/5xx error → move that same file back to `queue/` (drop `error`/`published_at`), push, and wait once more;
 - anything else → stop and report.
 Never pick or queue a second product in the same run, even if the first one failed.
-Before queueing, check `projects/<project>/done/` for a file created in the last 90 minutes
-(by name time or `published_at`); if one exists, another run already posted this slot — stop and report.
+Duplicate guard (run it right after step 0, before any browser work):
+`python3 scripts/new_post.py slot <project>` prints this run's slot and whether it was
+already posted. Only if it says `"already_posted": true` stop — another run covered this slot.
+(Posts made before this slot's start time never count, so a manual/test post earlier does not
+block the next scheduled slot.)
+
+**Whenever a run ends without posting** (duplicate guard, browser unreachable, login needed,
+no product passed the gate, publish failed for a non-transient reason), record it so the
+dashboard can show why:
+`python3 scripts/new_post.py skip <project> "<짧은 한국어 이유>"`, then commit and push
+`projects/<project>/skipped/`.
 
 ## 7. Report (last message of the run)
 One short Korean summary: 계정, 상품명, 가격, 게시물 주소(permalink), 첫 댓글 성공 여부.

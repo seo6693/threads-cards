@@ -136,10 +136,59 @@ def cmd_queue(project, draft_path):
                      ensure_ascii=False, indent=2))
 
 
+def current_slot(cfg, now=None):
+    """Latest scheduled slot start at or before now (KST), allowing runs that start a bit early."""
+    now = now or dt.datetime.now(KST)
+    starts = []
+    for day in (now.date() - dt.timedelta(days=1), now.date()):
+        for hm in cfg.get("schedule_kst", []):
+            h, m = map(int, hm.split(":"))
+            starts.append(dt.datetime(day.year, day.month, day.day, h, m, tzinfo=KST))
+    past = [s for s in starts if s <= now + dt.timedelta(minutes=5)]
+    return max(past) if past else None
+
+
+def cmd_slot(project):
+    proj, cfg, _, _ = load(project)
+    slot = current_slot(cfg)
+    posted = []
+    if slot:
+        guard = slot - dt.timedelta(minutes=5)
+        for folder in ("done", "queue"):
+            for f in (proj / folder).glob("*.json"):
+                d = json.loads(f.read_text())
+                if d.get("reply_to_media_id"):
+                    continue
+                when = d.get("published_at")
+                t = (dt.datetime.strptime(when, "%Y-%m-%dT%H:%M:%S%z") if when
+                     else dt.datetime.strptime(f.name[:15], "%Y-%m-%d-%H%M").replace(tzinfo=KST)
+                     if re.match(r"\d{4}-\d{2}-\d{2}-\d{4}", f.name) else None)
+                if t and t >= guard:
+                    posted.append(f.name)
+    print(json.dumps({"slot": slot.isoformat() if slot else None,
+                      "already_posted": bool(posted), "posted_files": posted}, ensure_ascii=False))
+
+
+def cmd_skip(project, reason):
+    proj, cfg, _, _ = load(project)
+    now = dt.datetime.now(KST)
+    slot = current_slot(cfg)
+    rec = {"account": cfg["account"], "skipped_at": now.isoformat(timespec="seconds"),
+           "slot": slot.isoformat() if slot else None, "reason": reason}
+    out = proj / "skipped" / f"{now.strftime('%Y-%m-%d-%H%M')}.json"
+    out.parent.mkdir(exist_ok=True)
+    out.write_text(json.dumps(rec, ensure_ascii=False, indent=2) + "\n")
+    print(json.dumps({"recorded": str(out.relative_to(ROOT))}, ensure_ascii=False))
+
+
 if __name__ == "__main__":
     if len(sys.argv) >= 3 and sys.argv[1] == "next":
         cmd_next(sys.argv[2])
     elif len(sys.argv) >= 4 and sys.argv[1] == "queue":
         cmd_queue(sys.argv[2], sys.argv[3])
+    elif len(sys.argv) >= 3 and sys.argv[1] == "slot":
+        cmd_slot(sys.argv[2])
+    elif len(sys.argv) >= 4 and sys.argv[1] == "skip":
+        cmd_skip(sys.argv[2], " ".join(sys.argv[3:]))
     else:
         sys.exit(__doc__)

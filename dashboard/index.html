@@ -209,14 +209,14 @@ async function load(){
       const base=f=>f.split("/").pop();
       const allDone=files("done"), replies=allDone.filter(f=>base(f).endsWith("-reply.json"));
       const done=allDone.filter(f=>!base(f).endsWith("-reply.json"));
-      const failed=files("failed"), queue=files("queue");
+      const failed=files("failed"), queue=files("queue"), skipped=files("skipped");
       const recent=f=>base(f).slice(0,10)>=yesterday;
       const load=list=>Promise.all(list.map(f=>raw(f).then(d=>({...d,_f:base(f)})).catch(()=>null))).then(a=>a.filter(Boolean));
-      const [d,fl,q,rp]=await Promise.all([load(done.filter(recent)),load(failed.filter(recent)),load(queue),load(replies.filter(recent))]);
+      const [d,fl,q,rp,sk]=await Promise.all([load(done.filter(recent)),load(failed.filter(recent)),load(queue),load(replies.filter(recent)),load(skipped.filter(recent))]);
       const fixed=new Set(rp.filter(r=>r.result?.reply_id).map(r=>r.reply_to_media_id));
       d.forEach(x=>{if(x.result?.reply_error&&fixed.has(x.result.media_id))delete x.result.reply_error;});
       const week=[...Array(7)].map((_,k)=>{const day=addDays(today,k-6);return{day,n:done.filter(f=>base(f).startsWith(day)).length};});
-      data[p]={cfg,acc:accounts[cfg.account]||{},done:d,failed:fl,queue:q,total:done.length,week,token:tokens[p]||tokens[cfg.account]};
+      data[p]={cfg,acc:accounts[cfg.account]||{},done:d,failed:fl,queue:q,skipped:sk,total:done.length,week,token:tokens[p]||tokens[cfg.account]};
     }));
     render(data,projects,runs,issues,now,today);
     $("updated").textContent=`${kstHM(now)} 기준`;
@@ -234,10 +234,11 @@ function slotsFor(x,now,today){
   return (x.cfg.schedule_kst||[]).map(hm=>{
     const s=slotAt(today,hm), e=new Date(s.getTime()+100*6e4);
     const hit=posted.find(o=>o.t>=s&&o.t<e), miss=failed.find(o=>o.t>=s&&o.t<e);
+    const skip=(x.skipped||[]).find(k=>k.slot&&Math.abs(parseTime(k.slot)-s)<6e4);
     let st;
     if(hit)st="done";else if(miss)st="failed";else if(s<new Date(STATIC.autoStart))st="before";else if(now<s)st="planned";
-    else if(now<new Date(s.getTime()+45*6e4))st="running";else st="missed";
-    return{hm,s,st,post:hit?.d};
+    else if(skip)st="missed";else if(now<new Date(s.getTime()+45*6e4))st="running";else st="missed";
+    return{hm,s,st,post:hit?.d,reason:skip?.reason};
   });
 }
 const ST_LABEL={before:"시작 전",done:"완료",failed:"실패",missed:"건너뜀",running:"진행 중",planned:"예정"};
@@ -282,8 +283,9 @@ function render(data,projects,runs,issues,now,today){
         <div style="display:grid;justify-items:end;gap:3px">${tokPill}<span class="muted" style="font-size:12px">${esc(tokText)}</span></div></div>
       <section>
         <div class="row"><span class="label">오늘 게시 시간표</span><span class="muted" style="font-size:12.5px">오늘 <b class="num" style="color:var(--ink)">${postedToday.length}</b>개 · 다음 <span class="num">${slots.find(s=>s.st==="planned")?.hm||"내일 "+(cfg.schedule_kst?.[0]||"")}</span></span></div>
-        <div class="slots">${slots.map(s=>`<div class="slot ${s.st}" title="${s.hm} ${ST_LABEL[s.st]}${s.post?" · "+esc(s.post.product_name):""}"><div class="t">${s.hm}</div>${ST_LABEL[s.st]}</div>`).join("")}</div>
+        <div class="slots">${slots.map(s=>`<div class="slot ${s.st}" title="${s.hm} ${ST_LABEL[s.st]}${s.post?" · "+esc(s.post.product_name):""}${s.reason?" · "+esc(s.reason):""}"><div class="t">${s.hm}</div>${ST_LABEL[s.st]}</div>`).join("")}</div>
         ${failHtml}
+        ${slots.filter(s=>s.st==="missed").map(s=>`<div class="banner warn" style="font-size:12.5px"><b>${s.hm} 건너뜀</b><span>${s.reason?esc(s.reason):"기록된 이유 없음 · 그 시간에 컴퓨터가 꺼져 있었거나 Claude 앱이 닫혀 있었을 수 있어요"}</span></div>`).join("")}
         ${x.queue.length?`<div class="muted" style="font-size:12.5px">지금 게시 대기 중 ${x.queue.length}개 (1~2분 안에 올라가요)</div>`:""}
       </section>
       <section>
@@ -300,7 +302,8 @@ function render(data,projects,runs,issues,now,today){
 
   // missed slots → computer probably off
   const missedAny=projects.some(p=>slotsFor(data[p],now,today).some(s=>s.st==="missed"));
-  if(missedAny)alerts.push(`<div class="banner warn"><b>건너뛴 회차 있음</b><span>예정 시간에 게시가 없었어요. 그 시간에 컴퓨터가 꺼져 있었거나, Claude 앱이 닫혀 있었거나, 쿠팡파트너스 로그인이 풀렸을 수 있어요.</span></div>`);
+  const missedUnknown=projects.some(p=>slotsFor(data[p],now,today).some(s=>s.st==="missed"&&!s.reason));
+  if(missedUnknown)alerts.push(`<div class="banner warn"><b>건너뛴 회차 있음</b><span>예정 시간에 게시가 없었어요. 그 시간에 컴퓨터가 꺼져 있었거나, Claude 앱이 닫혀 있었거나, 쿠팡파트너스 로그인이 풀렸을 수 있어요.</span></div>`);
   if(issues&&issues.length)alerts.push(...issues.slice(0,3).map(i=>`<div class="banner bad"><b>확인 필요</b><span><a href="${esc(i.html_url)}" target="_blank" rel="noopener">${esc(i.title)} ↗</a></span></div>`));
   $("alerts").innerHTML=alerts.join("");
 
