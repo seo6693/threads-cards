@@ -9,5 +9,7 @@
     "https://raw.githubusercontent.com/seo6693/threads-cards/main/projects/living/cards/2026-09-28-0825-8222539605/card2_product.jpg",
     "https://raw.githubusercontent.com/seo6693/threads-cards/main/projects/living/cards/2026-09-28-0825-8222539605/card3_reviews.jpg"
   ],
-  "reply": "🛒 구매 링크 → https://link.coupang.com/a/hoSd35SGf6\n※ 가격·쿠폰은 시점마다 달라질 수 있어요 (와우 회원은 쿠폰가 더 저렴)"
+  "reply": "🛒 구매 링크 → https://link.coupang.com/a/hoSd35SGf6\n※ 가격·쿠폰은 시점마다 달라질 수 있어요 (와우 회원은 쿠폰가 더 저렴)",
+  "published_at": "2026-09-27T23:25:21+0000",
+  "error": "POST 29273644168909137/threads -> HTTP 400: {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AffyIhyI1N6SFFuBvy6uxVZ\"}}"
 }
