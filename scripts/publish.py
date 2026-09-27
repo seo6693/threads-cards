@@ -38,12 +38,24 @@ def call(method, path, token, **params):
         req = urllib.request.Request(f"{url}?{data.decode()}")
     else:
         req = urllib.request.Request(url, data=data, method="POST")
-    try:
-        with urllib.request.urlopen(req, timeout=60) as r:
-            return json.load(r)
-    except urllib.error.HTTPError as e:
-        body = e.read().decode(errors="replace")
-        raise RuntimeError(f"{method} {path} -> HTTP {e.code}: {body}") from None
+    # Threads sometimes answers 5xx / "is_transient": true; retry those
+    # with backoff instead of failing the whole post.
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            body = e.read().decode(errors="replace")
+            transient = e.code >= 500 or '"is_transient":true' in body.replace(" ", "")
+            if transient and attempt < 4:
+                time.sleep(15 * (attempt + 1))
+                continue
+            raise RuntimeError(f"{method} {path} -> HTTP {e.code}: {body}") from None
+        except (urllib.error.URLError, TimeoutError) as e:
+            if attempt < 4:
+                time.sleep(15 * (attempt + 1))
+                continue
+            raise RuntimeError(f"{method} {path} -> {e}") from None
 
 
 def wait_ready(cid, token, timeout=300):
