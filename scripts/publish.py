@@ -1,8 +1,10 @@
 """Publish queued Threads posts.
 
-Each file in posts/queue/*.json describes one post:
+Each project (projects/<name>/) posts to exactly one Threads account,
+set in projects/<name>/config.json ("account"). Each file in
+projects/<name>/queue/*.json describes one post:
 {
-  "account": "nutri",                 # key in accounts.json
+  "account": "nutri",                 # optional; must match the project's account
   "text": "본문",                      # max 500 chars
   "images": ["https://...jpg", ...],  # 0 = text post, 1 = image, 2-20 = carousel
   "reply": "첫 댓글 (선택)"
@@ -11,13 +13,12 @@ To add only a comment to an already published post, use
 {"account": ..., "reply_to_media_id": "<id>", "reply": "..."}.
 
 Tokens come from environment variables named in accounts.json
-(GitHub Actions secrets). After publishing, the file is moved to
-posts/done/ with the result (permalink, ids, errors) added.
+(GitHub Actions secrets). After publishing, the file is moved to the
+project's done/ (or failed/) folder with the result added.
 """
 import json
 import os
 import pathlib
-import shutil
 import sys
 import time
 import urllib.error
@@ -26,9 +27,7 @@ import urllib.request
 
 API = "https://graph.threads.net/v1.0"
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-QUEUE = ROOT / "posts" / "queue"
-DONE = ROOT / "posts" / "done"
-FAILED = ROOT / "posts" / "failed"
+PROJECTS = ROOT / "projects"
 
 
 def call(method, path, token, **params):
@@ -127,23 +126,31 @@ def publish(spec, accounts):
 
 def main():
     accounts = json.loads((ROOT / "accounts.json").read_text())
-    files = sorted(QUEUE.glob("*.json"))
-    if not files:
+    jobs = []
+    for proj in sorted(p for p in PROJECTS.iterdir() if p.is_dir()):
+        account = json.loads((proj / "config.json").read_text())["account"]
+        jobs += [(proj, account, f) for f in sorted((proj / "queue").glob("*.json"))]
+    if not jobs:
         print("queue empty")
         return 0
     failures = 0
-    for f in files:
+    for proj, account, f in jobs:
         spec = json.loads(f.read_text())
         spec["published_at"] = time.strftime("%Y-%m-%dT%H:%M:%S%z")
         try:
+            # A project only ever posts to its own account, so a post
+            # dropped in the wrong folder fails instead of going live.
+            if spec.setdefault("account", account) != account:
+                raise RuntimeError(f"post is for '{spec['account']}' but sits in "
+                                   f"projects/{proj.name} ('{account}')")
             spec["result"] = publish(spec, accounts)
-            dest = DONE
-            print(f"OK   {f.name}: {spec['result']}")
+            dest = proj / "done"
+            print(f"OK   {proj.name}/{f.name}: {spec['result']}")
         except Exception as e:
             spec["error"] = str(e)
-            dest = FAILED
+            dest = proj / "failed"
             failures += 1
-            print(f"FAIL {f.name}: {e}")
+            print(f"FAIL {proj.name}/{f.name}: {e}")
         dest.mkdir(parents=True, exist_ok=True)
         (dest / f.name).write_text(json.dumps(spec, ensure_ascii=False, indent=2) + "\n")
         f.unlink()

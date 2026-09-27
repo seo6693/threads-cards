@@ -12,5 +12,7 @@
     "media_id": "18089194112215860",
     "permalink": "https://www.threads.com/@kkul394/post/DdyB4jEFQtL",
     "reply_error": "POST 26386715651026150/threads_publish -> HTTP 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 18111503221966838 cannot be found.\",\"fbtrace_id\":\"APvWJe4QPUlubm8va1M_OTj\"}}"
-  }
+  },
+  "product_id": "9593339416",
+  "product_name": "서울대위바이옴 프리미엄 유산균 프로바이오틱스"
 }
