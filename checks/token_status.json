@@ -1,7 +1,12 @@
 {
   "nutri": {
-    "checked_at": "2026-09-28T11:20:01+09:00",
+    "checked_at": "2026-09-28T13:31:40+09:00",
     "ok": true,
     "username": "kkul394"
+  },
+  "deals": {
+    "checked_at": "2026-09-28T13:31:40+09:00",
+    "username": "hagenminji4",
+    "ok": true
   }
 }
