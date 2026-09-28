@@ -1,6 +1,6 @@
 # RUNBOOK — one scheduled run = one post for one project
 
-A scheduled task runs this for exactly one project (`nutri` or `living`).
+A scheduled task runs this for exactly one project (`nutri`, `deals` or `fresh`).
 Never touch the other project's folder. Work unattended: do not ask the
 user anything; if a step cannot be done, stop and report why (nothing
 gets posted, which is fine).
@@ -10,6 +10,16 @@ gets posted, which is fine).
    then clone: `git clone --depth 1 https://github.com/seo6693/threads-cards ~/threads-cards`.
 2. `cd ~/threads-cards && python3 scripts/new_post.py next <project>`
    → gives `keyword`, `backup_keywords`, `skip_product_ids`, `selection`, `copy_rules`, `tone`, `theme`.
+
+3. **Take your turn on the browser.** Every account shares one browser on the user's computer.
+   Right after the duplicate guard (`slot`, below) passes, run
+   `python3 scripts/browser_lock.py acquire <project>` (it waits up to 45 min while another
+   account's run uses the browser). If it prints `"ok": false`, record a skip
+   ("다른 계정이 브라우저 사용 중") and stop. As soon as browser work is done (after step 4,
+   the image is in the workspace) run `python3 scripts/browser_lock.py release <project>`.
+   Also release before stopping for any reason. Do not leave uncommitted files when calling it.
+4. In the browser, open **your own tab** first (`Claude_Browser__tabs_create`) and pass that
+   `tabId` to every browser call; close it (`tabs_close`) when done. Never use or close other tabs.
 
 The browser is the **built-in browser pane on the user's computer**
 (`mcp__remote-devices__Claude_Browser__*`). It is already signed in to

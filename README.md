@@ -29,6 +29,20 @@
 - 토큰은 저장소 Secrets(`THREADS_TOKEN_NUTRI`, `THREADS_TOKEN_DEALS`, `THREADS_TOKEN_FRESH`)에만 있어요
 - 토큰 확인(게시 없음): `checks/request` 파일을 바꿔서 push하면 `checks/result.json`에 결과가 기록돼요
 
+## 브라우저 순서 지키기
+모든 계정이 사용자 컴퓨터의 브라우저 하나를 같이 써요. 회차마다 `scripts/browser_lock.py`로 차례를 받고
+(`locks/browser.json`), 브라우저 작업이 끝나면 바로 넘겨요. 시간표도 계정끼리 40분 이상 떨어지게 잡아요.
+
+| 시각(KST) | 계정 |
+|---|---|
+| 07:37 | 영양제 |
+| 08:22 · 09:42 · 10:52 | 특가 (골드박스 7시 교체 직후) |
+| 11:37 | 영양제 |
+| 12:22 · 15:52 · 18:22 | 로켓프레시 |
+| 20:37 | 영양제 |
+
+(특가·로켓프레시는 새 계정이라 하루 1개 → 2개 → 3개로 늘려가요. 빈 시간: 13~15시, 16:30~18시, 21시 이후)
+
 ## 토큰 자동 갱신
 - 매주 수요일 12:17(KST)에 두 계정 토큰을 갱신하고 새 토큰을 Secrets에 다시 저장해요 (`.github/workflows/token-refresh.yml`)
 - 필요한 것: Secrets에 `SECRETS_PAT` (이 저장소 "Secrets: Read and write" 권한만 있는 GitHub 접근 키)
