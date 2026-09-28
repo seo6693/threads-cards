@@ -1,3 +1,6 @@
 {
-  "next_keyword": 5
+  "next_keyword": 6,
+  "recent_formats": [
+    "quick_pick"
+  ]
 }

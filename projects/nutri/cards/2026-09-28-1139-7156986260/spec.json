@@ -1,0 +1,15 @@
+{
+  "product": {
+    "pill": "밀크씨슬",
+    "brand": "NOW FOODS",
+    "name": "실리마린 밀크시슬 300mg",
+    "sub": "베지 캡슐 200정 · 1알 실리마린 240mg",
+    "badge_top": "상품평 73,428개",
+    "badge_price": "50% 23,660원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "product"
+  ]
+}
