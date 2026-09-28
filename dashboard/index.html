@@ -10,7 +10,7 @@
 <style>
 :root{
   --bg:#eef2f1; --surface:#ffffff; --sunk:#f5f8f7; --ink:#15202b; --muted:#5b6873; --line:#dbe3e3;
-  --nutri:#2f5bea; --nutri-soft:#e6ecfd; --living:#0e8a7e; --living-soft:#dff3f0;
+  --nutri:#2f5bea; --nutri-soft:#e6ecfd; --living:#0e8a7e; --living-soft:#dff3f0; --deals:#d9480f; --deals-soft:#fde8dd;
   --good:#1d8f4e; --good-soft:#e2f4e9; --warn:#b77a00; --warn-soft:#fbf0d6; --bad:#c8392e; --bad-soft:#fbe4e1;
   --idle:#9aa6ae; --idle-soft:#edf0f1;
   --sans:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
@@ -19,12 +19,12 @@
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0e1519; --surface:#162027; --sunk:#111a20; --ink:#e5ecef; --muted:#93a2ac; --line:#25333b;
-  --nutri:#7593ff; --nutri-soft:#1c2748; --living:#35c3b3; --living-soft:#12322f;
+  --nutri:#7593ff; --nutri-soft:#1c2748; --living:#35c3b3; --living-soft:#12322f; --deals:#ff8a4c; --deals-soft:#3a2016;
   --good:#4cc47f; --good-soft:#15301f; --warn:#e3a92d; --warn-soft:#342a12; --bad:#f06b5f; --bad-soft:#3a1c19;
   --idle:#6f7d86; --idle-soft:#1d272d; color-scheme:dark;}}
 :root[data-theme="dark"]{
   --bg:#0e1519; --surface:#162027; --sunk:#111a20; --ink:#e5ecef; --muted:#93a2ac; --line:#25333b;
-  --nutri:#7593ff; --nutri-soft:#1c2748; --living:#35c3b3; --living-soft:#12322f;
+  --nutri:#7593ff; --nutri-soft:#1c2748; --living:#35c3b3; --living-soft:#12322f; --deals:#ff8a4c; --deals-soft:#3a2016;
   --good:#4cc47f; --good-soft:#15301f; --warn:#e3a92d; --warn-soft:#342a12; --bad:#f06b5f; --bad-soft:#3a1c19;
   --idle:#6f7d86; --idle-soft:#1d272d; color-scheme:dark;}
 *{box-sizing:border-box}
@@ -164,7 +164,7 @@ const OWNER="seo6693", REPO="threads-cards", BRANCH="main";
 const RAW=`https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/`;
 const API=`https://api.github.com/repos/${OWNER}/${REPO}`;
 const GH=`https://github.com/${OWNER}/${REPO}`;
-const COLORS={nutri:["var(--nutri)","var(--nutri-soft)"],living:["var(--living)","var(--living-soft)"]};
+const COLORS={nutri:["var(--nutri)","var(--nutri-soft)"],living:["var(--living)","var(--living-soft)"],deals:["var(--deals)","var(--deals-soft)"]};
 const WF_NAMES={"Publish Threads posts":"게시","Verify account tokens":"토큰 점검","Refresh Threads tokens":"토큰 갱신","pages build and deployment":"페이지 배포"};
 const STATIC={
   github:"seo6693", metaApp:"쿠팡파트너스-영양제 (Meta 개발자 앱)",

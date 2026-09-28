@@ -35,7 +35,7 @@ jobs:
       - name: Create a video container (never published)
         env:
           THREADS_TOKEN_NUTRI: ${{ secrets.THREADS_TOKEN_NUTRI }}
-          THREADS_TOKEN_LIVING: ${{ secrets.THREADS_TOKEN_LIVING }}
+          THREADS_TOKEN_DEALS: ${{ secrets.THREADS_TOKEN_DEALS }}
         run: python scripts/check_media.py $(cat checks/media-request)
 
       - name: Record result

@@ -26,8 +26,7 @@ jobs:
       - name: Check tokens (read-only, nothing is posted)
         env:
           THREADS_TOKEN_NUTRI: ${{ secrets.THREADS_TOKEN_NUTRI }}
-          THREADS_TOKEN_FOOD: ${{ secrets.THREADS_TOKEN_FOOD }}
-          THREADS_TOKEN_LIVING: ${{ secrets.THREADS_TOKEN_LIVING }}
+          THREADS_TOKEN_DEALS: ${{ secrets.THREADS_TOKEN_DEALS }}
         run: python scripts/verify.py
 
       - name: Record result

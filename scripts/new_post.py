@@ -109,21 +109,24 @@ def cmd_next(project):
         "theme": cfg["theme"],
         "theme_variants": cfg.get("theme_variants", [cfg["theme"]]),
         "topic_tags": cfg.get("topic_tags", []),
-        "format": pick_format(state),
+        "format": pick_format(state, cfg.get("formats")),
+        "source": cfg.get("source", "search"),
+        "source_note": cfg.get("source_note", ""),
         "formats": FORMATS,
         "avoid_openings": [first_line(d["text"]) for d in recent_posts(proj)],
         "recent_formats": state.get("recent_formats", [])[-4:],
     }, ensure_ascii=False, indent=2))
 
 
-def pick_format(state):
+def pick_format(state, allowed=None):
     """Least recently used format, never one of the last two posts' formats."""
     recent = state.get("recent_formats", [])
+    pool = [k for k in FORMATS if not allowed or k in allowed]
     # About one post in three is a motion video.
-    if "price_motion" in FORMATS and "price_motion" not in recent[-2:]:
+    if "price_motion" in pool and "price_motion" not in recent[-2:]:
         return "price_motion"
-    last_used = {k: max((i for i, r in enumerate(recent) if r == k), default=-1) for k in FORMATS}
-    options = [k for k in FORMATS if k not in recent[-2:] and k != "price_motion"] or list(FORMATS)
+    last_used = {k: max((i for i, r in enumerate(recent) if r == k), default=-1) for k in pool}
+    options = [k for k in pool if k not in recent[-2:] and k != "price_motion"] or pool
     oldest = min(last_used[k] for k in options)
     return random.choice([k for k in options if last_used[k] == oldest])
 
@@ -151,8 +154,9 @@ def cmd_queue(project, draft_path):
     if str(d.get("product_id")) in recent_ids(proj, cfg["selection"]["skip_if_posted_within_days"]):
         errors.append(f"product {d.get('product_id')} was already posted recently")
     fmt = d.get("format")
-    if fmt not in FORMATS:
-        errors.append(f"'format' must be one of {list(FORMATS)}")
+    allowed = cfg.get("formats") or list(FORMATS)
+    if fmt not in FORMATS or fmt not in allowed:
+        errors.append(f"'format' must be one of {allowed}")
     elif fmt in state.get("recent_formats", [])[-2:]:
         errors.append(f"format '{fmt}' was used in one of the last 2 posts; pick another")
     # Anti-copy: the opening and the body must not look like recent posts.

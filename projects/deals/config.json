@@ -1,0 +1,85 @@
+{
+  "account": "deals",
+  "label": "특가",
+  "threads": "@(하겐민지)",
+  "theme": "orange",
+  "source": "goldbox",
+  "source_note": "1순위: 쿠팡 골드박스 https://partners.coupang.com/#affiliate/ws/best/goldbox (오늘의 특가). 거기서 조건 맞는 게 없으면 keywords로 검색해서 할인율 높은 순으로.",
+  "keywords": [
+    "생활용품 특가",
+    "주방용품",
+    "세제",
+    "휴지",
+    "생수",
+    "간식",
+    "캠핑용품",
+    "수납",
+    "전자기기",
+    "욕실용품",
+    "반려동물용품",
+    "유아용품"
+  ],
+  "selection": {
+    "min_reviews": 50,
+    "min_top_rating_pct": 80,
+    "min_discount_pct": 35,
+    "min_price": 5000,
+    "max_price": 200000,
+    "skip_if_posted_within_days": 14,
+    "skip_price_zero": true,
+    "avoid": [
+      "여행·숙박 상품권",
+      "의류 사이즈 선택이 필요한 상품",
+      "성인용품",
+      "의약품",
+      "건강기능식품(영양제 계정과 겹침)"
+    ]
+  },
+  "formats": [
+    "price_motion",
+    "price_drop",
+    "quick_pick",
+    "review_digest",
+    "problem_solution"
+  ],
+  "copy_rules": [
+    "가격·할인율·리뷰 수는 상품 페이지에 적힌 것만. 가격은 수시로 바뀐다는 점을 첫 댓글에 꼭",
+    "골드박스 마감 시간 같은 한정 표현은 페이지에 실제로 표시된 경우에만",
+    "'오늘만', '마지막' 같은 가짜 긴급함 금지. 대신 '정가 대비 얼마 아낌', '개당 가격'처럼 계산된 숫자로",
+    "리뷰에서 자주 나오는 단점이 있으면 한 줄로 솔직하게",
+    "사용자가 직접 써본 것처럼 쓰지 않기 (1인칭 사용 후기 금지). 경험은 '리뷰에 따르면', '구매자들은'으로",
+    "과장 금지: '역대급', '무조건', '인생템' 같은 근거 없는 최상급 금지"
+  ],
+  "tone": "친근한 반말 섞인 존댓말, 짧고 빠르게. 이모지는 줄마다 1개 이하",
+  "schedule_kst": [
+    "21:08"
+  ],
+  "warmup": {
+    "week1": [
+      "21:08"
+    ],
+    "week2": [
+      "12:08",
+      "21:08"
+    ],
+    "week3+": [
+      "08:08",
+      "12:08",
+      "21:08"
+    ],
+    "started": "2026-09-28"
+  },
+  "scheduled_task": "Threads 자동 게시 · 특가 (하겐민지)",
+  "theme_variants": [
+    "orange",
+    "teal3",
+    "navy2"
+  ],
+  "topic_tags": [
+    "쿠팡특가",
+    "특가정보",
+    "할인정보",
+    "살림템",
+    "생활꿀템"
+  ]
+}

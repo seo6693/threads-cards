@@ -8,7 +8,7 @@
 | 프로젝트 | 계정 | 폴더 |
 |---|---|---|
 | 영양제 | @kkul394 | `projects/nutri/` |
-| 생활용품 | (새 계정 연결 중 · 이전 @bagdodo6는 `archive/`) | `projects/living/` |
+| 특가 | 하겐민지 (id 29440420288898544) · 이전 생활용품 @bagdodo6 기록은 `archive/` | `projects/deals/` |
 
 각 프로젝트 폴더:
 - `config.json` — 검색 키워드, 상품 선정 기준, 문구 규칙, 카드 색
@@ -24,7 +24,7 @@
 - 계정당 하루 3개 (아침·점심·저녁), 준비 후 4~42분 사이 무작위 시각에 게시
 - 글 형식 5가지를 돌려 쓰고, 최근 글과 비슷한 문장·구조는 자동으로 거부해요 (`scripts/formats.json`)
 - 순서는 `RUNBOOK.md` 참고
-- 토큰은 저장소 Secrets(`THREADS_TOKEN_NUTRI`, `THREADS_TOKEN_LIVING`)에만 있어요
+- 토큰은 저장소 Secrets(`THREADS_TOKEN_NUTRI`, `THREADS_TOKEN_DEALS`)에만 있어요
 - 토큰 확인(게시 없음): `checks/request` 파일을 바꿔서 push하면 `checks/result.json`에 결과가 기록돼요
 
 ## 토큰 자동 갱신

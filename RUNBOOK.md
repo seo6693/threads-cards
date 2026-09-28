@@ -20,6 +20,11 @@ If Coupang Partners shows a login page, stop and report that a login is needed.
 Never type passwords.
 
 ## 1. Find candidates (Coupang Partners search)
+- If `next` says `"source": "goldbox"` (특가 계정), start at
+  `https://partners.coupang.com/#affiliate/ws/best/goldbox` (쿠팡 골드박스, 오늘의 특가). Same
+  `.product-item` list and link buttons as search. Keep items whose discount is ≥
+  `selection.min_discount_pct` and that are not in `selection.avoid`; prefer everyday items people
+  buy on impulse (생필품, 간식, 주방·욕실, 소형 가전). Only if nothing fits, fall back to the keyword search below.
 - Open `https://partners.coupang.com/#affiliate/ws/link/0/<keyword>` and wait ~3s.
 - Read the list with JS:
   ```js
