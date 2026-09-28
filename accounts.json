@@ -5,8 +5,8 @@
     "token_env": "THREADS_TOKEN_NUTRI"
   },
   "living": {
-    "label": "생활용품 (새 계정 연결 대기)",
-    "user_id": "PENDING",
+    "label": "생활용품 (하겐민지)",
+    "user_id": "29440420288898544",
     "token_env": "THREADS_TOKEN_LIVING"
   }
 }
