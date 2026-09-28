@@ -298,7 +298,10 @@ function render(data,projects,runs,issues,now,today){
         ${link?`<a class="open" href="${esc(link)}" target="_blank" rel="noopener">게시물 ↗</a>`:""}</li>`;}).join("")
       :`<li class="empty">아직 게시물이 없어요.</li>`;
     const why=e=>{e=e||"";if(/API access blocked/i.test(e))return"Meta가 이 계정의 API 접근을 차단함";if(/cannot access the app till you log in/i.test(e))return"threads.com 로그인 후 안내 확인이 필요하다며 Meta가 차단함";if(/Session has expired|expired/i.test(e))return"토큰 만료";if(/HTTP 5\d\d|is_transient/i.test(e))return"Threads 서버 일시 오류";return e.slice(0,120);};
-    const failHtml=failedToday.map(d=>`<div class="banner bad" style="font-size:12.5px"><b>실패 ${kstHM(parseTime(d.published_at))}</b><span>${esc(d.product_name||d._f)} · <b>${esc(why(d.error))}</b></span></div>`).join("");
+    // A failure followed by a successful post on the same account is already resolved.
+    const lastOk=Math.max(0,...x.done.map(o=>+parseTime(o.published_at)||0));
+    const failHtml=failedToday.map(d=>{const t=parseTime(d.published_at),ok=lastOk>+t;
+      return`<div class="banner ${ok?"":"bad"}" style="font-size:12.5px"><b>${ok?"해결됨":"실패"} ${kstHM(t)}</b><span>${esc(d.product_name||d._f)} · ${esc(why(d.error))}${ok?` → 이후 ${kstHM(new Date(lastOk))}에 정상 게시`:""}</span></div>`;}).join("");
     const max=Math.max(8,...x.week.map(w=>w.n));
     const bars=x.week.map(w=>`<div class="bar${w.day===today?" today":""}"><div class="col" style="height:${Math.round(w.n/max*100)}%"></div><span class="n">${w.n}</span><span>${w.day===today?"오늘":dow(w.day)}</span></div>`).join("");
     return`<article class="acct" style="--c:${c};--c-soft:${cs}">
