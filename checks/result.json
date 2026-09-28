@@ -1,11 +1,23 @@
 {
-  "checked_at": "2026-09-27T07:59:18+0000",
+  "checked_at": "2026-09-28T06:09:42+0000",
   "accounts": {
     "nutri": {
       "ok": true,
       "id": "26386715651026150",
       "username": "kkul394",
       "expected_id": "26386715651026150"
+    },
+    "deals": {
+      "ok": true,
+      "id": "29440420288898544",
+      "username": "hagenminji4",
+      "expected_id": "29440420288898544"
+    },
+    "fresh": {
+      "ok": false,
+      "id": "28249749764697687",
+      "username": "magdungi43",
+      "expected_id": "pending"
     }
   }
 }
