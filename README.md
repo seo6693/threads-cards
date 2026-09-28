@@ -8,7 +8,7 @@
 | 프로젝트 | 계정 | 폴더 |
 |---|---|---|
 | 영양제 | @kkul394 | `projects/nutri/` |
-| 생활용품 | @bagdodo6 | `projects/living/` |
+| 생활용품 | (새 계정 연결 중 · 이전 @bagdodo6는 `archive/`) | `projects/living/` |
 
 각 프로젝트 폴더:
 - `config.json` — 검색 키워드, 상품 선정 기준, 문구 규칙, 카드 색

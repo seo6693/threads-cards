@@ -5,8 +5,8 @@
     "token_env": "THREADS_TOKEN_NUTRI"
   },
   "living": {
-    "label": "생활용품 (박도도 @bagdodo6)",
-    "user_id": "29273644168909137",
+    "label": "생활용품 (새 계정 연결 대기)",
+    "user_id": "PENDING",
     "token_env": "THREADS_TOKEN_LIVING"
   }
 }

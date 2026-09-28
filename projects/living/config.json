@@ -1,7 +1,7 @@
 {
   "account": "living",
   "label": "생활용품",
-  "threads": "@bagdodo6",
+  "threads": "@(연결 대기)",
   "theme": "teal",
   "keywords": [
     "무드등",
@@ -46,7 +46,7 @@
     "12:08",
     "21:08"
   ],
-  "scheduled_task": "Threads 자동 게시 · 생활용품 (@bagdodo6)",
+  "scheduled_task": "Threads 자동 게시 · 생활용품",
   "theme_variants": [
     "teal",
     "teal2",
