@@ -125,6 +125,24 @@ Cards needed per format (`formats[fmt].cards.order`); only fill what the format 
 - `product`: `{"pill","brand","name","sub","badge_top","badge_price"}`
 - `reviews`: `{"title","big","caption","quotes":[[q,sub]×3],"footer"}` (`nutri` title "먼저 먹어본 사람들 반응")
 
+**Video format (`price_motion`, about every third post).** No `cards`; give `motion` instead:
+```json
+"motion": {
+  "hook": ["밀크씨슬", "아직도", "237원에", "드세요?"],   // 3-4 words, ≤5 chars each is best; last word is the punch (shown red)
+  "unit": "한 알",                                      // 한 알 / 1포 / 1개 / 1롤 … whatever the product is sold in
+  "from_price": 237, "to_price": 118,                  // per-unit: 정가 ÷ 개수 and 일반할인가 ÷ 개수, rounded
+  "stamp": "반값",                                      // ≥50% off → "반값", otherwise "<할인율>%↓" (e.g. "38%↓")
+  "name": "나우푸드 밀크씨슬 200정",                     // short
+  "badge_price": "23,660원",                            // 일반할인가
+  "stats": [["리뷰", 73428, "개"], ["'복용 아주 편해요'", 74, "%"]],   // real numbers from the page
+  "cta": "첫 댓글에 링크",
+  "palette": "yellow"                                   // yellow | lime | pink | cyan — not the same as the last video
+}
+```
+Only use it for products with ≥20% off and a countable unit. Otherwise pick another format.
+The hook must make a true statement or honest question from those numbers. The text body is short
+(3-6 lines) and still ends with a question. Watch one frame of the video (the `poster.jpg`) before pushing.
+
 The last line of `text` is always exactly:
 `이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.`
 Use the 일반할인가 (not the 와우 쿠폰가) as the price. If the 와우 price is lower,
@@ -132,7 +150,7 @@ set `reply_note` to `※ 가격·쿠폰은 시점마다 달라질 수 있어요 
 
 ## 6. Queue, check, publish
 1. `python3 scripts/new_post.py queue <project> /tmp/draft.json` — fix and retry if it rejects the draft.
-2. Look at every rendered card in the printed `cards` folder (Read tool).
+2. Look at every rendered card (or `poster.jpg` for a video) in the printed `cards` folder (Read tool).
    Fix overlaps or wrong text by editing the draft and re-running (delete the
    previous `cards/<slug>` and `queue/<slug>.json` first).
 3. Commit only this project's files plus `state.json`:
