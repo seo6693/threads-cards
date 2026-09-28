@@ -1,0 +1,84 @@
+{
+  "account": "fresh",
+  "label": "로켓프레시 간편식",
+  "threads": "(연결 전)",
+  "theme": "teal",
+  "source": "category_ranking",
+  "category_url": "https://www.coupang.com/np/categories/502492",
+  "source_note": "쿠팡 카테고리 '냉장/냉동/간편식'(https://www.coupang.com/np/categories/502492, 기본 정렬 = 쿠팡 랭킹순)에서 scripts/category_ranking.js로 순위 목록을 읽고, 위에서부터 skip 목록에 없고 fresh=true(로켓프레시)인 첫 상품을 고른다. 그 상품의 title을 그대로 쿠팡파트너스 검색창 주소(#affiliate/ws/link/0/<title>)에 넣고, 목록에서 제목이 같고 로켓프레시 배지가 있는 항목의 링크를 만든 뒤 product[productId]가 순위 목록의 pid와 같은지 확인한다(다르면 다음 항목). 1페이지(1~60위)를 다 썼으면 ?page=2. keyword는 이번 회차에 우선할 세부 분류(해당 분류 상품이 상위 60위 안에 있으면 그걸 먼저).",
+  "keywords": [
+    "만두",
+    "치킨너겟·튀김",
+    "어묵·맛살·햄",
+    "즉석국·탕·찌개",
+    "밥·볶음밥",
+    "고기·해물요리",
+    "전·부침",
+    "면·칼국수"
+  ],
+  "selection": {
+    "max_rank": 120,
+    "require_rocket_fresh": true,
+    "min_reviews": 300,
+    "min_top_rating_pct": 80,
+    "min_price": 3000,
+    "max_price": 80000,
+    "skip_if_posted_within_days": 21,
+    "skip_price_zero": true,
+    "avoid": [
+      "주류",
+      "건강기능식품(영양제 계정과 겹침)",
+      "유아식·이유식"
+    ]
+  },
+  "formats": [
+    "price_motion",
+    "quick_pick",
+    "review_digest",
+    "problem_solution",
+    "buying_guide",
+    "price_drop"
+  ],
+  "copy_rules": [
+    "가격은 쿠팡파트너스에 표시된 판매가 기준. 쿠팡 카테고리 페이지의 쿠폰가(웰컴백 쿠폰 100% → 0원 등)는 로그인 계정 전용이라 절대 쓰지 않기",
+    "순위는 '쿠팡 랭킹 상위' 정도로만. 정확한 등수는 사람마다 다르게 보일 수 있어 쓰지 않기",
+    "조리법(에어프라이어 몇 도·몇 분 등)은 상품 페이지나 리뷰에 나온 것만, '리뷰에 따르면'으로",
+    "한 끼 가격, 1인분 가격, 100g당 가격처럼 계산한 숫자로 가성비를 보여주기",
+    "사용자가 직접 먹어본 것처럼 쓰지 않기 (1인칭 후기 금지). 경험은 '구매자들은', '리뷰에 따르면'으로",
+    "과장 금지: '역대급', '무조건', '인생템' 같은 근거 없는 최상급 금지. '오늘만' 같은 가짜 긴급함 금지",
+    "리뷰에서 자주 나오는 단점(짜다, 양이 적다 등)이 있으면 한 줄로 솔직하게",
+    "로켓프레시(새벽 도착) 여부는 상품에 로켓프레시 표시가 있을 때만 언급"
+  ],
+  "tone": "친근한 존댓말, 자취생·맞벌이·바쁜 아침에 공감하는 말투. 짧고 빠르게. 이모지는 줄마다 1개 이하",
+  "schedule_kst": [
+    "18:22"
+  ],
+  "warmup": {
+    "week1": [
+      "18:22"
+    ],
+    "week2": [
+      "11:22",
+      "18:22"
+    ],
+    "week3+": [
+      "07:52",
+      "11:22",
+      "18:22"
+    ],
+    "started": null
+  },
+  "scheduled_task": "(연결 후 만들 예정)",
+  "theme_variants": [
+    "teal",
+    "teal2",
+    "navy3"
+  ],
+  "topic_tags": [
+    "냉동식품",
+    "간편식",
+    "자취요리",
+    "에어프라이어요리",
+    "로켓프레시"
+  ]
+}

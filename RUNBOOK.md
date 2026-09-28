@@ -37,6 +37,18 @@ Never type passwords.
      qualifies, record a skip ("골드박스에 조건 맞는 상품 없음"). Never invent or guess an end time.
   - The goldbox list shows a "와우 가입 쿠폰" price for new WOW members; never use it. Take price and
     discount from the product page (step 3).
+- If `next` says `"source": "category_ranking"` (로켓프레시 간편식 계정), do **not** keyword-search Partners:
+  1. Open the config's `category_url` (default sort is 쿠팡 랭킹순; add `?page=2` for ranks 61-120) and run
+     `scripts/category_ranking.js` with `javascript_tool`. It returns `[{rank, pid, title, reviews, fresh}]`.
+  2. Walk the list from the top. Skip ids in `skip_product_ids`, items with `fresh: false`, items in
+     `selection.avoid`, and items with fewer than `selection.min_reviews` reviews. Prefer the first item
+     that fits this run's `keyword` (세부 분류) if one is in the top 60; otherwise take the first that fits.
+  3. Paste its exact `title` into `https://partners.coupang.com/#affiliate/ws/link/0/<title>`, pick the
+     `.product-item` with the same title and a `img[src*="rocket-fresh"]` badge, create the link (step 2)
+     and confirm `product[productId]` equals the ranking `pid`. If not, try the next list item.
+  4. Prices on the category page include coupons tied to the signed-in account (e.g. "웰컴백 쿠폰 100%" → 0원);
+     never use them. Use the Partners price (`product[salesPrice]`, `product[originPrice]`,
+     `product[discountRate]` in the URL after step 2) and confirm on the product page.
 - Open `https://partners.coupang.com/#affiliate/ws/link/0/<keyword>` and wait ~3s.
 - Read the list with JS:
   ```js

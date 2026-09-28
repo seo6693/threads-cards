@@ -8,6 +8,7 @@
 | 프로젝트 | 계정 | 폴더 |
 |---|---|---|
 | 영양제 | @kkul394 | `projects/nutri/` |
+| 로켓프레시 간편식 | (연결 전) — 쿠팡 '냉장/냉동/간편식' 랭킹순 상위 상품 | `projects/fresh/` |
 | 특가 | @hagenminji4 (하겐민지) · 이전 생활용품 @bagdodo6 기록은 `archive/` | `projects/deals/` |
 
 각 프로젝트 폴더:
