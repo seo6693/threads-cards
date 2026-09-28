@@ -172,12 +172,13 @@ Cards needed per format (`formats[fmt].cards.order`); only fill what the format 
   "badge_price": "23,660원",                            // 일반할인가
   "stats": [["리뷰", 73428, "개"], ["'복용 아주 편해요'", 74, "%"]],   // real numbers from the page
   "cta": "첫 댓글에 링크",
-  "palette": "yellow"                                   // yellow | lime | pink | cyan — not the same as the last video
+  // leave out "style" and "palette": queue rotates them automatically (slam / receipt / slot / split
+  // styles, never the same look twice in a row). Each style uses the same fields above.
 }
 ```
 Only use it for products with ≥20% off and a countable unit. Otherwise pick another format.
 The hook must make a true statement or honest question from those numbers. The text body is short
-(3-6 lines) and still ends with a question. Watch one frame of the video (the `poster.jpg`) before pushing.
+(3-6 lines) and still ends with a question. Watch one frame of the video (the `poster.jpg`) before pushing; check that no text overlaps and the price is readable.
 
 The last line of `text` is always exactly:
 `이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.`

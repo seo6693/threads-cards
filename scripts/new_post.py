@@ -236,10 +236,20 @@ def cmd_queue(project, draft_path):
         m = dict(m, product_image=img.name)
         if deal:
             m["deadline"] = deal["label"]
-        m.setdefault("palette", random.choice(["yellow", "lime", "pink", "cyan"]))
+        # Rotate the video style and colour so consecutive videos never look the same:
+        # least-recently-used style, and a palette different from the last two videos.
+        rv = state.get("recent_video_styles", [])
+        order = {st: (rv[::-1].index(st) if st in rv else 99) for st in make_motion.STYLES}
+        oldest = max(order.values())
+        m.setdefault("style", random.choice([st for st, v in order.items() if v == oldest]))
+        rp = state.get("recent_palettes", [])[-2:]
+        m.setdefault("palette", random.choice([c for c in make_motion.PALETTES if c not in rp] or list(make_motion.PALETTES)))
+        state["recent_video_styles"] = (rv + [m["style"]])[-6:]
+        state["recent_palettes"] = (state.get("recent_palettes", []) + [m["palette"]])[-6:]
         (card_dir / "motion.json").write_text(json.dumps(m, ensure_ascii=False, indent=2) + "\n")
         make_motion.render(m, str(card_dir), str(card_dir / "video.mp4"))
-        make_motion.poster(str(card_dir / "video.mp4"), str(card_dir / "poster.jpg"))
+        make_motion.poster(str(card_dir / "video.mp4"), str(card_dir / "poster.jpg"),
+                           at=make_motion.poster_time(m["style"]))
         rel = str(card_dir.relative_to(ROOT)).replace("\\", "/") + "/"
         media = {"video": PAGES + rel + "video.mp4", "thumb": RAW + rel + "poster.jpg", "images": []}
     else:

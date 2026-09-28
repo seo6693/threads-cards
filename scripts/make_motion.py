@@ -146,9 +146,18 @@ def shake(t, t0, amp=26, dur=0.25):
     return (0, 0)
 
 
+STYLES = ["slam", "receipt", "slot", "split"]
+
+
+def poster_time(style):
+    import motion_styles
+    return motion_styles.POSTER_AT.get(style, 4.2)
+
+
 def render(spec, spec_dir, out_path):
     P = PALETTES[spec.get("palette", "yellow")]
     prod = Image.open(os.path.join(spec_dir, spec["product_image"])).convert("RGB")
+    prod_raw = prod.copy()
     side = min(prod.size)
     prod = prod.crop(((prod.width - side) // 2, (prod.height - side) // 2,
                       (prod.width + side) // 2, (prod.height + side) // 2)).resize((720, 720), Image.LANCZOS)
@@ -157,6 +166,10 @@ def render(spec, spec_dir, out_path):
     m = Image.new("L", (720, 720), 0)
     ImageDraw.Draw(m).rounded_rectangle([0, 0, 719, 719], radius=40, fill=255)
     card.paste(prod, (20, 20), m)
+
+    style = spec.get("style", "slam")
+    if style != "slam":
+        return _render_frames(spec, card, prod_raw, style, out_path)
 
     words = spec["hook"][:4]
     wsizes = [fit_size(w, "Black", 250, 980) for w in words]
@@ -279,6 +292,33 @@ def render(spec, spec_dir, out_path):
         d.rectangle([0, 0, int(W * t / END), 14], fill=RED)
 
         frame.paste(im.convert("RGB"), (40 + sx, 40 + sy))
+        ff.stdin.write(frame.crop((40, 40, 40 + W, 40 + H)).tobytes())
+    ff.stdin.close()
+    ff.wait()
+    return out_path
+
+
+def _render_frames(spec, card, prod_raw, style, out_path):
+    import motion_styles as ms
+    ctx = ms.context(spec, card, prod_raw)
+    fn, end = ms.FRAMES[style], ms.END[style]
+    ff = subprocess.Popen(
+        ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
+         "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
+         "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
+         "-shortest", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+         "-pix_fmt", "yuv420p", "-profile:v", "high", "-movflags", "+faststart",
+         "-c:a", "aac", "-b:a", "96k", out_path],
+        stdin=subprocess.PIPE)
+    bar = {"receipt": WHITE, "slot": RED, "split": BLACK}.get(style, RED)
+    for i in range(int(end * FPS)):
+        t = i / FPS
+        im, sx, sy = fn(t, ctx)
+        d = ImageDraw.Draw(im)
+        d.rectangle([0, 0, W, 14], fill=(0, 0, 0, 90))
+        d.rectangle([0, 0, int(W * t / end), 14], fill=bar)
+        frame = Image.new("RGB", (W + 80, H + 80), BLACK)
+        frame.paste(im.convert("RGB"), (40 + int(sx), 40 + int(sy)))
         ff.stdin.write(frame.crop((40, 40, 40 + W, 40 + H)).tobytes())
     ff.stdin.close()
     ff.wait()
