@@ -1,14 +1,13 @@
 {
   "nutri": {
-    "checked_at": "2026-09-28T11:03:40+09:00",
-    "ok": false,
-    "username": "kkul394",
-    "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A6K93o8OjYqNDrg7H4aCjaT\"}}"
+    "checked_at": "2026-09-28T11:20:01+09:00",
+    "ok": true,
+    "username": "kkul394"
   },
   "living": {
-    "checked_at": "2026-09-28T11:03:40+09:00",
+    "checked_at": "2026-09-28T11:20:01+09:00",
     "username": "bagdodo6",
     "ok": false,
-    "error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ATvfXnDPDlZaN_mtFcxsQkv\"}}"
+    "error": "HTTP 400: {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ALKBEoBAVFs1ym8qWSTba_1\"}}"
   }
 }
