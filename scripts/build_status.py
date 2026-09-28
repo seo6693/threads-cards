@@ -37,6 +37,8 @@ def main():
     for r in (runs or {}).get("workflow_runs", []):
         if str(r["id"]) == this_run or r["status"] != "completed":
             continue
+        if r["event"] == "dynamic":  # GitHub Pages deploys; every commit makes one
+            continue
         if r["event"] == "schedule" and r["conclusion"] == "success":
             continue
         keep.append({k: r[k] for k in ("name", "status", "conclusion", "created_at", "html_url", "event")})
