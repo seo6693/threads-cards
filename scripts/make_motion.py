@@ -12,6 +12,7 @@ spec = {
   "badge_price": "23,660원",
   "stats": [["리뷰", 73428, "개"], ["'복용 아주 편해요'", 74, "%"]],
   "cta": "첫 댓글에 링크",
+  "deadline": "9/29(화) 오전 7시까지",                # optional; deals account adds it automatically
   "palette": "yellow"                              # yellow | lime | pink | cyan
 }
 Design: loud contrasting backgrounds that change every scene, words that slam in with
@@ -127,6 +128,17 @@ class Confetti:
                 d.polygon(pts, fill=col)
 
 
+def deadline_pill(text, size=54):
+    """Red '⏰-less' pill with the deal end time (fonts have no emoji)."""
+    tx = text_img("특가 " + text, "Black", size, WHITE)
+    bw, bh = tx.width + 70, tx.height + 44
+    pill = Image.new("RGBA", (bw, bh), (0, 0, 0, 0))
+    ImageDraw.Draw(pill).rounded_rectangle([0, 0, bw - 1, bh - 1], radius=bh // 2, fill=RED,
+                                           outline=WHITE, width=6)
+    pill.paste(tx, (35, 22), tx)
+    return pill
+
+
 def shake(t, t0, amp=26, dur=0.25):
     if t0 <= t < t0 + dur:
         k = 1 - (t - t0) / dur
@@ -208,7 +220,7 @@ def render(spec, spec_dir, out_path):
             rays(im, W // 2, 690, WHITE, -tt * 50, alpha=90)
             k = ease(tt / 0.45)
             paste_center(im, card, W / 2, 690, 0.35 + 0.65 * k, -25 * (1 - k))
-            paste_center(im, text_img(spec["name"], "Black", fit_size(spec["name"], "Black", 64, 960), BLACK), W / 2, 200, 1, 0, ease(tt / 0.3))
+            paste_center(im, text_img(spec["name"], "Black", fit_size(spec["name"], "Black", 64, 960), BLACK), W / 2, 150 if spec.get("deadline") else 200, 1, 0, ease(tt / 0.3))
             if tt > 0.6:
                 x = (tt - 0.6) / 0.3
                 stamp = text_img(spec.get("stamp", "특가"), "Black", 170, WHITE)
@@ -220,6 +232,8 @@ def render(spec, spec_dir, out_path):
                 paste_center(im, badge, 800, 1000, slam(x), -14)
                 dx, dy = shake(t, S2 + 0.78, 26, 0.25)
                 sx, sy = dx, dy
+            if spec.get("deadline"):
+                paste_center(im, deadline_pill(spec["deadline"], 46), W / 2, 250, 1, 0, ease((tt - 0.2) / 0.3))
             if tt > 1.0:
                 pr = text_img(spec["badge_price"], "Black", 110, BLACK)
                 paste_center(im, pr, 330, 1180, ease((tt - 1.0) / 0.3))
@@ -247,6 +261,8 @@ def render(spec, spec_dir, out_path):
             tt = t - S4
             im.paste(P["a"] + (255,), [0, 0, W, H])
             paste_center(im, card, W / 2, 470, 0.62)
+            if spec.get("deadline"):
+                paste_center(im, deadline_pill(spec["deadline"], 58), W / 2, 110, 1 + 0.04 * math.sin(tt * 7))
             paste_center(im, text_img(spec["badge_price"], "Black", 150, BLACK), W / 2, 870, slam(tt / 0.35))
             cta = text_img(spec.get("cta", "첫 댓글에 링크"), "Black", 90, WHITE)
             bw, bh = cta.width + 120, cta.height + 70

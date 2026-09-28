@@ -273,7 +273,7 @@ function render(data,projects,runs,issues,now,today){
       const link=d.result?.permalink;
       return`<li class="post">${img?`<img src="${esc(img)}" alt="" loading="lazy" onerror="this.removeAttribute('src')">`:`<img alt="">`}
         <div style="min-width:0"><div class="name" title="${esc(d.product_name)}">${esc(d.product_name||"상품")}</div>
-        <div class="meta"><span class="num">${kstDate(t)===today?"오늘 ":md(kstDate(t))+" "}${kstHM(t)}</span>${price?` · ${esc(price)}`:""}${d.result?.reply_error?' · <span style="color:var(--bad)">링크 댓글 실패</span>':""}${d.video?' · <b style="color:var(--c)">▶ 영상</b>':""}${d.keyword?` · #${esc(d.keyword)}`:""}</div></div>
+        <div class="meta"><span class="num">${kstDate(t)===today?"오늘 ":md(kstDate(t))+" "}${kstHM(t)}</span>${price?` · ${esc(price)}`:""}${d.result?.reply_error?' · <span style="color:var(--bad)">링크 댓글 실패</span>':""}${d.video?' · <b style="color:var(--c)">▶ 영상</b>':""}${d.deal_label?` · <span style="color:var(--bad)">⏰ ${esc(d.deal_label)}</span>`:""}${d.keyword?` · #${esc(d.keyword)}`:""}</div></div>
         ${link?`<a class="open" href="${esc(link)}" target="_blank" rel="noopener">게시물 ↗</a>`:""}</li>`;}).join("")
       :`<li class="empty">아직 게시물이 없어요.</li>`;
     const why=e=>{e=e||"";if(/API access blocked/i.test(e))return"Meta가 이 계정의 API 접근을 차단함";if(/cannot access the app till you log in/i.test(e))return"threads.com 로그인 후 안내 확인이 필요하다며 Meta가 차단함";if(/Session has expired|expired/i.test(e))return"토큰 만료";if(/HTTP 5\d\d|is_transient/i.test(e))return"Threads 서버 일시 오류";return e.slice(0,120);};

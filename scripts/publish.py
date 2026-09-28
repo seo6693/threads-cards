@@ -16,6 +16,7 @@ Tokens come from environment variables named in accounts.json
 (GitHub Actions secrets). After publishing, the file is moved to the
 project's done/ (or failed/) folder with the result added.
 """
+import datetime
 import json
 import os
 import pathlib
@@ -185,6 +186,15 @@ def main():
         due = spec.get("publish_after")
         if due and time.mktime(time.strptime(due[:19], "%Y-%m-%dT%H:%M:%S")) - _utc_offset(due) > now:
             print(f"WAIT {proj.name}/{f.name} until {due}")
+            continue
+        # A deal post must never go out after (or right before) the deal ends.
+        end = spec.get("deal_until")
+        if end and datetime.datetime.fromisoformat(end).timestamp() < now + 30 * 60:
+            spec["skip_reason"] = f"특가 마감({end[5:16].replace('T', ' ')}) 30분 전이라 게시하지 않음"
+            (proj / "skipped").mkdir(parents=True, exist_ok=True)
+            (proj / "skipped" / f.name).write_text(json.dumps(spec, ensure_ascii=False, indent=2) + "\n")
+            f.unlink()
+            print(f"SKIP {proj.name}/{f.name}: deal ends {end}")
             continue
         if spec.get("video") and not url_ready(spec["video"]):
             print(f"WAIT {proj.name}/{f.name}: video not served yet ({spec['video']})")

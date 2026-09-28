@@ -14,7 +14,8 @@ spec = {
   "product_image": "path/to/product.jpg",
   "hook":    {"kicker": "...", "big1": "...", "big2": "...", "line1": "...", "line2": "..."},
   "product": {"pill": "...", "brand": "...", "name": "...", "sub": "...",
-              "badge_top": "34% 할인", "badge_price": "256,630원"},
+              "badge_top": "34% 할인", "badge_price": "256,630원",
+              "deadline": "9/29(화) 오전 7시까지"},          # optional, deals account
   "reviews": {"title": "...", "big": "91%", "caption": "...",
               "quotes": [["“...”", "..."], ...3], "footer": "..."}
 }
@@ -204,6 +205,13 @@ def product_card(s, t, img_path):
     f2 = fit(d, s["badge_price"], "Black", 72, bw - 50)
     d.text((bx + (bw - d.textlength(s["badge_top"], font=f1)) / 2, by + 38), s["badge_top"], font=f1, fill=INK)
     d.text((bx + (bw - d.textlength(s["badge_price"], font=f2)) / 2, by + 95), s["badge_price"], font=f2, fill=INK)
+    if s.get("deadline"):  # deal end time, e.g. "9/29(화) 오전 7시까지"
+        txt = "특가 " + s["deadline"]
+        f3 = fit(d, txt, "Black", 40, 560)
+        w3 = d.textlength(txt, font=f3)
+        x0 = W - 70 - w3 - 60
+        d.rounded_rectangle([x0, 70, W - 70, 142], radius=36, fill=(214, 40, 40))
+        d.text((x0 + 30, 80), txt, font=f3, fill=WHITE)
     return c
 
 

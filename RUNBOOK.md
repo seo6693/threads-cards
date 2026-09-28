@@ -20,11 +20,23 @@ If Coupang Partners shows a login page, stop and report that a login is needed.
 Never type passwords.
 
 ## 1. Find candidates (Coupang Partners search)
-- If `next` says `"source": "goldbox"` (특가 계정), start at
-  `https://partners.coupang.com/#affiliate/ws/best/goldbox` (쿠팡 골드박스, 오늘의 특가). Same
-  `.product-item` list and link buttons as search. Keep items whose discount is ≥
-  `selection.min_discount_pct` and that are not in `selection.avoid`; prefer everyday items people
-  buy on impulse (생필품, 간식, 주방·욕실, 소형 가전). Only if nothing fits, fall back to the keyword search below.
+- If `next` says `"source": "goldbox"` (특가 계정), **only goldbox items are allowed**, because the
+  deal end time must be shown on every post (`require_deal_until`) and goldbox is the only place it
+  can be verified:
+  1. Open `https://pages.coupang.com/p/121237?sourceType=oms_goldbox` (쿠팡 골드박스), wait ~3s and
+     run the contents of `scripts/goldbox_timers.js` with `javascript_tool`. It returns
+     `[{pid, name, end, seen}]` — `end` is the deal end in KST from the item's "HH:MM:SS 남음" timer.
+     Keep this list; `end` and `seen` go into the draft as `deal_until` unchanged.
+  2. Open `https://partners.coupang.com/#affiliate/ws/best/goldbox` (same `.product-item` list and link
+     buttons as search). Keep items that are in the timer list (match by product id after step 2, or by
+     name), whose discount is ≥ `selection.min_discount_pct`, that are not in `selection.avoid`, and
+     that end ≥ 3 hours from now (queue rejects less). Prefer everyday impulse buys (생필품, 간식,
+     주방·욕실, 소형 가전).
+  3. After creating the link (step 2) confirm `product[productId]` equals the timer item's `pid`.
+     If it doesn't match or the item has no timer, do not post it — pick another. If no goldbox item
+     qualifies, record a skip ("골드박스에 조건 맞는 상품 없음"). Never invent or guess an end time.
+  - The goldbox list shows a "와우 가입 쿠폰" price for new WOW members; never use it. Take price and
+    discount from the product page (step 3).
 - Open `https://partners.coupang.com/#affiliate/ws/link/0/<keyword>` and wait ~3s.
 - Read the list with JS:
   ```js
@@ -119,9 +131,16 @@ Never write as if the account owner used the product (no "제가 써보니"). Sa
   "format": "<format id>", "topic_tag": "<tag>", "reply_text": "<optional one line>",
   "cards": { ...see below... },
   "text": "<본문 ≤500자, 링크 없음, 질문으로 끝나고, 마지막 줄에 고지 문구>",
-  "reply_note": "※ 가격·쿠폰은 시점마다 달라질 수 있어요"
+  "reply_note": "※ 가격·쿠폰은 시점마다 달라질 수 있어요",
+  "deal_until": {"end": "<end from goldbox_timers.js>", "seen": "<seen from goldbox_timers.js>"}
 }
 ```
+**특가(deals) — deal end time is mandatory.** `deal_until` must come from `scripts/goldbox_timers.js`
+for the exact product. `queue` turns it into a label like `9/29(화) 오전 7시까지` and rejects the draft
+unless `text` contains that label verbatim — put it in an early line, e.g.
+`⏰ 골드박스 특가 9/29(화) 오전 7시까지`. The label is added automatically to the product card, the
+video (top pill) and the first comment (`⏰ 특가 … (쿠팡 골드박스 표시 기준)`). If the product has
+no timer, do not post it. The publisher also refuses to post a deal that ends within 30 minutes.
 Cards needed per format (`formats[fmt].cards.order`); only fill what the format uses:
 - `hook` for **number**: `{"kicker","big1","big2","line1","line2"}`
 - `hook` for **question**: `{"kicker","question" (use \n for 2 lines),"answer"}`
