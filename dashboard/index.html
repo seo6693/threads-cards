@@ -244,7 +244,7 @@ async function load(){
     render(data,projects,runs,issues,now,today);
     $("updated").textContent=usedStale?`${kstHM(now)} · 일부는 직전 저장본(GitHub 조회 한도)`:`${kstHM(now)} 기준`;
   }catch(e){
-    const msg=(e.status===403||e.status===429)?`GitHub 조회 한도(시간당 60회)에 걸렸어요. ${e.reset?kstHM(e.reset)+"에 풀리면":"잠시 뒤"} 자동으로 다시 불러와요. 한 번 불러온 뒤로는 바뀐 내용만 확인해서 한도에 거의 안 걸려요."
+    const msg=(e.status===403||e.status===429)?`GitHub 조회 한도(시간당 60회)에 걸렸어요. ${e.reset?kstHM(e.reset)+"에 풀리면":"잠시 뒤"} 자동으로 다시 불러와요. 한 번 불러온 뒤로는 바뀐 내용만 확인해서 한도에 거의 안 걸려요.`
       :"GitHub에 연결하지 못했어요. 인터넷 연결을 확인한 뒤 새로고침하세요.";
     $("alerts").innerHTML=`<div class="banner bad"><b>불러오기 실패</b><span>${msg}</span></div>`;
     $("overall").className="pill bad";$("overall").textContent="불러오기 실패";
