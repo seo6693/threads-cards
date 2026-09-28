@@ -138,7 +138,10 @@ set `reply_note` to `※ 가격·쿠폰은 시점마다 달라질 수 있어요 
 Never pick or queue a second product in the same run, even if the first one failed.
 Duplicate guard (run it right after step 0, before any browser work):
 `python3 scripts/new_post.py slot <project>` prints this run's slot and whether it was
-already posted. Only if it says `"already_posted": true` stop — another run covered this slot.
+already posted.
+If it prints `"blocked": true`, Meta has blocked this account's API access: stop immediately
+(no browser work, no skip record needed) and report "계정 차단 상태라 건너뜀". Only a person clears
+`projects/<project>/BLOCKED.json` after fixing the account. Only if it says `"already_posted": true` stop — another run covered this slot.
 (Posts made before this slot's start time never count, so a manual/test post earlier does not
 block the next scheduled slot.)
 

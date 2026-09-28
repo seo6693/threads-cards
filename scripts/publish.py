@@ -28,6 +28,7 @@ import urllib.request
 API = "https://graph.threads.net/v1.0"
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PROJECTS = ROOT / "projects"
+BLOCK_MARKERS = ("API access blocked", "cannot access the app till you log in")
 
 
 def call(method, path, token, **params):
@@ -161,6 +162,12 @@ def main():
         except Exception as e:
             spec["error"] = str(e)
             dest = proj / "failed"
+            # Account-level block from Meta: stop every later run for this
+            # project until a person clears it (see RUNBOOK "BLOCKED").
+            if any(k in str(e) for k in BLOCK_MARKERS):
+                (proj / "BLOCKED.json").write_text(json.dumps({
+                    "since": spec["published_at"], "error": str(e)[:500]},
+                    ensure_ascii=False, indent=2) + "\n")
             failures += 1
             print(f"FAIL {proj.name}/{f.name}: {e}")
         dest.mkdir(parents=True, exist_ok=True)

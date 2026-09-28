@@ -150,6 +150,11 @@ def current_slot(cfg, now=None):
 
 def cmd_slot(project):
     proj, cfg, _, _ = load(project)
+    blocked = proj / "BLOCKED.json"
+    if blocked.exists():
+        print(json.dumps({"blocked": True, "already_posted": True,
+                          "detail": json.loads(blocked.read_text())}, ensure_ascii=False))
+        return
     slot = current_slot(cfg)
     posted = []
     if slot:
