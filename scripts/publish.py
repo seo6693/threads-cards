@@ -111,11 +111,21 @@ def publish(spec, accounts):
         raise RuntimeError(f"text is {len(text)} chars (max 500)")
     images = spec.get("images", [])
 
+    extra = {"topic_tag": spec["topic_tag"]} if spec.get("topic_tag") else {}
+
+    def top(**params):
+        # Topic tags help discovery; if the API rejects the field, post without it.
+        try:
+            return create_and_publish(uid, token, **params, **extra)
+        except RuntimeError as e:
+            if extra and "topic_tag" in str(e).lower() or extra and "Invalid parameter" in str(e):
+                return create_and_publish(uid, token, **params)
+            raise
+
     if not images:
-        media_id = create_and_publish(uid, token, media_type="TEXT", text=text)
+        media_id = top(media_type="TEXT", text=text)
     elif len(images) == 1:
-        media_id = create_and_publish(uid, token, media_type="IMAGE",
-                                      image_url=images[0], text=text)
+        media_id = top(media_type="IMAGE", image_url=images[0], text=text)
     else:
         children = []
         for url in images:
@@ -123,8 +133,7 @@ def publish(spec, accounts):
                        image_url=url, is_carousel_item="true")["id"]
             wait_ready(cid, token)
             children.append(cid)
-        media_id = create_and_publish(uid, token, media_type="CAROUSEL",
-                                      children=",".join(children), text=text)
+        media_id = top(media_type="CAROUSEL", children=",".join(children), text=text)
 
     result = {"media_id": media_id}
     result["permalink"] = call("GET", media_id, token, fields="permalink").get("permalink")
@@ -137,6 +146,17 @@ def publish(spec, accounts):
     return result
 
 
+def _utc_offset(ts):
+    """Seconds to subtract so time.mktime(local-naive) + offset handling gives UTC epoch."""
+    import calendar
+    naive = time.strptime(ts[:19], "%Y-%m-%dT%H:%M:%S")
+    tz = ts[19:].replace(":", "") or "+0000"
+    sign = 1 if tz[0] == "+" else -1
+    off = sign * (int(tz[1:3]) * 3600 + int(tz[3:5]) * 60)
+    # mktime treats naive as local time; convert to "as if UTC" then apply tz
+    return time.mktime(naive) - calendar.timegm(naive) + off
+
+
 def main():
     accounts = json.loads((ROOT / "accounts.json").read_text())
     jobs = []
@@ -147,8 +167,16 @@ def main():
         print("queue empty")
         return 0
     failures = 0
+    now = time.time()
     for proj, account, f in jobs:
         spec = json.loads(f.read_text())
+        due = spec.get("publish_after")
+        if due and time.mktime(time.strptime(due[:19], "%Y-%m-%dT%H:%M:%S")) - _utc_offset(due) > now:
+            print(f"WAIT {proj.name}/{f.name} until {due}")
+            continue
+        if (proj / "BLOCKED.json").exists() and not spec.get("reply_to_media_id"):
+            print(f"HOLD {proj.name}/{f.name}: account blocked")
+            continue
         spec["published_at"] = time.strftime("%Y-%m-%dT%H:%M:%S%z")
         try:
             # A project only ever posts to its own account, so a post

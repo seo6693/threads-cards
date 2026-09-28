@@ -22,8 +22,10 @@ draft.json:
 }
 """
 import datetime as dt
+import difflib
 import json
 import pathlib
+import random
 import re
 import shutil
 import sys
@@ -35,6 +37,27 @@ import make_cards  # noqa: E402
 DISCLOSURE = "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
 RAW = "https://raw.githubusercontent.com/seo6693/threads-cards/main/"
 KST = dt.timezone(dt.timedelta(hours=9))
+FORMATS = json.loads((ROOT / "scripts" / "formats.json").read_text())
+# Random delay between preparing a post and publishing it (minutes).
+DELAY_MIN, DELAY_MAX = 4, 42
+
+
+def recent_posts(proj, n=12):
+    posts = []
+    for f in (proj / "done").glob("*.json"):
+        d = json.loads(f.read_text())
+        if d.get("text"):
+            posts.append((d.get("published_at", ""), d))
+    posts.sort(key=lambda x: x[0], reverse=True)
+    return [d for _, d in posts[:n]]
+
+
+def first_line(text):
+    return next((ln.strip() for ln in text.splitlines() if ln.strip()), "")
+
+
+def body_only(text):
+    return text.replace(DISCLOSURE, "").strip()
 
 
 def load(project):
@@ -81,7 +104,22 @@ def cmd_next(project):
         "copy_rules": cfg["copy_rules"],
         "tone": cfg["tone"],
         "theme": cfg["theme"],
+        "theme_variants": cfg.get("theme_variants", [cfg["theme"]]),
+        "topic_tags": cfg.get("topic_tags", []),
+        "format": pick_format(state),
+        "formats": FORMATS,
+        "avoid_openings": [first_line(d["text"]) for d in recent_posts(proj)],
+        "recent_formats": state.get("recent_formats", [])[-4:],
     }, ensure_ascii=False, indent=2))
+
+
+def pick_format(state):
+    """Least recently used format, never one of the last two posts' formats."""
+    recent = state.get("recent_formats", [])
+    last_used = {k: max((i for i, r in enumerate(recent) if r == k), default=-1) for k in FORMATS}
+    options = [k for k in FORMATS if k not in recent[-2:]] or list(FORMATS)
+    oldest = min(last_used[k] for k in options)
+    return random.choice([k for k in options if last_used[k] == oldest])
 
 
 def cmd_queue(project, draft_path):
@@ -103,6 +141,27 @@ def cmd_queue(project, draft_path):
         errors.append("link must be a partner short link https://link.coupang.com/a/...")
     if str(d.get("product_id")) in recent_ids(proj, cfg["selection"]["skip_if_posted_within_days"]):
         errors.append(f"product {d.get('product_id')} was already posted recently")
+    fmt = d.get("format")
+    if fmt not in FORMATS:
+        errors.append(f"'format' must be one of {list(FORMATS)}")
+    elif fmt in state.get("recent_formats", [])[-2:]:
+        errors.append(f"format '{fmt}' was used in one of the last 2 posts; pick another")
+    # Anti-copy: the opening and the body must not look like recent posts.
+    fl = first_line(text)
+    for old_post in recent_posts(proj):
+        ofl = first_line(old_post["text"])
+        if difflib.SequenceMatcher(None, fl, ofl).ratio() > 0.6:
+            errors.append(f"first line is too close to a recent post: '{ofl}'")
+            break
+    for old_post in recent_posts(proj):
+        r = difflib.SequenceMatcher(None, body_only(text), body_only(old_post["text"])).ratio()
+        if r > 0.5:
+            errors.append(f"body is {r:.0%} similar to a recent post ({old_post.get('product_name')}); restructure it")
+            break
+    if text.count("✔️") >= 3 and sum(o["text"].count("✔️") >= 3 for o in recent_posts(proj, 2)) >= 1:
+        errors.append("the previous post already used a ✔️ bullet list; use a different structure")
+    if not re.search(r"[?？]\s*$|[?？]\s*\n", body_only(text)):
+        errors.append("end the body (before the disclosure) with a question to invite replies")
     if errors:
         sys.exit("draft rejected:\n- " + "\n- ".join(errors))
 
@@ -112,9 +171,13 @@ def cmd_queue(project, draft_path):
     card_dir.mkdir(parents=True, exist_ok=True)
     img = card_dir / ("product" + pathlib.Path(d["image"]).suffix)
     shutil.copy(d["image"], img)
-    spec = dict(d["cards"], theme=cfg["theme"], product_image=img.name)
+    fcards = FORMATS[fmt]["cards"]
+    spec = dict(d["cards"], theme=d.get("theme") or random.choice(cfg.get("theme_variants", [cfg["theme"]])),
+                product_image=img.name, order=fcards["order"])
+    if "hook" in fcards["order"]:
+        spec["hook"] = dict(spec.get("hook", {}), layout=fcards["hook_layout"])
     (card_dir / "spec.json").write_text(json.dumps(spec, ensure_ascii=False, indent=2) + "\n")
-    make_cards.main(str(card_dir / "spec.json"), str(card_dir))
+    names = make_cards.main(str(card_dir / "spec.json"), str(card_dir))
 
     base = RAW + str(card_dir.relative_to(ROOT)).replace("\\", "/") + "/"
     note = d.get("reply_note") or "※ 가격·쿠폰은 시점마다 달라질 수 있어요"
@@ -124,15 +187,22 @@ def cmd_queue(project, draft_path):
         "product_name": d["product_name"],
         "keyword": d["keyword"],
         "text": text,
-        "images": [base + f for f in ("card1_hook.jpg", "card2_product.jpg", "card3_reviews.jpg")],
-        "reply": f"🛒 구매 링크 → {d['link']}\n{note}",
+        "images": [base + f for f in names],
+        "reply": d.get("reply_text") and f"{d['reply_text']}\n{d['link']}\n{note}" or f"🛒 구매 링크 → {d['link']}\n{note}",
+        "format": fmt,
+        "publish_after": (dt.datetime.now(KST) + dt.timedelta(
+            minutes=random.randint(DELAY_MIN, DELAY_MAX))).isoformat(timespec="seconds"),
     }
+    if d.get("topic_tag"):
+        post["topic_tag"] = re.sub(r"[.&\s]", "", d["topic_tag"])[:50]
     qfile = proj / "queue" / f"{slug}.json"
     qfile.write_text(json.dumps(post, ensure_ascii=False, indent=2) + "\n")
 
     state["next_keyword"] = (state["next_keyword"] + 1) % len(cfg["keywords"])
+    state["recent_formats"] = (state.get("recent_formats", []) + [fmt])[-8:]
     state_path.write_text(json.dumps(state, indent=2) + "\n")
-    print(json.dumps({"queued": str(qfile.relative_to(ROOT)), "cards": str(card_dir.relative_to(ROOT))},
+    print(json.dumps({"queued": str(qfile.relative_to(ROOT)), "cards": str(card_dir.relative_to(ROOT)),
+                      "format": fmt, "publish_after": post["publish_after"]},
                      ensure_ascii=False, indent=2))
 
 

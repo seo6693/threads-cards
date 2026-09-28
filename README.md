@@ -21,7 +21,8 @@
 다른 폴더에 잘못 들어간 글은 게시되지 않고 `failed/`로 가요.
 
 ## 자동 게시
-- 매일 08~22시, 2시간마다 프로젝트별로 1개씩 (계정당 하루 8개)
+- 계정당 하루 3개 (아침·점심·저녁), 준비 후 4~42분 사이 무작위 시각에 게시
+- 글 형식 5가지를 돌려 쓰고, 최근 글과 비슷한 문장·구조는 자동으로 거부해요 (`scripts/formats.json`)
 - 순서는 `RUNBOOK.md` 참고
 - 토큰은 저장소 Secrets(`THREADS_TOKEN_NUTRI`, `THREADS_TOKEN_LIVING`)에만 있어요
 - 토큰 확인(게시 없음): `checks/request` 파일을 바꿔서 push하면 `checks/result.json`에 결과가 기록돼요

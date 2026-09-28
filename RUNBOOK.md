@@ -74,61 +74,73 @@ The shell cannot reach coupangcdn, so pass the image through the browser:
    ```
 4. Look at the image (Read tool) to make sure it is the product, not a blank/banner.
 
-## 5. Write the draft (`/tmp/draft.json`)
-Follow `copy_rules` and `tone`. **Every fact and number must come from the
-product page or its reviews — never invent.** Card quotes are short paraphrases
-of real reviews (the card already says "구매자 리뷰를 요약한 내용이에요").
+## 5. Write the draft (`/tmp/draft.json`) — this is what earns clicks
+`next` gave you a `format` (rotation), `formats` (what each one is), `avoid_openings`
+(first lines of recent posts), `theme_variants` and `topic_tags`. Use the suggested format
+unless the product clearly does not fit it (e.g. `price_drop` needs ≥30% off); then pick
+another format that is **not** in `recent_formats[-2:]`.
 
+**Facts:** every number and claim comes from the product page or its reviews — never invent.
+Never write as if the account owner used the product (no "제가 써보니"). Say "리뷰에 따르면",
+"구매자들은". Card quotes are short paraphrases of real reviews.
+
+### How to get views and clicks (apply every time)
+1. **First line decides everything.** Threads shows ~2 lines before "더 보기". The first line
+   must be specific and concrete, never generic ("추천템 소개해요" ✗). Pick ONE hook type, and
+   don't reuse the type or the wording of `avoid_openings`:
+   - 숫자 충격: "리뷰 23만 개, 불만은 딱 이것 하나"
+   - 상황 공감: "새벽에 충전기 선 짧아서 폰 떨어뜨린 적 있죠"
+   - 손해 회피: "이거 정가 주고 샀으면 1만3천 원 날린 거예요"
+   - 반전/오해: "유산균, 균 수만 보고 고르면 반은 틀려요" (사실일 때만)
+   - 비교: "2만 원대 vs 5만 원대, 리뷰 차이는 딱 하나"
+2. **Structure must differ from the last posts.** Rotate between: 짧은 문단 2~3개 / 번호 목록 /
+   질문-답 / 한 줄 요약형. Do not use a ✔️ list twice in a row (the checker rejects it).
+   Vary length: quick_pick 3~5줄, others 6~12줄.
+3. **Give a reason to open the comments.** End the body with a genuine question people can
+   answer from their own life (the checker requires a question), e.g. "여러분은 유산균 아침에 드세요,
+   저녁에 드세요?", "충전기 몇 W 쓰세요?". Replies are what Threads boosts.
+4. **Then point to the comment**: "링크는 첫 댓글에 둘게요" / "궁금하면 댓글 확인" — vary it.
+5. **One honest downside** (from reviews) builds trust and clicks; living: required when reviews show one.
+6. Emojis: 0~2 in the whole post, never at the start of every line.
+7. `topic_tag`: one tag from `topic_tags` or the product keyword (no spaces, dots or &).
+8. First comment (`reply_text`, optional): one line that makes the click worth it, e.g.
+   "오늘 가격 기준 쿠폰 적용가 확인해보세요 👇" — the link and price note are appended for you.
+
+### Draft shape
 ```json
 {
   "product_id": "<pid>", "product_name": "<short name>", "keyword": "<keyword>",
   "link": "https://link.coupang.com/a/XXXX", "image": "/tmp/product.jpg",
-  "cards": {
-    "hook":    {"kicker": "고민/상황 한 줄 (질문형)", "big1": "핵심 2~6자", "big2": "숫자 또는 결론 2~5자",
-                "line1": "핵심 장점 한 줄", "line2": "리뷰 N개 · M%가 '최고' 평가"},
-    "product": {"pill": "특징 · 특징 · 배송", "brand": "브랜드 모델", "name": "상품 종류 (짧게)",
-                "sub": "구성/용량 한 줄", "badge_top": "N% 할인", "badge_price": "X원"},
-    "reviews": {"title": "먼저 써본 사람들 반응", "big": "M%", "caption": "리뷰 N개 중 '최고' 평가",
-                "quotes": [["“짧은 인용”","근거 한 줄"],["“…”","…"],["“…”","…"]],
-                "footer": "링크는 댓글에"}
-  },
-  "text": "<본문>",
+  "format": "<format id>", "topic_tag": "<tag>", "reply_text": "<optional one line>",
+  "cards": { ...see below... },
+  "text": "<본문 ≤500자, 링크 없음, 질문으로 끝나고, 마지막 줄에 고지 문구>",
   "reply_note": "※ 가격·쿠폰은 시점마다 달라질 수 있어요"
 }
 ```
-(`nutri` title: "먼저 먹어본 사람들 반응".)
+Cards needed per format (`formats[fmt].cards.order`); only fill what the format uses:
+- `hook` for **number**: `{"kicker","big1","big2","line1","line2"}`
+- `hook` for **question**: `{"kicker","question" (use \n for 2 lines),"answer"}`
+- `hook` for **checklist**: `{"title" (\n ok),"items":[3 short criteria],"note"}`
+- `hook` for **versus**: `{"kicker","left_label":"정가","left","right_label":"지금","right","saving","note":"가격은 수시로 바뀌어요"}`
+- `product`: `{"pill","brand","name","sub","badge_top","badge_price"}`
+- `reviews`: `{"title","big","caption","quotes":[[q,sub]×3],"footer"}` (`nutri` title "먼저 먹어본 사람들 반응")
 
-Body template (≤ 500 chars, **no links in the body**):
-```
-<후킹 한 줄> <이모지 1개>
-
-<브랜드 상품명>
-✔️ <장점 1>
-✔️ <장점 2>
-✔️ <장점 3>
-
-리뷰 N개 중 M%가 '최고' ⭐
-<리뷰 세부 지표 1개가 있으면>
-
-<리뷰에 자주 나온 단점 한 줄 — living은 있으면 필수>
-
-지금 N% 할인 X원
-링크는 댓글에 👇
-
-이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
-```
+The last line of `text` is always exactly:
+`이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.`
 Use the 일반할인가 (not the 와우 쿠폰가) as the price. If the 와우 price is lower,
 set `reply_note` to `※ 가격·쿠폰은 시점마다 달라질 수 있어요 (와우 회원은 쿠폰가 더 저렴)`.
 
 ## 6. Queue, check, publish
 1. `python3 scripts/new_post.py queue <project> /tmp/draft.json` — fix and retry if it rejects the draft.
-2. Look at the three rendered cards in the printed `cards` folder (Read tool).
+2. Look at every rendered card in the printed `cards` folder (Read tool).
    Fix overlaps or wrong text by editing the draft and re-running (delete the
    previous `cards/<slug>` and `queue/<slug>.json` first).
 3. Commit only this project's files plus `state.json`:
    `git add projects/<project> && git commit -m "Queue <project>: <product_name>"` and push.
    If the push is rejected, `git pull --rebase origin main` and push again.
-4. GitHub Actions publishes it. Poll `git fetch` every 15s (max ~5 min) until
+4. The post goes out at its random `publish_after` time (printed by `queue`, 4–42 min later),
+   picked up by a GitHub Actions job that runs every 10 minutes. Poll `git fetch` every 60s
+   (max ~60 min) until
    `projects/<project>/done/<slug>.json` or `failed/<slug>.json` exists on origin/main,
    then read it.
 

@@ -1,0 +1,27 @@
+{
+  "review_digest": {
+    "name": "리뷰 뜯어보기",
+    "cards": {"order": ["hook", "product", "reviews"], "hook_layout": "number"},
+    "angle": "리뷰 N개를 요약해서 칭찬 포인트와 불만 포인트를 같이 보여준다. 첫 줄은 리뷰 숫자나 불만 개수로 시작 (예: '리뷰 4천 개 중 불만은 딱 두 가지')."
+  },
+  "buying_guide": {
+    "name": "고르는 법",
+    "cards": {"order": ["hook", "product"], "hook_layout": "checklist"},
+    "angle": "이 품목을 살 때 확인할 기준 3개를 먼저 알려주고, 그 기준에 맞는 예시로 상품을 소개한다. 기준은 상품 페이지·리뷰로 확인되는 것만. 저장·공유하고 싶은 정보형 글."
+  },
+  "price_drop": {
+    "name": "가격 알림",
+    "cards": {"order": ["hook", "product"], "hook_layout": "versus"},
+    "angle": "정가 대비 지금 가격과 절약 금액을 짧고 강하게. 본문은 4~6줄로 짧게. 할인율 30% 이상일 때만 이 형식을 쓴다."
+  },
+  "problem_solution": {
+    "name": "불편 해결",
+    "cards": {"order": ["hook", "product", "reviews"], "hook_layout": "question"},
+    "angle": "누구나 겪는 구체적 불편 상황 한 장면으로 시작해서, 이 상품이 그걸 어떻게 줄여주는지 리뷰 근거로 보여준다."
+  },
+  "quick_pick": {
+    "name": "한 줄 추천",
+    "cards": {"order": ["product"], "hook_layout": "number"},
+    "angle": "이미지 1장 + 본문 3~5줄의 아주 짧은 글. 핵심 이유 한 가지만. 가볍게 스크롤하다 멈추게."
+  }
+}

@@ -1,4 +1,0 @@
-{
-  "since": "2026-09-28T00:57:51+0000",
-  "error": "POST 26386715651026150/threads -> HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AGrnX0ps-_J87rZ9_fmOTSe\"}}"
-}

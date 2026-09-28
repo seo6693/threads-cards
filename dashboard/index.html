@@ -238,7 +238,7 @@ function slotsFor(x,now,today){
     const skip=(x.skipped||[]).find(k=>k.slot&&Math.abs(parseTime(k.slot)-s)<6e4);
     let st;
     if(hit)st="done";else if(miss)st="failed";else if(s<new Date(STATIC.autoStart))st="before";else if(now<s)st=x.blocked?"paused":"planned";
-    else if(skip)st="missed";else if(now<new Date(s.getTime()+45*6e4))st="running";else st="missed";
+    else if(skip)st="missed";else if(now<new Date(s.getTime()+75*6e4))st="running";else st="missed";
     return{hm,s,st,post:hit?.d,reason:skip?.reason};
   });
 }
