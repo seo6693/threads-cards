@@ -55,44 +55,12 @@
  ],
  "runs": [
   {
-   "name": "pages build and deployment",
-   "status": "completed",
-   "conclusion": "success",
-   "created_at": "2026-09-28T09:42:58Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/36405250014",
-   "event": "dynamic"
-  },
-  {
-   "name": "pages build and deployment",
-   "status": "completed",
-   "conclusion": "success",
-   "created_at": "2026-09-28T09:40:32Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/36405002744",
-   "event": "dynamic"
-  },
-  {
    "name": "Publish Threads posts",
    "status": "completed",
    "conclusion": "success",
    "created_at": "2026-09-28T09:26:41Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/36403529208",
    "event": "push"
-  },
-  {
-   "name": "pages build and deployment",
-   "status": "completed",
-   "conclusion": "success",
-   "created_at": "2026-09-28T09:26:41Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/36403528430",
-   "event": "dynamic"
-  },
-  {
-   "name": "pages build and deployment",
-   "status": "completed",
-   "conclusion": "success",
-   "created_at": "2026-09-28T07:38:31Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/36392752229",
-   "event": "dynamic"
   },
   {
    "name": "Publish Threads posts",
@@ -103,20 +71,28 @@
    "event": "schedule"
   },
   {
-   "name": "pages build and deployment",
-   "status": "completed",
-   "conclusion": "cancelled",
-   "created_at": "2026-09-28T07:38:15Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/36392728986",
-   "event": "dynamic"
-  },
-  {
-   "name": "pages build and deployment",
+   "name": "Refresh Threads tokens",
    "status": "completed",
    "conclusion": "success",
-   "created_at": "2026-09-28T06:10:10Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/36385120748",
-   "event": "dynamic"
+   "created_at": "2026-09-28T06:10:00Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/36385105995",
+   "event": "push"
+  },
+  {
+   "name": "Verify account tokens",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-09-28T06:09:36Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/36385073397",
+   "event": "push"
+  },
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-09-28T05:54:41Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/36383952419",
+   "event": "push"
   }
  ],
  "issues": []
