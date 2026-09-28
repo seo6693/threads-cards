@@ -185,12 +185,34 @@ const dow=day=>"일월화수목금토"[new Date(slotAt(day,"12:00")).getUTCDay()
 function ago(d){const m=Math.round((Date.now()-d)/6e4);if(m<1)return"방금";if(m<60)return`${m}분 전`;const h=Math.round(m/60);if(h<48)return`${h}시간 전`;return`${Math.round(h/24)}일 전`;}
 function until(d){const m=Math.round((d-Date.now())/6e4);if(m<60)return`${m}분 뒤`;return`${Math.floor(m/60)}시간 ${m%60}분 뒤`;}
 
-async function j(url){const r=await fetch(url,{cache:"no-store"});if(!r.ok){const e=new Error(`${r.status}`);e.status=r.status;throw e;}return r.json();}
+// GitHub API: answers "304 Not Modified" to a request that carries the last ETag, and
+// those answers do not count toward the 60-per-hour limit. So each API response is kept
+// in this browser with its ETag; if the limit is hit anyway, the last copy is shown.
+let usedStale=false;
+function cacheGet(k){try{return JSON.parse(localStorage.getItem("gh:"+k)||"null");}catch(e){return null;}}
+function cacheSet(k,v){try{localStorage.setItem("gh:"+k,JSON.stringify(v));}catch(e){}}
+async function j(url){
+  const isApi=url.startsWith(API), c=isApi?cacheGet(url):null;
+  let r;
+  try{r=await fetch(url,isApi?{headers:c?.etag?{"If-None-Match":c.etag}:{}}:{cache:"no-store"});}
+  catch(err){if(c){usedStale=true;return c.body;}throw err;}
+  if(isApi&&r.status===304&&c)return c.body;
+  if(!r.ok){
+    if(isApi&&c&&(r.status===403||r.status===429)){usedStale=true;return c.body;}
+    const e=new Error(`${r.status}`);e.status=r.status;
+    const reset=Number(r.headers.get("X-RateLimit-Reset"));if(reset)e.reset=new Date(reset*1000);
+    throw e;
+  }
+  const body=await r.json();
+  if(isApi){const et=r.headers.get("ETag");if(et)cacheSet(url,{etag:et,body});}
+  return body;
+}
 const raw=p=>j(RAW+p+"?t="+Date.now());
 
-let busy=false;
+let busy=false,lastLoad=0;
 async function load(){
   if(busy)return;busy=true;$("refresh").disabled=true;
+  usedStale=false;lastLoad=Date.now();
   try{
     const [tree,runs,issues]=await Promise.all([
       j(`${API}/git/trees/${BRANCH}?recursive=1`),
@@ -220,12 +242,13 @@ async function load(){
       data[p]={cfg,blocked:paths.includes(`projects/${p}/BLOCKED.json`),acc:accounts[cfg.account]||{},done:d,failed:fl,queue:q,skipped:sk,total:done.length,week,token:tokens[p]||tokens[cfg.account]};
     }));
     render(data,projects,runs,issues,now,today);
-    $("updated").textContent=`${kstHM(now)} 기준`;
+    $("updated").textContent=usedStale?`${kstHM(now)} · 일부는 직전 저장본(GitHub 조회 한도)`:`${kstHM(now)} 기준`;
   }catch(e){
-    const msg=e.status===403?"GitHub 조회 한도(시간당 60회)에 걸렸어요. 몇 분 뒤 새로고침하세요."
+    const msg=(e.status===403||e.status===429)?`GitHub 조회 한도(시간당 60회)에 걸렸어요. ${e.reset?kstHM(e.reset)+"에 풀리면":"잠시 뒤"} 자동으로 다시 불러와요. 한 번 불러온 뒤로는 바뀐 내용만 확인해서 한도에 거의 안 걸려요."
       :"GitHub에 연결하지 못했어요. 인터넷 연결을 확인한 뒤 새로고침하세요.";
     $("alerts").innerHTML=`<div class="banner bad"><b>불러오기 실패</b><span>${msg}</span></div>`;
     $("overall").className="pill bad";$("overall").textContent="불러오기 실패";
+    if(e.reset&&e.reset>Date.now())setTimeout(load,e.reset-Date.now()+5000);
   }finally{busy=false;$("refresh").disabled=false;}
 }
 
@@ -354,7 +377,9 @@ function render(data,projects,runs,issues,now,today){
 
 $("refresh").addEventListener("click",load);
 load();
-setInterval(load,5*60*1000);
+// Refresh every 5 minutes, but only while the page is actually on screen.
+setInterval(()=>{if(!document.hidden)load();},5*60*1000);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden&&Date.now()-lastLoad>60*1000)load();});
 </script>
 </body>
 </html>
