@@ -8,7 +8,7 @@
 | 프로젝트 | 계정 | 폴더 |
 |---|---|---|
 | 영양제 | @kkul394 | `projects/nutri/` |
-| 특가 | 하겐민지 (id 29440420288898544) · 이전 생활용품 @bagdodo6 기록은 `archive/` | `projects/deals/` |
+| 특가 | @hagenminji4 (하겐민지) · 이전 생활용품 @bagdodo6 기록은 `archive/` | `projects/deals/` |
 
 각 프로젝트 폴더:
 - `config.json` — 검색 키워드, 상품 선정 기준, 문구 규칙, 카드 색

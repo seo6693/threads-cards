@@ -1,7 +1,7 @@
 {
   "account": "deals",
   "label": "특가",
-  "threads": "@(하겐민지)",
+  "threads": "@hagenminji4",
   "theme": "orange",
   "source": "goldbox",
   "source_note": "골드박스 상품만 올린다(특가 마감 시각을 확인할 수 있는 곳이 골드박스뿐). 후보는 https://partners.coupang.com/#affiliate/ws/best/goldbox 에서 고르고, 마감 시각은 https://pages.coupang.com/p/121237?sourceType=oms_goldbox 에서 scripts/goldbox_timers.js로 읽는다. 타이머로 마감 시각이 확인 안 되는 상품은 올리지 않는다. keywords는 골드박스 안에서 카테고리를 돌려 고르는 순서로만 쓴다.",
