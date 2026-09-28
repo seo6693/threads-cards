@@ -8,7 +8,7 @@
 | 프로젝트 | 계정 | 폴더 |
 |---|---|---|
 | 영양제 | @kkul394 | `projects/nutri/` |
-| 로켓프레시 간편식 | (연결 전) — 쿠팡 '냉장/냉동/간편식' 랭킹순 상위 상품 | `projects/fresh/` |
+| 로켓프레시 간편식 | @magdungi43 — 쿠팡 '냉장/냉동/간편식' 랭킹순 상위 상품 | `projects/fresh/` |
 | 특가 | @hagenminji4 (하겐민지) · 이전 생활용품 @bagdodo6 기록은 `archive/` | `projects/deals/` |
 
 각 프로젝트 폴더:
@@ -26,7 +26,7 @@
 - 글 형식 5가지를 돌려 쓰고, 최근 글과 비슷한 문장·구조는 자동으로 거부해요 (`scripts/formats.json`)
 - 특가 계정은 골드박스 상품만 올리고, 마감 시각(예: `9/29(화) 오전 7시까지`)을 본문·카드·영상·첫 댓글에 꼭 넣어요. 마감 시각이 확인 안 되는 상품은 올리지 않고, 마감 30분 전이 지나면 게시하지 않아요
 - 순서는 `RUNBOOK.md` 참고
-- 토큰은 저장소 Secrets(`THREADS_TOKEN_NUTRI`, `THREADS_TOKEN_DEALS`)에만 있어요
+- 토큰은 저장소 Secrets(`THREADS_TOKEN_NUTRI`, `THREADS_TOKEN_DEALS`, `THREADS_TOKEN_FRESH`)에만 있어요
 - 토큰 확인(게시 없음): `checks/request` 파일을 바꿔서 push하면 `checks/result.json`에 결과가 기록돼요
 
 ## 토큰 자동 갱신
