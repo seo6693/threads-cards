@@ -1,0 +1,47 @@
+name: Check video acceptance (no posting)
+
+# Push checks/media-request with "<account> <video_url>" to run.
+on:
+  push:
+    branches: [main]
+    paths: ["checks/media-request"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Wait for GitHub Pages to serve the file
+        run: |
+          url=$(awk '{print $2}' checks/media-request)
+          for i in $(seq 1 30); do
+            ct=$(curl -sI "$url" | tr -d '\r' | awk -F': ' 'tolower($1)=="content-type"{print $2}')
+            echo "try $i: $ct"; case "$ct" in video/*) exit 0;; esac; sleep 10
+          done
+
+      - name: Create a video container (never published)
+        env:
+          THREADS_TOKEN_NUTRI: ${{ secrets.THREADS_TOKEN_NUTRI }}
+          THREADS_TOKEN_LIVING: ${{ secrets.THREADS_TOKEN_LIVING }}
+        run: python scripts/check_media.py $(cat checks/media-request)
+
+      - name: Record result
+        run: |
+          git config user.name "threads-bot"
+          git config user.email "threads-bot@users.noreply.github.com"
+          git add checks/media_result.json
+          git diff --cached --quiet || git commit -m "Record video check [skip ci]"
+          git pull --rebase origin main && git push

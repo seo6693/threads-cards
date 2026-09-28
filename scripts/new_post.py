@@ -33,9 +33,12 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 import make_cards  # noqa: E402
+import make_motion  # noqa: E402
 
 DISCLOSURE = "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
 RAW = "https://raw.githubusercontent.com/seo6693/threads-cards/main/"
+# Videos must be served with a video content type; GitHub Pages does that, raw does not.
+PAGES = "https://seo6693.github.io/threads-cards/"
 KST = dt.timezone(dt.timedelta(hours=9))
 FORMATS = json.loads((ROOT / "scripts" / "formats.json").read_text())
 # Random delay between preparing a post and publishing it (minutes).
@@ -116,8 +119,11 @@ def cmd_next(project):
 def pick_format(state):
     """Least recently used format, never one of the last two posts' formats."""
     recent = state.get("recent_formats", [])
+    # About one post in three is a motion video.
+    if "price_motion" in FORMATS and "price_motion" not in recent[-2:]:
+        return "price_motion"
     last_used = {k: max((i for i, r in enumerate(recent) if r == k), default=-1) for k in FORMATS}
-    options = [k for k in FORMATS if k not in recent[-2:]] or list(FORMATS)
+    options = [k for k in FORMATS if k not in recent[-2:] and k != "price_motion"] or list(FORMATS)
     oldest = min(last_used[k] for k in options)
     return random.choice([k for k in options if last_used[k] == oldest])
 
@@ -127,7 +133,10 @@ def cmd_queue(project, draft_path):
     d = json.loads(pathlib.Path(draft_path).read_text())
 
     errors = []
-    for k in ("product_id", "product_name", "keyword", "link", "image", "cards", "text"):
+    need_keys = ["product_id", "product_name", "keyword", "link", "image", "text"]
+    if not FORMATS.get(d.get("format"), {}).get("video"):
+        need_keys.append("cards")
+    for k in need_keys:
         if not d.get(k):
             errors.append(f"missing '{k}'")
     text = d.get("text", "")
@@ -171,15 +180,29 @@ def cmd_queue(project, draft_path):
     card_dir.mkdir(parents=True, exist_ok=True)
     img = card_dir / ("product" + pathlib.Path(d["image"]).suffix)
     shutil.copy(d["image"], img)
-    fcards = FORMATS[fmt]["cards"]
-    spec = dict(d["cards"], theme=d.get("theme") or random.choice(cfg.get("theme_variants", [cfg["theme"]])),
-                product_image=img.name, order=fcards["order"])
-    if "hook" in fcards["order"]:
-        spec["hook"] = dict(spec.get("hook", {}), layout=fcards["hook_layout"])
-    (card_dir / "spec.json").write_text(json.dumps(spec, ensure_ascii=False, indent=2) + "\n")
-    names = make_cards.main(str(card_dir / "spec.json"), str(card_dir))
-
-    base = RAW + str(card_dir.relative_to(ROOT)).replace("\\", "/") + "/"
+    if FORMATS[fmt].get("video"):
+        m = d.get("motion") or {}
+        need = ("hook", "unit", "from_price", "to_price", "stamp", "name", "badge_price", "stats")
+        missing = [k for k in need if not m.get(k)]
+        if missing:
+            sys.exit("draft rejected:\n- 'motion' is missing " + ", ".join(missing))
+        m = dict(m, product_image=img.name)
+        m.setdefault("palette", random.choice(["yellow", "lime", "pink", "cyan"]))
+        (card_dir / "motion.json").write_text(json.dumps(m, ensure_ascii=False, indent=2) + "\n")
+        make_motion.render(m, str(card_dir), str(card_dir / "video.mp4"))
+        make_motion.poster(str(card_dir / "video.mp4"), str(card_dir / "poster.jpg"))
+        rel = str(card_dir.relative_to(ROOT)).replace("\\", "/") + "/"
+        media = {"video": PAGES + rel + "video.mp4", "thumb": RAW + rel + "poster.jpg", "images": []}
+    else:
+        fcards = FORMATS[fmt]["cards"]
+        spec = dict(d["cards"], theme=d.get("theme") or random.choice(cfg.get("theme_variants", [cfg["theme"]])),
+                    product_image=img.name, order=fcards["order"])
+        if "hook" in fcards["order"]:
+            spec["hook"] = dict(spec.get("hook", {}), layout=fcards["hook_layout"])
+        (card_dir / "spec.json").write_text(json.dumps(spec, ensure_ascii=False, indent=2) + "\n")
+        names = make_cards.main(str(card_dir / "spec.json"), str(card_dir))
+        base = RAW + str(card_dir.relative_to(ROOT)).replace("\\", "/") + "/"
+        media = {"images": [base + f for f in names]}
     note = d.get("reply_note") or "※ 가격·쿠폰은 시점마다 달라질 수 있어요"
     post = {
         "account": cfg["account"],
@@ -187,7 +210,7 @@ def cmd_queue(project, draft_path):
         "product_name": d["product_name"],
         "keyword": d["keyword"],
         "text": text,
-        "images": [base + f for f in names],
+        **media,
         "reply": d.get("reply_text") and f"{d['reply_text']}\n{d['link']}\n{note}" or f"🛒 구매 링크 → {d['link']}\n{note}",
         "format": fmt,
         "publish_after": (dt.datetime.now(KST) + dt.timedelta(

@@ -59,7 +59,7 @@ def call(method, path, token, **params):
             raise RuntimeError(f"{method} {path} -> {e}") from None
 
 
-def wait_ready(cid, token, timeout=300):
+def wait_ready(cid, token, timeout=600):
     """Poll a media container until it is ready to publish."""
     start = time.time()
     while time.time() - start < timeout:
@@ -122,7 +122,9 @@ def publish(spec, accounts):
                 return create_and_publish(uid, token, **params)
             raise
 
-    if not images:
+    if spec.get("video"):
+        media_id = top(media_type="VIDEO", video_url=spec["video"], text=text)
+    elif not images:
         media_id = top(media_type="TEXT", text=text)
     elif len(images) == 1:
         media_id = top(media_type="IMAGE", image_url=images[0], text=text)
@@ -144,6 +146,16 @@ def publish(spec, accounts):
         except Exception as e:  # post is already live; record and continue
             result["reply_error"] = str(e)
     return result
+
+
+def url_ready(url):
+    """GitHub Pages needs a minute or two after a push before a new file is served."""
+    try:
+        req = urllib.request.Request(url, method="HEAD")
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return r.status == 200 and "video" in r.headers.get("Content-Type", "")
+    except Exception:
+        return False
 
 
 def _utc_offset(ts):
@@ -173,6 +185,9 @@ def main():
         due = spec.get("publish_after")
         if due and time.mktime(time.strptime(due[:19], "%Y-%m-%dT%H:%M:%S")) - _utc_offset(due) > now:
             print(f"WAIT {proj.name}/{f.name} until {due}")
+            continue
+        if spec.get("video") and not url_ready(spec["video"]):
+            print(f"WAIT {proj.name}/{f.name}: video not served yet ({spec['video']})")
             continue
         if (proj / "BLOCKED.json").exists() and not spec.get("reply_to_media_id"):
             print(f"HOLD {proj.name}/{f.name}: account blocked")

@@ -208,7 +208,7 @@ def render(spec, spec_dir, out_path):
             rays(im, W // 2, 690, WHITE, -tt * 50, alpha=90)
             k = ease(tt / 0.45)
             paste_center(im, card, W / 2, 690, 0.35 + 0.65 * k, -25 * (1 - k))
-            paste_center(im, text_img(spec["name"], "Black", 64, BLACK), W / 2, 200, 1, 0, ease(tt / 0.3))
+            paste_center(im, text_img(spec["name"], "Black", fit_size(spec["name"], "Black", 64, 960), BLACK), W / 2, 200, 1, 0, ease(tt / 0.3))
             if tt > 0.6:
                 x = (tt - 0.6) / 0.3
                 stamp = text_img(spec.get("stamp", "특가"), "Black", 170, WHITE)
@@ -234,7 +234,7 @@ def render(spec, spec_dir, out_path):
                     continue
                 c = ease((tt - t0) / 0.7)
                 y = 380 + k * 460
-                paste_center(im, text_img(label, "Black", 70, WHITE), W / 2, y - 120, 1, 0, clamp((tt - t0) * 4))
+                paste_center(im, text_img(label, "Black", fit_size(label, "Black", 70, 960), WHITE), W / 2, y - 120, 1, 0, clamp((tt - t0) * 4))
                 val = won(num * c) + unit
                 big = text_img(val, "Black", fit_size(val, "Black", 220, 980), P["hi"])
                 paste_center(im, big, W / 2, y + 60, 1.0 + 0.15 * (1 - c))
@@ -267,6 +267,12 @@ def render(spec, spec_dir, out_path):
     ff.stdin.close()
     ff.wait()
     return out_path
+
+
+def poster(video_path, jpg_path, at=4.2):
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-ss", str(at), "-i", video_path,
+                    "-frames:v", "1", "-q:v", "3", jpg_path], check=True)
+    return jpg_path
 
 
 if __name__ == "__main__":
