@@ -214,12 +214,10 @@ async function load(){
   if(busy)return;busy=true;$("refresh").disabled=true;
   usedStale=false;lastLoad=Date.now();
   try{
-    const [tree,runs,issues]=await Promise.all([
-      j(`${API}/git/trees/${BRANCH}?recursive=1`),
-      j(`${API}/actions/runs?per_page=10`).catch(()=>null),
-      j(`${API}/issues?state=open&per_page=10`).catch(()=>null)
-    ]);
-    const paths=tree.tree.map(t=>t.path);
+    // One small file, rebuilt by GitHub Actions every 10 minutes (scripts/build_status.py).
+    // No GitHub API calls from the browser, so there is no hourly limit to hit.
+    const st=await raw("dashboard/status.json");
+    const paths=st.paths, runs={workflow_runs:st.runs||[]}, issues=st.issues||[];
     const projects=[...new Set(paths.map(p=>p.match(/^projects\/([^/]+)\/config\.json$/)?.[1]).filter(Boolean))];
     const now=new Date(), today=kstDate(now), yesterday=addDays(today,-1);
     const [accounts,tokens,...configs]=await Promise.all([
@@ -244,11 +242,11 @@ async function load(){
     render(data,projects,runs,issues,now,today);
     $("updated").textContent=usedStale?`${kstHM(now)} · 일부는 직전 저장본(GitHub 조회 한도)`:`${kstHM(now)} 기준`;
   }catch(e){
-    const msg=(e.status===403||e.status===429)?`GitHub 조회 한도(시간당 60회)에 걸렸어요. ${e.reset?kstHM(e.reset)+"에 풀리면":"잠시 뒤"} 자동으로 다시 불러와요. 한 번 불러온 뒤로는 바뀐 내용만 확인해서 한도에 거의 안 걸려요.`
+    const msg=(e.status===403||e.status===429)?"GitHub가 잠시 응답을 막았어요. 5분 뒤 자동으로 다시 불러와요."
       :"GitHub에 연결하지 못했어요. 인터넷 연결을 확인한 뒤 새로고침하세요.";
     $("alerts").innerHTML=`<div class="banner bad"><b>불러오기 실패</b><span>${msg}</span></div>`;
     $("overall").className="pill bad";$("overall").textContent="불러오기 실패";
-    if(e.reset&&e.reset>Date.now())setTimeout(load,e.reset-Date.now()+5000);
+
   }finally{busy=false;$("refresh").disabled=false;}
 }
 
@@ -372,7 +370,7 @@ function render(data,projects,runs,issues,now,today){
     const st=r.status!=="completed"?"실행 중":r.conclusion==="success"?"성공":r.conclusion==="skipped"?"건너뜀":"실패";
     const t=new Date(r.created_at);
     return`<li><span class="dot ${cls}" title="${st}"></span><a href="${esc(r.html_url)}" target="_blank" rel="noopener"><b>${esc(WF_NAMES[r.name]||r.name)}</b> <span class="muted">· ${st}</span></a><span class="when">${kstDate(t)===today?"":md(kstDate(t))+" "}${kstHM(t)}</span></li>`;
-  }).join(""):`<li class="empty">실행 기록을 불러오지 못했어요.</li>`;
+  }).join(""):`<li class="empty">최근 특이 기록 없음 (정기 게시 확인은 10분마다 정상 실행 중)</li>`;
 }
 
 $("refresh").addEventListener("click",load);
