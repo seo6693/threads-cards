@@ -25,8 +25,8 @@
   "projects/fresh/cards/2026-09-29-1825-5057092117/spec.json",
   "projects/fresh/config.json",
   "projects/fresh/done/2026-09-28-1826-158010844.json",
+  "projects/fresh/done/2026-09-29-1825-5057092117.json",
   "projects/fresh/linkbank.json",
-  "projects/fresh/queue/2026-09-29-1825-5057092117.json",
   "projects/fresh/state.json",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card1_hook.jpg",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card2_product.jpg",
@@ -99,6 +99,14 @@
   "projects/promo/video_patterns.json"
  ],
  "runs": [
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-09-29T09:25:32Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/36549084016",
+   "event": "push"
+  },
   {
    "name": "Refresh Threads tokens",
    "status": "completed",
