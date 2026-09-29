@@ -318,12 +318,22 @@ def current_slot(cfg, now=None):
     return max(past) if past else None
 
 
-def cmd_slot(project):
+def cmd_slot(project, mode=None):
     proj, cfg, _, _ = load(project)
     blocked = proj / "BLOCKED.json"
     if blocked.exists():
         print(json.dumps({"blocked": True, "already_posted": True,
                           "detail": json.loads(blocked.read_text())}, ensure_ascii=False))
+        return
+    if mode == "makeup":
+        # Make-up for a slot that was skipped earlier today: allowed only while today's
+        # posts are still below the daily quota (number of scheduled slots).
+        today = dt.datetime.now(KST).date().isoformat()
+        n = sum(1 for folder in ("done", "queue") for f in (proj / folder).glob(today + "-*.json")
+                if not json.loads(f.read_text()).get("reply_to_media_id"))
+        quota = len(cfg.get("schedule_kst", []))
+        print(json.dumps({"slot": "makeup", "already_posted": n >= quota,
+                          "posted_today": n, "daily_quota": quota}, ensure_ascii=False))
         return
     slot = current_slot(cfg)
     posted = []
@@ -361,6 +371,8 @@ if __name__ == "__main__":
         cmd_next(sys.argv[2])
     elif len(sys.argv) >= 4 and sys.argv[1] == "queue":
         cmd_queue(sys.argv[2], sys.argv[3])
+    elif len(sys.argv) >= 4 and sys.argv[1] == "slot" and sys.argv[3] == "makeup":
+        cmd_slot(sys.argv[2], "makeup")
     elif len(sys.argv) >= 3 and sys.argv[1] == "slot":
         cmd_slot(sys.argv[2])
     elif len(sys.argv) >= 4 and sys.argv[1] == "skip":
