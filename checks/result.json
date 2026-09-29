@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T06:09:42+0000",
+  "checked_at": "2026-09-29T07:46:24+0000",
   "accounts": {
     "nutri": {
       "ok": true,
@@ -14,9 +14,15 @@
       "expected_id": "29440420288898544"
     },
     "fresh": {
-      "ok": false,
+      "ok": true,
       "id": "28249749764697687",
       "username": "magdungi43",
+      "expected_id": "28249749764697687"
+    },
+    "promo": {
+      "ok": false,
+      "id": "38701810562767501",
+      "username": "teugteuggassyo",
       "expected_id": "pending"
     }
   }
