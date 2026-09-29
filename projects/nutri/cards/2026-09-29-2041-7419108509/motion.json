@@ -1,0 +1,29 @@
+{
+  "hook": [
+    "아연",
+    "한 알에",
+    "327원?"
+  ],
+  "unit": "한 알",
+  "from_price": 650,
+  "to_price": 327,
+  "stamp": "49%↓",
+  "name": "뉴트리메이드 아연 60정",
+  "badge_price": "19,590원",
+  "stats": [
+    [
+      "리뷰",
+      1026,
+      "개"
+    ],
+    [
+      "별점 '최고'",
+      86,
+      "%"
+    ]
+  ],
+  "cta": "첫 댓글에 링크",
+  "product_image": "product.jpg",
+  "style": "slot",
+  "palette": "yellow"
+}

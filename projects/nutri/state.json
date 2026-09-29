@@ -1,12 +1,17 @@
 {
-  "next_keyword": 9,
+  "next_keyword": 10,
   "recent_formats": [
     "quick_pick",
     "price_motion",
     "price_drop",
-    "problem_solution"
+    "problem_solution",
+    "price_motion"
   ],
   "recent_video_styles": [
-    "slam"
+    "slam",
+    "slot"
+  ],
+  "recent_palettes": [
+    "yellow"
   ]
 }
