@@ -137,7 +137,16 @@ def cmd_next(project):
         "formats": FORMATS,
         "avoid_openings": [first_line(d["text"]) for d in recent_posts(proj)],
         "recent_formats": state.get("recent_formats", [])[-4:],
+        "linkbank_unused": _bank_unused(proj, cfg),
     }, ensure_ascii=False, indent=2))
+
+
+def _bank_unused(proj, cfg):
+    f = proj / "linkbank.json"
+    if not f.exists():
+        return 0
+    recent = set(recent_ids(proj, cfg["selection"]["skip_if_posted_within_days"]))
+    return sum(1 for k in json.loads(f.read_text()) if k not in recent)
 
 
 def pick_format(state, allowed=None):
@@ -279,6 +288,8 @@ def cmd_queue(project, draft_path):
         "publish_after": (dt.datetime.now(KST) + dt.timedelta(
             minutes=random.randint(DELAY_MIN, DELAY_MAX))).isoformat(timespec="seconds"),
     }
+    if d.get("link_source") == "bank":
+        post["link_source"] = "bank"
     if deal:
         post["deal_until"] = deal["end"]
         post["deal_label"] = deal["label"]

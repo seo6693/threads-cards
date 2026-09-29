@@ -21,6 +21,18 @@ gets posted, which is fine).
 4. In the browser, open **your own tab** first (`Claude_Browser__tabs_create`) and pass that
    `tabId` to every browser call; close it (`tabs_close`) when done. Never use or close other tabs.
 
+5. **Check the Partners sign-in first** (in your tab): open
+   `https://partners.coupang.com/#affiliate/ws/link/0/test`, wait ~3s. If the tab ends on
+   `login.coupang.com`, Partners has logged out. Never type a password. Then:
+   - `deals`: record a skip ("쿠팡파트너스 로그인 풀림") and stop (goldbox changes daily, no bank).
+   - `nutri` / `fresh`: switch to **link-bank mode** if `next` shows `linkbank_unused` > 0.
+     `python3 scripts/linkbank.py pick <project>` lists unused pre-made links. For `fresh`, still read
+     the category ranking (coupang.com works without Partners) and take the highest-ranked item that is
+     in the bank; for `nutri`, prefer an entry matching this run's keyword. Get price, discount, reviews
+     and image from the entry's public `product_url` (step 3-4), use the bank `link` as the draft `link` (and add `"link_source": "bank"` to the draft),
+     and skip step 2. If the bank is empty, record a skip ("쿠팡파트너스 로그인 풀림, 링크 저장분 없음") and stop.
+   In both cases put "쿠팡파트너스 로그인 풀림" in the final report so the owner signs in again.
+
 The browser is the **built-in browser pane on the user's computer**
 (`mcp__remote-devices__Claude_Browser__*`). It is already signed in to
 Coupang Partners and Coupang. If a site asks for access, call
