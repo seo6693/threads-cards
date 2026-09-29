@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "kicker": "비타민C 1000mg · 200정",
+    "left_label": "정가",
+    "left": "18,000원",
+    "right_label": "지금",
+    "right": "11,250원",
+    "saving": "6,750원 아껴요",
+    "note": "가격은 수시로 바뀌어요",
+    "layout": "versus"
+  },
+  "product": {
+    "pill": "비타민C",
+    "brand": "바이탈프로그램 (종근당)",
+    "name": "비타민C 1000mg",
+    "sub": "200정 · 상품평 8만 개",
+    "badge_top": "37% 할인",
+    "badge_price": "11,250원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
