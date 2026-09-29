@@ -207,6 +207,32 @@ Only use it for products with ≥20% off and a countable unit. Otherwise pick an
 The hook must make a true statement or honest question from those numbers. The text body is short
 (3-6 lines) and still ends with a question. Watch one frame of the video (the `poster.jpg`) before pushing; check that no text overlaps and the price is readable.
 
+**이벤트·프로모션 영상 (`promo` account, format `promo_video`) — every post is a video, and every
+video is a new design.** Instead of `motion` templates you write a small scene script for this post only.
+1. From the 기획전 list, save the promotion's **thumbnail/banner image** the same way as the product image
+   (step 4) → `/tmp/banner.jpg`. It must appear in the video.
+2. Read `projects/promo/video_patterns.json` (every concept used so far) and `scripts/custom_video.py`
+   (the scene API). `scripts/scene_example.py` only shows the API — never reuse it.
+3. Research and design a **new** concept that has not been used: what happens on screen, and why a
+   scroller stops in the first second. Draw from real-world formats people instantly recognize and
+   that fit the event: e.g. scratch card, vending machine, parcel box opening, countdown board,
+   calendar flip, shopping-cart race, neon sign, phone notification, torn price tag, puzzle pieces,
+   magnifier zoom, LED ticker, chat conversation, calculator, game HUD/level-up, breaking-news bar,
+   elevator floor counter, receipt printer, claw machine, stamp card, weather forecast parody, map pin
+   journey, split-flap departure board… (these are sparks, not a list to cycle — invent beyond it).
+   Vary structure, pacing, colours and camera motion too, not just the skin. Keep 6–15 s.
+4. Write `/tmp/scene.py` with `CONCEPT` (new `name` + one-line `idea`), `END`, `POSTER_AT`, `frame(t, ctx)`.
+   Must show: the banner, the event name (and period only if printed on the page), the product, its
+   price, and the CTA "첫 댓글에 링크". Big legible Korean text, nothing important in the top 20 px
+   or bottom 40 px. No real people, no characters/logos except the product photo and the banner.
+5. Draft: `"format": "promo_video"`, `"banner_image": "/tmp/banner.jpg"`, `"video_script": "/tmp/scene.py"`,
+   `"motion": {"name", "badge_price", "event_name", "event_period" (or ""), "cta", plus anything your
+   scene reads (from_price, to_price, unit, stamp, stats…)}` — no `cards`.
+6. `queue` renders it, rejects reused concept names or code that is >60% the same as any earlier scene,
+   and writes `frames.jpg` (6 frames) and `poster.jpg`. **Look at `frames.jpg`**: if anything overlaps,
+   is cut off, or is hard to read, delete `cards/<slug>` and `queue/<slug>.json`, fix the scene and queue
+   again (the concept name stays free once its folder is deleted).
+
 The last line of `text` is always exactly:
 `이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.`
 Use the 일반할인가 (not the 와우 쿠폰가) as the price. If the 와우 price is lower,

@@ -170,6 +170,8 @@ def cmd_queue(project, draft_path):
     need_keys = ["product_id", "product_name", "keyword", "link", "image", "text"]
     if not FORMATS.get(d.get("format"), {}).get("video"):
         need_keys.append("cards")
+    if FORMATS.get(d.get("format"), {}).get("custom"):
+        need_keys += ["video_script", "banner_image"]
     for k in need_keys:
         if not d.get(k):
             errors.append(f"missing '{k}'")
@@ -188,7 +190,7 @@ def cmd_queue(project, draft_path):
     allowed = cfg.get("formats") or list(FORMATS)
     if fmt not in FORMATS or fmt not in allowed:
         errors.append(f"'format' must be one of {allowed}")
-    elif fmt in state.get("recent_formats", [])[-2:]:
+    elif len(allowed) > 1 and fmt in state.get("recent_formats", [])[-2:]:
         errors.append(f"format '{fmt}' was used in one of the last 2 posts; pick another")
     # Anti-copy: the opening and the body must not look like recent posts.
     fl = first_line(text)
@@ -236,7 +238,35 @@ def cmd_queue(project, draft_path):
     card_dir.mkdir(parents=True, exist_ok=True)
     img = card_dir / ("product" + pathlib.Path(d["image"]).suffix)
     shutil.copy(d["image"], img)
-    if FORMATS[fmt].get("video"):
+    if FORMATS[fmt].get("custom"):
+        import custom_video
+        m = dict(d.get("motion") or {})
+        for k in ("name", "badge_price", "event_name"):
+            if not m.get(k):
+                sys.exit(f"draft rejected:\n- 'motion' is missing {k}")
+        ban = card_dir / ("banner" + pathlib.Path(d["banner_image"]).suffix)
+        shutil.copy(d["banner_image"], ban)
+        scene = card_dir / "scene.py"
+        shutil.copy(d["video_script"], scene)
+        errs = custom_video.novelty_errors(project, scene)
+        if errs:
+            shutil.rmtree(card_dir)
+            sys.exit("draft rejected:\n- " + "\n- ".join(errs))
+        rp = state.get("recent_palettes", [])[-2:]
+        m.setdefault("palette", random.choice([c for c in make_motion.PALETTES if c not in rp]))
+        state["recent_palettes"] = (state.get("recent_palettes", []) + [m["palette"]])[-6:]
+        m.update(product_image=img.name, banner_image=ban.name)
+        if deal:
+            m["deadline"] = deal["label"]
+        (card_dir / "motion.json").write_text(json.dumps(m, ensure_ascii=False, indent=2) + "\n")
+        mod = custom_video.render(str(scene), m, str(card_dir), str(card_dir / "video.mp4"))
+        make_motion.poster(str(card_dir / "video.mp4"), str(card_dir / "poster.jpg"), at=float(mod.POSTER_AT))
+        custom_video.contact_sheet(str(card_dir / "video.mp4"), str(card_dir / "frames.jpg"), float(mod.END))
+        custom_video.register(project, mod, card_dir.name, dt.date.today().isoformat())
+        rel = str(card_dir.relative_to(ROOT)).replace("\\", "/") + "/"
+        media = {"video": PAGES + rel + "video.mp4", "thumb": RAW + rel + "poster.jpg", "images": [],
+                 "video_concept": mod.CONCEPT["name"]}
+    elif FORMATS[fmt].get("video"):
         m = d.get("motion") or {}
         need = ("hook", "unit", "from_price", "to_price", "stamp", "name", "badge_price", "stats")
         missing = [k for k in need if not m.get(k)]
