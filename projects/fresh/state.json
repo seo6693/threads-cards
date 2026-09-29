@@ -1,6 +1,7 @@
 {
-  "next_keyword": 1,
+  "next_keyword": 2,
   "recent_formats": [
-    "review_digest"
+    "review_digest",
+    "problem_solution"
   ]
 }
