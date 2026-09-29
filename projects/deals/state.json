@@ -1,7 +1,8 @@
 {
-  "next_keyword": 1,
+  "next_keyword": 2,
   "recent_formats": [
-    "price_motion"
+    "price_motion",
+    "quick_pick"
   ],
   "recent_video_styles": [
     "slam"

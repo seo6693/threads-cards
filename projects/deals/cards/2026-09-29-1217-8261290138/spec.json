@@ -1,0 +1,16 @@
+{
+  "product": {
+    "pill": "골드박스 특가",
+    "brand": "깨끗한나라",
+    "name": "순수 프리미엄 더 퍼스트 3겹",
+    "sub": "30m × 30롤 · 천연펄프 · 무형광",
+    "badge_top": "정가 32,900원",
+    "badge_price": "20,900원",
+    "deadline": "9/30(수) 오전 7시까지"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "product"
+  ]
+}
