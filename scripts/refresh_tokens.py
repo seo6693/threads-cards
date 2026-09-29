@@ -65,6 +65,9 @@ def main():
     failed = []
 
     for key, acc in accounts.items():
+        if acc.get("user_id") == "pending":  # account being connected; nothing to refresh yet
+            print(f"SKIP {key}: not connected yet")
+            continue
         token = os.environ.get(acc["token_env"])
         entry = status.get(key, {})
         entry["checked_at"] = now.isoformat(timespec="seconds")
@@ -77,7 +80,18 @@ def main():
                                    f"expected {acc['user_id']}")
             entry["username"] = me.get("username")
             if not dry:
-                new = get("refresh_access_token", grant_type="th_refresh_token", access_token=token)
+                try:
+                    new = get("refresh_access_token", grant_type="th_refresh_token", access_token=token)
+                except Exception as e:
+                    # A token issued less than 24h ago cannot be refreshed yet; it is still
+                    # valid for ~60 days, so this is not a failure. Next week's run refreshes it.
+                    if "24" in str(e) or "too early" in str(e).lower():
+                        entry["ok"] = True
+                        entry["note"] = "발급 24시간 이내라 이번 주는 갱신 생략"
+                        print(f"OK   {key}: too new to refresh")
+                        status[key] = entry
+                        continue
+                    raise
                 print(f"::add-mask::{new['access_token']}")
                 set_secret(acc["token_env"], new["access_token"])
                 entry["refreshed_at"] = now.isoformat(timespec="seconds")

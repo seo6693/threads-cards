@@ -35,6 +35,7 @@ jobs:
           THREADS_TOKEN_NUTRI: ${{ secrets.THREADS_TOKEN_NUTRI }}
           THREADS_TOKEN_DEALS: ${{ secrets.THREADS_TOKEN_DEALS }}
           THREADS_TOKEN_FRESH: ${{ secrets.THREADS_TOKEN_FRESH }}
+          THREADS_TOKEN_PROMO: ${{ secrets.THREADS_TOKEN_PROMO }}
         run: python scripts/publish.py
 
       - name: Refresh dashboard status file

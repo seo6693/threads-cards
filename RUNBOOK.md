@@ -71,6 +71,11 @@ Never type passwords.
   4. Prices on the category page include coupons tied to the signed-in account (e.g. "웰컴백 쿠폰 100%" → 0원);
      never use them. Use the Partners price (`product[salesPrice]`, `product[originPrice]`,
      `product[discountRate]` in the URL after step 2) and confirm on the product page.
+- If `next` says `"source": "promotion"` (이벤트·프로모션 계정): read `source_note`. Open the 기획전 hub
+  `https://pages.coupang.com/p/bep` (or the other promotion pages listed there), pick one promotion that is live now
+  and fits this run's `keyword`, note its exact name and period as printed on the page (no period shown → do not
+  state one), pick one representative product in it that passes `selection`, then search its exact title in
+  Partners and create the link (step 2). Mention the promotion name (and period if shown) in the text.
 - Open `https://partners.coupang.com/#affiliate/ws/link/0/<keyword>` and wait ~3s.
 - Read the list with JS:
   ```js

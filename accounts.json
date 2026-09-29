@@ -13,5 +13,10 @@
   "label": "로켓프레시 간편식 (@magdungi43)",
   "user_id": "28249749764697687",
   "token_env": "THREADS_TOKEN_FRESH"
+ },
+ "promo": {
+  "label": "이벤트·프로모션",
+  "user_id": "pending",
+  "token_env": "THREADS_TOKEN_PROMO"
  }
 }
