@@ -86,10 +86,10 @@
   "projects/nutri/done/2026-09-28-2039-7735337888.json",
   "projects/nutri/done/2026-09-29-1206-6903873562.json",
   "projects/nutri/done/2026-09-29-1549-6395389697.json",
+  "projects/nutri/done/2026-09-29-2041-7419108509.json",
   "projects/nutri/failed/2026-09-28-0755-8123061158.json",
   "projects/nutri/failed/2026-09-28-0957-7156986260.json",
   "projects/nutri/linkbank.json",
-  "projects/nutri/queue/2026-09-29-2041-7419108509.json",
   "projects/nutri/skipped/2026-09-28-0756.json",
   "projects/nutri/skipped/2026-09-28-0958.json",
   "projects/nutri/skipped/2026-09-29-0749.json",
@@ -104,6 +104,14 @@
   "projects/promo/video_patterns.json"
  ],
  "runs": [
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-09-29T11:42:41Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/36563430650",
+   "event": "push"
+  },
   {
    "name": "Publish Threads posts",
    "status": "completed",
