@@ -11,6 +11,7 @@
   "projects/deals/done/2026-09-28-2111-6746052927.json",
   "projects/deals/done/2026-09-29-1217-8261290138.json",
   "projects/deals/skipped/2026-09-29-0823.json",
+  "projects/deals/skipped/2026-09-29-1254.json",
   "projects/deals/state.json",
   "projects/fresh/cards/2026-09-28-1826-158010844/card1_hook.jpg",
   "projects/fresh/cards/2026-09-28-1826-158010844/card2_product.jpg",
@@ -74,6 +75,7 @@
   "projects/nutri/skipped/2026-09-28-0958.json",
   "projects/nutri/skipped/2026-09-29-0749.json",
   "projects/nutri/skipped/2026-09-29-1138.json",
+  "projects/nutri/skipped/2026-09-29-1254.json",
   "projects/nutri/state.json"
  ],
  "runs": [
@@ -91,14 +93,6 @@
    "conclusion": "success",
    "created_at": "2026-09-29T03:06:12Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/36515646198",
-   "event": "push"
-  },
-  {
-   "name": "Publish Threads posts",
-   "status": "completed",
-   "conclusion": "success",
-   "created_at": "2026-09-28T23:23:39Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/36497757931",
    "event": "push"
   }
  ],
