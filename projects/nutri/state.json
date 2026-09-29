@@ -1,9 +1,10 @@
 {
-  "next_keyword": 8,
+  "next_keyword": 9,
   "recent_formats": [
     "quick_pick",
     "price_motion",
-    "price_drop"
+    "price_drop",
+    "problem_solution"
   ],
   "recent_video_styles": [
     "slam"
