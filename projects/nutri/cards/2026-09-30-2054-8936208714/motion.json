@@ -1,0 +1,30 @@
+{
+  "hook": [
+    "칼슘",
+    "한 알",
+    "36원",
+    "맞아요?"
+  ],
+  "unit": "한 알",
+  "from_price": 66,
+  "to_price": 36,
+  "stamp": "45%↓",
+  "name": "99바이탈 칼슘 300정",
+  "badge_price": "10,900원",
+  "stats": [
+    [
+      "리뷰",
+      4328,
+      "개"
+    ],
+    [
+      "'복용 아주 편해요'",
+      89,
+      "%"
+    ]
+  ],
+  "cta": "첫 댓글에 링크",
+  "product_image": "product.jpg",
+  "style": "receipt",
+  "palette": "pink"
+}

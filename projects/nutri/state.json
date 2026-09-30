@@ -1,5 +1,5 @@
 {
-  "next_keyword": 12,
+  "next_keyword": 13,
   "recent_formats": [
     "quick_pick",
     "price_motion",
@@ -7,13 +7,16 @@
     "problem_solution",
     "price_motion",
     "review_digest",
-    "quick_pick"
+    "quick_pick",
+    "price_motion"
   ],
   "recent_video_styles": [
     "slam",
-    "slot"
+    "slot",
+    "receipt"
   ],
   "recent_palettes": [
-    "yellow"
+    "yellow",
+    "pink"
   ]
 }
