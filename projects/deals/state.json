@@ -1,11 +1,16 @@
 {
-  "next_keyword": 3,
+  "next_keyword": 4,
   "recent_formats": [
     "price_motion",
     "quick_pick",
-    "review_digest"
+    "review_digest",
+    "price_motion"
   ],
   "recent_video_styles": [
-    "slam"
+    "slam",
+    "receipt"
+  ],
+  "recent_palettes": [
+    "lime"
   ]
 }

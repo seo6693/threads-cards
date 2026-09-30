@@ -1,0 +1,30 @@
+{
+  "hook": [
+    "알아서",
+    "도는 팬",
+    "8만원대?"
+  ],
+  "unit": "1개",
+  "from_price": 399000,
+  "to_price": 88810,
+  "stamp": "반값",
+  "name": "롤팬 인덕션 팬",
+  "badge_price": "88,810원",
+  "stats": [
+    [
+      "리뷰",
+      2751,
+      "개"
+    ],
+    [
+      "'아주 편리해요'",
+      88,
+      "%"
+    ]
+  ],
+  "cta": "첫 댓글에 링크",
+  "product_image": "product.jpg",
+  "deadline": "10/2(금) 오전 7시까지",
+  "style": "receipt",
+  "palette": "lime"
+}
