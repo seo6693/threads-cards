@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "칼마 영양제\n고를 때 볼 3가지",
+    "items": [
+      "칼슘 : 마그네슘 비율",
+      "하루 몇 번 먹는지",
+      "캡슐 원료 (비건 여부)"
+    ],
+    "note": "한 알 함량만 보면 계산이 어긋나요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "칼슘·마그네슘 1:1",
+    "brand": "쏜리서치",
+    "name": "칼슘-마그네슘 말레이트",
+    "sub": "240캡슐 · 1캡슐당 칼슘 100mg·마그네슘 100mg",
+    "badge_top": "정가 대비 22%↓",
+    "badge_price": "39,410원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
