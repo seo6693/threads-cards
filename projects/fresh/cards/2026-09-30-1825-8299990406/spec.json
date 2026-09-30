@@ -1,0 +1,15 @@
+{
+  "product": {
+    "pill": "로켓프레시 · 쿠팡 랭킹 상위",
+    "brand": "삼호어묵",
+    "name": "CJ 정통어묵탕 336g",
+    "sub": "어묵 6가지 + 멸치스프 한 봉지",
+    "badge_top": "100g당 1,185원",
+    "badge_price": "3,980원"
+  },
+  "theme": "teal2",
+  "product_image": "product.jpg",
+  "order": [
+    "product"
+  ]
+}
