@@ -1,0 +1,15 @@
+{
+  "product": {
+    "pill": "리뷰 877개 · 최고 90%",
+    "brand": "나우푸드",
+    "name": "프로폴리스 2000",
+    "sub": "5:1 추출물 · 소프트젤 90정",
+    "badge_top": "배송비 별도",
+    "badge_price": "23,240원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "product"
+  ]
+}
