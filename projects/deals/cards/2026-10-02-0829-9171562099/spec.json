@@ -1,0 +1,46 @@
+{
+  "theme": "orange",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "쿠팡 골드박스 · 일반할인가 기준",
+    "title": "오늘 할인율 TOP3"
+  },
+  "ranks": [
+    {
+      "name": "키친아트 티타늄 프라이팬 28cm",
+      "short": "티타늄 프라이팬",
+      "sub": "정가 25,980원 · 리뷰 7,711개",
+      "price": "12,800원",
+      "badge": "51% 할인",
+      "cover_value": "51%",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "프리티케어 무선 청소기 W400",
+      "short": "무선 청소기",
+      "sub": "정가 159,900원 · 리뷰 2,343개",
+      "price": "85,560원",
+      "badge": "46% 할인",
+      "cover_value": "46%",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "행복미트 돼지 미박사태 1kg×2",
+      "short": "돼지 미박사태 2kg",
+      "sub": "정가 45,000원 · 리뷰 2,267개",
+      "price": "25,900원",
+      "badge": "42% 할인",
+      "cover_value": "42%",
+      "rank": 3,
+      "image": "p3.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3"
+  ]
+}
