@@ -1,8 +1,9 @@
 {
-  "next_keyword": 3,
+  "next_keyword": 4,
   "recent_formats": [
     "review_digest",
     "problem_solution",
-    "quick_pick"
+    "quick_pick",
+    "buying_guide"
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "냉동 설렁탕\n고를 때 볼 3가지",
+    "items": [
+      "고기가 따로 들었나",
+      "100g당 가격",
+      "해동·조리가 간단한가"
+    ],
+    "note": "세 가지로 골라본 예시는 다음 장",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "로켓프레시",
+    "brand": "신선설농탕",
+    "name": "설농탕 450g + 양지고기 40g",
+    "sub": "1~2인분 · 냉동",
+    "badge_top": "리뷰 20,232개",
+    "badge_price": "8,190원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
