@@ -57,5 +57,20 @@
     "건강관리",
     "유산균",
     "비타민"
+  ],
+  "slot_types": {
+    "07:37": "tip",
+    "11:37": "curation",
+    "20:37": "hero"
+  },
+  "formats": [
+    "review_digest",
+    "buying_guide",
+    "price_drop",
+    "problem_solution",
+    "quick_pick",
+    "price_motion",
+    "curation",
+    "tip_post"
   ]
 }

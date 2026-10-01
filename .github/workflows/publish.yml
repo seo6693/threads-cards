@@ -43,11 +43,14 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: python scripts/build_status.py
 
+      - name: Refresh profile-link shop pages
+        run: python scripts/build_shop.py
+
       - name: Record results
         run: |
           git config user.name "threads-bot"
           git config user.email "threads-bot@users.noreply.github.com"
-          git add -A projects dashboard/status.json
+          git add -A projects dashboard/status.json shop
           git diff --cached --quiet || git commit -m "Record publish results [skip ci]"
           git pull --rebase origin main && git push
 

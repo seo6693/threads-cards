@@ -81,15 +81,24 @@ def hook_card(s, t):
 
 
 def wrap(d, text, f, max_w):
+    """Break at spaces (Korean words stay whole); fall back to characters for a too-long word."""
     out = []
     for para in text.split("\n"):
         line = ""
-        for ch in para:
-            if d.textlength(line + ch, font=f) > max_w and line:
+        for word in para.split(" "):
+            cand = (line + " " + word).strip()
+            if d.textlength(cand, font=f) <= max_w:
+                line = cand
+                continue
+            if line:
                 out.append(line)
-                line = ch.lstrip()
-            else:
-                line += ch
+            line = ""
+            for ch in word:
+                if d.textlength(line + ch, font=f) > max_w and line:
+                    out.append(line)
+                    line = ch
+                else:
+                    line += ch
         out.append(line)
     return out
 
@@ -234,6 +243,66 @@ def review_card(s, t):
     return c
 
 
+def cover_card(s, t):
+    """Curation cover: title + numbered list of the products inside."""
+    c, d = _dark_base(t)
+    center(d, 110, s.get("kicker", ""), fit(d, s.get("kicker", ""), "Bold", 50, 960), t["soft"])
+    tf = font("Black", 92)
+    y = 200
+    for ln in wrap(d, s["title"], tf, 960)[:2]:
+        center(d, y, ln, tf, WHITE)
+        y += 118
+    y += 40
+    items = s.get("items") or [{"name": r.get("short") or r["name"], "price": r.get("cover_value") or r.get("price", "")}
+                               for r in s.get("_ranks", [])]
+    items = items[:5]
+    rowh = min(150, (1160 - y) // max(1, len(items)))
+    for i, it in enumerate(items, 1):
+        d.rounded_rectangle([70, y, W - 70, y + rowh - 18], radius=28, fill=t["card"] if "card" in t else (40, 46, 60))
+        d.ellipse([96, y + (rowh - 18) / 2 - 38, 172, y + (rowh - 18) / 2 + 38], fill=t["accent"])
+        fn = font("Black", 46)
+        d.text((134 - d.textlength(str(i), font=fn) / 2, y + (rowh - 18) / 2 - 30), str(i), font=fn, fill=INK)
+        fnm = fit(d, it["name"], "Bold", 44, 560)
+        d.text((196, y + (rowh - 18) / 2 - 28), it["name"], font=fnm, fill=INK if "card" in t else WHITE)
+        fp = fit(d, it.get("price", ""), "Black", 46, 260)
+        d.text((W - 96 - d.textlength(it.get("price", ""), font=fp), y + (rowh - 18) / 2 - 28), it.get("price", ""), font=fp, fill=t["main"] if "card" in t else t["accent"])
+        y += rowh
+    center(d, 1230, s.get("note", "넘겨서 하나씩 보기  →"), fit(d, s.get("note", "넘겨서 하나씩 보기  →"), "Bold", 42, 960), t["accent"])
+    return c
+
+
+def rank_card(s, t, img_path):
+    """One product of a curation: rank badge, photo, name, price and one fact."""
+    c = Image.new("RGB", (W, H), t["paper"])
+    d = ImageDraw.Draw(c)
+    d.rectangle([0, 0, W, 16], fill=t["main"])
+    d.ellipse([60, 60, 220, 220], fill=t["main"])
+    rn = str(s["rank"])
+    fr = font("Black", 96)
+    d.text((140 - d.textlength(rn, font=fr) / 2, 78), rn, font=fr, fill=WHITE)
+    if s.get("badge"):
+        fb = fit(d, s["badge"], "Black", 46, 680)
+        bw = d.textlength(s["badge"], font=fb)
+        d.rounded_rectangle([250, 100, 250 + bw + 64, 180], radius=40, fill=t["accent"])
+        d.text((282, 112), s["badge"], font=fb, fill=INK)
+    card = Image.new("RGB", (760, 760), WHITE)
+    card.paste(Image.open(img_path).convert("RGB").resize((720, 720), Image.LANCZOS), (20, 20))
+    mask = Image.new("L", card.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle([0, 0, 760, 760], radius=40, fill=255)
+    c.paste(card, (160, 250), mask)
+    d = ImageDraw.Draw(c)
+    nm = s["name"]
+    center(d, 1040, nm, fit(d, nm, "Black", 64, 960), INK)
+    if s.get("sub"):
+        center(d, 1125, s["sub"], fit(d, s["sub"], "Regular", 44, 960), MUTED)
+    pr = s.get("price", "")
+    fp = fit(d, pr, "Black", 74, 700)
+    pw = d.textlength(pr, font=fp)
+    d.rounded_rectangle([(W - pw) / 2 - 44, 1190, (W + pw) / 2 + 44, 1300], radius=55, fill=t["main"])
+    d.text(((W - pw) / 2, 1200), pr, font=fp, fill=WHITE)
+    return c
+
+
 def main(spec_path, out_dir):
     s = json.load(open(spec_path))
     t = THEMES[s.get("theme", "navy")]
@@ -252,6 +321,12 @@ def main(spec_path, out_dir):
             im = product_card(s["product"], t, img)
         elif part == "reviews":
             im = review_card(s["reviews"], t)
+        elif part == "cover":
+            im = cover_card(dict(s["cover"], _ranks=s.get("ranks", [])), t)
+        elif part.startswith("rank"):
+            r = s["ranks"][int(part[4:]) - 1]
+            ip = r["image"] if os.path.isabs(r["image"]) else os.path.join(os.path.dirname(os.path.abspath(spec_path)), r["image"])
+            im = rank_card(r, t, ip)
         else:
             raise SystemExit(f"unknown card '{part}'")
         name = f"card{i}_{part}.jpg"

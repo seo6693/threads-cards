@@ -141,11 +141,22 @@ def publish(spec, accounts):
     result = {"media_id": media_id}
     result["permalink"] = call("GET", media_id, token, fields="permalink").get("permalink")
 
-    if spec.get("reply"):
+    # Link comments. Several products → numbered comments 1) 2) 3)… each with its own link,
+    # all attached to the post in order.
+    replies = spec.get("replies") or ([spec["reply"]] if spec.get("reply") else [])
+    for i, text_i in enumerate(replies):
         try:
-            result["reply_id"] = reply(uid, token, media_id, spec["reply"])
+            rid = reply(uid, token, media_id, text_i)
+            if i == 0:
+                result["reply_id"] = rid
+            else:
+                result.setdefault("more_reply_ids", []).append(rid)
         except Exception as e:  # post is already live; record and continue
-            result["reply_error"] = str(e)
+            key = "reply_error" if i == 0 else "more_reply_errors"
+            if i == 0:
+                result[key] = str(e)
+            else:
+                result.setdefault(key, []).append(f"{i + 1}: {e}"[:300])
     return result
 
 

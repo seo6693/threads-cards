@@ -37,7 +37,9 @@
     "review_digest",
     "problem_solution",
     "buying_guide",
-    "price_drop"
+    "price_drop",
+    "curation",
+    "tip_post"
   ],
   "copy_rules": [
     "가격은 쿠팡파트너스에 표시된 판매가 기준. 쿠팡 카테고리 페이지의 쿠폰가(웰컴백 쿠폰 100% → 0원 등)는 로그인 계정 전용이라 절대 쓰지 않기",
@@ -80,5 +82,10 @@
     "자취요리",
     "에어프라이어요리",
     "로켓프레시"
-  ]
+  ],
+  "slot_types": {
+    "18:22": "rotate",
+    "12:22": "curation",
+    "15:52": "tip"
+  }
 }

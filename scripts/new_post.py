@@ -104,13 +104,14 @@ def recent_ids(proj, days):
             d = json.loads(f.read_text())
             if not d.get("product_id"):
                 continue
+            pids = [d["product_id"], *d.get("more_product_ids", [])]
             when = d.get("published_at")
             if folder == "queue" or not when:
-                ids.add(d["product_id"])
+                ids.update(pids)
                 continue
             t = dt.datetime.strptime(when, "%Y-%m-%dT%H:%M:%S%z")
             if t >= cutoff:
-                ids.add(d["product_id"])
+                ids.update(pids)
     return sorted(ids)
 
 
@@ -131,7 +132,7 @@ def cmd_next(project):
         "theme": cfg["theme"],
         "theme_variants": cfg.get("theme_variants", [cfg["theme"]]),
         "topic_tags": cfg.get("topic_tags", []),
-        "format": pick_format(state, cfg.get("formats")),
+        **_post_plan(cfg, state),
         "source": cfg.get("source", "search"),
         "source_note": cfg.get("source_note", ""),
         "formats": FORMATS,
@@ -139,6 +140,30 @@ def cmd_next(project):
         "recent_formats": state.get("recent_formats", [])[-4:],
         "linkbank_unused": _bank_unused(proj, cfg),
     }, ensure_ascii=False, indent=2))
+
+
+TYPE_FORMAT = {"curation": "curation", "tip": "tip_post"}
+
+
+def _post_plan(cfg, state):
+    """What this run should make. Each slot has a post type (config slot_types):
+    curation = 3-5 products compared in one post, tip = useful info + related product,
+    hero = one product in a strong single format (often video). "rotate" cycles the three."""
+    slot = current_slot(cfg)
+    hm = slot.strftime("%H:%M") if slot else None
+    ptype = (cfg.get("slot_types") or {}).get(hm, "hero")
+    if ptype == "rotate":
+        recent = state.get("recent_post_types", [])
+        options = ["curation", "tip", "hero"]
+        ptype = min(options, key=lambda k: max((i for i, r in enumerate(recent) if r == k), default=-1))
+    allowed = cfg.get("formats") or list(FORMATS)
+    if ptype in TYPE_FORMAT and TYPE_FORMAT[ptype] in allowed:
+        fmt = TYPE_FORMAT[ptype]
+    else:
+        ptype = "hero"
+        fmt = pick_format(state, [f for f in allowed if f not in TYPE_FORMAT.values()])
+    return {"post_type": ptype, "format": fmt,
+            "more_products_wanted": {"curation": "2-4 (required)", "tip": "0-1", "hero": cfg.get("hero_more_products", "0")}[ptype]}
 
 
 def _bank_unused(proj, cfg):
@@ -186,6 +211,33 @@ def cmd_queue(project, draft_path):
         errors.append("link must be a partner short link https://link.coupang.com/a/...")
     if str(d.get("product_id")) in recent_ids(proj, cfg["selection"]["skip_if_posted_within_days"]):
         errors.append(f"product {d.get('product_id')} was already posted recently")
+    # Extra products: each becomes its own numbered reply with its own link.
+    more = d.get("more_products") or []
+    if len(more) > 4:
+        errors.append("more_products: at most 4 (5 products per post)")
+    seen = {str(d.get("product_id"))}
+    recent_short = set(recent_ids(proj, min(7, cfg["selection"]["skip_if_posted_within_days"])))
+    for i, mp in enumerate(more, 2):
+        for k in ("product_id", "product_name", "link"):
+            if not mp.get(k):
+                errors.append(f"more_products[{i}] missing '{k}'")
+        if not re.match(r"^https://link\.coupang\.com/a/\w+$", mp.get("link", "")):
+            errors.append(f"more_products[{i}] link must be a partner short link")
+        if str(mp.get("product_id")) in seen:
+            errors.append(f"more_products[{i}] duplicates another product in this post")
+        if str(mp.get("product_id")) in recent_short:
+            errors.append(f"more_products[{i}] ({mp.get('product_name')}) was posted in the last 7 days")
+        seen.add(str(mp.get("product_id")))
+    if FORMATS.get(d.get("format"), {}).get("multi"):
+        if not 2 <= len(more) <= 4:
+            errors.append("curation needs 3-5 products in total (main + 2-4 more_products)")
+        if any(not mp.get("image") for mp in more):
+            errors.append("curation: every more_products entry needs an 'image' (its photo)")
+        if not (d.get("cards") or {}).get("cover") or len((d.get("cards") or {}).get("ranks", [])) != len(more) + 1:
+            errors.append("curation cards need 'cover' and one 'ranks' entry per product (main first)")
+        elif (d["cards"]["cover"]).get("items"):
+            errors.append("curation: leave cover.items out; the cover list is built from 'ranks' in the same order "
+                          "(give each rank an optional 'short' name and 'cover_value')")
     fmt = d.get("format")
     allowed = cfg.get("formats") or list(FORMATS)
     if fmt not in FORMATS or fmt not in allowed:
@@ -291,6 +343,21 @@ def cmd_queue(project, draft_path):
                            at=make_motion.poster_time(m["style"]))
         rel = str(card_dir.relative_to(ROOT)).replace("\\", "/") + "/"
         media = {"video": PAGES + rel + "video.mp4", "thumb": RAW + rel + "poster.jpg", "images": []}
+    elif FORMATS[fmt].get("multi"):
+        ranks = []
+        for i, r in enumerate(d["cards"]["ranks"]):
+            src = d["image"] if i == 0 else more[i - 1]["image"]
+            name = "product" + pathlib.Path(src).suffix if i == 0 else f"p{i + 1}" + pathlib.Path(src).suffix
+            if i:
+                shutil.copy(src, card_dir / name)
+            ranks.append(dict(r, rank=i + 1, image=name))
+        spec = {"theme": d.get("theme") or random.choice(cfg.get("theme_variants", [cfg["theme"]])),
+                "product_image": img.name, "cover": d["cards"]["cover"], "ranks": ranks,
+                "order": ["cover"] + [f"rank{i + 1}" for i in range(len(ranks))]}
+        (card_dir / "spec.json").write_text(json.dumps(spec, ensure_ascii=False, indent=2) + "\n")
+        names = make_cards.main(str(card_dir / "spec.json"), str(card_dir))
+        base = RAW + str(card_dir.relative_to(ROOT)).replace("\\", "/") + "/"
+        media = {"images": [base + f for f in names]}
     else:
         fcards = FORMATS[fmt]["cards"]
         spec = dict(d["cards"], theme=d.get("theme") or random.choice(cfg.get("theme_variants", [cfg["theme"]])),
@@ -315,9 +382,20 @@ def cmd_queue(project, draft_path):
         **media,
         "reply": d.get("reply_text") and f"{d['reply_text']}\n{d['link']}\n{note}" or f"🛒 구매 링크 → {d['link']}\n{note}",
         "format": fmt,
+        "post_type": {"curation": "curation", "tip_post": "tip"}.get(fmt, "hero"),
         "publish_after": (dt.datetime.now(KST) + dt.timedelta(
             minutes=random.randint(DELAY_MIN, DELAY_MAX))).isoformat(timespec="seconds"),
     }
+    if more:
+        first = d.get("reply_text") or d["product_name"]
+        post["reply"] = f"1) {first}\n{d['link']}\n{note}"
+        post["replies"] = [post["reply"]] + [
+            f"{i}) {mp.get('line') or mp['product_name']}\n{mp['link']}" for i, mp in enumerate(more, 2)]
+        post["more_product_ids"] = [str(mp["product_id"]) for mp in more]
+        post["more_products"] = [{"product_id": str(mp["product_id"]), "product_name": mp["product_name"],
+                                  "link": mp["link"], "price": mp.get("price", "")} for mp in more]
+    post["link"] = d["link"]
+    post["price"] = d.get("price", "")
     if d.get("link_source") == "bank":
         post["link_source"] = "bank"
     if deal:
@@ -330,6 +408,8 @@ def cmd_queue(project, draft_path):
 
     state["next_keyword"] = (state["next_keyword"] + 1) % len(cfg["keywords"])
     state["recent_formats"] = (state.get("recent_formats", []) + [fmt])[-8:]
+    ptype = {"curation": "curation", "tip_post": "tip"}.get(fmt, "hero")
+    state["recent_post_types"] = (state.get("recent_post_types", []) + [ptype])[-8:]
     state_path.write_text(json.dumps(state, indent=2) + "\n")
     print(json.dumps({"queued": str(qfile.relative_to(ROOT)), "cards": str(card_dir.relative_to(ROOT)),
                       "format": fmt, "publish_after": post["publish_after"]},

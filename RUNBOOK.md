@@ -41,6 +41,27 @@ reached (computer asleep/offline), stop: report "컴퓨터가 꺼져 있어 이�
 If Coupang Partners shows a login page, stop and report that a login is needed.
 Never type passwords.
 
+## Post types (read this first — `next` prints `post_type`, `format`, `more_products_wanted`)
+Every post carries products, but the post itself must be worth reading. Each slot has a type:
+- **curation** (`format: curation`) — one topic, **3–5 products compared** by a computed, verifiable
+  measure (100g당/1정당/1개당 가격, 리뷰 수, 평점, 할인율, 마감 시각…). Examples: "냉동만두 5종 100g당 가격
+  순위", "골드박스 오늘 반값 이상 TOP5", "마그네슘 4종 1정당 가격". Pick all products with the normal
+  method for this account (same quality gate for each), make a link for each, save each photo
+  (step 4) as /tmp/p1.jpg, /tmp/p2.jpg…. Draft: main product = rank 1 (`product_id`, `link`, `image`,
+  `price`), others in `more_products: [{product_id, product_name, link, image, price, line}]` (2–4).
+  `cards: {"cover": {"kicker", "title"}, "ranks": [{name, short, sub, price, badge, cover_value} × N, in rank
+  order, main first]}` — no `cover.items` (built from ranks). Body: the ranking logic + 1 honest caveat +
+  a question. Comments become `1) … link`, `2) … link`, … automatically.
+- **tip** (`format: tip_post`) — the body is genuinely useful information for the account's topic
+  (보관법, 조리법, 먹는 시간·같이 먹으면 안 되는 조합, 고르는 기준, 계절 살림 팁…), only facts you can back
+  with the product page, official notices or many reviews (영양제: 건강기능식품 표현 규정 지키기, 효능 단정 금지).
+  End with "여기 나온 제품은 댓글에" and link 1 related product (optionally 1 more via `more_products`).
+  Cards: checklist hook with the tip points + product card. It must not read like an ad.
+- **hero** — one strong single product (existing formats incl. videos). If `more_products_wanted` is not 0
+  (이벤트·프로모션: 2-3 more products from the same event), add them as `more_products` (image optional).
+Products used in any post (main or more) are skipped by later posts automatically (main: the account's
+skip window, more: 7 days). In link-bank mode the bank can supply all products of a curation.
+
 ## 1. Find candidates (Coupang Partners search)
 - If `next` says `"source": "goldbox"` (특가 계정), **only goldbox items are allowed**, because the
   deal end time must be shown on every post (`require_deal_until`) and goldbox is the only place it
