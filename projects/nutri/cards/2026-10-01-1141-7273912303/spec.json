@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "kicker": "액상 철분 · 30포",
+    "left_label": "정가",
+    "left": "35,000원",
+    "right_label": "지금",
+    "right": "16,500원",
+    "saving": "18,500원 아껴요",
+    "note": "가격은 수시로 바뀌어요",
+    "layout": "versus"
+  },
+  "product": {
+    "pill": "철분",
+    "brand": "락피도",
+    "name": "철분 액상 30포",
+    "sub": "1포 8ml · 철분 12mg",
+    "badge_top": "53% 할인",
+    "badge_price": "16,500원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}

@@ -1,14 +1,14 @@
 {
-  "next_keyword": 14,
+  "next_keyword": 15,
   "recent_formats": [
-    "price_motion",
     "price_drop",
     "problem_solution",
     "price_motion",
     "review_digest",
     "quick_pick",
     "price_motion",
-    "buying_guide"
+    "buying_guide",
+    "price_drop"
   ],
   "recent_video_styles": [
     "slam",
