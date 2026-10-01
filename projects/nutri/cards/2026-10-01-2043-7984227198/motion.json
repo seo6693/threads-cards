@@ -1,0 +1,30 @@
+{
+  "hook": [
+    "복숭아",
+    "비오틴",
+    "한 알에",
+    "129원"
+  ],
+  "unit": "한 알",
+  "from_price": 270,
+  "to_price": 129,
+  "stamp": "반값",
+  "name": "비오틴 구미 5000",
+  "badge_price": "12,900원",
+  "stats": [
+    [
+      "리뷰",
+      3645,
+      "개"
+    ],
+    [
+      "별점 '최고'",
+      87,
+      "%"
+    ]
+  ],
+  "cta": "첫 댓글에 링크",
+  "product_image": "product.jpg",
+  "style": "split",
+  "palette": "cyan"
+}

@@ -1,22 +1,27 @@
 {
-  "next_keyword": 15,
+  "next_keyword": 16,
   "recent_formats": [
-    "price_drop",
     "problem_solution",
     "price_motion",
     "review_digest",
     "quick_pick",
     "price_motion",
     "buying_guide",
-    "price_drop"
+    "price_drop",
+    "price_motion"
   ],
   "recent_video_styles": [
     "slam",
     "slot",
-    "receipt"
+    "receipt",
+    "split"
   ],
   "recent_palettes": [
     "yellow",
-    "pink"
+    "pink",
+    "cyan"
+  ],
+  "recent_post_types": [
+    "hero"
   ]
 }
