@@ -59,6 +59,14 @@ Every post carries products, but the post itself must be worth reading. Each slo
   Cards: checklist hook with the tip points + product card. It must not read like an ad.
 - **hero** — one strong single product (existing formats incl. videos). If `more_products_wanted` is not 0
   (이벤트·프로모션: 2-3 more products from the same event), add them as `more_products` (image optional).
+Finding enough products: for curation you may use `keyword` and both `backup_keywords` (stay on one
+theme in the post). For **tip** posts the tip is the point: if no product passes the full gate, link the
+best related product that has ≥ `min_reviews` reviews rather than skipping the slot.
+**Coupang blocks fast browsing ("Access Denied").** Open as few coupang.com pages as possible: shortlist
+from the Partners list (price/discount are in it), then open product pages only for the finalists, with
+3-5 s between page loads. If you hit Access Denied, stop opening coupang.com pages for this run and
+finish with what you have: Partners data (price, discount) is enough for a curation ranked by price/discount
+— then do not mention reviews or ratings for products you could not check. Don't skip a slot only for that.
 Products used in any post (main or more) are skipped by later posts automatically (main: the account's
 skip window, more: 7 days). In link-bank mode the bank can supply all products of a curation.
 

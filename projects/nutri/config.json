@@ -25,7 +25,7 @@
   ],
   "selection": {
     "min_reviews": 100,
-    "min_top_rating_pct": 85,
+    "min_top_rating_pct": 80,
     "min_price": 5000,
     "max_price": 150000,
     "skip_if_posted_within_days": 30,
