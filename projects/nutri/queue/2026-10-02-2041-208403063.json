@@ -15,7 +15,5 @@
   "publish_after": "2026-10-02T20:51:28+09:00",
   "link": "https://link.coupang.com/a/hwmp7RLr5g",
   "price": "",
-  "topic_tag": "글루타치온",
-  "published_at": "2026-10-02T12:04:39+0000",
-  "error": "POST 26386715651026150/threads_publish -> HTTP 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 18113179705966838 cannot be found.\",\"fbtrace_id\":\"A1pA1KjBSNd3_7TWTJwOCYH\"}}"
+  "topic_tag": "글루타치온"
 }
