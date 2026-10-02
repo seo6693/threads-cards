@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "크릴오일 박스,\n이 3줄만 보세요",
+    "items": [
+      "인지질 % 옆 '원료' 표기",
+      "추출 방식 · 용매 검사",
+      "1캡슐 mg × 총 정 수"
+    ],
+    "note": "제품 라벨 문구 기준 체크리스트",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "예시 제품",
+    "brand": "순수식품",
+    "name": "크릴오일 58 180정",
+    "sub": "500mg × 30캡슐 × 6박스",
+    "badge_top": "리뷰 1,998개",
+    "badge_price": "38,250원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}

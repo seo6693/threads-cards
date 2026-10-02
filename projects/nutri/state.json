@@ -1,14 +1,14 @@
 {
-  "next_keyword": 16,
+  "next_keyword": 17,
   "recent_formats": [
-    "problem_solution",
     "price_motion",
     "review_digest",
     "quick_pick",
     "price_motion",
     "buying_guide",
     "price_drop",
-    "price_motion"
+    "price_motion",
+    "tip_post"
   ],
   "recent_video_styles": [
     "slam",
@@ -22,6 +22,7 @@
     "cyan"
   ],
   "recent_post_types": [
-    "hero"
+    "hero",
+    "tip"
   ]
 }
