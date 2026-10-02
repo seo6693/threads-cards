@@ -1,10 +1,10 @@
 {
- "collected_at": "2026-10-01T15:24:21+0000",
+ "collected_at": "2026-10-02T15:24:22+0000",
  "projects": {
   "deals": {
    "account": "특가 (하겐민지)",
    "totals": {
-    "views": 20,
+    "views": 16,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -59,9 +59,23 @@
      "video": true,
      "published_at": "2026-10-01T00:31:21+0000",
      "permalink": "https://www.threads.com/@hagenminji4/post/Dd7oLjQjDrv",
-     "views": 13,
+     "views": 15,
      "likes": 0,
      "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-02-0829-9171562099.json",
+     "product": "키친아트 뉴 티타늄 코팅 프라이팬 28cm",
+     "format": "curation",
+     "video": false,
+     "published_at": "2026-10-02T00:29:23+0000",
+     "permalink": "https://www.threads.com/@hagenminji4/post/Dd-MyyUlvBC",
+     "views": 13,
+     "likes": 0,
+     "replies": 3,
      "reposts": 0,
      "quotes": 0,
      "shares": 0
@@ -71,7 +85,7 @@
   "fresh": {
    "account": "로켓프레시 간편식 (@magdungi43)",
    "totals": {
-    "views": 42,
+    "views": 49,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -126,9 +140,23 @@
      "video": false,
      "published_at": "2026-10-01T09:49:34+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/Dd8oGAskXFi",
-     "views": 11,
+     "views": 13,
      "likes": 0,
      "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-02-1828-1310396687.json",
+     "product": "곰곰 닭갈비볶음밥 300g×2",
+     "format": "curation",
+     "video": false,
+     "published_at": "2026-10-02T10:03:11+0000",
+     "permalink": "https://www.threads.com/@magdungi43/post/Dd_OfdkFTg0",
+     "views": 17,
+     "likes": 0,
+     "replies": 4,
      "reposts": 0,
      "quotes": 0,
      "shares": 0
@@ -138,7 +166,7 @@
   "nutri": {
    "account": "영양제 (꿀템짱)",
    "totals": {
-    "views": 50,
+    "views": 39,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -151,7 +179,7 @@
      "video": false,
      "published_at": "2026-09-27T09:06:50+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DdyQCpsm9Jl",
-     "views": 2,
+     "views": 4,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -193,7 +221,7 @@
      "video": false,
      "published_at": "2026-09-27T07:03:10+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DdyB4jEFQtL",
-     "views": 8,
+     "views": 9,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -347,9 +375,51 @@
      "video": true,
      "published_at": "2026-10-01T12:06:27+0000",
      "permalink": "https://www.threads.com/@kkul394/post/Dd83usMijMt",
-     "views": 8,
+     "views": 11,
      "likes": 0,
      "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-02-1451-4926034781.json",
+     "product": "순수식품 크릴오일 58 180정",
+     "format": "tip_post",
+     "video": false,
+     "published_at": "2026-10-02T06:47:14+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/Dd-4A_YEXMd",
+     "views": 12,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-02-2041-208403063.json",
+     "product": "나우푸드 글루타티온 500mg 60정",
+     "format": "problem_solution",
+     "video": false,
+     "published_at": "2026-10-02T12:05:41+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/Dd_cdp-FIx5",
+     "views": 11,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-02-2305-26208.json",
+     "product": "나우푸드 마그네슘 캡 400mg 180정",
+     "format": "curation",
+     "video": false,
+     "published_at": "2026-10-02T14:41:05+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/Dd_uTHqG4-i",
+     "views": 1,
+     "likes": 0,
+     "replies": 4,
      "reposts": 0,
      "quotes": 0,
      "shares": 0
@@ -359,7 +429,7 @@
   "promo": {
    "account": "이벤트·프로모션 (@teugteuggassyo)",
    "totals": {
-    "views": 30,
+    "views": 59,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -386,7 +456,7 @@
      "video": true,
      "published_at": "2026-09-30T13:08:40+0000",
      "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd6aDyUAnKi",
-     "views": 11,
+     "views": 12,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -400,9 +470,23 @@
      "video": true,
      "published_at": "2026-10-01T12:50:06+0000",
      "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd88uSZk7fS",
-     "views": 14,
+     "views": 28,
      "likes": 0,
      "replies": 2,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-02-2134-7400832256.json",
+     "product": "스카치브라이트 올터치 더블액션 막대걸레 + 정전기청소포 60매",
+     "format": "promo_video",
+     "video": true,
+     "published_at": "2026-10-02T13:23:11+0000",
+     "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd_lTPdDjcH",
+     "views": 16,
+     "likes": 0,
+     "replies": 3,
      "reposts": 0,
      "quotes": 0,
      "shares": 0
