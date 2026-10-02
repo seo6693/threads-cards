@@ -438,13 +438,15 @@ def cmd_slot(project, mode=None):
         return
     if mode == "makeup":
         # Make-up for a slot that was skipped earlier today: allowed only while today's
-        # posts are still below the daily quota (number of scheduled slots).
+        # posts are fewer than the slots whose time has already passed.
         today = dt.datetime.now(KST).date().isoformat()
         n = sum(1 for folder in ("done", "queue") for f in (proj / folder).glob(today + "-*.json")
                 if not json.loads(f.read_text()).get("reply_to_media_id"))
-        quota = len(cfg.get("schedule_kst", []))
-        print(json.dumps({"slot": "makeup", "already_posted": n >= quota,
-                          "posted_today": n, "daily_quota": quota}, ensure_ascii=False))
+        now = dt.datetime.now(KST)
+        due = sum(1 for hm in cfg.get("schedule_kst", [])
+                  if now >= now.replace(hour=int(hm[:2]), minute=int(hm[3:]), second=0, microsecond=0))
+        print(json.dumps({"slot": "makeup", "already_posted": n >= due,
+                          "posted_today": n, "slots_passed_today": due}, ensure_ascii=False))
         return
     slot = current_slot(cfg)
     posted = []

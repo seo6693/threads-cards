@@ -289,7 +289,9 @@ Duplicate guard (run it right after step 0, before any browser work):
 `python3 scripts/new_post.py slot <project>` prints this run's slot and whether it was
 already posted. **Make-up run:** if the run's message says it is a 보충(make-up) run for a slot
 skipped earlier today, use `python3 scripts/new_post.py slot <project> makeup` instead; it allows
-one more post only while today's posts are below the daily quota.
+one more post only while today's posts are fewer than today's slots that have already passed.
+In a make-up run, if it says `"already_posted": true` just stop: no skip record, no browser work.
+A make-up run makes the post type of the earliest missed slot today (see config `slot_types`).
 If it prints `"blocked": true`, Meta has blocked this account's API access: stop immediately
 (no browser work, no skip record needed) and report "계정 차단 상태라 건너뜀". Only a person clears
 `projects/<project>/BLOCKED.json` after fixing the account. Only if it says `"already_posted": true` stop — another run covered this slot.
