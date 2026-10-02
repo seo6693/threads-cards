@@ -234,6 +234,15 @@
   "projects/promo/state.json",
   "projects/promo/video_patterns.json"
  ],
- "runs": [],
+ "runs": [
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-10-02T22:41:23Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37073817929",
+   "event": "push"
+  }
+ ],
  "issues": []
 }
