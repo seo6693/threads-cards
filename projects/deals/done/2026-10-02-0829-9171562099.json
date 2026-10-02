@@ -41,5 +41,15 @@
   "price": "12,800원",
   "deal_until": "2026-10-03T06:59:59+09:00",
   "deal_label": "10/3(토) 오전 7시까지",
-  "topic_tag": "쿠팡특가"
+  "topic_tag": "쿠팡특가",
+  "published_at": "2026-10-02T00:29:23+0000",
+  "result": {
+    "media_id": "18106002890246053",
+    "permalink": "https://www.threads.com/@hagenminji4/post/Dd-MyyUlvBC",
+    "reply_id": "18103298075525910",
+    "more_reply_ids": [
+      "18629336386055565",
+      "18106432100618918"
+    ]
+  }
 }
