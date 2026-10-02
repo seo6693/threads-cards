@@ -1,0 +1,46 @@
+{
+  "theme": "orange",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "골드박스 3개, 아끼는 금액 순",
+    "title": "할인율 말고\n'얼마 아끼나'로\n줄 세우면"
+  },
+  "ranks": [
+    {
+      "name": "Yzontro EMS 무선 온열 슬림벨트",
+      "short": "EMS 온열 벨트",
+      "sub": "189,000원 → 99,000원 · 리뷰 185개",
+      "price": "99,000원",
+      "badge": "90,000원 아낌",
+      "cover_value": "9만 원 아낌",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "뉴케어 구수한맛 순 200ml×24",
+      "short": "뉴케어 24팩",
+      "sub": "64,800원 → 37,410원 · 1팩 약 1,559원",
+      "price": "37,410원",
+      "badge": "27,390원 아낌",
+      "cover_value": "2.7만 원 아낌",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "에라토 크림모노 4인 홈세트 24p",
+      "short": "4인 그릇 세트",
+      "sub": "30,310원 → 18,760원 · 리뷰 8,242개",
+      "price": "18,760원",
+      "badge": "11,550원 아낌",
+      "cover_value": "1.2만 원 아낌",
+      "rank": 3,
+      "image": "p3.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3"
+  ]
+}
