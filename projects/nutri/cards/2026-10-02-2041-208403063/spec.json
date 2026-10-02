@@ -1,0 +1,43 @@
+{
+  "hook": {
+    "kicker": "글루타치온 고를 때",
+    "question": "리포좀? 필름? 1000mg?\n뭘 먼저 봐야 할까",
+    "answer": "한 알 함량 · 같이 든 성분 · 후기",
+    "layout": "question"
+  },
+  "product": {
+    "pill": "1캡슐 500mg",
+    "brand": "NOW Foods",
+    "name": "나우푸드 글루타티온 500mg",
+    "sub": "베지캡슐 60정 · 밀크씨슬·알파리포산 함께",
+    "badge_top": "정가 27,450원",
+    "badge_price": "24,970원"
+  },
+  "reviews": {
+    "title": "먼저 먹어본 사람들 반응",
+    "big": "84%",
+    "caption": "상품평 10,799개 중 별점 '최고'",
+    "quotes": [
+      [
+        "캡슐이 조금 크지만 삼키기 어렵진 않아요",
+        "목 넘김"
+      ],
+      [
+        "특유의 냄새가 심하지 않아요",
+        "냄새"
+      ],
+      [
+        "공복에 먹어도 속쓰림은 없었어요",
+        "복용감"
+      ]
+    ],
+    "footer": "효능 '아주 만족' 62% · 꾸준히 먹는 쪽이라는 후기도"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product",
+    "reviews"
+  ]
+}
