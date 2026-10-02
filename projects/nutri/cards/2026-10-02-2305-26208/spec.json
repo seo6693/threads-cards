@@ -1,0 +1,57 @@
+{
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "마그네슘 4종 비교",
+    "title": "한 알에 얼마?\n1정당 가격 순위"
+  },
+  "ranks": [
+    {
+      "name": "나우푸드 마그네슘 캡 400mg 180정",
+      "short": "나우푸드 180정",
+      "sub": "리뷰 1만3,659개 · 해외배송(배송비 별도)",
+      "price": "20,040원",
+      "badge": "1정당 약 111원",
+      "cover_value": "111원",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "뉴트리디데이 프리미엄 마그네슘 400 90정",
+      "short": "뉴트리디데이 90정",
+      "sub": "리뷰 1만3,715개 · 정가 21,500원",
+      "price": "10,900원",
+      "badge": "1정당 약 121원",
+      "cover_value": "121원",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "닥터스베스트 마그네슘 240정",
+      "short": "닥터스베스트 240정",
+      "sub": "리뷰 8,827개 · 라벨 1회분 200mg 표기",
+      "price": "34,480원",
+      "badge": "1정당 약 144원",
+      "cover_value": "144원",
+      "rank": 3,
+      "image": "p3.jpg"
+    },
+    {
+      "name": "세노비스 마그네슘 90정",
+      "short": "세노비스 90정",
+      "sub": "리뷰 4만2,435개 · 정가 28,000원",
+      "price": "16,030원",
+      "badge": "1정당 약 178원",
+      "cover_value": "178원",
+      "rank": 4,
+      "image": "p4.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3",
+    "rank4"
+  ]
+}
