@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "오메가3 통 뒷면\n이 3줄은 꼭 읽기",
+    "items": [
+      "음식과 함께 먹기",
+      "실온·건조·빛 피해 보관",
+      "처방약 복용 중이면 상담"
+    ],
+    "note": "예시: 스포츠리서치 라벨 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "예시로 본 제품",
+    "brand": "Sports Research",
+    "name": "오메가-3 트리플 스트렝스",
+    "sub": "피쉬오일 1250mg 중 오메가-3 1040mg · 90정",
+    "badge_top": "리뷰 87,673개",
+    "badge_price": "29,360원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
