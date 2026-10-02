@@ -67,7 +67,10 @@ def build(proj):
         for i, mp in enumerate(d.get("more_products") or [], 2):
             items.append({"name": mp["product_name"], "price": mp.get("price", ""), "link": mp["link"],
                           "img": img_for(proj, slug, f"p{i}")})
-        rows.append((t, items, d.get("deal_label")))
+        deal = d.get("deal_label")
+        if deal and d.get("deal_until") and dt.datetime.fromisoformat(d["deal_until"]) < dt.datetime.now(KST):
+            deal = "특가 마감 · 지금 가격은 들어가서 확인"
+        rows.append((t, items, deal))
     days = {}
     for t, items, deal in rows:
         days.setdefault(t.strftime("%m/%d"), []).append((items, deal))
