@@ -1,0 +1,57 @@
+{
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "쿠팡 판매가 기준 · 100g당 가격",
+    "title": "냉동 볶음밥·주먹밥 4종 가성비 순위"
+  },
+  "ranks": [
+    {
+      "name": "곰곰 닭갈비볶음밥 300g×2",
+      "short": "곰곰 닭갈비볶음밥",
+      "sub": "한 봉지 약 2,345원 · 리뷰 3만 6천여 개",
+      "price": "4,690원",
+      "badge": "100g당 782원",
+      "cover_value": "782원",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "곰곰 새우 볶음밥 250g×2",
+      "short": "곰곰 새우 볶음밥",
+      "sub": "정가 7,900원 → 40% 할인 · 리뷰 11만 7천여 개",
+      "price": "4,730원",
+      "badge": "100g당 946원",
+      "cover_value": "946원",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "쉐푸드 참치마요 삼각김밥 3개입",
+      "short": "참치마요 삼각김밥",
+      "sub": "330g · 1개 1,660원꼴 · '맛있어요' 80%",
+      "price": "4,980원",
+      "badge": "100g당 1,509원",
+      "cover_value": "1,509원",
+      "rank": 3,
+      "image": "p3.jpg"
+    },
+    {
+      "name": "햇반 김치치즈 주먹밥 500g",
+      "short": "햇반 김치치즈 주먹밥",
+      "sub": "'조리가 간편해요' 94% · 리뷰 3만 8천여 개",
+      "price": "7,980원",
+      "badge": "100g당 1,596원",
+      "cover_value": "1,596원",
+      "rank": 4,
+      "image": "p4.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3",
+    "rank4"
+  ]
+}
