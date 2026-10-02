@@ -387,8 +387,9 @@ def cmd_queue(project, draft_path):
             minutes=random.randint(DELAY_MIN, DELAY_MAX))).isoformat(timespec="seconds"),
     }
     if more:
-        first = d.get("reply_text") or d["product_name"]
-        post["reply"] = f"1) {first}\n{d['link']}\n{note}"
+        intro = f"{d['reply_text']}\n" if d.get("reply_text") else ""
+        price = f" {d['price']}" if d.get("price") else ""
+        post["reply"] = f"{intro}1) {d['product_name']}{price}\n{d['link']}\n{note}"
         post["replies"] = [post["reply"]] + [
             f"{i}) {mp.get('line') or mp['product_name']}\n{mp['link']}" for i, mp in enumerate(more, 2)]
         post["more_product_ids"] = [str(mp["product_id"]) for mp in more]
