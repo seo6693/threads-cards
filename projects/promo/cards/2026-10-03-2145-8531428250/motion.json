@@ -1,0 +1,26 @@
+{
+  "name": "필립스 고용량 멀티탭 4000W 4구 3m",
+  "badge_price": "19,700원",
+  "from_price": 24900,
+  "to_price": 19700,
+  "stamp": "20%↓",
+  "event_name": "공9위크 SALE",
+  "event_period": "",
+  "feature": "4000W 과부하차단",
+  "stats": [
+    [
+      "리뷰",
+      2996,
+      "개"
+    ],
+    [
+      "'아주 견고해요'",
+      80,
+      "%"
+    ]
+  ],
+  "cta": "첫 댓글에 링크",
+  "palette": "lime",
+  "product_image": "product.jpg",
+  "banner_image": "banner.jpg"
+}

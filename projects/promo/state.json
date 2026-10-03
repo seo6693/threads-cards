@@ -1,6 +1,7 @@
 {
-  "next_keyword": 5,
+  "next_keyword": 0,
   "recent_formats": [
+    "promo_video",
     "promo_video",
     "promo_video",
     "promo_video",
@@ -12,9 +13,11 @@
     "yellow",
     "lime",
     "pink",
-    "cyan"
+    "cyan",
+    "lime"
   ],
   "recent_post_types": [
+    "hero",
     "hero",
     "hero"
   ]
