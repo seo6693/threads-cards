@@ -1,10 +1,11 @@
 {
-  "next_keyword": 6,
+  "next_keyword": 7,
   "recent_formats": [
     "price_motion",
     "quick_pick",
     "review_digest",
     "price_motion",
+    "curation",
     "curation",
     "curation"
   ],
@@ -16,6 +17,7 @@
     "lime"
   ],
   "recent_post_types": [
+    "curation",
     "curation",
     "curation"
   ]

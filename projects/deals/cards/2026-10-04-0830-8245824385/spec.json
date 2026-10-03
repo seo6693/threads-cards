@@ -1,0 +1,46 @@
+{
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "오늘 골드박스 · 쿠팡판매가 기준",
+    "title": "골드박스 3개,\n리뷰 많은 순으로"
+  },
+  "ranks": [
+    {
+      "name": "조지아 크래프트 아메리카노 470ml 24병",
+      "short": "조지아 아메리카노 24병",
+      "sub": "리뷰 28,513개 · 1병 약 908원",
+      "price": "21,780원",
+      "badge": "52% 할인",
+      "cover_value": "리뷰 2.8만",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "퍼실 라벤더젤 드럼용 1.8L 2개",
+      "short": "퍼실 라벤더젤 2개",
+      "sub": "리뷰 14,313개 · 향 '아주만족' 94%",
+      "price": "19,900원",
+      "badge": "53% 할인",
+      "cover_value": "리뷰 1.4만",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "알텐바흐 헥사 통5중 프라이팬 22cm",
+      "short": "알텐바흐 프라이팬 22cm",
+      "sub": "리뷰 8,282개 · 정가보다 24,440원↓",
+      "price": "38,000원",
+      "badge": "39% 할인",
+      "cover_value": "리뷰 8천",
+      "rank": 3,
+      "image": "p3.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3"
+  ]
+}
