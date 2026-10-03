@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "루테인 박스\n여기 세 군데만",
+    "items": [
+      "500mg은 캡슐 한 알 무게",
+      "루테인 mg은 뒷면 기능정보",
+      "주의 문구 3줄 확인"
+    ],
+    "note": "식약처 루테인 재평가(2023) 반영 문구 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "예시로 본 제품",
+    "brand": "종근당건강",
+    "name": "아이클리어 루테인지아잔틴",
+    "sub": "30정 × 3개 (90정)",
+    "badge_top": "상품평 19만 개",
+    "badge_price": "22,900원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
