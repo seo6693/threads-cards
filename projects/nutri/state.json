@@ -1,25 +1,27 @@
 {
-  "next_keyword": 3,
+  "next_keyword": 4,
   "recent_formats": [
-    "buying_guide",
     "price_drop",
     "price_motion",
     "tip_post",
     "problem_solution",
     "curation",
     "tip_post",
-    "curation"
+    "curation",
+    "price_motion"
   ],
   "recent_video_styles": [
     "slam",
     "slot",
     "receipt",
-    "split"
+    "split",
+    "slam"
   ],
   "recent_palettes": [
     "yellow",
     "pink",
-    "cyan"
+    "cyan",
+    "yellow"
   ],
   "recent_post_types": [
     "hero",
@@ -27,6 +29,7 @@
     "hero",
     "curation",
     "tip",
-    "curation"
+    "curation",
+    "hero"
   ]
 }

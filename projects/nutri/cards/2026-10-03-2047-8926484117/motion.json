@@ -1,0 +1,30 @@
+{
+  "hook": [
+    "비타민D",
+    "한 알에",
+    "얼마",
+    "내세요?"
+  ],
+  "unit": "한 알",
+  "from_price": 100,
+  "to_price": 59,
+  "stamp": "41%↓",
+  "name": "네이처홀릭 비타민D3 5000IU 180정",
+  "badge_price": "10,600원",
+  "stats": [
+    [
+      "리뷰",
+      417,
+      "개"
+    ],
+    [
+      "별점 '최고'",
+      93,
+      "%"
+    ]
+  ],
+  "cta": "첫 댓글에 링크",
+  "product_image": "product.jpg",
+  "style": "slam",
+  "palette": "yellow"
+}
