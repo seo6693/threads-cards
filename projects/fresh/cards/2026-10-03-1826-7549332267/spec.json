@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "냉동 고기산적\n이렇게 구우세요",
+    "items": [
+      "센 불 말고 중불 이하로",
+      "먹을 만큼만 꺼내고 바로 냉동",
+      "남으면 볶음밥·계란옷으로"
+    ],
+    "note": "구매 후기에서 자주 나온 요령",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "로켓프레시",
+    "brand": "비셰프",
+    "name": "고기산적 1kg",
+    "sub": "100g당 738원 · 100g당 230kcal",
+    "badge_top": "간편해요 92%",
+    "badge_price": "7,380원"
+  },
+  "theme": "teal2",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
