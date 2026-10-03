@@ -242,7 +242,8 @@ def cmd_queue(project, draft_path):
     allowed = cfg.get("formats") or list(FORMATS)
     if fmt not in FORMATS or fmt not in allowed:
         errors.append(f"'format' must be one of {allowed}")
-    elif len(allowed) > 1 and fmt in state.get("recent_formats", [])[-2:]:
+    elif (len(allowed) > 1 and fmt in state.get("recent_formats", [])[-2:]
+          and fmt != _post_plan(cfg, state)["format"]):  # the slot's own type (curation/tip) is always allowed
         errors.append(f"format '{fmt}' was used in one of the last 2 posts; pick another")
     # Anti-copy: the opening and the body must not look like recent posts.
     fl = first_line(text)

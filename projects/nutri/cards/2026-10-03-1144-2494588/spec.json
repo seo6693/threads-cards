@@ -1,0 +1,46 @@
+{
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "비타민D 5000IU 3종 비교",
+    "title": "한 알 값 말고\n5000IU 하루분 가격"
+  },
+  "ranks": [
+    {
+      "name": "닥터스베스트 비타민D3 5000IU 360정",
+      "short": "닥터스베스트 360정",
+      "sub": "1정 5000IU · 리뷰 7,144개 · 해외배송",
+      "price": "16,120원",
+      "badge": "하루분 약 45원",
+      "cover_value": "45원",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "뉴트리가든 비타민D3 5000IU 180정",
+      "short": "뉴트리가든 180정",
+      "sub": "1정 125μg(5000IU) · 리뷰 4만4,917개",
+      "price": "11,900원",
+      "badge": "하루분 약 66원",
+      "cover_value": "66원",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "99바이탈 비타민D3 5000IU 300정",
+      "short": "99바이탈 300정",
+      "sub": "1정 2,500IU(판매자 답변) · 리뷰 3,877개",
+      "price": "10,900원",
+      "badge": "2정 기준 약 73원",
+      "cover_value": "73원",
+      "rank": 3,
+      "image": "p3.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3"
+  ]
+}
