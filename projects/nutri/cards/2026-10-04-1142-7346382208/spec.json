@@ -1,0 +1,57 @@
+{
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "리뷰 1만 개 넘는 밀크씨슬 4종",
+    "title": "1정당 가격 순위"
+  },
+  "ranks": [
+    {
+      "name": "고려은단 퓨어 밀크씨슬 120정",
+      "short": "고려은단 퓨어",
+      "sub": "단일 제품 · 리뷰 1.2만",
+      "price": "16,900원",
+      "badge": "1정 141원",
+      "cover_value": "141원",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "자연의품격 건강한 간 밀크씨슬 150정",
+      "short": "자연의품격",
+      "sub": "비타민B군 복합 · 리뷰 7.8만",
+      "price": "21,500원",
+      "badge": "1정 143원",
+      "cover_value": "143원",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "뉴트리디데이 밀크씨슬 골드 90정",
+      "short": "뉴트리디데이 골드",
+      "sub": "리뷰 4.3만 · 90정 1통",
+      "price": "12,900원",
+      "badge": "1정 143원",
+      "cover_value": "143원",
+      "rank": 3,
+      "image": "p3.jpg"
+    },
+    {
+      "name": "종근당건강 헬씨칸 로얄 30정×3",
+      "short": "헬씨칸 로얄",
+      "sub": "리뷰 3.9만 · 30정 3통 구성",
+      "price": "17,700원",
+      "badge": "1정 197원",
+      "cover_value": "197원",
+      "rank": 4,
+      "image": "p4.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3",
+    "rank4"
+  ]
+}
