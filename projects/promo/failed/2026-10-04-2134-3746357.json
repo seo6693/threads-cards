@@ -45,5 +45,7 @@
   ],
   "link": "https://link.coupang.com/a/hzJBzgkzM4",
   "price": "11,250원",
-  "topic_tag": "쿠팡기획전"
+  "topic_tag": "쿠팡기획전",
+  "published_at": "2026-10-04T13:40:01+0000",
+  "error": "POST 38701810562767501/threads -> HTTP 400: {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A9fwbrqHZeC2AMmgAdTYzL-\"}}"
 }
