@@ -302,6 +302,14 @@
    "name": "Publish Threads posts",
    "status": "completed",
    "conclusion": "success",
+   "created_at": "2026-10-04T03:11:16Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37173340125",
+   "event": "workflow_dispatch"
+  },
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
    "created_at": "2026-10-04T02:42:34Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37171883352",
    "event": "push"
@@ -353,14 +361,6 @@
    "created_at": "2026-10-03T12:46:51Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37123979375",
    "event": "push"
-  },
-  {
-   "name": "Publish Threads posts",
-   "status": "completed",
-   "conclusion": "success",
-   "created_at": "2026-10-03T12:35:53Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37123388844",
-   "event": "workflow_dispatch"
   }
  ],
  "issues": []
