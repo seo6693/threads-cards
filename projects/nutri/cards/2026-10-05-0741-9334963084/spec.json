@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "비타민C 1000mg\n먹기 전 체크 3가지",
+    "items": [
+      "하루 총량 합산 (상한 2,000mg)",
+      "공복보다 식후가 편했다는 후기",
+      "빛·습기 피해서 보관"
+    ],
+    "note": "기준치 100mg 대비 한 알 = 1,000%",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "예시 제품",
+    "brand": "고려은단",
+    "name": "비타민C 1000",
+    "sub": "180정 · 1정 1,000mg",
+    "badge_top": "상품평 31만+",
+    "badge_price": "17,900원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
