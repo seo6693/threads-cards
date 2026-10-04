@@ -1,36 +1,38 @@
 {
-  "next_keyword": 6,
+  "next_keyword": 7,
   "recent_formats": [
-    "tip_post",
     "problem_solution",
     "curation",
     "tip_post",
     "curation",
     "price_motion",
     "tip_post",
-    "curation"
+    "curation",
+    "price_motion"
   ],
   "recent_video_styles": [
     "slam",
     "slot",
     "receipt",
     "split",
-    "slam"
+    "slam",
+    "slot"
   ],
   "recent_palettes": [
     "yellow",
     "pink",
     "cyan",
-    "yellow"
+    "yellow",
+    "lime"
   ],
   "recent_post_types": [
-    "tip",
     "hero",
     "curation",
     "tip",
     "curation",
     "hero",
     "tip",
-    "curation"
+    "curation",
+    "hero"
   ]
 }
