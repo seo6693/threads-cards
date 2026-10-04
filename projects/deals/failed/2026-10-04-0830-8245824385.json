@@ -41,5 +41,7 @@
   "price": "21,780원",
   "deal_until": "2026-10-05T07:00:01+09:00",
   "deal_label": "10/5(월) 오전 7시까지",
-  "topic_tag": "쿠팡특가"
+  "topic_tag": "쿠팡특가",
+  "published_at": "2026-10-04T00:17:10+0000",
+  "error": "POST 29440420288898544/threads -> HTTP 400: {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AfX1eyhJoQoTc2QDY6NPPdd\"}}"
 }
