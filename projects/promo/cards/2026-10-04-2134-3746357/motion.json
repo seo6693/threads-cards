@@ -1,0 +1,26 @@
+{
+  "name": "사랑해 사랑해 사랑해",
+  "short": "사랑해 사랑해 사랑해",
+  "sub": "보물창고 · 그림책",
+  "badge_price": "11,250원",
+  "from_price": "12,500",
+  "stamp": "10% 할인",
+  "stats": [
+    [
+      "리뷰",
+      1636,
+      "개"
+    ],
+    [
+      "'읽기 편해요'",
+      85,
+      "%"
+    ]
+  ],
+  "event_name": "(주)푸른책들 행사 모음전",
+  "event_period": "",
+  "cta": "첫 댓글에 링크",
+  "palette": "yellow",
+  "product_image": "product.jpg",
+  "banner_image": "banner.jpg"
+}
