@@ -228,6 +228,16 @@
   "projects/nutri/cards/2026-10-05-0741-9334963084/card2_product.jpg",
   "projects/nutri/cards/2026-10-05-0741-9334963084/product.jpg",
   "projects/nutri/cards/2026-10-05-0741-9334963084/spec.json",
+  "projects/nutri/cards/2026-10-05-1145-9697477655/card1_cover.jpg",
+  "projects/nutri/cards/2026-10-05-1145-9697477655/card2_rank1.jpg",
+  "projects/nutri/cards/2026-10-05-1145-9697477655/card3_rank2.jpg",
+  "projects/nutri/cards/2026-10-05-1145-9697477655/card4_rank3.jpg",
+  "projects/nutri/cards/2026-10-05-1145-9697477655/card5_rank4.jpg",
+  "projects/nutri/cards/2026-10-05-1145-9697477655/p2.jpg",
+  "projects/nutri/cards/2026-10-05-1145-9697477655/p3.jpg",
+  "projects/nutri/cards/2026-10-05-1145-9697477655/p4.jpg",
+  "projects/nutri/cards/2026-10-05-1145-9697477655/product.jpg",
+  "projects/nutri/cards/2026-10-05-1145-9697477655/spec.json",
   "projects/nutri/config.json",
   "projects/nutri/done/2026-09-27-1754-7458810098.json",
   "projects/nutri/done/2026-09-27-1954-6586372374.json",
@@ -258,6 +268,7 @@
   "projects/nutri/failed/2026-09-28-0755-8123061158.json",
   "projects/nutri/failed/2026-09-28-0957-7156986260.json",
   "projects/nutri/linkbank.json",
+  "projects/nutri/queue/2026-10-05-1145-9697477655.json",
   "projects/nutri/skipped/2026-09-28-0756.json",
   "projects/nutri/skipped/2026-09-28-0958.json",
   "projects/nutri/skipped/2026-09-29-0749.json",
@@ -330,14 +341,6 @@
    "created_at": "2026-10-04T22:41:28Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37240969299",
    "event": "push"
-  },
-  {
-   "name": "Publish Threads posts",
-   "status": "completed",
-   "conclusion": "failure",
-   "created_at": "2026-10-04T13:39:53Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37206417901",
-   "event": "workflow_dispatch"
   }
  ],
  "issues": []
