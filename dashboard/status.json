@@ -355,10 +355,66 @@
   {
    "name": "Publish Threads posts",
    "status": "completed",
-   "conclusion": "success",
-   "created_at": "2026-10-05T11:41:13Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37304525323",
-   "event": "push"
+   "conclusion": "failure",
+   "created_at": "2026-10-05T21:10:23Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37374217914",
+   "event": "schedule"
+  },
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "failure",
+   "created_at": "2026-10-05T20:58:23Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37373015709",
+   "event": "schedule"
+  },
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "failure",
+   "created_at": "2026-10-05T20:40:40Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37371219292",
+   "event": "schedule"
+  },
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "failure",
+   "created_at": "2026-10-05T20:23:41Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37369450491",
+   "event": "schedule"
+  },
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "failure",
+   "created_at": "2026-10-05T20:04:46Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37367495797",
+   "event": "schedule"
+  },
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "failure",
+   "created_at": "2026-10-05T19:52:28Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37366195372",
+   "event": "schedule"
+  },
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "failure",
+   "created_at": "2026-10-05T19:39:35Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37364826586",
+   "event": "schedule"
+  },
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "failure",
+   "created_at": "2026-10-05T19:22:57Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37362994652",
+   "event": "schedule"
   }
  ],
  "issues": []
