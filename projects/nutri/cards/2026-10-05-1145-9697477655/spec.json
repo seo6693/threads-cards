@@ -1,0 +1,57 @@
+{
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "판매가 ÷ 총 정 수 (쿠폰 제외)",
+    "title": "콜라겐 알약 4종 1정당 가격"
+  },
+  "ranks": [
+    {
+      "name": "99바이탈 초저분자 피쉬콜라겐",
+      "short": "99바이탈 360정",
+      "sub": "360정 · 1정 250mg",
+      "price": "1정 약 30원",
+      "badge": "1정당 최저",
+      "cover_value": "약 30원",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "홀리데이즈 프리미엄 콜라겐",
+      "short": "홀리데이즈 120정",
+      "sub": "120정 · 1정 500mg · 상품평 3만6천+",
+      "price": "1정 약 83원",
+      "badge": "리뷰 최다",
+      "cover_value": "약 83원",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "헬스프랜드 저분자 피쉬콜라겐",
+      "short": "헬스프랜드 360정",
+      "sub": "180정×2 · 1정 900mg",
+      "price": "1정 약 83원",
+      "badge": "1정 무게 최대",
+      "cover_value": "약 83원",
+      "rank": 3,
+      "image": "p3.jpg"
+    },
+    {
+      "name": "셀로렌 피쉬콜라겐 펩타이드",
+      "short": "셀로렌 120정×2",
+      "sub": "240정 · 1정 450mg · 비오틴 등 복합",
+      "price": "1정 약 116원",
+      "badge": "복합 구성",
+      "cover_value": "약 116원",
+      "rank": 4,
+      "image": "p4.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3",
+    "rank4"
+  ]
+}
