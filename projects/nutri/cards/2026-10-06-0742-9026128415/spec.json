@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "코큐텐 라벨,\n이 3줄은 꼭 읽기",
+    "items": [
+      "항응고제 먹는다면 먼저 상담",
+      "은박이 캡슐에 붙어 나오는지 확인",
+      "캡슐끼리 붙어도 품질 이상은 아님"
+    ],
+    "note": "고려은단 코엔자임Q10 라벨 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "예시로 본 제품",
+    "brand": "고려은단",
+    "name": "코엔자임Q10 90정",
+    "sub": "1일 1캡슐 · 코엔자임Q10 100mg",
+    "badge_top": "상품평 5,932개",
+    "badge_price": "17,900원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
