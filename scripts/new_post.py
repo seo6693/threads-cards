@@ -391,8 +391,17 @@ def cmd_queue(project, draft_path):
         intro = f"{d['reply_text']}\n" if d.get("reply_text") else ""
         price = f" {d['price']}" if d.get("price") else ""
         post["reply"] = f"{intro}1) {d['product_name']}{price}\n{d['link']}\n{note}"
+        # Several link comments in a row from a new account looked like spam to Meta (two accounts
+        # were checkpointed on 10/4). Only `max_link_replies` comments carry a link; the other
+        # products are listed in one plain comment that points to the profile link page.
+        max_links = int(cfg.get("max_link_replies", 1))
+        linked = more[:max(0, max_links - 1)]
+        rest = more[len(linked):]
         post["replies"] = [post["reply"]] + [
-            f"{i}) {mp.get('line') or mp['product_name']}\n{mp['link']}" for i, mp in enumerate(more, 2)]
+            f"{i}) {mp.get('line') or mp['product_name']}\n{mp['link']}" for i, mp in enumerate(linked, 2)]
+        if rest:
+            names = "\n".join(f"{i}) {mp['product_name']}" for i, mp in enumerate(rest, 2 + len(linked)))
+            post["replies"].append(f"{names}\n→ 나머지 링크는 프로필 링크 '상품 모음'에 순서대로 있어요")
         post["more_product_ids"] = [str(mp["product_id"]) for mp in more]
         post["more_products"] = [{"product_id": str(mp["product_id"]), "product_name": mp["product_name"],
                                   "link": mp["link"], "price": mp.get("price", "")} for mp in more]

@@ -72,5 +72,6 @@
     "price_motion",
     "curation",
     "tip_post"
-  ]
+  ],
+  "max_link_replies": 1
 }

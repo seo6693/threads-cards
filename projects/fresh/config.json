@@ -87,5 +87,6 @@
     "18:22": "rotate",
     "12:22": "curation",
     "15:52": "tip"
-  }
+  },
+  "max_link_replies": 1
 }

@@ -51,7 +51,8 @@ Every post carries products, but the post itself must be worth reading. Each slo
   `price`), others in `more_products: [{product_id, product_name, link, image, price, line}]` (2–4).
   `cards: {"cover": {"kicker", "title"}, "ranks": [{name, short, sub, price, badge, cover_value} × N, in rank
   order, main first]}` — no `cover.items` (built from ranks). Body: the ranking logic + 1 honest caveat +
-  a question. Comments become `1) … link`, `2) … link`, … automatically.
+  a question. Only the first comment carries a link (`max_link_replies`); the other products are listed in one
+  plain comment pointing to the profile link page (shop page), where all their links are. Body: say "전체 링크는 프로필 링크에".
 - **tip** (`format: tip_post`) — the body is genuinely useful information for the account's topic
   (보관법, 조리법, 먹는 시간·같이 먹으면 안 되는 조합, 고르는 기준, 계절 살림 팁…), only facts you can back
   with the product page, official notices or many reviews (영양제: 건강기능식품 표현 규정 지키기, 효능 단정 금지).

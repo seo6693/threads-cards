@@ -78,5 +78,6 @@
     "14:22": "hero",
     "17:12": "hero"
   },
-  "hero_more_products": "2-3 (같은 행사 다른 추천 상품, 댓글 2)~4)로)"
+  "hero_more_products": "2-3 (같은 행사 다른 추천 상품, 댓글 2)~4)로)",
+  "max_link_replies": 1
 }
