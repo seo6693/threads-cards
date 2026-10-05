@@ -1,0 +1,68 @@
+{
+  "theme": "teal",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "냉동만두 5종 · 판매가 ÷ 중량",
+    "title": "100g당 가격\n싼 순서대로"
+  },
+  "ranks": [
+    {
+      "name": "해태 고향만두 1.8kg",
+      "short": "고향만두 1.8kg",
+      "sub": "리뷰 17만 개 · '맛있어요' 78%",
+      "price": "12,650원",
+      "badge": "100g당 703원",
+      "cover_value": "703원",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "개성 왕만두 1.2kg",
+      "short": "개성 왕만두 1.2kg",
+      "sub": "리뷰 2.3만 개 · '맛있어요' 80%",
+      "price": "8,980원",
+      "badge": "100g당 748원",
+      "cover_value": "748원",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "풀무원 얇은피 김치만두 1kg",
+      "short": "얇은피 김치만두 1kg",
+      "sub": "리뷰 7.3만 개 · '맛있어요' 74%",
+      "price": "10,510원",
+      "badge": "100g당 1,051원",
+      "cover_value": "1,051원",
+      "rank": 3,
+      "image": "p3.jpg"
+    },
+    {
+      "name": "풀무원 얄피꽉찬 쌀 물만두 1kg",
+      "short": "얄피꽉찬 물만두 1kg",
+      "sub": "리뷰 4.7만 개 · '맛있어요' 86%",
+      "price": "10,800원",
+      "badge": "100g당 1,080원",
+      "cover_value": "1,080원",
+      "rank": 4,
+      "image": "p4.jpg"
+    },
+    {
+      "name": "신선설농탕 신선왕만두 490g",
+      "short": "신선왕만두 490g",
+      "sub": "리뷰 1.1만 개 · '맛있어요' 85%",
+      "price": "6,300원",
+      "badge": "100g당 1,286원",
+      "cover_value": "1,286원",
+      "rank": 5,
+      "image": "p5.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3",
+    "rank4",
+    "rank5"
+  ]
+}
