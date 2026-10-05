@@ -1,0 +1,30 @@
+{
+  "hook": [
+    "아연",
+    "한 알값",
+    "반으로",
+    "줄었다?"
+  ],
+  "unit": "한 알",
+  "from_price": 290,
+  "to_price": 148,
+  "stamp": "49%↓",
+  "name": "GNC 아연30 100정",
+  "badge_price": "14,750원",
+  "stats": [
+    [
+      "리뷰",
+      1959,
+      "개"
+    ],
+    [
+      "'복용 아주 편해요'",
+      84,
+      "%"
+    ]
+  ],
+  "cta": "첫 댓글에 링크",
+  "product_image": "product.jpg",
+  "style": "receipt",
+  "palette": "cyan"
+}
