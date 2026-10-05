@@ -1,9 +1,9 @@
 {
- "collected_at": "2026-10-04T20:41:01+0000",
+ "collected_at": "2026-10-05T15:25:40+0000",
  "projects": {
   "deals": {
    "account": "특가 (하겐민지)",
-   "totals": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AxB-kbQ08mY608GJApPscUx\"}}",
+   "totals": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AMG2ibUO-VYyE_GNHXPj93y\"}}",
    "posts": [
     {
      "file": "2026-09-28-2111-6746052927.json",
@@ -12,7 +12,7 @@
      "video": true,
      "published_at": "2026-09-28T12:27:19+0000",
      "permalink": "https://www.threads.com/@hagenminji4/post/Dd1Luy2Ecdt",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"ALoTIbZ2iUbOwFPDfckBBXH\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AuyCK9yjmNGw4E0F084EaZx\"}}"
     },
     {
      "file": "2026-09-29-1217-8261290138.json",
@@ -21,7 +21,7 @@
      "video": false,
      "published_at": "2026-09-29T03:51:27+0000",
      "permalink": "https://www.threads.com/@hagenminji4/post/Dd21fL9kcHm",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"ATvyQ8LMdYHk7wbxr2pngoQ\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Akt5JBot1yN795quo7qVBEp\"}}"
     },
     {
      "file": "2026-09-30-0826-8548508229.json",
@@ -30,7 +30,7 @@
      "video": false,
      "published_at": "2026-09-30T00:04:19+0000",
      "permalink": "https://www.threads.com/@hagenminji4/post/Dd5AV7hjzPd",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"ACC5u0dcnW0QuQTceRw2hZI\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AsqWB_ZOyZQMT6E4wVC5aZF\"}}"
     },
     {
      "file": "2026-10-01-0829-8266336555.json",
@@ -39,7 +39,7 @@
      "video": true,
      "published_at": "2026-10-01T00:31:21+0000",
      "permalink": "https://www.threads.com/@hagenminji4/post/Dd7oLjQjDrv",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AC_NUbkniQNpa-PgkQp6F0a\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"ARlp9RbshczNH1a7AGyRAPJ\"}}"
     },
     {
      "file": "2026-10-02-0829-9171562099.json",
@@ -48,7 +48,7 @@
      "video": false,
      "published_at": "2026-10-02T00:29:23+0000",
      "permalink": "https://www.threads.com/@hagenminji4/post/Dd-MyyUlvBC",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AGB5Ch2A86kYHCp68SgD83H\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AaV1p9-WYrcBmp_uyuVlt-F\"}}"
     },
     {
      "file": "2026-10-03-0832-9544502256.json",
@@ -57,14 +57,14 @@
      "video": false,
      "published_at": "2026-10-02T23:54:03+0000",
      "permalink": "https://www.threads.com/@hagenminji4/post/DeAtjZfmQLv",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"An5ElJGC1IVJcGGp6Gj6jsh\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A3MIAEU5HZFMDO30zVUQwq3\"}}"
     }
    ]
   },
   "fresh": {
    "account": "로켓프레시 간편식 (@magdungi43)",
    "totals": {
-    "views": 38,
+    "views": 42,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -167,13 +167,27 @@
      "reposts": 0,
      "quotes": 0,
      "shares": 0
+    },
+    {
+     "file": "2026-10-05-1831-7525648896.json",
+     "product": "해태 고향만두 1.8kg",
+     "format": "curation",
+     "video": false,
+     "published_at": "2026-10-05T10:14:19+0000",
+     "permalink": "https://www.threads.com/@magdungi43/post/DeG-LbjlWlk",
+     "views": 11,
+     "likes": 0,
+     "replies": 2,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
     }
    ]
   },
   "nutri": {
    "account": "영양제 (꿀템짱)",
    "totals": {
-    "views": 50,
+    "views": 41,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -514,12 +528,54 @@
      "reposts": 0,
      "quotes": 0,
      "shares": 0
+    },
+    {
+     "file": "2026-10-05-0741-9334963084.json",
+     "product": "고려은단 비타민C 1000 180정",
+     "format": "tip_post",
+     "video": false,
+     "published_at": "2026-10-04T22:48:21+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DeFvl0KFSAe",
+     "views": 23,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-05-1145-9697477655.json",
+     "product": "99바이탈 초저분자 피쉬콜라겐 360정",
+     "format": "curation",
+     "video": false,
+     "published_at": "2026-10-05T03:05:12+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DeGNCcnm1uu",
+     "views": 2,
+     "likes": 0,
+     "replies": 4,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-05-2040-6417930188.json",
+     "product": "GNC 아연30 100정",
+     "format": "price_motion",
+     "video": true,
+     "published_at": "2026-10-05T12:13:57+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DeHLxA0jMly",
+     "views": 10,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
     }
    ]
   },
   "promo": {
    "account": "이벤트·프로모션 (@teugteuggassyo)",
-   "totals": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AAW7vn6VlzpMg8qpgUbZV9Q\"}}",
+   "totals": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Aoc_BIEXZ2XufWxAuvGqHvw\"}}",
    "posts": [
     {
      "file": "2026-09-29-2148-9496608730.json",
@@ -528,7 +584,7 @@
      "video": true,
      "published_at": "2026-09-29T13:25:05+0000",
      "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd33IxVGio7",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Ay01Fy9c-cbF3rxEyopn0sR\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A1gQtc9DbA5JofeTg-rZeRY\"}}"
     },
     {
      "file": "2026-09-30-2132-7610965239.json",
@@ -537,7 +593,7 @@
      "video": true,
      "published_at": "2026-09-30T13:08:40+0000",
      "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd6aDyUAnKi",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AWkifTVsaAVnxrK3JQDMBnm\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Ax4Rc5ZzJQfmD0VfZpXZEWX\"}}"
     },
     {
      "file": "2026-10-01-2131-6613137782.json",
@@ -546,7 +602,7 @@
      "video": true,
      "published_at": "2026-10-01T12:50:06+0000",
      "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd88uSZk7fS",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Atho8KRFxnUJZNeVtzRVmA4\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A_tjnI8ZfPp_-62zOEqPyjw\"}}"
     },
     {
      "file": "2026-10-02-2134-7400832256.json",
@@ -555,7 +611,7 @@
      "video": true,
      "published_at": "2026-10-02T13:23:11+0000",
      "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd_lTPdDjcH",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AS9iYyrkG5tfPBCx285deXv\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AkCAxqO9DwD1KDmKL2B6n4e\"}}"
     },
     {
      "file": "2026-10-03-2145-8531428250.json",
@@ -564,7 +620,7 @@
      "video": true,
      "published_at": "2026-10-03T13:42:21+0000",
      "permalink": "https://www.threads.com/@teugteuggassyo/post/DeCMSpujUDP",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"ARGU9rYo71Ad5CQ8NUR9M8v\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AWedoI85lE_4Hs1w5JfSDaB\"}}"
     }
    ]
   }
