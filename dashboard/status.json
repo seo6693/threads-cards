@@ -391,22 +391,6 @@
    "created_at": "2026-10-05T21:10:23Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37374217914",
    "event": "schedule"
-  },
-  {
-   "name": "Publish Threads posts",
-   "status": "completed",
-   "conclusion": "failure",
-   "created_at": "2026-10-05T20:58:23Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37373015709",
-   "event": "schedule"
-  },
-  {
-   "name": "Publish Threads posts",
-   "status": "completed",
-   "conclusion": "failure",
-   "created_at": "2026-10-05T20:40:40Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37371219292",
-   "event": "schedule"
   }
  ],
  "issues": []
