@@ -1,0 +1,30 @@
+{
+  "hook": [
+    "홍삼정",
+    "한 병에",
+    "아직도",
+    "1.6만원?"
+  ],
+  "unit": "1병",
+  "from_price": 16840,
+  "to_price": 8420,
+  "stamp": "반값",
+  "name": "백년홍삼정 4병",
+  "badge_price": "33,680원",
+  "stats": [
+    [
+      "리뷰",
+      433,
+      "개"
+    ],
+    [
+      "'맛있어요'",
+      64,
+      "%"
+    ]
+  ],
+  "cta": "첫 댓글에 링크",
+  "product_image": "product.jpg",
+  "style": "split",
+  "palette": "pink"
+}
