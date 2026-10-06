@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "칼슘 먹을 때\n놓치기 쉬운 3가지",
+    "items": [
+      "한 번에 500mg 이하로 나누기",
+      "탄산칼슘은 식사와 함께",
+      "철분과는 시간 띄우기"
+    ],
+    "note": "출처: 미국 국립보건원(NIH) 영양제 안내",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "예시 제품",
+    "brand": "Solgar",
+    "name": "솔가 칼슘 600 타블렛",
+    "sub": "굴껍질 유래 칼슘 + 비타민D3 · 120정×2",
+    "badge_top": "상품평 1,013개",
+    "badge_price": "30,100원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}

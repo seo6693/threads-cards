@@ -1,14 +1,14 @@
 {
-  "next_keyword": 13,
+  "next_keyword": 14,
   "recent_formats": [
-    "curation",
     "price_motion",
     "tip_post",
     "curation",
     "price_motion",
     "tip_post",
     "curation",
-    "price_motion"
+    "price_motion",
+    "tip_post"
   ],
   "recent_video_styles": [
     "receipt",
@@ -27,13 +27,13 @@
     "pink"
   ],
   "recent_post_types": [
-    "curation",
     "hero",
     "tip",
     "curation",
     "hero",
     "tip",
     "curation",
-    "hero"
+    "hero",
+    "tip"
   ]
 }
