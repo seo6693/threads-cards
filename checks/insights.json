@@ -1,9 +1,9 @@
 {
- "collected_at": "2026-10-05T15:25:40+0000",
+ "collected_at": "2026-10-06T15:23:08+0000",
  "projects": {
   "deals": {
    "account": "특가 (하겐민지)",
-   "totals": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AMG2ibUO-VYyE_GNHXPj93y\"}}",
+   "totals": "{\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AN9MS6fWrLsBQ4x4LMafDfp\"}}",
    "posts": [
     {
      "file": "2026-09-28-2111-6746052927.json",
@@ -12,7 +12,7 @@
      "video": true,
      "published_at": "2026-09-28T12:27:19+0000",
      "permalink": "https://www.threads.com/@hagenminji4/post/Dd1Luy2Ecdt",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AuyCK9yjmNGw4E0F084EaZx\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A1w23Lwj2_9dsx-gqb697J6\"}}"
     },
     {
      "file": "2026-09-29-1217-8261290138.json",
@@ -21,7 +21,7 @@
      "video": false,
      "published_at": "2026-09-29T03:51:27+0000",
      "permalink": "https://www.threads.com/@hagenminji4/post/Dd21fL9kcHm",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Akt5JBot1yN795quo7qVBEp\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AYrlZRrEe2or342ui-CLRlh\"}}"
     },
     {
      "file": "2026-09-30-0826-8548508229.json",
@@ -30,7 +30,7 @@
      "video": false,
      "published_at": "2026-09-30T00:04:19+0000",
      "permalink": "https://www.threads.com/@hagenminji4/post/Dd5AV7hjzPd",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AsqWB_ZOyZQMT6E4wVC5aZF\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AOm-_LLnYNIvJUFXqZmCo_C\"}}"
     },
     {
      "file": "2026-10-01-0829-8266336555.json",
@@ -39,7 +39,7 @@
      "video": true,
      "published_at": "2026-10-01T00:31:21+0000",
      "permalink": "https://www.threads.com/@hagenminji4/post/Dd7oLjQjDrv",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"ARlp9RbshczNH1a7AGyRAPJ\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AUzGDBSRjFegCn8o7xo-jU8\"}}"
     },
     {
      "file": "2026-10-02-0829-9171562099.json",
@@ -48,7 +48,7 @@
      "video": false,
      "published_at": "2026-10-02T00:29:23+0000",
      "permalink": "https://www.threads.com/@hagenminji4/post/Dd-MyyUlvBC",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AaV1p9-WYrcBmp_uyuVlt-F\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AieU02yOUFhxAOwdtQRdg6G\"}}"
     },
     {
      "file": "2026-10-03-0832-9544502256.json",
@@ -57,14 +57,14 @@
      "video": false,
      "published_at": "2026-10-02T23:54:03+0000",
      "permalink": "https://www.threads.com/@hagenminji4/post/DeAtjZfmQLv",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A3MIAEU5HZFMDO30zVUQwq3\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AIxzq1kAhUlhWy3tik9IbDm\"}}"
     }
    ]
   },
   "fresh": {
    "account": "로켓프레시 간편식 (@magdungi43)",
    "totals": {
-    "views": 42,
+    "views": 22,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -77,7 +77,7 @@
      "video": false,
      "published_at": "2026-09-28T09:39:03+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/Dd04hpAoOwr",
-     "views": 23,
+     "views": 24,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -181,13 +181,27 @@
      "reposts": 0,
      "quotes": 0,
      "shares": 0
+    },
+    {
+     "file": "2026-10-06-1825-158010853.json",
+     "product": "비비고 김치 왕교자 315g",
+     "format": "tip_post",
+     "video": false,
+     "published_at": "2026-10-06T10:04:55+0000",
+     "permalink": "https://www.threads.com/@magdungi43/post/DeJh0wjm8E4",
+     "views": 8,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
     }
    ]
   },
   "nutri": {
    "account": "영양제 (꿀템짱)",
    "totals": {
-    "views": 41,
+    "views": 46,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -382,7 +396,7 @@
      "video": false,
      "published_at": "2026-10-01T02:56:35+0000",
      "permalink": "https://www.threads.com/@kkul394/post/Dd741KzjsOj",
-     "views": 12,
+     "views": 13,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -553,7 +567,7 @@
      "views": 2,
      "likes": 0,
      "replies": 4,
-     "reposts": 0,
+     "reposts": 1,
      "quotes": 0,
      "shares": 0
     },
@@ -570,12 +584,54 @@
      "reposts": 0,
      "quotes": 0,
      "shares": 0
+    },
+    {
+     "file": "2026-10-06-0742-9026128415.json",
+     "product": "고려은단 코엔자임Q10 90정",
+     "format": "tip_post",
+     "video": false,
+     "published_at": "2026-10-05T23:18:50+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DeIX4qrj3oy",
+     "views": 19,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-06-1146-7518523485.json",
+     "product": "뉴트리디데이 프리미엄 프로폴리스 180정",
+     "format": "curation",
+     "video": false,
+     "published_at": "2026-10-06T02:52:48+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DeIwZYcjUgk",
+     "views": 4,
+     "likes": 0,
+     "replies": 2,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-06-2041-147742035.json",
+     "product": "더존건강 백년홍삼정 240g 4병",
+     "format": "price_motion",
+     "video": true,
+     "published_at": "2026-10-06T12:05:27+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DeJvl4Higlj",
+     "views": 4,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
     }
    ]
   },
   "promo": {
    "account": "이벤트·프로모션 (@teugteuggassyo)",
-   "totals": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Aoc_BIEXZ2XufWxAuvGqHvw\"}}",
+   "totals": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AC9w6siNJrQ3W02p-frwPRX\"}}",
    "posts": [
     {
      "file": "2026-09-29-2148-9496608730.json",
@@ -584,7 +640,7 @@
      "video": true,
      "published_at": "2026-09-29T13:25:05+0000",
      "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd33IxVGio7",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A1gQtc9DbA5JofeTg-rZeRY\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AGlfdtmt9GXc4UI-wS4XEwj\"}}"
     },
     {
      "file": "2026-09-30-2132-7610965239.json",
@@ -593,7 +649,7 @@
      "video": true,
      "published_at": "2026-09-30T13:08:40+0000",
      "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd6aDyUAnKi",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"Ax4Rc5ZzJQfmD0VfZpXZEWX\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AN-N96UDG63SJsvk3u05V6G\"}}"
     },
     {
      "file": "2026-10-01-2131-6613137782.json",
@@ -602,7 +658,7 @@
      "video": true,
      "published_at": "2026-10-01T12:50:06+0000",
      "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd88uSZk7fS",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A_tjnI8ZfPp_-62zOEqPyjw\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AMg2WMImQp2ytuTUvgD3zoB\"}}"
     },
     {
      "file": "2026-10-02-2134-7400832256.json",
@@ -611,7 +667,7 @@
      "video": true,
      "published_at": "2026-10-02T13:23:11+0000",
      "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd_lTPdDjcH",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AkCAxqO9DwD1KDmKL2B6n4e\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AvnJtB0e7l5TpdVnxwdjc_i\"}}"
     },
     {
      "file": "2026-10-03-2145-8531428250.json",
@@ -620,7 +676,7 @@
      "video": true,
      "published_at": "2026-10-03T13:42:21+0000",
      "permalink": "https://www.threads.com/@teugteuggassyo/post/DeCMSpujUDP",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AWedoI85lE_4Hs1w5JfSDaB\"}}"
+     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A9oG3_LssQbirgcs-ucUeUG\"}}"
     }
    ]
   }
