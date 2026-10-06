@@ -1,0 +1,57 @@
+{
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "쿠팡 검색 상위 캡슐 4종",
+    "title": "프로폴리스\n1정당 가격 순위"
+  },
+  "ranks": [
+    {
+      "name": "뉴트리디데이 프리미엄 프로폴리스 180정",
+      "short": "뉴트리디데이 180정",
+      "sub": "1정 약 111원 · 리뷰 9,044개",
+      "price": "19,900원",
+      "badge": "1정 약 111원",
+      "cover_value": "약 111원",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "종근당건강 프로폴리스 플러스 60정×3",
+      "short": "종근당건강 60정×3",
+      "sub": "1정 약 119원 · 리뷰 20,843개",
+      "price": "21,390원",
+      "badge": "1정 약 119원",
+      "cover_value": "약 119원",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "내츄럴플러스 프로폴리스 1000 180정",
+      "short": "내츄럴플러스 180정",
+      "sub": "1정 약 125원 · 리뷰 24,216개",
+      "price": "22,410원",
+      "badge": "1정 약 125원",
+      "cover_value": "약 125원",
+      "rank": 3,
+      "image": "p3.jpg"
+    },
+    {
+      "name": "세노비스 프로폴리스 플러스 60정",
+      "short": "세노비스 60정",
+      "sub": "'복용 아주 편해요' 75% · 4종 중 최고",
+      "price": "18,890원",
+      "badge": "1정 약 315원",
+      "cover_value": "약 315원",
+      "rank": 4,
+      "image": "p4.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3",
+    "rank4"
+  ]
+}
