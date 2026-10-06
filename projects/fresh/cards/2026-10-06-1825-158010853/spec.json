@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "냉동만두 봉지,\n이 세 줄부터 보세요",
+    "items": [
+      "-18℃ 이하 냉동보관",
+      "한 봉지 열량 (315g 550kcal)",
+      "찜기·팬·국, 조리법 3갈래"
+    ],
+    "note": "상품 표기·구매자 리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "로켓프레시",
+    "brand": "비비고",
+    "name": "김치 왕교자 315g",
+    "sub": "100g당 1,438원 · 상품평 6만 5천여 개",
+    "badge_top": "43% 할인",
+    "badge_price": "4,530원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}

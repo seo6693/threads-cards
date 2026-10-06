@@ -1,19 +1,20 @@
 {
-  "next_keyword": 0,
+  "next_keyword": 1,
   "recent_formats": [
-    "review_digest",
     "problem_solution",
     "quick_pick",
     "buying_guide",
     "curation",
     "tip_post",
     "review_digest",
-    "curation"
+    "curation",
+    "tip_post"
   ],
   "recent_post_types": [
     "curation",
     "tip",
     "hero",
-    "curation"
+    "curation",
+    "tip"
   ]
 }
