@@ -259,6 +259,16 @@
   "projects/nutri/cards/2026-10-06-0742-9026128415/card2_product.jpg",
   "projects/nutri/cards/2026-10-06-0742-9026128415/product.jpg",
   "projects/nutri/cards/2026-10-06-0742-9026128415/spec.json",
+  "projects/nutri/cards/2026-10-06-1146-7518523485/card1_cover.jpg",
+  "projects/nutri/cards/2026-10-06-1146-7518523485/card2_rank1.jpg",
+  "projects/nutri/cards/2026-10-06-1146-7518523485/card3_rank2.jpg",
+  "projects/nutri/cards/2026-10-06-1146-7518523485/card4_rank3.jpg",
+  "projects/nutri/cards/2026-10-06-1146-7518523485/card5_rank4.jpg",
+  "projects/nutri/cards/2026-10-06-1146-7518523485/p2.jpg",
+  "projects/nutri/cards/2026-10-06-1146-7518523485/p3.jpg",
+  "projects/nutri/cards/2026-10-06-1146-7518523485/p4.jpg",
+  "projects/nutri/cards/2026-10-06-1146-7518523485/product.jpg",
+  "projects/nutri/cards/2026-10-06-1146-7518523485/spec.json",
   "projects/nutri/config.json",
   "projects/nutri/done/2026-09-27-1754-7458810098.json",
   "projects/nutri/done/2026-09-27-1954-6586372374.json",
@@ -292,6 +302,7 @@
   "projects/nutri/failed/2026-09-28-0755-8123061158.json",
   "projects/nutri/failed/2026-09-28-0957-7156986260.json",
   "projects/nutri/linkbank.json",
+  "projects/nutri/queue/2026-10-06-1146-7518523485.json",
   "projects/nutri/skipped/2026-09-28-0756.json",
   "projects/nutri/skipped/2026-09-28-0958.json",
   "projects/nutri/skipped/2026-09-29-0749.json",
@@ -403,22 +414,6 @@
    "conclusion": "failure",
    "created_at": "2026-10-05T20:04:46Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37367495797",
-   "event": "schedule"
-  },
-  {
-   "name": "Publish Threads posts",
-   "status": "completed",
-   "conclusion": "failure",
-   "created_at": "2026-10-05T19:52:28Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37366195372",
-   "event": "schedule"
-  },
-  {
-   "name": "Publish Threads posts",
-   "status": "completed",
-   "conclusion": "failure",
-   "created_at": "2026-10-05T19:39:35Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37364826586",
    "event": "schedule"
   }
  ],
