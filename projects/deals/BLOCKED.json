@@ -1,4 +1,0 @@
-{
-  "since": "2026-10-04T00:17:10+0000",
-  "error": "POST 29440420288898544/threads -> HTTP 400: {\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AfX1eyhJoQoTc2QDY6NPPdd\"}}"
-}
