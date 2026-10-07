@@ -1,0 +1,30 @@
+{
+  "hook": [
+    "비오틴",
+    "정가면",
+    "560원",
+    "지금은?"
+  ],
+  "unit": "한 알",
+  "from_price": 560,
+  "to_price": 289,
+  "stamp": "48%↓",
+  "name": "솔가 비오틴 5000 100정",
+  "badge_price": "28,890원",
+  "stats": [
+    [
+      "리뷰",
+      10821,
+      "개"
+    ],
+    [
+      "'성분 아주 만족'",
+      73,
+      "%"
+    ]
+  ],
+  "cta": "첫 댓글에 링크",
+  "product_image": "product.jpg",
+  "style": "slam",
+  "palette": "yellow"
+}
