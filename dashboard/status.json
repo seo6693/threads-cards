@@ -67,8 +67,8 @@
   "projects/fresh/done/2026-10-04-1825-6870631533.json",
   "projects/fresh/done/2026-10-05-1831-7525648896.json",
   "projects/fresh/done/2026-10-06-1825-158010853.json",
+  "projects/fresh/done/2026-10-07-1825-4567751809.json",
   "projects/fresh/linkbank.json",
-  "projects/fresh/queue/2026-10-07-1825-4567751809.json",
   "projects/fresh/state.json",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card1_hook.jpg",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card2_product.jpg",
@@ -309,14 +309,6 @@
    "conclusion": "failure",
    "created_at": "2026-10-07T03:05:06Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37565082821",
-   "event": "push"
-  },
-  {
-   "name": "Publish Threads posts",
-   "status": "completed",
-   "conclusion": "success",
-   "created_at": "2026-10-07T02:46:04Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37563552391",
    "event": "push"
   }
  ],
