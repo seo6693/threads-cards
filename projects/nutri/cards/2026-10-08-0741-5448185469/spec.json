@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "크릴오일 사기 전\n박스에서 볼 3가지",
+    "items": [
+      "인지질 % (원료 기준인지)",
+      "소비기한·개별 포장",
+      "1일 섭취량·캡슐 크기"
+    ],
+    "note": "상품 라벨·구매자 리뷰 기준 정리",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "예시 제품",
+    "brand": "FHC",
+    "name": "프리미엄 크릴오일",
+    "sub": "1,000mg × 30캡슐 · 3박스",
+    "badge_top": "상품평 4,974개",
+    "badge_price": "인지질 56% 원료"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
