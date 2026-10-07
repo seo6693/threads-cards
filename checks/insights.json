@@ -1,70 +1,10 @@
 {
- "collected_at": "2026-10-06T15:23:08+0000",
+ "collected_at": "2026-10-07T15:34:22+0000",
  "projects": {
-  "deals": {
-   "account": "특가 (하겐민지)",
-   "totals": "{\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AN9MS6fWrLsBQ4x4LMafDfp\"}}",
-   "posts": [
-    {
-     "file": "2026-09-28-2111-6746052927.json",
-     "product": "리큐 진한겔 꿉꿉한 냄새 액상세제 리필 2.1L 6개",
-     "format": "price_motion",
-     "video": true,
-     "published_at": "2026-09-28T12:27:19+0000",
-     "permalink": "https://www.threads.com/@hagenminji4/post/Dd1Luy2Ecdt",
-     "error": "{\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A1w23Lwj2_9dsx-gqb697J6\"}}"
-    },
-    {
-     "file": "2026-09-29-1217-8261290138.json",
-     "product": "깨끗한나라 순수 프리미엄 더 퍼스트 3겹 롤화장지 30m 30롤",
-     "format": "quick_pick",
-     "video": false,
-     "published_at": "2026-09-29T03:51:27+0000",
-     "permalink": "https://www.threads.com/@hagenminji4/post/Dd21fL9kcHm",
-     "error": "{\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AYrlZRrEe2or342ui-CLRlh\"}}"
-    },
-    {
-     "file": "2026-09-30-0826-8548508229.json",
-     "product": "베베앙 120 유아물티슈 캡형 120매 10개",
-     "format": "review_digest",
-     "video": false,
-     "published_at": "2026-09-30T00:04:19+0000",
-     "permalink": "https://www.threads.com/@hagenminji4/post/Dd5AV7hjzPd",
-     "error": "{\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AOm-_LLnYNIvJUFXqZmCo_C\"}}"
-    },
-    {
-     "file": "2026-10-01-0829-8266336555.json",
-     "product": "롤팬 인덕션 뉴오리지널 그레이 25cm",
-     "format": "price_motion",
-     "video": true,
-     "published_at": "2026-10-01T00:31:21+0000",
-     "permalink": "https://www.threads.com/@hagenminji4/post/Dd7oLjQjDrv",
-     "error": "{\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AUzGDBSRjFegCn8o7xo-jU8\"}}"
-    },
-    {
-     "file": "2026-10-02-0829-9171562099.json",
-     "product": "키친아트 뉴 티타늄 코팅 프라이팬 28cm",
-     "format": "curation",
-     "video": false,
-     "published_at": "2026-10-02T00:29:23+0000",
-     "permalink": "https://www.threads.com/@hagenminji4/post/Dd-MyyUlvBC",
-     "error": "{\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AieU02yOUFhxAOwdtQRdg6G\"}}"
-    },
-    {
-     "file": "2026-10-03-0832-9544502256.json",
-     "product": "Yzontro EMS 무선 온열 슬림벨트 S900Pro",
-     "format": "curation",
-     "video": false,
-     "published_at": "2026-10-02T23:54:03+0000",
-     "permalink": "https://www.threads.com/@hagenminji4/post/DeAtjZfmQLv",
-     "error": "{\"error\":{\"message\":\"Error validating access token: Session key is malformed because of invalid user id.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AIxzq1kAhUlhWy3tik9IbDm\"}}"
-    }
-   ]
-  },
   "fresh": {
    "account": "로켓프레시 간편식 (@magdungi43)",
    "totals": {
-    "views": 22,
+    "views": 10,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -189,7 +129,21 @@
      "video": false,
      "published_at": "2026-10-06T10:04:55+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/DeJh0wjm8E4",
-     "views": 8,
+     "views": 9,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-07-1825-4567751809.json",
+     "product": "하림 치킨너겟 1.2kg×2",
+     "format": "problem_solution",
+     "video": false,
+     "published_at": "2026-10-07T09:59:35+0000",
+     "permalink": "https://www.threads.com/@magdungi43/post/DeMGBdtG55b",
+     "views": 1,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -201,7 +155,7 @@
   "nutri": {
    "account": "영양제 (꿀템짱)",
    "totals": {
-    "views": 46,
+    "views": 63,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -368,7 +322,7 @@
      "video": true,
      "published_at": "2026-09-30T12:30:44+0000",
      "permalink": "https://www.threads.com/@kkul394/post/Dd6Vtx8gRqe",
-     "views": 6,
+     "views": 7,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -382,7 +336,7 @@
      "video": false,
      "published_at": "2026-09-30T23:09:42+0000",
      "permalink": "https://www.threads.com/@kkul394/post/Dd7e3fqmUJh",
-     "views": 20,
+     "views": 21,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -410,7 +364,7 @@
      "video": true,
      "published_at": "2026-10-01T12:06:27+0000",
      "permalink": "https://www.threads.com/@kkul394/post/Dd83usMijMt",
-     "views": 11,
+     "views": 12,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -508,7 +462,7 @@
      "video": false,
      "published_at": "2026-10-03T23:30:57+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DeDPrY2lLG2",
-     "views": 34,
+     "views": 35,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -592,7 +546,7 @@
      "video": false,
      "published_at": "2026-10-05T23:18:50+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DeIX4qrj3oy",
-     "views": 19,
+     "views": 20,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -606,7 +560,7 @@
      "video": false,
      "published_at": "2026-10-06T02:52:48+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DeIwZYcjUgk",
-     "views": 4,
+     "views": 5,
      "likes": 0,
      "replies": 2,
      "reposts": 0,
@@ -620,63 +574,54 @@
      "video": true,
      "published_at": "2026-10-06T12:05:27+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DeJvl4Higlj",
+     "views": 5,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-07-0741-8289178801.json",
+     "product": "솔가 칼슘 600 타블렛 120정 2개",
+     "format": "tip_post",
+     "video": false,
+     "published_at": "2026-10-06T22:49:13+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DeK5SrVmCp8",
+     "views": 16,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-07-1145-8181051045.json",
+     "product": "나우푸드 철분 36mg 베지 캡슐 90정×2",
+     "format": "curation",
+     "video": false,
+     "published_at": "2026-10-07T03:04:50+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DeLWlYkFPWF",
+     "views": 5,
+     "likes": 0,
+     "replies": 2,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-07-2040-6057670086.json",
+     "product": "솔가 비오틴 5000 100정",
+     "format": "price_motion",
+     "video": true,
+     "published_at": "2026-10-07T12:30:42+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DeMXRaojKE3",
      "views": 4,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
      "quotes": 0,
      "shares": 0
-    }
-   ]
-  },
-  "promo": {
-   "account": "이벤트·프로모션 (@teugteuggassyo)",
-   "totals": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AC9w6siNJrQ3W02p-frwPRX\"}}",
-   "posts": [
-    {
-     "file": "2026-09-29-2148-9496608730.json",
-     "product": "테팔 트렌디쿡 프라이팬 20cm",
-     "format": "promo_video",
-     "video": true,
-     "published_at": "2026-09-29T13:25:05+0000",
-     "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd33IxVGio7",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AGlfdtmt9GXc4UI-wS4XEwj\"}}"
-    },
-    {
-     "file": "2026-09-30-2132-7610965239.json",
-     "product": "쁘리엘르 윈즈 바람막이 방한 커튼",
-     "format": "promo_video",
-     "video": true,
-     "published_at": "2026-09-30T13:08:40+0000",
-     "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd6aDyUAnKi",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AN-N96UDG63SJsvk3u05V6G\"}}"
-    },
-    {
-     "file": "2026-10-01-2131-6613137782.json",
-     "product": "퀴진드마망 순수 4인 수저세트",
-     "format": "promo_video",
-     "video": true,
-     "published_at": "2026-10-01T12:50:06+0000",
-     "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd88uSZk7fS",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AMg2WMImQp2ytuTUvgD3zoB\"}}"
-    },
-    {
-     "file": "2026-10-02-2134-7400832256.json",
-     "product": "스카치브라이트 올터치 더블액션 막대걸레 + 정전기청소포 60매",
-     "format": "promo_video",
-     "video": true,
-     "published_at": "2026-10-02T13:23:11+0000",
-     "permalink": "https://www.threads.com/@teugteuggassyo/post/Dd_lTPdDjcH",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"AvnJtB0e7l5TpdVnxwdjc_i\"}}"
-    },
-    {
-     "file": "2026-10-03-2145-8531428250.json",
-     "product": "필립스 고용량멀티탭 4000W 워크탭 4구 3m",
-     "format": "promo_video",
-     "video": true,
-     "published_at": "2026-10-03T13:42:21+0000",
-     "permalink": "https://www.threads.com/@teugteuggassyo/post/DeCMSpujUDP",
-     "error": "{\"error\":{\"message\":\"Error validating access token: You cannot access the app till you log in to www.threads.com and follow the instructions given.\",\"code\":190,\"type\":\"OAuthException\",\"error_subcode\":0,\"fbtrace_id\":\"A9oG3_LssQbirgcs-ucUeUG\"}}"
     }
    ]
   }
