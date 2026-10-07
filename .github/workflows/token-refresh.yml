@@ -37,9 +37,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.SECRETS_PAT }}
           THREADS_TOKEN_NUTRI: ${{ secrets.THREADS_TOKEN_NUTRI }}
-          THREADS_TOKEN_DEALS: ${{ secrets.THREADS_TOKEN_DEALS }}
           THREADS_TOKEN_FRESH: ${{ secrets.THREADS_TOKEN_FRESH }}
-          THREADS_TOKEN_PROMO: ${{ secrets.THREADS_TOKEN_PROMO }}
         run: |
           if [ "${{ github.event_name }}" = "push" ] && grep -qi "dry" checks/refresh-request; then
             python scripts/refresh_tokens.py --dry-run
