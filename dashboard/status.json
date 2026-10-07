@@ -304,6 +304,14 @@
    "name": "Publish Threads posts",
    "status": "completed",
    "conclusion": "success",
+   "created_at": "2026-10-07T11:40:44Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37615703611",
+   "event": "push"
+  },
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
    "created_at": "2026-10-07T09:25:28Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37600508141",
    "event": "push"
