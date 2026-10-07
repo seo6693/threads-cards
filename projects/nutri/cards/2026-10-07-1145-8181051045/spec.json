@@ -1,0 +1,57 @@
+{
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "쿠팡 '철분' 검색 상위 4종",
+    "title": "철분제\n철 1mg당 가격 순위"
+  },
+  "ranks": [
+    {
+      "name": "나우푸드 철분 36mg 베지 캡슐 90정×2",
+      "short": "나우푸드 36mg 180정",
+      "sub": "1정 약 136원 · 리뷰 1,922개",
+      "price": "24,450원",
+      "badge": "1mg 약 3.8원",
+      "cover_value": "약 3.8원",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "솔가 킬레이트 철분 25mg 100정",
+      "short": "솔가 킬레이트 100정",
+      "sub": "1정 135원 · 배송비 5,000원 별도",
+      "price": "13,500원",
+      "badge": "1mg 약 5.4원",
+      "cover_value": "약 5.4원",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "나우푸드 철분 18mg 베지 캡슐 120정",
+      "short": "나우푸드 18mg 120정",
+      "sub": "1정 약 112원 · 4종 중 1정 값 최저",
+      "price": "13,380원",
+      "badge": "1mg 약 6.2원",
+      "cover_value": "약 6.2원",
+      "rank": 3,
+      "image": "p3.jpg"
+    },
+    {
+      "name": "솔가 철분 25 90정",
+      "short": "솔가 철분 25 90정",
+      "sub": "1정 약 266원 · 리뷰 25,636개",
+      "price": "23,900원",
+      "badge": "1mg 약 10.6원",
+      "cover_value": "약 10.6원",
+      "rank": 4,
+      "image": "p4.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3",
+    "rank4"
+  ]
+}
