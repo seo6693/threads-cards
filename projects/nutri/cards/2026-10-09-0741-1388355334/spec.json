@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "오메가3 살 때\n뒷면에서 볼 3가지",
+    "items": [
+      "EPA+DHA 합계 (mg)",
+      "같이 든 비타민D 중복",
+      "섭취 주의·알레르기 표시"
+    ],
+    "note": "앞면 캡슐 무게와 다른 숫자예요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "예시 라벨",
+    "brand": "순수식품",
+    "name": "rTG 오메가3 비타민D",
+    "sub": "1캡슐 1,018mg 중 EPA+DHA 600mg",
+    "badge_top": "리뷰 14,142개",
+    "badge_price": "29,760원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
