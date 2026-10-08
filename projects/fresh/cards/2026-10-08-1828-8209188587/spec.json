@@ -1,0 +1,57 @@
+{
+  "theme": "teal",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "소시지 4종 · 판매가 ÷ 중량",
+    "title": "100g당 가격\n낮은 순서대로"
+  },
+  "ranks": [
+    {
+      "name": "곰곰 온가족 비엔나 500g",
+      "short": "곰곰 비엔나 500g",
+      "sub": "리뷰 1.6만 개 · '맛있어요' 53%",
+      "price": "3,130원",
+      "badge": "100g당 626원",
+      "cover_value": "626원",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "곰곰 오리지널 부어스트 600g",
+      "short": "곰곰 부어스트 600g",
+      "sub": "리뷰 1.8만 개 · '맛있어요' 84%",
+      "price": "8,580원",
+      "badge": "100g당 1,430원",
+      "cover_value": "1,430원",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "한성 콤비부어스트 330g",
+      "short": "한성 콤비부어스트",
+      "sub": "리뷰 9,916개 · '맛있어요' 82%",
+      "price": "5,650원",
+      "badge": "100g당 1,712원",
+      "cover_value": "1,712원",
+      "rank": 3,
+      "image": "p3.jpg"
+    },
+    {
+      "name": "목우촌 주부9단 비엔나 450g",
+      "short": "목우촌 비엔나 450g",
+      "sub": "리뷰 10.7만 개 · '맛있어요' 84%",
+      "price": "7,760원",
+      "badge": "100g당 1,724원",
+      "cover_value": "1,724원",
+      "rank": 4,
+      "image": "p4.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3",
+    "rank4"
+  ]
+}
