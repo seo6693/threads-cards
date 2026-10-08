@@ -339,14 +339,6 @@
    "created_at": "2026-10-07T23:20:52Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37701745152",
    "event": "schedule"
-  },
-  {
-   "name": "Publish Threads posts",
-   "status": "completed",
-   "conclusion": "success",
-   "created_at": "2026-10-07T22:41:26Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37697765428",
-   "event": "push"
   }
  ],
  "issues": []
