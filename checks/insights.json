@@ -1,10 +1,10 @@
 {
- "collected_at": "2026-10-07T15:34:22+0000",
+ "collected_at": "2026-10-08T15:25:02+0000",
  "projects": {
   "fresh": {
    "account": "로켓프레시 간편식 (@magdungi43)",
    "totals": {
-    "views": 10,
+    "views": 11,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -143,9 +143,23 @@
      "video": false,
      "published_at": "2026-10-07T09:59:35+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/DeMGBdtG55b",
-     "views": 1,
+     "views": 3,
      "likes": 0,
      "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-08-1828-8209188587.json",
+     "product": "곰곰 온가족 비엔나 소시지 500g",
+     "format": "curation",
+     "video": false,
+     "published_at": "2026-10-08T09:52:32+0000",
+     "permalink": "https://www.threads.com/@magdungi43/post/DeOqB2HG7uW",
+     "views": 8,
+     "likes": 0,
+     "replies": 2,
      "reposts": 0,
      "quotes": 0,
      "shares": 0
@@ -155,7 +169,7 @@
   "nutri": {
    "account": "영양제 (꿀템짱)",
    "totals": {
-    "views": 63,
+    "views": 31,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -168,7 +182,7 @@
      "video": false,
      "published_at": "2026-09-27T09:06:50+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DdyQCpsm9Jl",
-     "views": 4,
+     "views": 5,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -364,7 +378,7 @@
      "video": true,
      "published_at": "2026-10-01T12:06:27+0000",
      "permalink": "https://www.threads.com/@kkul394/post/Dd83usMijMt",
-     "views": 12,
+     "views": 14,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -617,6 +631,48 @@
      "published_at": "2026-10-07T12:30:42+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DeMXRaojKE3",
      "views": 4,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-08-0741-5448185469.json",
+     "product": "FHC 프리미엄 크릴오일 30정 3개",
+     "format": "tip_post",
+     "video": false,
+     "published_at": "2026-10-08T08:22:24+0900",
+     "permalink": "https://www.threads.com/@kkul394/post/DeNhufKj8-q",
+     "views": 5,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-08-1144-8943399049.json",
+     "product": "뉴트리정 가득채운 글루타치온 57000 120정",
+     "format": "curation",
+     "video": false,
+     "published_at": "2026-10-08T03:22:52+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DeN9cGElNKD",
+     "views": 8,
+     "likes": 0,
+     "replies": 2,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-08-2040-6063894601.json",
+     "product": "덴프스 덴마크 유산균이야기 30정×2개",
+     "format": "price_motion",
+     "video": true,
+     "published_at": "2026-10-08T11:50:23+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DeO3c61DxUE",
+     "views": 5,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
