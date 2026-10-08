@@ -1,0 +1,57 @@
+{
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "글루타치온 알약 4종",
+    "title": "1정 값 순위"
+  },
+  "ranks": [
+    {
+      "name": "뉴트리정 가득채운 글루타치온 57000",
+      "short": "뉴트리정 120정",
+      "sub": "120정 · 13,900원 · 리뷰 5,307개",
+      "price": "13,900원",
+      "badge": "1정 약 116원",
+      "cover_value": "116원",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "TRUEME 리포좀 글루타치온 98%",
+      "short": "TRUEME 90정",
+      "sub": "90정 · 11,900원 · 리뷰 3,741개",
+      "price": "11,900원",
+      "badge": "1정 약 132원",
+      "cover_value": "132원",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "뉴트라업 글루타치온 맥스",
+      "short": "뉴트라업 120정",
+      "sub": "120정 · 19,150원 · 리뷰 5,435개",
+      "price": "19,150원",
+      "badge": "1정 약 160원",
+      "cover_value": "160원",
+      "rank": 3,
+      "image": "p3.jpg"
+    },
+    {
+      "name": "글루타치온 MAX 6개월분",
+      "short": "글루타치온 MAX 180정",
+      "sub": "180정 · 30,690원 · 리뷰 13,528개",
+      "price": "30,690원",
+      "badge": "1정 약 171원",
+      "cover_value": "171원",
+      "rank": 4,
+      "image": "p4.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3",
+    "rank4"
+  ]
+}
