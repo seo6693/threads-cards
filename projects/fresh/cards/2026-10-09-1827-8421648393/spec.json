@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "쌀쌀한 퇴근 후,",
+        false
+      ],
+      [
+        "국물 생각나는 사람?",
+        true
+      ]
+    ],
+    "sub": "국 끓일 힘 없다면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "즉석국 데우기 전\n확인할 3가지",
+    "items": [
+      "냄비면 2~2.5분이면 끝",
+      "전자레인지는 전용 용기에 5분",
+      "개봉 전엔 실온보관 OK"
+    ],
+    "note": "포장 표시 기준 · 짜면 물 조금 추가(리뷰 팁)",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "쌀쌀한 저녁",
+    "brand": "비비고",
+    "name": "소고기 미역국 500g",
+    "sub": "100g당 864원 · 1~2인분",
+    "badge_top": "33% 할인",
+    "badge_price": "4,320원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
