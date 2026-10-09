@@ -38,9 +38,28 @@
     }
   ],
   "order": [
+    "scene",
     "cover",
     "rank1",
     "rank2",
     "rank3"
-  ]
+  ],
+  "scene_image": "scene.jpg",
+  "scene": {
+    "lines": [
+      [
+        "주말마다",
+        false
+      ],
+      [
+        "바닥 청소 전쟁?",
+        false
+      ],
+      [
+        "로봇청소기 60%↓",
+        true
+      ]
+    ],
+    "sub": "오늘 골드박스 특가 3종 정리"
+  }
 }

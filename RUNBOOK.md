@@ -5,6 +5,10 @@ Never touch the other project's folder. Work unattended: do not ask the
 user anything; if a step cannot be done, stop and report why (nothing
 gets posted, which is fine).
 
+**Image transfer check:** the tool output only holds about 150,000 characters. If the base64 is longer, keep it in
+`window._b` and read it in pieces (`'@@B@@'+window._b.slice(0,120000)+'@@E@@'+'#'.repeat(40000)`, then `.slice(120000)`),
+join the pieces, and always confirm with `PIL.Image.open(f).load()` (it raises on a cut-off image) before using it.
+
 ## Instagram deals (`instadeal`) — Instagram only, posted by hand
 `projects/instadeal` has `"channel": "instagram_manual"`: the publisher never sends it to Threads; it only
 moves the queued post to `done/`, and `scripts/build_insta.py` puts it on
@@ -85,8 +89,8 @@ checks) → **product** (real product photo, price, unit price).
   anyone using or holding the product** (that would be a fake testimonial). One image per post (~0.25 credits).
 - Wait with `jobs_wait`, then move the image into the workspace through your browser tab (the workspace
   cannot download from that host): navigate your tab to the `result_url`, then run
-  `const i=await new Promise((r,j)=>{const x=new Image();x.crossOrigin='anonymous';x.onload=()=>r(x);x.onerror=j;x.src=location.href+'?c=1'});const c=document.createElement('canvas');c.width=i.width;c.height=i.height;c.getContext('2d').drawImage(i,0,0);'BEGIN'+c.toDataURL('image/jpeg',0.85).split(',')[1]+'END'+'#'.repeat(40000)`
-  — the result is saved to a tool-results file; decode the text between BEGIN and END with base64 into
+  `const i=await new Promise((r,j)=>{const x=new Image();x.crossOrigin='anonymous';x.onload=()=>r(x);x.onerror=j;x.src=location.href+'?c=1'});const c=document.createElement('canvas');c.width=i.width;c.height=i.height;c.getContext('2d').drawImage(i,0,0);'@@B@@'+c.toDataURL('image/jpeg',0.85).split(',')[1]+'@@E@@'+'#'.repeat(40000)`
+  — the result is saved to a tool-results file; decode the text between @@B@@ and @@E@@ (never plain BEGIN/END: 'END' can occur inside base64 and cuts the image short) with base64 into
   `/tmp/scene.jpg`. Check the image (Read) — redo once if it has text, logos, odd hands/faces.
 - If image generation is unavailable or fails twice, make a `tip_post` instead (don't skip the slot).
 
@@ -213,14 +217,14 @@ The shell cannot reach coupangcdn, so pass the image through the browser:
    (()=>{const i=document.images[0],c=document.createElement('canvas');
     c.width=i.naturalWidth;c.height=i.naturalHeight;const x=c.getContext('2d');
     x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);x.drawImage(i,0,0);
-    return 'BEGIN'+c.toDataURL('image/jpeg',0.9).split(',')[1]+'END'+'#'.repeat(40000)})()
+    return '@@B@@'+c.toDataURL('image/jpeg',0.9).split(',')[1]+'@@E@@'+'#'.repeat(40000)})()
    ```
    The padding makes the tool save the result to a file (path is in the tool message).
 3. Decode it:
    ```python
    import json,re,base64
    t=json.load(open(PATH))[0]['text']
-   open('/tmp/product.jpg','wb').write(base64.b64decode(re.search(r'BEGIN([A-Za-z0-9+/=]+)END',t).group(1)))
+   open('/tmp/product.jpg','wb').write(base64.b64decode(re.search(r'@@B@@([A-Za-z0-9+/=]+)@@E@@',t).group(1)))
    ```
 4. Look at the image (Read tool) to make sure it is the product, not a blank/banner.
 
