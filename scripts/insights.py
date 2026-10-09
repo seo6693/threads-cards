@@ -43,6 +43,7 @@ def main():
             m = {x["name"]: (x.get("values") or [{}])[0].get("value", x.get("total_value", {}).get("value"))
                  for x in r.get("data", [])}
             posts.append({"file": f.name, "product": d.get("product_name"), "format": d.get("format"),
+                          "hook_formula": d.get("hook_formula", ""), "topic_source": d.get("topic_source", ""),
                           "video": bool(d.get("video")), "published_at": d.get("published_at"),
                           "permalink": d["result"].get("permalink"), **m,
                           **({"error": r["error"]} if "error" in r else {})})
