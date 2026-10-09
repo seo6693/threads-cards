@@ -1,0 +1,77 @@
+{
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "오늘 골드박스 · 쿠폰 제외 일반 판매가",
+    "title": "골드박스 생필품 4종,\n할인율 높은 순"
+  },
+  "ranks": [
+    {
+      "name": "아리얼 퓨어풀 클렌징 티슈 80매×2",
+      "short": "아리얼 클렌징 티슈",
+      "sub": "리뷰 77,827개 · 10매당 450원",
+      "price": "7,200원",
+      "badge": "59% 할인",
+      "cover_value": "59%↓",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "코멧 순백 3겹 화장지 30m 30롤×2",
+      "short": "코멧 3겹 화장지 60롤",
+      "sub": "리뷰 927,351개 · 1롤 약 367원",
+      "price": "21,990원",
+      "badge": "45% 할인",
+      "cover_value": "45%↓",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "리벤스 스페셜 민트 유아물티슈 캡형 100매×20",
+      "short": "리벤스 물티슈 20팩",
+      "sub": "리뷰 40,006개 · 1팩 695원",
+      "price": "13,900원",
+      "badge": "44% 할인",
+      "cover_value": "44%↓",
+      "rank": 3,
+      "image": "p3.jpg"
+    },
+    {
+      "name": "리큐 진한겔 액상세제 리필 2.1L×4",
+      "short": "리큐 진한겔 세제 4개",
+      "sub": "리뷰 115,372개 · 100ml당 225원",
+      "price": "18,900원",
+      "badge": "40% 할인",
+      "cover_value": "40%↓",
+      "rank": 4,
+      "image": "p4.jpg"
+    }
+  ],
+  "order": [
+    "scene",
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3",
+    "rank4"
+  ],
+  "scene_image": "scene.jpg",
+  "scene": {
+    "lines": [
+      [
+        "10매당 450원,",
+        false
+      ],
+      [
+        "화장 지우는 값",
+        false
+      ],
+      [
+        "클렌징티슈 59%↓",
+        true
+      ]
+    ],
+    "sub": "오늘 골드박스 특가 4종 정리",
+    "ai": true
+  }
+}

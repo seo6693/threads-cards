@@ -1,14 +1,14 @@
 {
-  "next_keyword": 8,
+  "next_keyword": 9,
   "recent_formats": [
-    "price_motion",
     "quick_pick",
     "review_digest",
     "price_motion",
     "curation",
     "curation",
     "curation",
-    "curation"
+    "curation",
+    "deal_story"
   ],
   "recent_video_styles": [
     "slam",
@@ -21,6 +21,10 @@
     "curation",
     "curation",
     "curation",
-    "curation"
+    "curation",
+    "deal_story"
+  ],
+  "recent_hook_formulas": [
+    "\uc22b\uc790"
   ]
 }
