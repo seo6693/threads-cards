@@ -1,9 +1,24 @@
 # RUNBOOK — one scheduled run = one post for one project
 
-A scheduled task runs this for exactly one project (`nutri`, `deals` or `fresh`).
+A scheduled task runs this for exactly one project (`nutri`, `fresh` or `instadeal`).
 Never touch the other project's folder. Work unattended: do not ask the
 user anything; if a step cannot be done, stop and report why (nothing
 gets posted, which is fine).
+
+## Instagram deals (`instadeal`) — Instagram only, posted by hand
+`projects/instadeal` has `"channel": "instagram_manual"`: the publisher never sends it to Threads; it only
+moves the queued post to `done/`, and `scripts/build_insta.py` puts it on
+https://seo6693.github.io/threads-cards/insta/ where the owner saves the images, copies the caption and
+posts on Instagram from the phone. Links live on the profile-link page `shop/instadeal/`.
+- One post a day, type **curation**: today's 4 best Gold Box (골드박스) deals in one carousel
+  (cover + 4 rank cards). Pick from https://partners.coupang.com/#affiliate/ws/best/goldbox, read each
+  end time with `scripts/goldbox_timers.js`, every item must pass `selection` and have a timer.
+  `deal_until` = the earliest end among the 4. Prices: the general sale price on the product page,
+  never the 와우 가입 쿠폰 price.
+- Text is written for Instagram: line 1 says what and how much cheaper (first ~125 chars are what shows),
+  the deal-end label once, short lines, ends with a question. Write `링크는 프로필 링크 '상품 모음'에`
+  instead of anything about comments (the caption builder also rewrites comment lines). Disclosure last.
+- Covers no health functional food (that is the nutri topic) and no fake urgency.
 
 ## 0. Setup
 1. Attach the repo: `add_repo(owner="seo6693", repo="threads-cards", access="push")`,
@@ -24,7 +39,7 @@ gets posted, which is fine).
 5. **Check the Partners sign-in first** (in your tab): open
    `https://partners.coupang.com/#affiliate/ws/link/0/test`, wait ~3s. If the tab ends on
    `login.coupang.com`, Partners has logged out. Never type a password. Then:
-   - `deals`: record a skip ("쿠팡파트너스 로그인 풀림") and stop (goldbox changes daily, no bank).
+   - `instadeal`: record a skip ("쿠팡파트너스 로그인 풀림") and stop (goldbox changes daily, no bank).
    - `nutri` / `fresh`: switch to **link-bank mode** if `next` shows `linkbank_unused` > 0.
      `python3 scripts/linkbank.py pick <project>` lists unused pre-made links. For `fresh`, still read
      the category ranking (coupang.com works without Partners) and take the highest-ranked item that is
@@ -248,7 +263,7 @@ Never write as if the account owner used the product (no "제가 써보니"). Sa
   "deal_until": {"end": "<end from goldbox_timers.js>", "seen": "<seen from goldbox_timers.js>"}
 }
 ```
-**특가(deals) — deal end time is mandatory.** `deal_until` must come from `scripts/goldbox_timers.js`
+**특가(instadeal) — deal end time is mandatory.** `deal_until` must come from `scripts/goldbox_timers.js`
 for the exact product. `queue` turns it into a label like `9/29(화) 오전 7시까지` and rejects the draft
 unless `text` contains that label verbatim — put it in an early line, e.g.
 `⏰ 골드박스 특가 9/29(화) 오전 7시까지`. The label is added automatically to the product card, the

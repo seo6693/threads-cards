@@ -185,14 +185,16 @@ def main():
     accounts = json.loads((ROOT / "accounts.json").read_text())
     jobs = []
     for proj in sorted(p for p in PROJECTS.iterdir() if p.is_dir()):
-        account = json.loads((proj / "config.json").read_text())["account"]
-        jobs += [(proj, account, f) for f in sorted((proj / "queue").glob("*.json"))]
+        cfg = json.loads((proj / "config.json").read_text())
+        account = cfg["account"]
+        manual = cfg.get("channel") == "instagram_manual"
+        jobs += [(proj, (account, manual), f) for f in sorted((proj / "queue").glob("*.json"))]
     if not jobs:
         print("queue empty")
         return 0
     failures = 0
     now = time.time()
-    for proj, account, f in jobs:
+    for proj, (account, manual), f in jobs:
         spec = json.loads(f.read_text())
         due = spec.get("publish_after")
         if due and time.mktime(time.strptime(due[:19], "%Y-%m-%dT%H:%M:%S")) - _utc_offset(due) > now:
@@ -220,7 +222,9 @@ def main():
             if spec.setdefault("account", account) != account:
                 raise RuntimeError(f"post is for '{spec['account']}' but sits in "
                                    f"projects/{proj.name} ('{account}')")
-            spec["result"] = publish(spec, accounts)
+            # Instagram-only projects are never sent to Threads: the post just moves to done/
+            # so build_insta.py can put it on the copy-and-paste page for a person to post.
+            spec["result"] = {"manual": "instagram"} if manual else publish(spec, accounts)
             dest = proj / "done"
             print(f"OK   {proj.name}/{f.name}: {spec['result']}")
         except Exception as e:

@@ -53,7 +53,7 @@ def build(proj):
     rows = []
     for f in sorted((proj / "done").glob("*.json"), reverse=True):
         d = json.loads(f.read_text())
-        if d.get("reply_to_media_id") or not d.get("published_at") or not (d.get("result") or {}).get("media_id"):
+        if d.get("reply_to_media_id") or not d.get("published_at") or not ((d.get("result") or {}).get("media_id") or (d.get("result") or {}).get("manual")):
             continue
         t = dt.datetime.strptime(d["published_at"], "%Y-%m-%dT%H:%M:%S%z").astimezone(KST)
         if t < cutoff:
@@ -88,7 +88,7 @@ def build(proj):
     if not parts:
         parts.append('<p class="sub">곧 첫 상품이 올라와요.</p>')
     title = f'{cfg.get("label", proj.name)} 모음'
-    out = PAGE.format(title=html.escape(title), sub=f'{html.escape(cfg.get("threads", ""))} 에 올라온 상품 (최근 2주)',
+    out = PAGE.format(title=html.escape(title), sub=f'{html.escape(cfg.get("threads") or "인스타")} 에 올라온 상품 (최근 2주)',
                       disc=DISCLOSURE, body="\n".join(parts), accent=ACCENT.get(proj.name, "#2f6fd6"),
                       updated=(max(t for t, _, _ in rows) if rows else dt.datetime.now(KST)).strftime("%m/%d %H:%M"))
     dest = ROOT / "shop" / proj.name / "index.html"

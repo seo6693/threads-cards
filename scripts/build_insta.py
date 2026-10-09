@@ -14,14 +14,12 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 KST = dt.timezone(dt.timedelta(hours=9))
 DISCLOSURE = "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
 SHOP = "https://seo6693.github.io/threads-cards/shop/{}/"
-BASE_TAGS = {
-    "nutri": ["영양제", "영양제추천", "건강기능식품"],
-    "fresh": ["로켓프레시", "냉동식품", "간편식"],
-}
+# Only projects whose config has "channel": "instagram_manual" appear here (Instagram is a
+# different topic from the Threads accounts). Hashtags come from that config's topic_tags.
 LINK_LINE = "👉 상품 링크는 프로필 링크 '상품 모음'에 모아뒀어요"
 
 
-def caption(d, project):
+def caption(d, cfg):
     lines = d.get("text", "").replace(DISCLOSURE, "").rstrip().split("\n")
     out, replaced = [], False
     for ln in lines:
@@ -35,7 +33,7 @@ def caption(d, project):
         out += ["", LINK_LINE]
     body = "\n".join(out).strip()
     tags = []
-    for t in [d.get("topic_tag"), d.get("keyword")] + BASE_TAGS.get(project, []) + ["쿠팡추천"]:
+    for t in (cfg.get("topic_tags") or [])[:3] + [d.get("topic_tag"), d.get("keyword")] + ["쿠팡추천"]:
         t = re.sub(r"[^0-9A-Za-z가-힣]", "", t or "")
         if t and t not in tags:
             tags.append(t)
@@ -70,6 +68,8 @@ h1{font-size:23px;margin:6px 0 4px}.sub{color:var(--muted);font-size:14px;margin
 .acct{font-weight:700;color:var(--ink)}
 .strip{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px}
 .strip img,.strip video{height:200px;border-radius:10px;flex:none;background:#ddd}
+.deal{font-weight:700;color:#c92a2a;margin:0 0 8px;font-size:15px}
+.post.over{opacity:.5;padding:10px 14px}.post.over .head{margin:0}
 .ai{display:inline-block;font-size:12.5px;background:#fff3bf;color:#5c4400;border-radius:8px;padding:3px 8px;margin:6px 0 0}
 textarea{width:100%;min-height:150px;margin:10px 0 8px;border:1px solid var(--line);border-radius:10px;padding:10px;font-size:14px;line-height:1.5;font-family:inherit;background:var(--bg);color:var(--ink)}
 .btns{display:flex;flex-wrap:wrap;gap:8px}
@@ -79,20 +79,20 @@ label.chk{display:flex;gap:8px;align-items:center;margin-top:10px;font-size:14px
 .links{font-size:13.5px;color:var(--muted);margin-top:24px}.links a{color:inherit}
 </style></head><body><main>
 <h1>인스타 올리기 묶음</h1>
-<p class="sub">최근 7일 쓰레드 게시물을 인스타용으로 바꿔뒀어요 · 업데이트 __UPDATED__</p>
+<p class="sub">매일 아침 골드박스 특가를 인스타용으로 만들어둬요 · 업데이트 __UPDATED__</p>
 <div class="how"><b>올리는 순서</b><ol>
 <li>[사진 한꺼번에 저장] → 사진 앱에 저장</li>
 <li>[글 복사]</li>
 <li>인스타 + → 게시물 → 저장한 사진 순서대로 선택 → 글 붙여넣기</li>
 <li>노란 'AI 이미지' 표시가 있으면: 고급 설정 → <b>AI 레이블 추가</b> 켜기</li>
 <li>올린 뒤 [올렸어요] 체크</li>
-</ol>하루 1개면 충분해요. 위에서부터(가장 최근 것) 올리세요.</div>
+</ol>하루 1개, 특가가 끝나기 전에 위에서부터(가장 최근 것) 올리세요.</div>
 __BODY__
-<div class="links">인스타 프로필 링크(최대 5개)에 넣을 주소:<br>__SHOPS__</div>
+<div class="links">인스타 프로필 링크에 넣을 주소(한 번만):<br>__SHOPS__</div>
 </main>
 <script>
 function key(id){return 'insta-done-'+id}
-document.querySelectorAll('.post').forEach(function(p){
+document.querySelectorAll('.post:not(.over)').forEach(function(p){
   var id=p.dataset.id, box=p.querySelector('input[type=checkbox]');
   try{ if(localStorage.getItem(key(id))){box.checked=true;p.classList.add('done')} }catch(e){}
   box.addEventListener('change',function(){p.classList.toggle('done',box.checked);
@@ -125,10 +125,12 @@ def build():
         if not (proj / "config.json").exists():
             continue
         cfg = json.loads((proj / "config.json").read_text())
+        if cfg.get("channel") != "instagram_manual":
+            continue
         shops.append(f'{html.escape(cfg.get("label", proj.name))}: <a href="{SHOP.format(proj.name)}">{SHOP.format(proj.name)}</a>')
         for f in (proj / "done").glob("*.json"):
             d = json.loads(f.read_text())
-            if d.get("reply_to_media_id") or not d.get("published_at") or not (d.get("result") or {}).get("media_id"):
+            if d.get("reply_to_media_id") or not d.get("published_at") or not (d.get("result") or {}).get("manual"):
                 continue
             t = dt.datetime.strptime(d["published_at"], "%Y-%m-%dT%H:%M:%S%z").astimezone(KST)
             if t < cutoff:
@@ -136,10 +138,17 @@ def build():
             imgs, video = media(proj, f.stem, d)
             if not imgs and not video:
                 continue
-            rows.append((t, proj.name, cfg.get("label", proj.name), f.stem, d, imgs, video))
+            rows.append((t, cfg, cfg.get("label", proj.name), f.stem, d, imgs, video))
     rows.sort(key=lambda r: r[0], reverse=True)
     parts = []
-    for t, pname, label, slug, d, imgs, video in rows:
+    now = dt.datetime.now(KST)
+    for t, cfg, label, slug, d, imgs, video in rows:
+        end = d.get("deal_until") and dt.datetime.fromisoformat(d["deal_until"])
+        if end and end < now:
+            parts.append(f'<section class="post over"><div class="head"><span><span class="acct">{html.escape(label)}</span> · '
+                         f'{t.strftime("%m/%d %H:%M")}</span><span>특가 끝남 · 올리지 마세요</span></div></section>')
+            continue
+        deal = (f'<div class="deal">⏰ 특가 {html.escape(d.get("deal_label", ""))} · 그 전에 올려야 해요</div>' if end else "")
         # a video post goes up as a Reel (video only); a card post as a carousel (images)
         files = [video] if video else imgs
         strip = "".join(f'<video src="{html.escape(video)}" controls muted playsinline preload="metadata"></video>' if video else "" for _ in [0])
@@ -149,12 +158,12 @@ def build():
         parts.append(
             f'<section class="post" data-id="{slug}" data-files=\'{html.escape(json.dumps(files))}\'>'
             f'<div class="head"><span><span class="acct">{html.escape(label)}</span> · {t.strftime("%m/%d %H:%M")}</span><span>{kind}</span></div>'
-            f'<div class="strip">{strip}</div>{ai}'
-            f'<textarea readonly>{html.escape(caption(d, pname))}</textarea>'
+            f'{deal}<div class="strip">{strip}</div>{ai}'
+            f'<textarea readonly>{html.escape(caption(d, cfg))}</textarea>'
             f'<div class="btns"><button class="save">{"영상 저장" if video else "사진 한꺼번에 저장"}</button><button class="copy alt">글 복사</button></div>'
             f'<label class="chk"><input type="checkbox"> 올렸어요</label></section>')
     if not parts:
-        parts.append('<p class="sub">최근 7일 게시물이 아직 없어요.</p>')
+        parts.append('<p class="sub">아직 만든 묶음이 없어요. 매일 아침 8시쯤 새 묶음이 생겨요.</p>')
     out = (PAGE.replace("__BODY__", "\n".join(parts)).replace("__SHOPS__", "<br>".join(shops))
            .replace("__UPDATED__", (rows[0][0] if rows else dt.datetime.now(KST)).strftime("%m/%d %H:%M")))
     dest = ROOT / "insta" / "index.html"

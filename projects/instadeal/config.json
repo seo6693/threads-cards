@@ -1,0 +1,82 @@
+{
+  "account": "instadeal",
+  "label": "특가 (인스타)",
+  "threads": "",
+  "theme": "orange",
+  "source": "goldbox",
+  "source_note": "골드박스 상품만 올린다(특가 마감 시각을 확인할 수 있는 곳이 골드박스뿐). 후보는 https://partners.coupang.com/#affiliate/ws/best/goldbox 에서 고르고, 마감 시각은 https://pages.coupang.com/p/121237?sourceType=oms_goldbox 에서 scripts/goldbox_timers.js로 읽는다. 타이머로 마감 시각이 확인 안 되는 상품은 올리지 않는다. keywords는 골드박스 안에서 카테고리를 돌려 고르는 순서로만 쓴다.",
+  "keywords": [
+    "생활용품 특가",
+    "주방용품",
+    "세제",
+    "휴지",
+    "생수",
+    "간식",
+    "캠핑용품",
+    "수납",
+    "전자기기",
+    "욕실용품",
+    "반려동물용품",
+    "유아용품"
+  ],
+  "selection": {
+    "min_reviews": 50,
+    "min_top_rating_pct": 80,
+    "min_discount_pct": 35,
+    "min_price": 5000,
+    "max_price": 200000,
+    "skip_if_posted_within_days": 14,
+    "skip_price_zero": true,
+    "avoid": [
+      "여행·숙박 상품권",
+      "의류 사이즈 선택이 필요한 상품",
+      "성인용품",
+      "의약품",
+      "건강기능식품(영양제 계정과 겹침)"
+    ]
+  },
+  "formats": [
+    "price_motion",
+    "price_drop",
+    "quick_pick",
+    "review_digest",
+    "problem_solution",
+    "curation",
+    "tip_post"
+  ],
+  "copy_rules": [
+    "가격·할인율·리뷰 수는 상품 페이지에 적힌 것만. 가격은 수시로 바뀐다는 점을 첫 댓글에 꼭",
+    "본문에 특가 마감 시각을 queue가 알려주는 표기 그대로 꼭 한 번 넣기 (예: '9/29(화) 오전 7시까지'). 카드·영상·첫 댓글에는 자동으로 들어감",
+    "골드박스 목록의 '와우 가입 쿠폰' 가격은 신규 가입자 전용이라 쓰지 않기. 가격은 상품 페이지의 일반 판매가 기준",
+    "'오늘만', '마지막' 같은 가짜 긴급함 금지. 대신 '정가 대비 얼마 아낌', '개당 가격'처럼 계산된 숫자로",
+    "리뷰에서 자주 나오는 단점이 있으면 한 줄로 솔직하게",
+    "사용자가 직접 써본 것처럼 쓰지 않기 (1인칭 사용 후기 금지). 경험은 '리뷰에 따르면', '구매자들은'으로",
+    "과장 금지: '역대급', '무조건', '인생템' 같은 근거 없는 최상급 금지",
+    "인스타용: '링크는 첫 댓글' 대신 '링크는 프로필 링크 상품 모음에'라고 쓴다",
+    "맨 앞 줄(첫 125자)에 무엇이 몇 % 싼지가 보이게"
+  ],
+  "tone": "친근한 반말 섞인 존댓말, 짧고 빠르게. 이모지는 줄마다 1개 이하",
+  "schedule_kst": [
+    "07:52"
+  ],
+  "theme_variants": [
+    "orange",
+    "teal3",
+    "navy2"
+  ],
+  "topic_tags": [
+    "쿠팡특가",
+    "골드박스",
+    "오늘의특가",
+    "특가정보",
+    "살림템"
+  ],
+  "require_deal_until": true,
+  "schedule_note": "골드박스는 매일 오전 7시에 바뀌고 다음날 오전 7시에 끝난다. 07:52에 묶음을 만들어 두면 사람이 아침~낮에 올릴 수 있다. 하루 1개(4종 모음 카드).",
+  "slot_types": {
+    "07:52": "curation"
+  },
+  "max_link_replies": 1,
+  "channel": "instagram_manual",
+  "channel_note": "쓰레드에 올리지 않는다. publish.py가 done으로 옮기기만 하고, 사람이 insta/ 페이지에서 복사해 인스타에 직접 올린다. 링크는 인스타 프로필 링크(shop/instadeal/)로만 안내한다."
+}
