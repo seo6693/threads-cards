@@ -10,11 +10,16 @@ gets posted, which is fine).
 moves the queued post to `done/`, and `scripts/build_insta.py` puts it on
 https://seo6693.github.io/threads-cards/insta/ where the owner saves the images, copies the caption and
 posts on Instagram from the phone. Links live on the profile-link page `shop/instadeal/`.
-- One post a day, type **curation**: today's 4 best Gold Box (골드박스) deals in one carousel
-  (cover + 4 rank cards). Pick from https://partners.coupang.com/#affiliate/ws/best/goldbox, read each
-  end time with `scripts/goldbox_timers.js`, every item must pass `selection` and have a timer.
-  `deal_until` = the earliest end among the 4. Prices: the general sale price on the product page,
-  never the 와우 가입 쿠폰 price.
+- One post a day, format **deal_story**: card 1 = a real-life scene photo (Higgsfield, `image_gen` in the
+  config, same way as Story posts B) with a big hook burned in (`cards.scene.lines`, ≤16 chars a line; the
+  last line is the deal, highlighted, e.g. `["로봇청소기 60%↓", true]`; `sub` like `오늘 골드박스 특가 3종 정리`),
+  card 2 = the cover list, then one card per product. Give `scene_image`, `hook_formula` (not one of the
+  last 2) plus everything curation needs (`cover`, `ranks`, 2-4 `more_products`). The scene is about the
+  #1 product's situation, never shows anyone using or holding a product, no text/logos in the photo. If image
+  generation fails, fall back to plain `curation`.
+- Products: today's 3-5 best Gold Box (골드박스) deals from https://partners.coupang.com/#affiliate/ws/best/goldbox,
+  each end time read with `scripts/goldbox_timers.js`; every item must pass `selection` and have a timer.
+  `deal_until` = the earliest end. Prices: the general sale price on the product page, never the 와우 가입 쿠폰 price.
 - Text is written for Instagram: line 1 says what and how much cheaper (first ~125 chars are what shows),
   the deal-end label once, short lines, ends with a question. Write `링크는 프로필 링크 '상품 모음'에`
   instead of anything about comments (the caption builder also rewrites comment lines). Disclosure last.

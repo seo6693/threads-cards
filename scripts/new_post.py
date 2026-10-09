@@ -142,7 +142,7 @@ def cmd_next(project):
     }, ensure_ascii=False, indent=2))
 
 
-TYPE_FORMAT = {"curation": "curation", "tip": "tip_post", "story": "scene_story"}
+TYPE_FORMAT = {"curation": "curation", "tip": "tip_post", "story": "scene_story", "deal_story": "deal_story"}
 
 
 def _post_plan(cfg, state):
@@ -163,7 +163,7 @@ def _post_plan(cfg, state):
         ptype = "hero"
         fmt = pick_format(state, [f for f in allowed if f not in TYPE_FORMAT.values()])
     return {"post_type": ptype, "format": fmt,
-            "more_products_wanted": {"curation": "2-4 (required)", "tip": "0-1", "story": "0",
+            "more_products_wanted": {"curation": "2-4 (required)", "deal_story": "2-4 (required)", "tip": "0-1", "story": "0",
                                      "hero": cfg.get("hero_more_products", "0")}[ptype],
             "hook_formulas": cfg.get("hook_formulas", []),
             "avoid_hook_formulas": state.get("recent_hook_formulas", [])[-2:],
@@ -215,7 +215,7 @@ def cmd_queue(project, draft_path):
         need_keys.append("cards")
     if FORMATS.get(d.get("format"), {}).get("custom"):
         need_keys += ["video_script", "banner_image"]
-    if d.get("format") == "scene_story":
+    if d.get("format") in ("scene_story", "deal_story"):
         need_keys += ["scene_image", "hook_formula"]
         sc = (d.get("cards") or {}).get("scene") or {}
         if not sc.get("lines") or not 1 <= len(sc["lines"]) <= 3:
@@ -385,6 +385,10 @@ def cmd_queue(project, draft_path):
         spec = {"theme": d.get("theme") or random.choice(cfg.get("theme_variants", [cfg["theme"]])),
                 "product_image": img.name, "cover": d["cards"]["cover"], "ranks": ranks,
                 "order": ["cover"] + [f"rank{i + 1}" for i in range(len(ranks))]}
+        if d.get("scene_image"):  # deal_story: a real-life scene with the hook goes in front of the cover
+            sc_name = "scene" + pathlib.Path(d["scene_image"]).suffix
+            shutil.copy(d["scene_image"], card_dir / sc_name)
+            spec.update(scene_image=sc_name, scene=d["cards"]["scene"], order=["scene"] + spec["order"])
         (card_dir / "spec.json").write_text(json.dumps(spec, ensure_ascii=False, indent=2) + "\n")
         names = make_cards.main(str(card_dir / "spec.json"), str(card_dir))
         base = RAW + str(card_dir.relative_to(ROOT)).replace("\\", "/") + "/"
@@ -417,7 +421,7 @@ def cmd_queue(project, draft_path):
         **media,
         "reply": d.get("reply_text") and f"{d['reply_text']}\n{d['link']}\n{note}" or f"🛒 구매 링크 → {d['link']}\n{note}",
         "format": fmt,
-        "post_type": {"curation": "curation", "tip_post": "tip", "scene_story": "story"}.get(fmt, "hero"),
+        "post_type": {"curation": "curation", "tip_post": "tip", "scene_story": "story", "deal_story": "deal_story"}.get(fmt, "hero"),
         "hook_formula": d.get("hook_formula", ""),
         "topic_source": d.get("topic_source", ""),
         "publish_after": (dt.datetime.now(KST) + dt.timedelta(
@@ -455,7 +459,7 @@ def cmd_queue(project, draft_path):
 
     state["next_keyword"] = (state["next_keyword"] + 1) % len(cfg["keywords"])
     state["recent_formats"] = (state.get("recent_formats", []) + [fmt])[-8:]
-    ptype = {"curation": "curation", "tip_post": "tip", "scene_story": "story"}.get(fmt, "hero")
+    ptype = {"curation": "curation", "tip_post": "tip", "scene_story": "story", "deal_story": "deal_story"}.get(fmt, "hero")
     state["recent_post_types"] = (state.get("recent_post_types", []) + [ptype])[-8:]
     if d.get("hook_formula"):
         state["recent_hook_formulas"] = (state.get("recent_hook_formulas", []) + [d["hook_formula"]])[-8:]

@@ -36,13 +36,8 @@
     ]
   },
   "formats": [
-    "price_motion",
-    "price_drop",
-    "quick_pick",
-    "review_digest",
-    "problem_solution",
-    "curation",
-    "tip_post"
+    "deal_story",
+    "curation"
   ],
   "copy_rules": [
     "가격·할인율·리뷰 수는 상품 페이지에 적힌 것만. 가격은 수시로 바뀐다는 점을 첫 댓글에 꼭",
@@ -74,9 +69,27 @@
   "require_deal_until": true,
   "schedule_note": "골드박스는 매일 오전 7시에 바뀌고 다음날 오전 7시에 끝난다. 07:52에 묶음을 만들어 두면 사람이 아침~낮에 올릴 수 있다. 하루 1개(4종 모음 카드).",
   "slot_types": {
-    "07:52": "curation"
+    "07:52": "deal_story"
   },
   "max_link_replies": 1,
   "channel": "instagram_manual",
-  "channel_note": "쓰레드에 올리지 않는다. publish.py가 done으로 옮기기만 하고, 사람이 insta/ 페이지에서 복사해 인스타에 직접 올린다. 링크는 인스타 프로필 링크(shop/instadeal/)로만 안내한다."
+  "channel_note": "쓰레드에 올리지 않는다. publish.py가 done으로 옮기기만 하고, 사람이 insta/ 페이지에서 복사해 인스타에 직접 올린다. 링크는 인스타 프로필 링크(shop/instadeal/)로만 안내한다.",
+  "hook_formulas": [
+    "상황 질문",
+    "손해 피하기",
+    "숫자",
+    "반전",
+    "저격"
+  ],
+  "image_gen": {
+    "tool": "Higgsfield generate_image",
+    "model": "gpt_image_2_5",
+    "aspect_ratio": "3:4",
+    "prompt_rules": [
+      "오늘 특가 1위 상품이 필요한 한국 가정의 실제 생활 장면(예: 바닥에 머리카락·먼지가 보이는 거실, 꽉 찬 분리수거함, 빈 냉장고 앞). 사진처럼 자연스럽게",
+      "글자·로고·브랜드·상품 자체는 넣지 않는다. 사람이 상품을 쓰거나 든 모습 금지(사람이 나오면 뒷모습·손 정도로 상황만)",
+      "위쪽 1/3은 후킹 문구가 올라갈 수 있게 단순한 배경",
+      "세로 3:4"
+    ]
+  }
 }

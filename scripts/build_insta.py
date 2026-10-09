@@ -170,7 +170,7 @@ def build():
         strip = "".join(f'<video src="{html.escape(video)}" controls muted playsinline preload="metadata"></video>' if video else "" for _ in [0])
         strip += "".join(f'<img src="{html.escape(u)}" alt="" loading="lazy">' for u in ([] if video else imgs))
         kind = "릴스(영상)" if video else f"사진 {len(imgs)}장"
-        ai = '<div class="ai">AI 이미지 포함 → AI 레이블 켜기</div>' if d.get("format") == "scene_story" else ""
+        ai = '<div class="ai">AI 이미지 포함 → AI 레이블 켜기</div>' if d.get("format") in ("scene_story", "deal_story") else ""
         parts.append(
             f'<section class="post" data-id="{slug}" data-files=\'{html.escape(json.dumps(files))}\'>'
             f'<div class="head"><span><span class="acct">{html.escape(label)}</span> · {t.strftime("%m/%d %H:%M")}</span><span>{kind}</span></div>'

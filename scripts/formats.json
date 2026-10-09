@@ -1,106 +1,118 @@
 {
-  "review_digest": {
-    "name": "리뷰 뜯어보기",
-    "cards": {
-      "order": [
-        "hook",
-        "product",
-        "reviews"
-      ],
-      "hook_layout": "number"
-    },
-    "angle": "리뷰 N개를 요약해서 칭찬 포인트와 불만 포인트를 같이 보여준다. 첫 줄은 리뷰 숫자나 불만 개수로 시작 (예: '리뷰 4천 개 중 불만은 딱 두 가지')."
+ "review_digest": {
+  "name": "리뷰 뜯어보기",
+  "cards": {
+   "order": [
+    "hook",
+    "product",
+    "reviews"
+   ],
+   "hook_layout": "number"
   },
-  "buying_guide": {
-    "name": "고르는 법",
-    "cards": {
-      "order": [
-        "hook",
-        "product"
-      ],
-      "hook_layout": "checklist"
-    },
-    "angle": "이 품목을 살 때 확인할 기준 3개를 먼저 알려주고, 그 기준에 맞는 예시로 상품을 소개한다. 기준은 상품 페이지·리뷰로 확인되는 것만. 저장·공유하고 싶은 정보형 글."
+  "angle": "리뷰 N개를 요약해서 칭찬 포인트와 불만 포인트를 같이 보여준다. 첫 줄은 리뷰 숫자나 불만 개수로 시작 (예: '리뷰 4천 개 중 불만은 딱 두 가지')."
+ },
+ "buying_guide": {
+  "name": "고르는 법",
+  "cards": {
+   "order": [
+    "hook",
+    "product"
+   ],
+   "hook_layout": "checklist"
   },
-  "price_drop": {
-    "name": "가격 알림",
-    "cards": {
-      "order": [
-        "hook",
-        "product"
-      ],
-      "hook_layout": "versus"
-    },
-    "angle": "정가 대비 지금 가격과 절약 금액을 짧고 강하게. 본문은 4~6줄로 짧게. 할인율 30% 이상일 때만 이 형식을 쓴다."
+  "angle": "이 품목을 살 때 확인할 기준 3개를 먼저 알려주고, 그 기준에 맞는 예시로 상품을 소개한다. 기준은 상품 페이지·리뷰로 확인되는 것만. 저장·공유하고 싶은 정보형 글."
+ },
+ "price_drop": {
+  "name": "가격 알림",
+  "cards": {
+   "order": [
+    "hook",
+    "product"
+   ],
+   "hook_layout": "versus"
   },
-  "problem_solution": {
-    "name": "불편 해결",
-    "cards": {
-      "order": [
-        "hook",
-        "product",
-        "reviews"
-      ],
-      "hook_layout": "question"
-    },
-    "angle": "누구나 겪는 구체적 불편 상황 한 장면으로 시작해서, 이 상품이 그걸 어떻게 줄여주는지 리뷰 근거로 보여준다."
+  "angle": "정가 대비 지금 가격과 절약 금액을 짧고 강하게. 본문은 4~6줄로 짧게. 할인율 30% 이상일 때만 이 형식을 쓴다."
+ },
+ "problem_solution": {
+  "name": "불편 해결",
+  "cards": {
+   "order": [
+    "hook",
+    "product",
+    "reviews"
+   ],
+   "hook_layout": "question"
   },
-  "quick_pick": {
-    "name": "한 줄 추천",
-    "cards": {
-      "order": [
-        "product"
-      ],
-      "hook_layout": "number"
-    },
-    "angle": "이미지 1장 + 본문 3~5줄의 아주 짧은 글. 핵심 이유 한 가지만. 가볍게 스크롤하다 멈추게."
+  "angle": "누구나 겪는 구체적 불편 상황 한 장면으로 시작해서, 이 상품이 그걸 어떻게 줄여주는지 리뷰 근거로 보여준다."
+ },
+ "quick_pick": {
+  "name": "한 줄 추천",
+  "cards": {
+   "order": [
+    "product"
+   ],
+   "hook_layout": "number"
   },
-  "price_motion": {
-    "name": "가격 모션 (영상)",
-    "video": true,
-    "cards": {
-      "order": [],
-      "hook_layout": "number"
-    },
-    "angle": "8.5초 모션 영상. 첫 1초에 질문형 단어 3~4개가 박히고, 개당(한 알·1포·1개) 정가→지금 가격 반전, 제품 등장과 할인 도장, 리뷰 숫자, 첫 댓글 유도. 할인율 20% 이상인 상품에만. 본문은 3~6줄로 짧게."
+  "angle": "이미지 1장 + 본문 3~5줄의 아주 짧은 글. 핵심 이유 한 가지만. 가볍게 스크롤하다 멈추게."
+ },
+ "price_motion": {
+  "name": "가격 모션 (영상)",
+  "video": true,
+  "cards": {
+   "order": [],
+   "hook_layout": "number"
   },
-  "promo_video": {
-    "video": true,
-    "custom": true,
-    "angle": "행사 썸네일 + 대표 상품으로, 매번 새로 설계한 독창적인 영상. 첫 1초에 시선을 잡는 장면."
+  "angle": "8.5초 모션 영상. 첫 1초에 질문형 단어 3~4개가 박히고, 개당(한 알·1포·1개) 정가→지금 가격 반전, 제품 등장과 할인 도장, 리뷰 숫자, 첫 댓글 유도. 할인율 20% 이상인 상품에만. 본문은 3~6줄로 짧게."
+ },
+ "promo_video": {
+  "video": true,
+  "custom": true,
+  "angle": "행사 썸네일 + 대표 상품으로, 매번 새로 설계한 독창적인 영상. 첫 1초에 시선을 잡는 장면."
+ },
+ "curation": {
+  "name": "비교·순위",
+  "cards": {
+   "order": [
+    "cover"
+   ],
+   "hook_layout": "number"
   },
-  "curation": {
-    "name": "비교·순위",
-    "cards": {
-      "order": [
-        "cover"
-      ],
-      "hook_layout": "number"
-    },
-    "multi": true,
-    "angle": "한 주제로 상품 3~5개를 비교·순위로 정리(100g당·1정당 가격, 리뷰 수, 평점 등 계산된 기준). 표지 카드 + 상품별 카드, 댓글에 1)~5) 링크. 저장·공유하고 싶은 정리글."
+  "multi": true,
+  "angle": "한 주제로 상품 3~5개를 비교·순위로 정리(100g당·1정당 가격, 리뷰 수, 평점 등 계산된 기준). 표지 카드 + 상품별 카드, 댓글에 1)~5) 링크. 저장·공유하고 싶은 정리글."
+ },
+ "tip_post": {
+  "name": "꿀팁 + 관련 상품",
+  "cards": {
+   "order": [
+    "hook",
+    "product"
+   ],
+   "hook_layout": "checklist"
   },
-  "tip_post": {
-    "name": "꿀팁 + 관련 상품",
-    "cards": {
-      "order": [
-        "hook",
-        "product"
-      ],
-      "hook_layout": "checklist"
-    },
-    "angle": "본문은 실제로 쓸모 있는 정보·꿀팁(보관법, 조리법, 먹는 시간, 고르는 기준 등, 상품 페이지·공식 안내·리뷰로 확인되는 것만). 끝에 '여기 나온 제품은 댓글에'로 관련 상품 1~2개를 연결. 광고처럼 보이지 않게."
+  "angle": "본문은 실제로 쓸모 있는 정보·꿀팁(보관법, 조리법, 먹는 시간, 고르는 기준 등, 상품 페이지·공식 안내·리뷰로 확인되는 것만). 끝에 '여기 나온 제품은 댓글에'로 관련 상품 1~2개를 연결. 광고처럼 보이지 않게."
+ },
+ "scene_story": {
+  "name": "공감 → 해결 → 상품",
+  "cards": {
+   "order": [
+    "scene",
+    "hook",
+    "product"
+   ],
+   "hook_layout": "checklist"
   },
-  "scene_story": {
-    "name": "공감 → 해결 → 상품",
-    "cards": {
-      "order": [
-        "scene",
-        "hook",
-        "product"
-      ],
-      "hook_layout": "checklist"
-    },
-    "angle": "1장: 그 상품이 필요한 실제 생활 장면(AI로 새로 생성한 사진) + 크게 박힌 후킹 문구. 2장: 그 상황에서 확인할 것 2~3가지(쓸모 있는 정보). 3장: 해결책 상품(실제 상품 사진·가격·1개당 가격). 본문도 공감→정보→상품 순서."
-  }
+  "angle": "1장: 그 상품이 필요한 실제 생활 장면(AI로 새로 생성한 사진) + 크게 박힌 후킹 문구. 2장: 그 상황에서 확인할 것 2~3가지(쓸모 있는 정보). 3장: 해결책 상품(실제 상품 사진·가격·1개당 가격). 본문도 공감→정보→상품 순서."
+ },
+ "deal_story": {
+  "name": "생활 장면 → 오늘 특가 모음",
+  "cards": {
+   "order": [
+    "scene",
+    "cover"
+   ],
+   "hook_layout": "number"
+  },
+  "multi": true,
+  "angle": "1장: 오늘 특가 상품이 필요한 실제 생활 장면(AI로 새로 생성한 사진, 사람이 상품을 쓰거나 든 모습 없음) + 크게 박힌 후킹 문구(예: '주말마다 청소 전쟁?' / '로봇청소기 60%↓'). 2장: 오늘 특가 표지(할인율 순 목록). 3장부터: 상품별 카드. 글도 공감 한 줄 → 특가 정리 → 질문."
+ }
 }
