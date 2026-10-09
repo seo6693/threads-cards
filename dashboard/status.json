@@ -99,8 +99,21 @@
   "projects/instadeal/cards/2026-10-09-1624-8327575463/product.jpg",
   "projects/instadeal/cards/2026-10-09-1624-8327575463/scene.jpg",
   "projects/instadeal/cards/2026-10-09-1624-8327575463/spec.json",
+  "projects/instadeal/cards/2026-10-10-0758-4343134537/card1_scene.jpg",
+  "projects/instadeal/cards/2026-10-10-0758-4343134537/card2_cover.jpg",
+  "projects/instadeal/cards/2026-10-10-0758-4343134537/card3_rank1.jpg",
+  "projects/instadeal/cards/2026-10-10-0758-4343134537/card4_rank2.jpg",
+  "projects/instadeal/cards/2026-10-10-0758-4343134537/card5_rank3.jpg",
+  "projects/instadeal/cards/2026-10-10-0758-4343134537/card6_rank4.jpg",
+  "projects/instadeal/cards/2026-10-10-0758-4343134537/p2.jpg",
+  "projects/instadeal/cards/2026-10-10-0758-4343134537/p3.jpg",
+  "projects/instadeal/cards/2026-10-10-0758-4343134537/p4.jpg",
+  "projects/instadeal/cards/2026-10-10-0758-4343134537/product.jpg",
+  "projects/instadeal/cards/2026-10-10-0758-4343134537/scene.jpg",
+  "projects/instadeal/cards/2026-10-10-0758-4343134537/spec.json",
   "projects/instadeal/config.json",
   "projects/instadeal/done/2026-10-09-1624-8327575463.json",
+  "projects/instadeal/queue/2026-10-10-0758-4343134537.json",
   "projects/instadeal/state.json",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card1_hook.jpg",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card2_product.jpg",
@@ -383,6 +396,15 @@
   "projects/nutri/skipped/2026-10-02-1153.json",
   "projects/nutri/state.json"
  ],
- "runs": [],
+ "runs": [
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-10-09T22:52:44Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/38001553569",
+   "event": "push"
+  }
+ ],
  "issues": []
 }
