@@ -82,13 +82,15 @@
   "projects/fresh/learning.json",
   "projects/fresh/linkbank.json",
   "projects/fresh/state.json",
-  "projects/instadeal/cards/2026-10-09-1624-8327575463/card1_cover.jpg",
-  "projects/instadeal/cards/2026-10-09-1624-8327575463/card2_rank1.jpg",
-  "projects/instadeal/cards/2026-10-09-1624-8327575463/card3_rank2.jpg",
-  "projects/instadeal/cards/2026-10-09-1624-8327575463/card4_rank3.jpg",
+  "projects/instadeal/cards/2026-10-09-1624-8327575463/card1_scene.jpg",
+  "projects/instadeal/cards/2026-10-09-1624-8327575463/card2_cover.jpg",
+  "projects/instadeal/cards/2026-10-09-1624-8327575463/card3_rank1.jpg",
+  "projects/instadeal/cards/2026-10-09-1624-8327575463/card4_rank2.jpg",
+  "projects/instadeal/cards/2026-10-09-1624-8327575463/card5_rank3.jpg",
   "projects/instadeal/cards/2026-10-09-1624-8327575463/p2.jpg",
   "projects/instadeal/cards/2026-10-09-1624-8327575463/p3.jpg",
   "projects/instadeal/cards/2026-10-09-1624-8327575463/product.jpg",
+  "projects/instadeal/cards/2026-10-09-1624-8327575463/scene.jpg",
   "projects/instadeal/cards/2026-10-09-1624-8327575463/spec.json",
   "projects/instadeal/config.json",
   "projects/instadeal/done/2026-10-09-1624-8327575463.json",
@@ -361,6 +363,14 @@
   "projects/nutri/state.json"
  ],
  "runs": [
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-10-09T08:56:17Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37908063813",
+   "event": "push"
+  },
   {
    "name": "Publish Threads posts",
    "status": "completed",
