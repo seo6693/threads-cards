@@ -1,0 +1,46 @@
+{
+  "theme": "teal3",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "오늘 골드박스 · 쿠폰 제외 판매가",
+    "title": "골드박스 3종,\n할인율 높은 순"
+  },
+  "ranks": [
+    {
+      "name": "프리티케어 로봇청소기 C2",
+      "short": "프리티케어 로봇청소기",
+      "sub": "리뷰 2,313개 · 정가보다 140,060원↓",
+      "price": "89,840원",
+      "badge": "60% 할인",
+      "cover_value": "60%↓",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "행복미트 돼지 등갈비 로인립 2kg",
+      "short": "등갈비 로인립 2kg",
+      "sub": "리뷰 3,610개 · 100g당 약 1,327원",
+      "price": "26,540원",
+      "badge": "55% 할인",
+      "cover_value": "55%↓",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "해태htb 갈배사이다 제로 355ml 24캔",
+      "short": "갈배사이다 제로 24캔",
+      "sub": "리뷰 29,699개 · 1캔 약 417원",
+      "price": "10,000원",
+      "badge": "49% 할인",
+      "cover_value": "49%↓",
+      "rank": 3,
+      "image": "p3.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3"
+  ]
+}
