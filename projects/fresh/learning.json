@@ -1,15 +1,20 @@
 {
- "updated": "2026-10-09T15:54+09:00",
- "posts_28d": 11,
+ "updated": "2026-10-10T00:23+09:00",
+ "posts_28d": 12,
  "avg_views_28d": 13.2,
  "formula_weights": {
-  "상황 질문": 1.0,
+  "상황 질문": 1.02,
   "손해 피하기": 1.0,
   "숫자": 1.0,
   "반전": 1.0,
   "저격": 1.0
  },
- "formulas": {},
+ "formulas": {
+  "상황 질문": {
+   "avg": 14.0,
+   "n": 1
+  }
+ },
  "types": {
   "대표": {
    "avg": 14.7,
@@ -22,6 +27,10 @@
   "꿀팁": {
    "avg": 8.0,
    "n": 2
+  },
+  "이야기": {
+   "avg": 14.0,
+   "n": 1
   }
  },
  "hours": {
@@ -30,8 +39,8 @@
    "n": 7
   },
   "19시": {
-   "avg": 16.2,
-   "n": 4
+   "avg": 15.8,
+   "n": 5
   }
  },
  "top_posts": [
@@ -63,6 +72,15 @@
    "permalink": "https://www.threads.com/@magdungi43/post/Dd_OfdkFTg0"
   },
   {
+   "views": 14,
+   "hook_formula": "상황 질문",
+   "topic_source": "10월 '쌀쌀해진 날 국·탕' → 쿠팡 '냉동국' 연관검색어 '즉석국' → 냉장/냉동/간편식 랭킹 상위 로켓프레시(39위)",
+   "product": "비비고 소고기 미역국 500g",
+   "format": "scene_story",
+   "when": "10/09 19:05",
+   "permalink": "https://www.threads.com/@magdungi43/post/DeRQUO4ljR_"
+  },
+  {
    "views": 13,
    "hook_formula": "",
    "topic_source": "",
@@ -70,15 +88,6 @@
    "format": "quick_pick",
    "when": "09/30 18:54",
    "permalink": "https://www.threads.com/@magdungi43/post/Dd6DzveG9XU"
-  },
-  {
-   "views": 13,
-   "hook_formula": "",
-   "topic_source": "",
-   "product": "신선설농탕 450g + 양지고기 40g 세트",
-   "format": "buying_guide",
-   "when": "10/01 18:49",
-   "permalink": "https://www.threads.com/@magdungi43/post/Dd8oGAskXFi"
   }
  ]
 }

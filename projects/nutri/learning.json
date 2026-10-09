@@ -1,15 +1,20 @@
 {
- "updated": "2026-10-09T15:54+09:00",
- "posts_28d": 38,
- "avg_views_28d": 11.1,
+ "updated": "2026-10-10T00:23+09:00",
+ "posts_28d": 39,
+ "avg_views_28d": 11.4,
  "formula_weights": {
-  "상황 질문": 1.0,
+  "상황 질문": 1.04,
   "손해 피하기": 1.0,
   "숫자": 1.0,
   "반전": 1.0,
   "저격": 1.0
  },
- "formulas": {},
+ "formulas": {
+  "상황 질문": {
+   "avg": 13.0,
+   "n": 1
+  }
+ },
  "types": {
   "대표": {
    "avg": 8.2,
@@ -20,8 +25,12 @@
    "n": 8
   },
   "비교": {
-   "avg": 8.5,
+   "avg": 9.6,
    "n": 8
+  },
+  "이야기": {
+   "avg": 13.0,
+   "n": 1
   }
  },
  "hours": {
@@ -42,7 +51,7 @@
    "n": 8
   },
   "14시": {
-   "avg": 30.0,
+   "avg": 39.0,
    "n": 1
   },
   "15시": {
@@ -66,8 +75,8 @@
    "n": 3
   },
   "21시": {
-   "avg": 7.0,
-   "n": 9
+   "avg": 7.6,
+   "n": 10
   },
   "23시": {
    "avg": 3.0,
@@ -75,6 +84,15 @@
   }
  },
  "top_posts": [
+  {
+   "views": 39,
+   "hook_formula": "",
+   "topic_source": "",
+   "product": "99바이탈 맘편한 마그네슘 360정",
+   "format": "curation",
+   "when": "10/09 14:23",
+   "permalink": "https://www.threads.com/@kkul394/post/DeQwAWhG-vu"
+  },
   {
    "views": 35,
    "hook_formula": "",
@@ -92,15 +110,6 @@
    "format": "tip_post",
    "when": "10/04 08:30",
    "permalink": "https://www.threads.com/@kkul394/post/DeDPrY2lLG2"
-  },
-  {
-   "views": 30,
-   "hook_formula": "",
-   "topic_source": "",
-   "product": "99바이탈 맘편한 마그네슘 360정",
-   "format": "curation",
-   "when": "10/09 14:23",
-   "permalink": "https://www.threads.com/@kkul394/post/DeQwAWhG-vu"
   },
   {
    "views": 26,

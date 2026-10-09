@@ -1,10 +1,10 @@
 {
- "collected_at": "2026-10-09T06:54:44+0000",
+ "collected_at": "2026-10-09T15:23:31+0000",
  "projects": {
   "fresh": {
    "account": "로켓프레시 간편식 (@magdungi43)",
    "totals": {
-    "views": 16,
+    "views": 28,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -185,6 +185,22 @@
      "reposts": 0,
      "quotes": 0,
      "shares": 0
+    },
+    {
+     "file": "2026-10-09-1827-8421648393.json",
+     "product": "비비고 소고기 미역국 500g",
+     "format": "scene_story",
+     "hook_formula": "상황 질문",
+     "topic_source": "10월 '쌀쌀해진 날 국·탕' → 쿠팡 '냉동국' 연관검색어 '즉석국' → 냉장/냉동/간편식 랭킹 상위 로켓프레시(39위)",
+     "video": false,
+     "published_at": "2026-10-09T10:05:44+0000",
+     "permalink": "https://www.threads.com/@magdungi43/post/DeRQUO4ljR_",
+     "views": 14,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
     }
    ]
   },
@@ -192,8 +208,8 @@
    "account": "영양제 (꿀템짱)",
    "totals": {
     "views": 94,
-    "likes": 1,
-    "replies": 1,
+    "likes": 0,
+    "replies": 0,
     "followers_count": 0
    },
    "posts": [
@@ -798,9 +814,25 @@
      "video": false,
      "published_at": "2026-10-09T05:23:04+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DeQwAWhG-vu",
-     "views": 30,
+     "views": 39,
      "likes": 1,
      "replies": 3,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-09-2042-5191718214.json",
+     "product": "종근당건강 비타민D 2000IU 90정",
+     "format": "scene_story",
+     "hook_formula": "상황 질문",
+     "topic_source": "10월 환절기(season_topics: 비타민D) → 쿠팡 '비타민D' 연관검색어 확인('더글라스비타민d'는 리뷰 31~111개로 기준 미달) → '비타민d' 판매량순 1위",
+     "video": false,
+     "published_at": "2026-10-09T12:26:52+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DeRgeENoGA1",
+     "views": 13,
+     "likes": 0,
+     "replies": 1,
      "reposts": 0,
      "quotes": 0,
      "shares": 0
