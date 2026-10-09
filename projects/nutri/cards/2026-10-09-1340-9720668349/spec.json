@@ -1,0 +1,57 @@
+{
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "마그네슘 4종",
+    "title": "1정 값 순위"
+  },
+  "ranks": [
+    {
+      "name": "99바이탈 맘편한 마그네슘",
+      "short": "99바이탈 360정",
+      "sub": "360정 · 10,900원 · 리뷰 291개",
+      "price": "10,900원",
+      "badge": "1정 약 30원",
+      "cover_value": "30원",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "뉴트리하루 퍼스트픽 마그네슘 400",
+      "short": "뉴트리하루 240정",
+      "sub": "240정 · 9,800원 · 리뷰 2,908개",
+      "price": "9,800원",
+      "badge": "1정 약 41원",
+      "cover_value": "41원",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "세노비스 마그네슘 90정×2",
+      "short": "세노비스 180정",
+      "sub": "180정 · 28,680원 · 리뷰 315개",
+      "price": "28,680원",
+      "badge": "1정 약 159원",
+      "cover_value": "159원",
+      "rank": 3,
+      "image": "p3.jpg"
+    },
+    {
+      "name": "쏜리서치 마그네슘 시트라메이트",
+      "short": "쏜리서치 90정",
+      "sub": "90정 · 22,480원 · 리뷰 7,583개",
+      "price": "22,480원",
+      "badge": "1정 약 250원",
+      "cover_value": "250원",
+      "rank": 4,
+      "image": "p4.jpg"
+    }
+  ],
+  "order": [
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3",
+    "rank4"
+  ]
+}
