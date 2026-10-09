@@ -82,7 +82,16 @@
   "projects/fresh/learning.json",
   "projects/fresh/linkbank.json",
   "projects/fresh/state.json",
+  "projects/instadeal/cards/2026-10-09-1624-8327575463/card1_cover.jpg",
+  "projects/instadeal/cards/2026-10-09-1624-8327575463/card2_rank1.jpg",
+  "projects/instadeal/cards/2026-10-09-1624-8327575463/card3_rank2.jpg",
+  "projects/instadeal/cards/2026-10-09-1624-8327575463/card4_rank3.jpg",
+  "projects/instadeal/cards/2026-10-09-1624-8327575463/p2.jpg",
+  "projects/instadeal/cards/2026-10-09-1624-8327575463/p3.jpg",
+  "projects/instadeal/cards/2026-10-09-1624-8327575463/product.jpg",
+  "projects/instadeal/cards/2026-10-09-1624-8327575463/spec.json",
   "projects/instadeal/config.json",
+  "projects/instadeal/queue/2026-10-09-1624-8327575463.json",
   "projects/instadeal/state.json",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card1_hook.jpg",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card2_product.jpg",
@@ -352,6 +361,14 @@
   "projects/nutri/state.json"
  ],
  "runs": [
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-10-09T07:17:09Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/37898142268",
+   "event": "push"
+  },
   {
    "name": "Collect Threads insights (read-only)",
    "status": "completed",
