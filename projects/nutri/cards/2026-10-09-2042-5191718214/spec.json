@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "하루 종일 형광등 아래,",
+        false
+      ],
+      [
+        "오늘 햇빛 본 사람?",
+        true
+      ]
+    ],
+    "sub": "노을만 보고 퇴근한다면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "비타민D 고를 때\n확인할 3가지",
+    "items": [
+      "1캡슐 함량(IU) 먼저 보기",
+      "종합비타민 속 D와 겹치는지",
+      "건강기능식품 마크·기능성 문구"
+    ],
+    "note": "제품 라벨·리뷰 기준 · 여러 개 먹으면 하루 총량 확인",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "실내 근무 루틴",
+    "brand": "종근당건강",
+    "name": "비타민D 2000IU 90캡슐",
+    "sub": "1캡슐당 121원 · 3개월분",
+    "badge_top": "판매량순 1위",
+    "badge_price": "10,890원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}

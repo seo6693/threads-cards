@@ -1,14 +1,14 @@
 {
-  "next_keyword": 3,
+  "next_keyword": 4,
   "recent_formats": [
-    "tip_post",
     "curation",
     "price_motion",
     "tip_post",
     "curation",
     "price_motion",
     "tip_post",
-    "curation"
+    "curation",
+    "scene_story"
   ],
   "recent_video_styles": [
     "slam",
@@ -27,13 +27,16 @@
     "cyan"
   ],
   "recent_post_types": [
-    "tip",
     "curation",
     "hero",
     "tip",
     "curation",
     "hero",
     "tip",
-    "curation"
+    "curation",
+    "story"
+  ],
+  "recent_hook_formulas": [
+    "\uc0c1\ud669 \uc9c8\ubb38"
   ]
 }
