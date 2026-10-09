@@ -23,12 +23,17 @@ textarea{width:100%;min-height:150px;margin:10px 0 8px;border:1px solid var(--li
 button,a.btn{flex:1 1 140px;border:0;border-radius:10px;padding:12px;font-weight:600;font-size:15px;font-family:inherit;text-align:center;text-decoration:none;cursor:pointer;background:var(--ink);color:var(--bg)}
 button.alt,a.btn{background:transparent;color:var(--ink);border:1px solid var(--line)}
 label.chk{display:flex;gap:8px;align-items:center;margin-top:10px;font-size:14px}
+#viewer{position:fixed;inset:0;background:var(--bg);overflow-y:auto;z-index:9;padding:0 16px 40px}
+#viewer[hidden]{display:none}
+.vtop{position:sticky;top:0;background:var(--bg);display:flex;gap:10px;align-items:center;justify-content:space-between;padding:12px 0;font-size:14px}
+.vtop .close{flex:none;padding:10px 16px}
+#viewer .list img,#viewer .list video{display:block;width:100%;border-radius:10px;margin:0 0 12px}
 .links{font-size:13.5px;color:var(--muted);margin-top:24px}.links a{color:inherit}
 </style></head><body><main>
 <h1>인스타 올리기 묶음</h1>
 <p class="sub">매일 아침 골드박스 특가를 인스타용으로 만들어둬요 · 업데이트 10/09 17:05</p>
 <div class="how"><b>올리는 순서</b><ol>
-<li>[사진 한꺼번에 저장] → 사진 앱에 저장</li>
+<li>[사진 한꺼번에 저장] → 뜨는 창에서 <b>'이미지 저장'</b>(아이폰) 또는 <b>'갤러리/사진에 저장'</b>(안드로이드). 창이 안 뜨면 사진이 크게 나오니 길게 눌러 저장</li>
 <li>[글 복사]</li>
 <li>인스타 + → 게시물 → 저장한 사진 순서대로 선택 → 글 붙여넣기</li>
 <li>노란 'AI 이미지' 표시가 있으면: 고급 설정 → <b>AI 레이블 추가</b> 켜기</li>
@@ -61,8 +66,16 @@ label.chk{display:flex;gap:8px;align-items:center;margin-top:10px;font-size:14px
 #쿠팡특가 #골드박스 #오늘의특가 #쿠팡추천</textarea><div class="btns"><button class="save">사진 한꺼번에 저장</button><button class="copy alt">글 복사</button></div><label class="chk"><input type="checkbox"> 올렸어요</label></section>
 <div class="links">인스타 프로필 링크에 넣을 주소(한 번만):<br>특가 (인스타): <a href="https://seo6693.github.io/threads-cards/shop/instadeal/">https://seo6693.github.io/threads-cards/shop/instadeal/</a></div>
 </main>
+<div id="viewer" hidden><div class="vtop"><span>사진을 <b>길게 눌러</b> → '사진 앱에 저장'<br>위에서부터 순서대로 저장하세요</span><button class="close">닫기</button></div><div class="list"></div></div>
 <script>
 function key(id){return 'insta-done-'+id}
+function openViewer(urls){
+  var v=document.getElementById('viewer'), list=v.querySelector('.list'); list.innerHTML='';
+  urls.forEach(function(u){var el=document.createElement(u.endsWith('.mp4')?'video':'img');el.src=u;
+    if(el.tagName==='VIDEO'){el.controls=true;el.playsInline=true}list.appendChild(el)});
+  v.hidden=false; window.scrollTo(0,0);
+}
+document.addEventListener('click',function(e){if(e.target.closest('.close'))document.getElementById('viewer').hidden=true});
 document.querySelectorAll('.post:not(.over)').forEach(function(p){
   var id=p.dataset.id, box=p.querySelector('input[type=checkbox]');
   try{ if(localStorage.getItem(key(id))){box.checked=true;p.classList.add('done')} }catch(e){}
@@ -74,16 +87,19 @@ document.querySelectorAll('.post:not(.over)').forEach(function(p){
     if(navigator.clipboard){navigator.clipboard.writeText(t.value).then(ok,function(){t.select();document.execCommand('copy');ok()})}
     else{t.select();document.execCommand('copy');ok()}
   });
-  p.querySelector('.save').addEventListener('click',async function(ev){
-    var b=ev.currentTarget, orig=b.textContent, urls=JSON.parse(p.dataset.files); b.textContent='준비 중…';
-    try{
-      var files=await Promise.all(urls.map(async function(u,i){
-        var r=await fetch(u); var bl=await r.blob();
-        return new File([bl],id+'_'+(i+1)+(u.endsWith('.mp4')?'.mp4':'.jpg'),{type:bl.type});}));
-      if(navigator.canShare&&navigator.canShare({files:files})){await navigator.share({files:files})}
-      else{files.forEach(function(f){var a=document.createElement('a');a.href=URL.createObjectURL(f);a.download=f.name;document.body.appendChild(a);a.click();a.remove()})}
-    }catch(e){ if(e.name!=='AbortError') alert('저장이 안 되면 사진을 길게 눌러 저장하세요') }
-    b.textContent=orig;
+  // Fetch the photos as soon as the page opens: phones only open the save sheet when it is
+  // called right away from the tap, not after a download finishes.
+  var urls=JSON.parse(p.dataset.files), files=null, saveBtn=p.querySelector('.save'), orig=saveBtn.textContent;
+  Promise.all(urls.map(function(u,i){return fetch(u).then(function(r){return r.blob()}).then(function(bl){
+    var mp4=u.endsWith('.mp4');
+    return new File([bl],id+'_'+(i+1)+(mp4?'.mp4':'.jpg'),{type:bl.type||(mp4?'video/mp4':'image/jpeg')});})}))
+    .then(function(fs){files=fs}).catch(function(){files=[]});
+  saveBtn.addEventListener('click',function(){
+    if(files===null){saveBtn.textContent='사진 받는 중… 잠깐 뒤 다시 눌러주세요';setTimeout(function(){saveBtn.textContent=orig},2000);return}
+    if(files.length&&navigator.canShare&&navigator.canShare({files:files})){
+      navigator.share({files:files}).catch(function(e){if(e.name!=='AbortError')openViewer(urls)});
+    }else{openViewer(urls)}
   });
+  p.querySelectorAll('.strip img').forEach(function(im){im.addEventListener('click',function(){openViewer(urls)})});
 });
 </script></body></html>
