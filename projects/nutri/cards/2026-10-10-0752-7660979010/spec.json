@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "눈 피로로 루테인 샀다면",
+        false
+      ],
+      [
+        "라벨부터 다시 보세요",
+        true
+      ]
+    ],
+    "sub": "밤마다 눈 비비는 사람이라면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "눈 영양제\n라벨에서 볼 것 3가지",
+    "items": [
+      "루테인 = 황반색소밀도 유지 기능성",
+      "눈 피로도 개선은 아스타잔틴 기능성",
+      "1정당 가격으로 비교하기"
+    ],
+    "note": "식약처 인정 기능성 문구 기준 · 제품 라벨 확인",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "모니터 많이 보는 날",
+    "brand": "고려은단",
+    "name": "루테인 지아잔틴 아스타잔틴 60캡슐",
+    "sub": "1정당 357원 · 하루 1캡슐",
+    "badge_top": "리뷰 31,157개",
+    "badge_price": "21,400원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
