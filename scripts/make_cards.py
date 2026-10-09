@@ -303,6 +303,42 @@ def rank_card(s, t, img_path):
     return c
 
 
+def scene_card(s, t, img_path):
+    """Stop-the-scroll cover: a real-life situation photo with a big hook burned in.
+    s = {"lines": [["오후 3시만 되면", false], ["눈이 감기는 사람?", true]], "sub": "넘겨서 확인 →", "ai": true}"""
+    im = Image.open(img_path).convert("RGB")
+    r = max(W / im.width, H / im.height)
+    im = im.resize((int(im.width * r) + 1, int(im.height * r) + 1), Image.LANCZOS)
+    x, y = (im.width - W) // 2, int((im.height - H) * 0.35)
+    im = im.crop((x, y, x + W, y + H)).convert("RGBA")
+    g = Image.new("L", (1, H))
+    for j in range(H):
+        g.putpixel((0, j), int(225 * max(0.0, 1 - j / 640) ** 1.4 + 120 * max(0.0, (j - H + 260) / 260) ** 2))
+    shade = Image.new("RGBA", (W, H), (0, 0, 0, 255))
+    shade.putalpha(g.resize((W, H)))
+    im.alpha_composite(shade)
+    d = ImageDraw.Draw(im)
+    accent = s.get("accent") or t["accent"]
+    if isinstance(accent, list):
+        accent = tuple(accent)
+    y = 110
+    for ln, hi in s["lines"][:3]:
+        f = fit(d, ln, "Black", 118, 960)
+        d.text(((W - d.textlength(ln, font=f)) / 2, y), ln, font=f, fill=accent if hi else WHITE,
+               stroke_width=6, stroke_fill=(0, 0, 0))
+        y += f.size + 26
+    sub = s.get("sub", "넘겨서 확인 →")
+    fs = fit(d, sub, "Bold", 44, 900)
+    tw = d.textlength(sub, font=fs)
+    d.rounded_rectangle([(W - tw) / 2 - 34, H - 150, (W + tw) / 2 + 34, H - 72], radius=40, fill=(255, 255, 255, 235))
+    d.text(((W - tw) / 2, H - 140), sub, font=fs, fill=INK)
+    if s.get("ai", True):
+        fa = font("Bold", 26)
+        d.rounded_rectangle([28, H - 58, 28 + d.textlength("AI 이미지", font=fa) + 28, H - 20], radius=19, fill=(0, 0, 0, 150))
+        d.text((42, H - 54), "AI 이미지", font=fa, fill=(235, 235, 235))
+    return im.convert("RGB")
+
+
 def main(spec_path, out_dir):
     s = json.load(open(spec_path))
     t = THEMES[s.get("theme", "navy")]
@@ -321,6 +357,9 @@ def main(spec_path, out_dir):
             im = product_card(s["product"], t, img)
         elif part == "reviews":
             im = review_card(s["reviews"], t)
+        elif part == "scene":
+            sp = s["scene_image"] if os.path.isabs(s["scene_image"]) else os.path.join(os.path.dirname(os.path.abspath(spec_path)), s["scene_image"])
+            im = scene_card(s["scene"], t, sp)
         elif part == "cover":
             im = cover_card(dict(s["cover"], _ranks=s.get("ranks", [])), t)
         elif part.startswith("rank"):

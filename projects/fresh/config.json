@@ -39,7 +39,8 @@
     "buying_guide",
     "price_drop",
     "curation",
-    "tip_post"
+    "tip_post",
+    "scene_story"
   ],
   "copy_rules": [
     "가격은 쿠팡파트너스에 표시된 판매가 기준. 쿠팡 카테고리 페이지의 쿠폰가(웰컴백 쿠폰 100% → 0원 등)는 로그인 계정 전용이라 절대 쓰지 않기",
@@ -84,9 +85,42 @@
     "로켓프레시"
   ],
   "slot_types": {
-    "18:22": "rotate",
-    "12:22": "curation",
-    "15:52": "tip"
+    "18:22": "story",
+    "12:22": "story",
+    "15:52": "story"
   },
-  "max_link_replies": 1
+  "max_link_replies": 1,
+  "season_topics": {
+    "10": [
+      "밤 11시 야식",
+      "가을 캠핑 간편식",
+      "쌀쌀해진 날 국·탕",
+      "주말 늦잠 브런치"
+    ],
+    "11": [
+      "김장날 수육·보쌈",
+      "수능 도시락",
+      "추울수록 찌개",
+      "퇴근 후 10분 저녁"
+    ],
+    "12": [
+      "연말 홈파티",
+      "겨울 어묵탕",
+      "크리스마스 간편 요리",
+      "새해 첫 끼"
+    ]
+  },
+  "hook_formulas": [
+    "상황 질문",
+    "손해 피하기",
+    "숫자",
+    "반전",
+    "저격"
+  ],
+  "image_gen": {
+    "tool": "Higgsfield generate_image",
+    "model": "gpt_image_2_5",
+    "aspect_ratio": "3:4",
+    "prompt_rules": "Candid smartphone photo of a real Korean everyday situation that needs the product; Korean people/places; natural light; vertical with empty top third for text; no text, no logos, no brand products, never show anyone using or holding the product"
+  }
 }

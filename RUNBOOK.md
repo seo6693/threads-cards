@@ -41,6 +41,47 @@ reached (computer asleep/offline), stop: report "컴퓨터가 꺼져 있어 이�
 If Coupang Partners shows a login page, stop and report that a login is needed.
 Never type passwords.
 
+## Story posts (`format: scene_story`) — the default for nutri and fresh since 10/10
+Marketing logic: stop the scroll with a situation people recognise → give something useful → offer the
+product as the fix. Three cards: **scene** (real-life photo + big hook) → **hook** (checklist: 2-3 useful
+checks) → **product** (real product photo, price, unit price).
+
+**A. Pick the topic and product by demand, not by a fixed keyword list.**
+1. Topic: choose from `next.season_topics` (this month's real needs), or a topic that did well recently
+   (open `checks/insights.json`, look at this project's posts with the most views and their `hook_formula`).
+   Don't repeat the previous 2 posts' topic.
+2. Demand check on coupang.com (browser, your tab, 3-5 s between pages): search the topic's main word,
+   e.g. `https://www.coupang.com/np/search?q=마그네슘`, read the **연관검색어** list (what people actually
+   search) and pick the most specific one that fits the topic. Then open the same search sorted by sales:
+   add `&sorter=saleCountDesc`. Candidates = top sellers that pass `selection` (fresh: must also carry the
+   로켓프레시 badge; its category ranking stays a valid source). Record where it came from in
+   `"topic_source"` (e.g. "10월 환절기 → 연관검색어 '아연' → 판매량순 3위").
+3. Make the Partners link for the chosen product exactly as before (title search, same productId).
+
+**B. Make the scene photo** with the Higgsfield tools (`mcp__Higgsfield__generate_image`; load with ToolSearch).
+- `{"model": "gpt_image_2_5", "aspect_ratio": "3:4", "prompt": ...}` following `config.image_gen.prompt_rules`:
+  a candid phone photo of the *situation* (tired worker at 3 pm, empty fridge at 11 pm, dry eyes after
+  a night of monitors…), Korean people and places, empty top third for text, **no text, no logos, never
+  anyone using or holding the product** (that would be a fake testimonial). One image per post (~0.25 credits).
+- Wait with `jobs_wait`, then move the image into the workspace through your browser tab (the workspace
+  cannot download from that host): navigate your tab to the `result_url`, then run
+  `const i=await new Promise((r,j)=>{const x=new Image();x.crossOrigin='anonymous';x.onload=()=>r(x);x.onerror=j;x.src=location.href+'?c=1'});const c=document.createElement('canvas');c.width=i.width;c.height=i.height;c.getContext('2d').drawImage(i,0,0);'BEGIN'+c.toDataURL('image/jpeg',0.85).split(',')[1]+'END'+'#'.repeat(40000)`
+  — the result is saved to a tool-results file; decode the text between BEGIN and END with base64 into
+  `/tmp/scene.jpg`. Check the image (Read) — redo once if it has text, logos, odd hands/faces.
+- If image generation is unavailable or fails twice, make a `tip_post` instead (don't skip the slot).
+
+**C. Write it.**
+- `cards.scene`: `{"lines": [["오후 3시만 되면", false], ["눈이 감기는 사람?", true]], "sub": "커피 3잔째라면, 넘겨서 확인 →"}`
+  — 2 lines, each ≤ 16 characters, the highlighted line is the punch. `"ai": true` stays on (small "AI 이미지" tag).
+- `hook_formula`: one of `next.hook_formulas`, not one of `avoid_hook_formulas`:
+  상황 질문 ("…하는 사람?"), 손해 피하기 ("이렇게 먹으면 반은 버리는 것"), 숫자 ("자취 3년차 냉동실 고정템 3"),
+  반전 ("비싼 게 더 좋을 줄 알았는데"), 저격 ("점심 편의점으로 때우는 직장인만").
+- `cards.hook` (checklist): title + 2-3 checks that are genuinely useful and verifiable (product page, official
+  functional claims, many reviews). 영양제: only approved functional wording, no disease/cure claims.
+- `cards.product`: as before (pill = the situation, e.g. "오후 루틴"; sub = 1정당/100g당 가격).
+- Text: line 1 = the hook in words, 2-4 short lines of empathy/info, one line on the product, an honest
+  downside, a question, then the disclosure. Link in the first comment as usual (one link only).
+
 ## Post types (read this first — `next` prints `post_type`, `format`, `more_products_wanted`)
 Every post carries products, but the post itself must be worth reading. Each slot has a type:
 - **curation** (`format: curation`) — one topic, **3–5 products compared** by a computed, verifiable

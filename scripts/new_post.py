@@ -142,7 +142,7 @@ def cmd_next(project):
     }, ensure_ascii=False, indent=2))
 
 
-TYPE_FORMAT = {"curation": "curation", "tip": "tip_post"}
+TYPE_FORMAT = {"curation": "curation", "tip": "tip_post", "story": "scene_story"}
 
 
 def _post_plan(cfg, state):
@@ -154,7 +154,7 @@ def _post_plan(cfg, state):
     ptype = (cfg.get("slot_types") or {}).get(hm, "hero")
     if ptype == "rotate":
         recent = state.get("recent_post_types", [])
-        options = ["curation", "tip", "hero"]
+        options = [k for k in ("story", "curation", "tip", "hero") if k in (cfg.get("rotate_types") or ["curation", "tip", "hero"])]
         ptype = min(options, key=lambda k: max((i for i, r in enumerate(recent) if r == k), default=-1))
     allowed = cfg.get("formats") or list(FORMATS)
     if ptype in TYPE_FORMAT and TYPE_FORMAT[ptype] in allowed:
@@ -163,7 +163,11 @@ def _post_plan(cfg, state):
         ptype = "hero"
         fmt = pick_format(state, [f for f in allowed if f not in TYPE_FORMAT.values()])
     return {"post_type": ptype, "format": fmt,
-            "more_products_wanted": {"curation": "2-4 (required)", "tip": "0-1", "hero": cfg.get("hero_more_products", "0")}[ptype]}
+            "more_products_wanted": {"curation": "2-4 (required)", "tip": "0-1", "story": "0",
+                                     "hero": cfg.get("hero_more_products", "0")}[ptype],
+            "hook_formulas": cfg.get("hook_formulas", []),
+            "avoid_hook_formulas": state.get("recent_hook_formulas", [])[-2:],
+            "season_topics": (cfg.get("season_topics") or {}).get(str(dt.datetime.now(KST).month), [])}
 
 
 def _bank_unused(proj, cfg):
@@ -197,6 +201,18 @@ def cmd_queue(project, draft_path):
         need_keys.append("cards")
     if FORMATS.get(d.get("format"), {}).get("custom"):
         need_keys += ["video_script", "banner_image"]
+    if d.get("format") == "scene_story":
+        need_keys += ["scene_image", "hook_formula"]
+        sc = (d.get("cards") or {}).get("scene") or {}
+        if not sc.get("lines") or not 1 <= len(sc["lines"]) <= 3:
+            errors.append("scene_story: cards.scene.lines needs 1-3 [text, highlight] lines")
+        elif any(len(str(ln[0])) > 16 for ln in sc["lines"]):
+            errors.append("scene_story: each hook line must be 16 characters or fewer (must read at a glance)")
+        hf = cfg.get("hook_formulas", [])
+        if hf and d.get("hook_formula") not in hf:
+            errors.append(f"hook_formula must be one of {hf}")
+        elif d.get("hook_formula") in state.get("recent_hook_formulas", [])[-2:]:
+            errors.append(f"hook formula '{d.get('hook_formula')}' was used in the last 2 posts; use another")
     for k in need_keys:
         if not d.get(k):
             errors.append(f"missing '{k}'")
@@ -363,6 +379,10 @@ def cmd_queue(project, draft_path):
         fcards = FORMATS[fmt]["cards"]
         spec = dict(d["cards"], theme=d.get("theme") or random.choice(cfg.get("theme_variants", [cfg["theme"]])),
                     product_image=img.name, order=fcards["order"])
+        if d.get("scene_image"):
+            sc_name = "scene" + pathlib.Path(d["scene_image"]).suffix
+            shutil.copy(d["scene_image"], card_dir / sc_name)
+            spec["scene_image"] = sc_name
         if deal:
             spec["product"] = dict(spec.get("product", {}), deadline=deal["label"])
         if "hook" in fcards["order"]:
@@ -383,7 +403,9 @@ def cmd_queue(project, draft_path):
         **media,
         "reply": d.get("reply_text") and f"{d['reply_text']}\n{d['link']}\n{note}" or f"🛒 구매 링크 → {d['link']}\n{note}",
         "format": fmt,
-        "post_type": {"curation": "curation", "tip_post": "tip"}.get(fmt, "hero"),
+        "post_type": {"curation": "curation", "tip_post": "tip", "scene_story": "story"}.get(fmt, "hero"),
+        "hook_formula": d.get("hook_formula", ""),
+        "topic_source": d.get("topic_source", ""),
         "publish_after": (dt.datetime.now(KST) + dt.timedelta(
             minutes=random.randint(DELAY_MIN, DELAY_MAX))).isoformat(timespec="seconds"),
     }
@@ -419,8 +441,10 @@ def cmd_queue(project, draft_path):
 
     state["next_keyword"] = (state["next_keyword"] + 1) % len(cfg["keywords"])
     state["recent_formats"] = (state.get("recent_formats", []) + [fmt])[-8:]
-    ptype = {"curation": "curation", "tip_post": "tip"}.get(fmt, "hero")
+    ptype = {"curation": "curation", "tip_post": "tip", "scene_story": "story"}.get(fmt, "hero")
     state["recent_post_types"] = (state.get("recent_post_types", []) + [ptype])[-8:]
+    if d.get("hook_formula"):
+        state["recent_hook_formulas"] = (state.get("recent_hook_formulas", []) + [d["hook_formula"]])[-8:]
     state_path.write_text(json.dumps(state, indent=2) + "\n")
     print(json.dumps({"queued": str(qfile.relative_to(ROOT)), "cards": str(card_dir.relative_to(ROOT)),
                       "format": fmt, "publish_after": post["publish_after"]},
