@@ -1,0 +1,120 @@
+{
+ "updated": "2026-10-09T15:50+09:00",
+ "posts_28d": 36,
+ "avg_views_28d": 10.1,
+ "formula_weights": {
+  "상황 질문": 1.0,
+  "손해 피하기": 1.0,
+  "숫자": 1.0,
+  "반전": 1.0,
+  "저격": 1.0
+ },
+ "formulas": {},
+ "types": {
+  "대표": {
+   "avg": 8.1,
+   "n": 22
+  },
+  "꿀팁": {
+   "avg": 20.9,
+   "n": 7
+  },
+  "비교": {
+   "avg": 5.4,
+   "n": 7
+  }
+ },
+ "hours": {
+  "07시": {
+   "avg": 19.5,
+   "n": 2
+  },
+  "08시": {
+   "avg": 20.2,
+   "n": 6
+  },
+  "11시": {
+   "avg": 9.0,
+   "n": 2
+  },
+  "12시": {
+   "avg": 6.9,
+   "n": 8
+  },
+  "15시": {
+   "avg": 12.0,
+   "n": 1
+  },
+  "16시": {
+   "avg": 11.5,
+   "n": 2
+  },
+  "18시": {
+   "avg": 5.0,
+   "n": 1
+  },
+  "19시": {
+   "avg": 9.0,
+   "n": 1
+  },
+  "20시": {
+   "avg": 5.3,
+   "n": 3
+  },
+  "21시": {
+   "avg": 6.9,
+   "n": 9
+  },
+  "23시": {
+   "avg": 3.0,
+   "n": 1
+  }
+ },
+ "top_posts": [
+  {
+   "views": 35,
+   "hook_formula": "",
+   "topic_source": "",
+   "product": "스포츠리서치 오메가-3 트리플 스트렝스 1040mg 90정",
+   "format": "tip_post",
+   "when": "10/03 08:30",
+   "permalink": "https://www.threads.com/@kkul394/post/DeAq3r-D2WA"
+  },
+  {
+   "views": 35,
+   "hook_formula": "",
+   "topic_source": "",
+   "product": "종근당건강 아이클리어 루테인지아잔틴 30정x3",
+   "format": "tip_post",
+   "when": "10/04 08:30",
+   "permalink": "https://www.threads.com/@kkul394/post/DeDPrY2lLG2"
+  },
+  {
+   "views": 23,
+   "hook_formula": "",
+   "topic_source": "",
+   "product": "고려은단 비타민C 1000 180정",
+   "format": "tip_post",
+   "when": "10/05 07:48",
+   "permalink": "https://www.threads.com/@kkul394/post/DeFvl0KFSAe"
+  },
+  {
+   "views": 21,
+   "hook_formula": "",
+   "topic_source": "",
+   "product": "쏜리서치 칼슘-마그네슘 말레이트 240정",
+   "format": "buying_guide",
+   "when": "10/01 08:09",
+   "permalink": "https://www.threads.com/@kkul394/post/Dd7e3fqmUJh"
+  },
+  {
+   "views": 20,
+   "hook_formula": "",
+   "topic_source": "",
+   "product": "고려은단 코엔자임Q10 90정",
+   "format": "tip_post",
+   "when": "10/06 08:18",
+   "permalink": "https://www.threads.com/@kkul394/post/DeIX4qrj3oy"
+  }
+ ]
+}

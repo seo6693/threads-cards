@@ -73,7 +73,10 @@ checks) → **product** (real product photo, price, unit price).
 **C. Write it.**
 - `cards.scene`: `{"lines": [["오후 3시만 되면", false], ["눈이 감기는 사람?", true]], "sub": "커피 3잔째라면, 넘겨서 확인 →"}`
   — 2 lines, each ≤ 16 characters, the highlighted line is the punch. `"ai": true` stays on (small "AI 이미지" tag).
-- `hook_formula`: one of `next.hook_formulas`, not one of `avoid_hook_formulas`:
+- `hook_formula`: start from `next.suggested_hook_formula` (picked by what has been getting views —
+  `scripts/learn.py`); you may choose another if it clearly fits the situation better. Look at
+  `next.top_posts_to_learn_from` (best recent posts) and borrow what worked, without copying wording.
+  Must be one of `next.hook_formulas`, not one of `avoid_hook_formulas`:
   상황 질문 ("…하는 사람?"), 손해 피하기 ("이렇게 먹으면 반은 버리는 것"), 숫자 ("자취 3년차 냉동실 고정템 3"),
   반전 ("비싼 게 더 좋을 줄 알았는데"), 저격 ("점심 편의점으로 때우는 직장인만").
 - `cards.hook` (checklist): title + 2-3 checks that are genuinely useful and verifiable (product page, official
@@ -308,6 +311,11 @@ The last line of `text` is always exactly:
 `이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.`
 Use the 일반할인가 (not the 와우 쿠폰가) as the price. If the 와우 price is lower,
 set `reply_note` to `※ 가격·쿠폰은 시점마다 달라질 수 있어요 (와우 회원은 쿠폰가 더 저렴)`.
+
+## 5b. Brand check before queueing
+Read `BRAND.md`. If the `marketing:brand-review` skill is available in this session, run it on the draft
+(text + card texts) with BRAND.md as the brand guide; otherwise go through BRAND.md's "반드시 지킬 것"
+checklist yourself. Fix every high/medium finding before queueing.
 
 ## 6. Queue, check, publish
 1. `python3 scripts/new_post.py queue <project> /tmp/draft.json` — fix and retry if it rejects the draft.

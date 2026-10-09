@@ -28,10 +28,12 @@ jobs:
           THREADS_TOKEN_NUTRI: ${{ secrets.THREADS_TOKEN_NUTRI }}
           THREADS_TOKEN_FRESH: ${{ secrets.THREADS_TOKEN_FRESH }}
         run: python scripts/insights.py
+      - name: Learn (hook formula weights, best hours, top posts)
+        run: python scripts/learn.py
       - name: Record
         run: |
           git config user.name "threads-bot"
           git config user.email "threads-bot@users.noreply.github.com"
-          git add checks/insights.json
+          git add checks/insights.json projects/*/learning.json
           git diff --cached --quiet || git commit -m "Record insights [skip ci]"
           git pull --rebase origin main && git push

@@ -167,7 +167,21 @@ def _post_plan(cfg, state):
                                      "hero": cfg.get("hero_more_products", "0")}[ptype],
             "hook_formulas": cfg.get("hook_formulas", []),
             "avoid_hook_formulas": state.get("recent_hook_formulas", [])[-2:],
+            **_learned(cfg, state),
             "season_topics": (cfg.get("season_topics") or {}).get(str(dt.datetime.now(KST).month), [])}
+
+
+def _learned(cfg, state):
+    """Suggest the next hook formula from what has been getting views (scripts/learn.py)."""
+    f = ROOT / "projects" / cfg["account"] / "learning.json"
+    if not f.exists():
+        return {}
+    L = json.loads(f.read_text())
+    w = {k: v for k, v in (L.get("formula_weights") or {}).items()
+         if k not in state.get("recent_hook_formulas", [])[-2:]}
+    pick = random.choices(list(w), weights=list(w.values()))[0] if w else None
+    return {"suggested_hook_formula": pick, "top_posts_to_learn_from": L.get("top_posts", [])[:3],
+            "best_hours": L.get("hours", {})}
 
 
 def _bank_unused(proj, cfg):

@@ -141,6 +141,12 @@ footer{font-size:12px;color:var(--muted)}
 
   <div class="accounts" id="accounts"></div>
 
+  <div class="panel" style="margin:16px 0">
+    <h3>무엇이 잘 되나 (최근 4주 · 매일 자정 자동 학습)</h3>
+    <div id="learn" class="muted" style="font-size:13.5px">불러오는 중…</div>
+    <div class="muted" style="font-size:12px;margin-top:8px">조회수가 높은 후킹 공식일수록 다음 글에서 더 자주 쓰여요. 주간 보고서: <a href="https://github.com/seo6693/threads-cards/tree/main/reports" target="_blank" rel="noopener">reports ↗</a></div>
+  </div>
+
   <div class="grid2">
     <div class="panel">
       <h3>계정 · 연결 정보</h3>
@@ -240,6 +246,7 @@ async function load(){
       data[p]={cfg,blocked:paths.includes(`projects/${p}/BLOCKED.json`),acc:accounts[cfg.account]||{},done:d,failed:fl,queue:q,skipped:sk,total:done.length,week,token:tokens[p]||tokens[cfg.account]};
     }));
     render(data,projects,runs,issues,now,today);
+    renderLearn(projects,data).catch(()=>{$("learn").textContent="아직 학습 데이터가 없어요.";});
     $("updated").textContent=usedStale?`${kstHM(now)} · 일부는 직전 저장본(GitHub 조회 한도)`:`${kstHM(now)} 기준`;
   }catch(e){
     const msg=(e.status===403||e.status===429)?"GitHub가 잠시 응답을 막았어요. 5분 뒤 자동으로 다시 불러와요."
@@ -264,6 +271,17 @@ function slotsFor(x,now,today){
   });
 }
 const ST_LABEL={paused:"정지",before:"시작 전",done:"완료",failed:"실패",missed:"건너뜀",running:"진행 중",planned:"예정"};
+
+async function renderLearn(projects,data){
+  const ls=await Promise.all(projects.map(p=>raw(`projects/${p}/learning.json`).catch(()=>null)));
+  const bar=(v,max)=>`<span style="display:inline-block;height:9px;border-radius:5px;background:var(--c,#2f6fd6);width:${Math.max(4,Math.round(90*v/(max||1)))}px;vertical-align:middle;margin-right:6px"></span>`;
+  const block=(title,obj)=>{const e=Object.entries(obj||{}).filter(([,v])=>v.n);if(!e.length)return"";const m=Math.max(...e.map(([,v])=>v.avg));
+    return`<div style="margin:6px 0 2px;font-weight:700">${title}</div>`+e.sort((a,b)=>b[1].avg-a[1].avg).map(([k,v])=>`<div>${bar(v.avg,m)}${esc(k)} · 평균 ${v.avg}회 <span class="muted">(${v.n}개)</span></div>`).join("");};
+  $("learn").innerHTML=projects.map((p,i)=>{const L=ls[i];if(!L)return"";const top=(L.top_posts||[])[0];
+    return`<div style="margin-bottom:14px"><b>${esc(data[p].cfg.label)}</b> · 최근 4주 ${L.posts_28d}개, 글당 평균 ${L.avg_views_28d}회
+      ${block("글 종류",L.types)}${block("후킹 공식",L.formulas)}${block("시간대",L.hours)}
+      ${top?`<div style="margin-top:6px">가장 많이 본 글: <a href="${esc(top.permalink||"#")}" target="_blank" rel="noopener">${esc(top.product||"")} ↗</a> · ${top.views}회</div>`:""}</div>`;}).join("")||"아직 학습 데이터가 없어요.";
+}
 
 function render(data,projects,runs,issues,now,today){
   let todayPosts=0,left=0,bad=0,total=0,queued=0,next=null;const alerts=[];

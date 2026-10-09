@@ -1,0 +1,84 @@
+{
+ "updated": "2026-10-09T15:50+09:00",
+ "posts_28d": 11,
+ "avg_views_28d": 12.9,
+ "formula_weights": {
+  "상황 질문": 1.0,
+  "손해 피하기": 1.0,
+  "숫자": 1.0,
+  "반전": 1.0,
+  "저격": 1.0
+ },
+ "formulas": {},
+ "types": {
+  "대표": {
+   "avg": 14.7,
+   "n": 6
+  },
+  "비교": {
+   "avg": 12.7,
+   "n": 3
+  },
+  "꿀팁": {
+   "avg": 8.0,
+   "n": 2
+  }
+ },
+ "hours": {
+  "18시": {
+   "avg": 11.0,
+   "n": 7
+  },
+  "19시": {
+   "avg": 16.2,
+   "n": 4
+  }
+ },
+ "top_posts": [
+  {
+   "views": 26,
+   "hook_formula": "",
+   "topic_source": "",
+   "product": "사옹원 한입 아삭김치전 510g",
+   "format": "review_digest",
+   "when": "10/04 19:12",
+   "permalink": "https://www.threads.com/@magdungi43/post/DeEZFeyHNK9"
+  },
+  {
+   "views": 24,
+   "hook_formula": "",
+   "topic_source": "",
+   "product": "비비고 왕교자 1.715kg",
+   "format": "review_digest",
+   "when": "09/28 18:39",
+   "permalink": "https://www.threads.com/@magdungi43/post/Dd04hpAoOwr"
+  },
+  {
+   "views": 19,
+   "hook_formula": "",
+   "topic_source": "",
+   "product": "곰곰 닭갈비볶음밥 300g×2",
+   "format": "curation",
+   "when": "10/02 19:03",
+   "permalink": "https://www.threads.com/@magdungi43/post/Dd_OfdkFTg0"
+  },
+  {
+   "views": 13,
+   "hook_formula": "",
+   "topic_source": "",
+   "product": "삼호어묵 CJ 정통어묵탕 336g",
+   "format": "quick_pick",
+   "when": "09/30 18:54",
+   "permalink": "https://www.threads.com/@magdungi43/post/Dd6DzveG9XU"
+  },
+  {
+   "views": 13,
+   "hook_formula": "",
+   "topic_source": "",
+   "product": "신선설농탕 450g + 양지고기 40g 세트",
+   "format": "buying_guide",
+   "when": "10/01 18:49",
+   "permalink": "https://www.threads.com/@magdungi43/post/Dd8oGAskXFi"
+  }
+ ]
+}
