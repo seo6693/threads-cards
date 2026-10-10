@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "창가 자리라 햇빛은",
+        false
+      ],
+      [
+        "충분한 줄 알았다",
+        true
+      ]
+    ],
+    "sub": "유리창 너머 햇빛의 반전, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "비타민D 고를 때\n볼 것 3가지",
+    "items": [
+      "함량(IU): 종합비타민·칼슘제 속 D까지 합산",
+      "표기: D3(콜레칼시페롤)인지 확인",
+      "먹는 때: 지용성이라 식사와 함께"
+    ],
+    "note": "기능성: 칼슘과 인의 흡수·이용, 뼈의 형성과 유지에 필요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "실내 근무 루틴",
+    "brand": "나우푸드",
+    "name": "메가 D-3 & MK-7 120캡슐",
+    "sub": "1정당 249원 · D3 5000IU + K2 180mcg",
+    "badge_top": "리뷰 2,708개",
+    "badge_price": "29,920원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
