@@ -1,26 +1,27 @@
 {
-  "next_keyword": 4,
+  "next_keyword": 5,
   "recent_formats": [
-    "curation",
     "tip_post",
     "review_digest",
     "curation",
     "tip_post",
     "problem_solution",
     "curation",
+    "scene_story",
     "scene_story"
   ],
   "recent_post_types": [
-    "curation",
     "tip",
     "hero",
     "curation",
     "tip",
     "hero",
     "curation",
+    "story",
     "story"
   ],
   "recent_hook_formulas": [
-    "\uc0c1\ud669 \uc9c8\ubb38"
+    "\uc0c1\ud669 \uc9c8\ubb38",
+    "\uc800\uaca9"
   ]
 }

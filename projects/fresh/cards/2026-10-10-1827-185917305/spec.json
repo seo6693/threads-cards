@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "밤 11시 냉장고",
+        false
+      ],
+      [
+        "또 열어본 자취생만",
+        true
+      ]
+    ],
+    "sub": "배달비 아까운 밤이라면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "야식용 냉동밥\n살 때 볼 3가지",
+    "items": [
+      "한 봉이 딱 1인분인지 (300g)",
+      "전자레인지 조리 되는지",
+      "한 봉당 가격 (6봉이면 ÷6)"
+    ],
+    "note": "상품 페이지·포장 표시 기준 · 계란프라이 올리면 더 든든(리뷰 팁)",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "밤 11시 야식",
+    "brand": "곰곰",
+    "name": "김치볶음밥 300g×6",
+    "sub": "1봉 약 1,848원 · 100g당 616원",
+    "badge_top": "27% 할인",
+    "badge_price": "11,090원"
+  },
+  "theme": "teal",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
