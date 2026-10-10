@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "오후 3시, 커피 3잔째",
+        false
+      ],
+      [
+        "라벨 숫자 3개 보세요",
+        true
+      ]
+    ],
+    "sub": "점심 먹고 눈꺼풀 내려오는 사람, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "비타민B 고를 때\n라벨에서 볼 숫자 3개",
+    "items": [
+      "B군 몇 종? B1~B12·엽산·비오틴 8종인지",
+      "활성형 표기: P5P·메틸코발라민·5-MTHF",
+      "1정당 가격: 같은 60정도 283원~460원"
+    ],
+    "note": "쿠팡 상품 페이지·제품 라벨 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "오후 3시 루틴",
+    "brand": "쏜리서치",
+    "name": "베이직 B 컴플렉스 60캡슐",
+    "sub": "1정당 460원 · 1캡슐에 B군 8종+콜린",
+    "badge_top": "리뷰 18,735개",
+    "badge_price": "27,600원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
