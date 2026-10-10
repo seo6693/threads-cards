@@ -1,17 +1,21 @@
 {
- "updated": "2026-10-10T00:23+09:00",
- "posts_28d": 12,
- "avg_views_28d": 13.2,
+ "updated": "2026-10-11T00:21+09:00",
+ "posts_28d": 13,
+ "avg_views_28d": 13.8,
  "formula_weights": {
-  "상황 질문": 1.02,
+  "상황 질문": 1.0,
   "손해 피하기": 1.0,
   "숫자": 1.0,
   "반전": 1.0,
-  "저격": 1.0
+  "저격": 1.11
  },
  "formulas": {
   "상황 질문": {
    "avg": 14.0,
+   "n": 1
+  },
+  "저격": {
+   "avg": 20.0,
    "n": 1
   }
  },
@@ -21,7 +25,7 @@
    "n": 6
   },
   "비교": {
-   "avg": 13.7,
+   "avg": 14.0,
    "n": 3
   },
   "꿀팁": {
@@ -29,14 +33,14 @@
    "n": 2
   },
   "이야기": {
-   "avg": 14.0,
-   "n": 1
+   "avg": 17.0,
+   "n": 2
   }
  },
  "hours": {
   "18시": {
-   "avg": 11.4,
-   "n": 7
+   "avg": 12.6,
+   "n": 8
   },
   "19시": {
    "avg": 15.8,
@@ -63,6 +67,15 @@
    "permalink": "https://www.threads.com/@magdungi43/post/Dd04hpAoOwr"
   },
   {
+   "views": 20,
+   "hook_formula": "저격",
+   "topic_source": "10월 '밤 11시 야식' → 쿠팡 '야식' 연관검색어 '간편야식' → 판매량순(saleCountDesc) 상위 로켓프레시 볶음밥, 쿠팡파트너스 동일 상품번호 185917305",
+   "product": "곰곰 김치볶음밥 300g×6",
+   "format": "scene_story",
+   "when": "10/10 18:52",
+   "permalink": "https://www.threads.com/@magdungi43/post/DeTzjZqFbke"
+  },
+  {
    "views": 19,
    "hook_formula": "",
    "topic_source": "",
@@ -79,15 +92,6 @@
    "format": "scene_story",
    "when": "10/09 19:05",
    "permalink": "https://www.threads.com/@magdungi43/post/DeRQUO4ljR_"
-  },
-  {
-   "views": 13,
-   "hook_formula": "",
-   "topic_source": "",
-   "product": "삼호어묵 CJ 정통어묵탕 336g",
-   "format": "quick_pick",
-   "when": "09/30 18:54",
-   "permalink": "https://www.threads.com/@magdungi43/post/Dd6DzveG9XU"
   }
  ]
 }
