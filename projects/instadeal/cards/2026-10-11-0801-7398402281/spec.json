@@ -1,0 +1,77 @@
+{
+  "theme": "teal3",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "오늘 골드박스 · 쿠폰 제외 일반 판매가",
+    "title": "골드박스 생활용품 4종,\n할인율 높은 순"
+  },
+  "ranks": [
+    {
+      "name": "온더바디 발을 씻자 풋샴푸 리필 500ml×4",
+      "short": "발을 씻자 풋샴푸 리필 4개",
+      "sub": "리뷰 26,110개 · 100ml당 약 1,081원",
+      "price": "21,620원",
+      "badge": "55% 할인",
+      "cover_value": "55%↓",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "쿤달 딥 클린 이중 미세모 칫솔 16개입",
+      "short": "쿤달 미세모 칫솔 16개",
+      "sub": "리뷰 75,209개 · 1개 약 1,163원",
+      "price": "18,600원",
+      "badge": "48% 할인",
+      "cover_value": "48%↓",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "피죤 건조기용 시그니처 시트 130매",
+      "short": "피죤 건조기 시트 130매",
+      "sub": "리뷰 62,839개 · 1매 약 91원",
+      "price": "11,870원",
+      "badge": "42% 할인",
+      "cover_value": "42%↓",
+      "rank": 3,
+      "image": "p3.jpg"
+    },
+    {
+      "name": "깨끗한나라 순수 시그니처 3겹 화장지 27m 30롤",
+      "short": "깨끗한나라 화장지 30롤",
+      "sub": "리뷰 134,406개 · 1롤 550원",
+      "price": "16,500원",
+      "badge": "41% 할인",
+      "cover_value": "41%↓",
+      "rank": 4,
+      "image": "p4.jpg"
+    }
+  ],
+  "order": [
+    "scene",
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3",
+    "rank4"
+  ],
+  "scene_image": "scene.jpg",
+  "scene": {
+    "lines": [
+      [
+        "하루 종일 구두 신는",
+        false
+      ],
+      [
+        "직장인만 보세요",
+        false
+      ],
+      [
+        "발샴푸 리필 55%↓",
+        true
+      ]
+    ],
+    "sub": "오늘 골드박스 특가 4종 정리",
+    "ai": true
+  }
+}

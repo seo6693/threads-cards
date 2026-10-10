@@ -1,13 +1,13 @@
 {
-  "next_keyword": 9,
+  "next_keyword": 10,
   "recent_formats": [
-    "quick_pick",
     "review_digest",
     "price_motion",
     "curation",
     "curation",
     "curation",
     "curation",
+    "deal_story",
     "deal_story"
   ],
   "recent_video_styles": [
@@ -22,9 +22,11 @@
     "curation",
     "curation",
     "curation",
+    "deal_story",
     "deal_story"
   ],
   "recent_hook_formulas": [
-    "\uc22b\uc790"
+    "\uc22b\uc790",
+    "\uc800\uaca9"
   ]
 }
