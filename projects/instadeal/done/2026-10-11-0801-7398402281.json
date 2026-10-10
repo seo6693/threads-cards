@@ -51,5 +51,9 @@
   "price": "21,620원",
   "deal_until": "2026-10-12T06:59:59+09:00",
   "deal_label": "10/12(월) 오전 7시까지",
-  "topic_tag": "살림템"
+  "topic_tag": "살림템",
+  "published_at": "2026-10-10T23:48:20+0000",
+  "result": {
+    "manual": "instagram"
+  }
 }
