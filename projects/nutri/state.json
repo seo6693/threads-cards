@@ -1,11 +1,11 @@
 {
-  "next_keyword": 6,
+  "next_keyword": 7,
   "recent_formats": [
-    "tip_post",
     "curation",
     "price_motion",
     "tip_post",
     "curation",
+    "scene_story",
     "scene_story",
     "scene_story",
     "scene_story"
@@ -27,11 +27,11 @@
     "cyan"
   ],
   "recent_post_types": [
-    "tip",
     "curation",
     "hero",
     "tip",
     "curation",
+    "story",
     "story",
     "story",
     "story"
@@ -39,6 +39,7 @@
   "recent_hook_formulas": [
     "\uc0c1\ud669 \uc9c8\ubb38",
     "\uc190\ud574 \ud53c\ud558\uae30",
-    "\uc22b\uc790"
+    "\uc22b\uc790",
+    "\uc0c1\ud669 \uc9c8\ubb38"
   ]
 }

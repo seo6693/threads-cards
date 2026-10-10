@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "아침 출근길 쌀쌀한데",
+        false
+      ],
+      [
+        "코 훌쩍이는 사람?",
+        true
+      ]
+    ],
+    "sub": "환절기 아연 챙긴다면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "아연 영양제 고를 때\n볼 것 3가지",
+    "items": [
+      "함량: 1일 기준치 8.5mg, 종합비타민과 합산",
+      "형태 표기: 피콜리네이트·글루콘산 등",
+      "먹는 때: 공복에 속 불편 리뷰 → 식후"
+    ],
+    "note": "식약처 기능성: 아연은 정상적인 면역기능에 필요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "환절기 루틴",
+    "brand": "쏜리서치",
+    "name": "아연 피콜리네이트 15mg 60캡슐",
+    "sub": "1정당 277원 · 1캡슐 아연 15mg",
+    "badge_top": "리뷰 1,262개",
+    "badge_price": "16,640원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
