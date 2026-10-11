@@ -454,9 +454,6 @@ def cmd_queue(project, draft_path):
         post["deal_label"] = deal["label"]
     if d.get("topic_tag"):
         post["topic_tag"] = re.sub(r"[.&\s]", "", d["topic_tag"])[:50]
-    if cfg.get("channel") == "instagram_manual":
-        import insta_square  # square copies so Instagram never crops the cards
-        insta_square.run(card_dir)
     qfile = proj / "queue" / f"{slug}.json"
     qfile.write_text(json.dumps(post, ensure_ascii=False, indent=2) + "\n")
 

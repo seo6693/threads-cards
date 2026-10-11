@@ -45,9 +45,6 @@ def media(proj, slug, d):
     card_dir = proj / "cards" / slug
     rel = lambda f: "../" + str(f.relative_to(ROOT)).replace("\\", "/")
     imgs = sorted(card_dir.glob("card*.jpg")) if card_dir.exists() else []
-    sq = [card_dir / "ig" / f.name for f in imgs]
-    if imgs and all(f.exists() for f in sq):
-        imgs = sq  # Instagram-safe square versions (scripts/insta_square.py)
     if not imgs and (card_dir / "poster.jpg").exists():
         imgs = [card_dir / "poster.jpg"]
     video = card_dir / "video.mp4"
@@ -91,7 +88,7 @@ label.chk{display:flex;gap:8px;align-items:center;margin-top:10px;font-size:14px
 <div class="how"><b>올리는 순서</b><ol>
 <li>[사진 한꺼번에 저장] → 뜨는 창에서 <b>'이미지 저장'</b>(아이폰) 또는 <b>'갤러리/사진에 저장'</b>(안드로이드). 창이 안 뜨면 사진이 크게 나오니 길게 눌러 저장</li>
 <li>[글 복사]</li>
-<li>인스타 + → 게시물 → '여러 장 선택'으로 저장한 사진을 순서대로 선택 → 글 붙여넣기 (사진을 정사각형으로 만들어 둬서 잘리지 않아요)</li>
+<li>인스타 + → 게시물 → 미리보기 왼쪽 아래 <b>↔ 버튼을 눌러 세로로</b> 바꾼 뒤 → '여러 장 선택'으로 저장한 사진 순서대로 선택 → 글 붙여넣기 <span style="color:#c92a2a">(세로로 안 바꾸면 위아래가 잘려요)</span></li>
 <li>노란 'AI 이미지' 표시가 있으면: 고급 설정 → <b>AI 레이블 추가</b> 켜기</li>
 <li>올린 뒤 [올렸어요] 체크</li>
 </ol>하루 1개, 특가가 끝나기 전에 위에서부터(가장 최근 것) 올리세요.</div>
