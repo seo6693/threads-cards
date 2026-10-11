@@ -1,12 +1,12 @@
 {
-  "next_keyword": 10,
+  "next_keyword": 11,
   "recent_formats": [
-    "review_digest",
     "price_motion",
     "curation",
     "curation",
     "curation",
     "curation",
+    "deal_story",
     "deal_story",
     "deal_story"
   ],
@@ -23,10 +23,12 @@
     "curation",
     "curation",
     "deal_story",
+    "deal_story",
     "deal_story"
   ],
   "recent_hook_formulas": [
     "\uc22b\uc790",
-    "\uc800\uaca9"
+    "\uc800\uaca9",
+    "\uc0c1\ud669 \uc9c8\ubb38"
   ]
 }

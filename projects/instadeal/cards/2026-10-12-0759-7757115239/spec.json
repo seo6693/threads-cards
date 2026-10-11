@@ -1,0 +1,66 @@
+{
+  "theme": "orange",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "오늘 골드박스 · 쿠폰 제외 일반 판매가",
+    "title": "골드박스 생활 특가 3종,\n할인율 높은 순"
+  },
+  "ranks": [
+    {
+      "name": "매일두유 99.9 플레인 190ml×24",
+      "short": "매일두유 99.9 24팩",
+      "sub": "리뷰 237,778개 · 1팩 약 647원",
+      "price": "15,530원",
+      "badge": "50% 할인",
+      "cover_value": "50%↓",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "액츠 퍼펙트 실내건조 액상세제 3.2L",
+      "short": "액츠 실내건조 세제 3.2L",
+      "sub": "리뷰 113,498개 · 100ml당 약 316원",
+      "price": "10,100원",
+      "badge": "44% 할인",
+      "cover_value": "44%↓",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "코멧 오리지널 아기물티슈 캡형 100매×20",
+      "short": "코멧 아기물티슈 20팩",
+      "sub": "리뷰 480,268개 · 1팩 약 995원",
+      "price": "19,890원",
+      "badge": "43% 할인",
+      "cover_value": "43%↓",
+      "rank": 3,
+      "image": "p3.jpg"
+    }
+  ],
+  "order": [
+    "scene",
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3"
+  ],
+  "scene_image": "scene.jpg",
+  "scene": {
+    "lines": [
+      [
+        "아침 거르고",
+        false
+      ],
+      [
+        "출근하는 사람?",
+        false
+      ],
+      [
+        "매일두유 24팩 50%↓",
+        true
+      ]
+    ],
+    "sub": "오늘 골드박스 특가 3종 정리",
+    "ai": true
+  }
+}
