@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "눈 뻑뻑해서 오메가3?",
+        false
+      ],
+      [
+        "캡슐 수 안 보면 손해",
+        true
+      ]
+    ],
+    "sub": "고르기 전 볼 숫자, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "오메가3 고르기 전\n확인할 것 3가지",
+    "items": [
+      "EPA+DHA 합: 하루 600~1,000mg?",
+      "앞면에 '건조한 눈 개선' 표시?",
+      "함량이 몇 캡슐 기준인지"
+    ],
+    "note": "제품마다 1일 섭취량이 달라요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "모니터 야근 시즌",
+    "brand": "종근당건강",
+    "name": "알티지 오메가3 듀얼 60정×3",
+    "sub": "1정당 약 148원 · 하루 2정 90일분",
+    "badge_top": "리뷰 76,416",
+    "badge_price": "26,700원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
