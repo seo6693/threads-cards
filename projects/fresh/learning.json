@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-11T00:21+09:00",
- "posts_28d": 13,
- "avg_views_28d": 13.8,
+ "updated": "2026-10-12T00:21+09:00",
+ "posts_28d": 14,
+ "avg_views_28d": 15.3,
  "formula_weights": {
-  "상황 질문": 1.0,
-  "손해 피하기": 1.0,
+  "상황 질문": 0.98,
+  "손해 피하기": 1.29,
   "숫자": 1.0,
   "반전": 1.0,
-  "저격": 1.11
+  "저격": 1.09
  },
  "formulas": {
   "상황 질문": {
@@ -15,7 +15,11 @@
    "n": 1
   },
   "저격": {
-   "avg": 20.0,
+   "avg": 21.0,
+   "n": 1
+  },
+  "손해 피하기": {
+   "avg": 33.0,
    "n": 1
   }
  },
@@ -33,14 +37,14 @@
    "n": 2
   },
   "이야기": {
-   "avg": 17.0,
-   "n": 2
+   "avg": 22.7,
+   "n": 3
   }
  },
  "hours": {
   "18시": {
-   "avg": 12.6,
-   "n": 8
+   "avg": 15.0,
+   "n": 9
   },
   "19시": {
    "avg": 15.8,
@@ -48,6 +52,15 @@
   }
  },
  "top_posts": [
+  {
+   "views": 33,
+   "hook_formula": "손해 피하기",
+   "topic_source": "10월 '가을 캠핑 간편식' → 쿠팡 '캠핑음식' 연관검색어 '닭갈비' → 판매량순(saleCountDesc) 2위 로켓프레시(1위 셰프초이스는 최고 79%로 기준 미달) → 쿠팡파트너스 동일 상품번호 1798091856",
+   "product": "맛잽이식품 춘천닭갈비 800g",
+   "format": "scene_story",
+   "when": "10/11 18:53",
+   "permalink": "https://www.threads.com/@magdungi43/post/DeWYffLkUmk"
+  },
   {
    "views": 26,
    "hook_formula": "",
@@ -67,7 +80,7 @@
    "permalink": "https://www.threads.com/@magdungi43/post/Dd04hpAoOwr"
   },
   {
-   "views": 20,
+   "views": 21,
    "hook_formula": "저격",
    "topic_source": "10월 '밤 11시 야식' → 쿠팡 '야식' 연관검색어 '간편야식' → 판매량순(saleCountDesc) 상위 로켓프레시 볶음밥, 쿠팡파트너스 동일 상품번호 185917305",
    "product": "곰곰 김치볶음밥 300g×6",
@@ -83,15 +96,6 @@
    "format": "curation",
    "when": "10/02 19:03",
    "permalink": "https://www.threads.com/@magdungi43/post/Dd_OfdkFTg0"
-  },
-  {
-   "views": 14,
-   "hook_formula": "상황 질문",
-   "topic_source": "10월 '쌀쌀해진 날 국·탕' → 쿠팡 '냉동국' 연관검색어 '즉석국' → 냉장/냉동/간편식 랭킹 상위 로켓프레시(39위)",
-   "product": "비비고 소고기 미역국 500g",
-   "format": "scene_story",
-   "when": "10/09 19:05",
-   "permalink": "https://www.threads.com/@magdungi43/post/DeRQUO4ljR_"
   }
  ]
 }
