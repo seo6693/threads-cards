@@ -1,9 +1,9 @@
 {
-  "next_keyword": 8,
+  "next_keyword": 9,
   "recent_formats": [
-    "price_motion",
     "tip_post",
     "curation",
+    "scene_story",
     "scene_story",
     "scene_story",
     "scene_story",
@@ -27,9 +27,9 @@
     "cyan"
   ],
   "recent_post_types": [
-    "hero",
     "tip",
     "curation",
+    "story",
     "story",
     "story",
     "story",
@@ -41,6 +41,7 @@
     "\uc190\ud574 \ud53c\ud558\uae30",
     "\uc22b\uc790",
     "\uc0c1\ud669 \uc9c8\ubb38",
-    "\ubc18\uc804"
+    "\ubc18\uc804",
+    "\uc22b\uc790"
   ]
 }

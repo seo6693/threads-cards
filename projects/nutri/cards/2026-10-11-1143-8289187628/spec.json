@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "새벽에 또 깼다면",
+        false
+      ],
+      [
+        "라벨 숫자 3개부터",
+        true
+      ]
+    ],
+    "sub": "마그네슘 고르기 전, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "마그네슘 고르기 전\n확인할 숫자 3개",
+    "items": [
+      "1일 섭취량: 몇 정에 몇 mg?",
+      "총 정수 ÷ 하루 알 수 = 며칠분",
+      "기능성: 신경·근육 기능 유지에 필요"
+    ],
+    "note": "수면 개선은 인정된 기능성 표시가 아니에요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "일교차 시즌",
+    "brand": "솔가",
+    "name": "마그네슘 위드 비타민 B6 100정",
+    "sub": "1정당 약 120원 · 하루 3정 기준 33일분",
+    "badge_top": "리뷰 2,883",
+    "badge_price": "11,950원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
