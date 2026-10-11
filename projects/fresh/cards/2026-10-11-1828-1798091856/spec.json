@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "캠핑 가서 닭갈비",
+        false
+      ],
+      [
+        "고기만 볶으면 짜요",
+        true
+      ]
+    ],
+    "sub": "양배추 한 통 챙길 이유, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "캠핑용 냉동 닭갈비\n챙길 때 볼 3가지",
+    "items": [
+      "전날 냉장실로 옮겨 해동하기",
+      "양배추·고구마·떡 넉넉히 (간이 진한 편)",
+      "남은 양념엔 밥 볶아 마무리"
+    ],
+    "note": "상품 페이지·구매 리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "가을 캠핑",
+    "brand": "맛잽이식품",
+    "name": "춘천닭갈비 800g (냉동)",
+    "sub": "100g당 1,638원 · 리뷰 3만 7천여 개",
+    "badge_top": "로켓프레시",
+    "badge_price": "13,100원"
+  },
+  "theme": "teal",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
