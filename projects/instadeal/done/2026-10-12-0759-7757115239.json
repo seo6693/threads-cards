@@ -43,5 +43,9 @@
   "price": "15,530원",
   "deal_until": "2026-10-13T07:00:00+09:00",
   "deal_label": "10/13(화) 오전 7시까지",
-  "topic_tag": "골드박스"
+  "topic_tag": "골드박스",
+  "published_at": "2026-10-11T23:38:27+0000",
+  "result": {
+    "manual": "instagram"
+  }
 }
