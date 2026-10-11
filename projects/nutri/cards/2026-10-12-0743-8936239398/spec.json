@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "커피 두 잔째인데",
+        false
+      ],
+      [
+        "또 멍한 사람?",
+        true
+      ]
+    ],
+    "sub": "비타민B 고르기 전, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "비타민B 고를 때\n볼 것 3가지",
+    "items": [
+      "B군 8종이 다 들었는지",
+      "영양정보의 기준치 %",
+      "하루 몇 정, 하루 얼마인지"
+    ],
+    "note": "라벨 '영양정보' 칸에서 확인돼요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "오후 루틴",
+    "brand": "99바이탈",
+    "name": "활력 비타민B 컴플렉스 360정",
+    "sub": "1정당 약 30원 · B군 8종 기준치 100%",
+    "badge_top": "리뷰 5,772",
+    "badge_price": "10,900원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}

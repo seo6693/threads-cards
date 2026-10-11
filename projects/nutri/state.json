@@ -1,7 +1,7 @@
 {
-  "next_keyword": 10,
+  "next_keyword": 11,
   "recent_formats": [
-    "curation",
+    "scene_story",
     "scene_story",
     "scene_story",
     "scene_story",
@@ -27,7 +27,7 @@
     "cyan"
   ],
   "recent_post_types": [
-    "curation",
+    "story",
     "story",
     "story",
     "story",
@@ -43,6 +43,7 @@
     "\uc0c1\ud669 \uc9c8\ubb38",
     "\ubc18\uc804",
     "\uc22b\uc790",
-    "\uc190\ud574 \ud53c\ud558\uae30"
+    "\uc190\ud574 \ud53c\ud558\uae30",
+    "\uc0c1\ud669 \uc9c8\ubb38"
   ]
 }
