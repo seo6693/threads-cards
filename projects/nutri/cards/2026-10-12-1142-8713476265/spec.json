@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "루테인만 챙겼는데",
+        false
+      ],
+      [
+        "눈 피로는 따로래요",
+        true
+      ]
+    ],
+    "sub": "라벨에서 확인할 것, 넘겨서 보기 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "눈 영양제 라벨\n볼 것 3가지",
+    "items": [
+      "루테인지아잔틴 → 황반색소밀도",
+      "헤마토코쿠스 → 눈의 피로도",
+      "하루 몇 캡슐, 하루 얼마인지"
+    ],
+    "note": "서로 다른 기능성 원료예요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "모니터 루틴",
+    "brand": "종근당건강",
+    "name": "아이클리어 루테인 지아잔틴 아스타잔틴 30캡슐x3",
+    "sub": "1캡슐당 약 323원 · 53% 할인",
+    "badge_top": "리뷰 19,153",
+    "badge_price": "29,090원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
