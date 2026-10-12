@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "휴지 달고 사는",
+        false
+      ],
+      [
+        "환절기 직장인만",
+        true
+      ]
+    ],
+    "sub": "유산균 고를 때 이것부터, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "환절기 유산균\n라벨에서 볼 3가지",
+    "items": [
+      "투입균수 말고 '보장균수'",
+      "기능성 문구: 장 건강·배변활동",
+      "아연 함유: 정상적인 면역기능에 필요"
+    ],
+    "note": "건강기능식품 표시 기준으로 확인",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "환절기 루틴",
+    "brand": "종근당건강",
+    "name": "락토핏 생유산균 코어맥스 60포",
+    "sub": "1포당 약 432원 · 보장균수 30억 CFU",
+    "badge_top": "리뷰 34,329개",
+    "badge_price": "25,900원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
