@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "소풍 도시락 정답,",
+        false
+      ],
+      [
+        "김밥 아닐 수도 있어요",
+        true
+      ]
+    ],
+    "sub": "새벽에 김밥 말기 전에, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "유부초밥 도시락\n이것만 챙기세요",
+    "items": [
+      "유부피는 살짝만 짜기 (세게 짜면 찢어져요)",
+      "밥은 따뜻할 때 소스와 섞기 (2인분 약 330g)",
+      "냉장 제품(0~10℃)이라 들고 갈 땐 보냉백"
+    ],
+    "note": "상품 페이지 조리법·구매 리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "소풍 도시락",
+    "brand": "풀무원",
+    "name": "꼬마유부초밥 145.5g (유부 14장)",
+    "sub": "1개당 약 279원 · 2인분",
+    "badge_top": "리뷰 2만5천+",
+    "badge_price": "3,910원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
