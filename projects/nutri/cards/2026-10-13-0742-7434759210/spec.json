@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "알약만 보면",
+        false
+      ],
+      [
+        "입 꾹 닫는 아이?",
+        true
+      ]
+    ],
+    "sub": "아이 칼슘 챙길 때 이것부터, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "아이 칼슘 고를 때\n확인할 3가지",
+    "items": [
+      "사용 대상 '유아/어린이' 표시",
+      "1일 섭취량 (이 제품 15ml)",
+      "액상은 먹이기 전 흔들기"
+    ],
+    "note": "상품 정보·판매자 안내 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "아침 루틴",
+    "brand": "차일드라이프",
+    "name": "액상 칼슘 마그네슘 오렌지맛 473ml",
+    "sub": "1일 15ml 기준 하루 약 897원",
+    "badge_top": "리뷰 22,043개",
+    "badge_price": "28,290원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
