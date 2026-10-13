@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "비 오는 저녁,",
+        false
+      ],
+      [
+        "칼국수 당기는 사람?",
+        true
+      ]
+    ],
+    "sub": "면 불기 전에, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "냉동 칼국수\n이 순서로 끓이세요",
+    "items": [
+      "물 350㎖+소스 1팩 먼저 끓이기 (1인분)",
+      "끓으면 면·고명 넣고 중불 약 4분",
+      "싱겁다면 물을 조금 덜 잡기 (리뷰 팁)"
+    ],
+    "note": "상품 페이지 조리법·구매 리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "비 오는 저녁",
+    "brand": "비비고",
+    "name": "바지락칼국수 2인분 642g",
+    "sub": "1인분 약 4,490원 · 조리 약 4분",
+    "badge_top": "리뷰 1만2천+",
+    "badge_price": "8,980원"
+  },
+  "theme": "teal",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
