@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "철분 하루 24mg,",
+        false
+      ],
+      [
+        "한 알에 99원",
+        true
+      ]
+    ],
+    "sub": "라벨에서 볼 숫자, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "철분제 고를 때\n라벨에서 볼 것",
+    "items": [
+      "1일 섭취량당 철 함량(mg)",
+      "하루 몇 정 먹는지",
+      "가격 ÷ 총 정 수 = 한 알 값"
+    ],
+    "note": "철: 체내 산소운반과 혈액생성에 필요(기능성 표시)",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "아침 출근길",
+    "brand": "올바른건강식품",
+    "name": "프리미엄 철분제 90정",
+    "sub": "1정당 99원 · 1일 1정",
+    "badge_top": "철 24mg",
+    "badge_price": "8,900원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
