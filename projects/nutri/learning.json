@@ -1,33 +1,33 @@
 {
- "updated": "2026-10-13T00:25+09:00",
- "posts_28d": 48,
- "avg_views_28d": 12.1,
+ "updated": "2026-10-14T00:26+09:00",
+ "posts_28d": 51,
+ "avg_views_28d": 12.9,
  "formula_weights": {
-  "상황 질문": 1.12,
-  "손해 피하기": 1.03,
-  "숫자": 1.23,
+  "상황 질문": 1.29,
+  "손해 피하기": 0.95,
+  "숫자": 1.22,
   "반전": 1.05,
-  "저격": 0.87
+  "저격": 1.1
  },
  "formulas": {
   "상황 질문": {
-   "avg": 15.0,
-   "n": 3
+   "avg": 19.5,
+   "n": 4
   },
   "손해 피하기": {
-   "avg": 13.0,
-   "n": 2
+   "avg": 11.7,
+   "n": 3
   },
   "숫자": {
-   "avg": 19.0,
-   "n": 2
+   "avg": 18.7,
+   "n": 3
   },
   "반전": {
-   "avg": 13.5,
+   "avg": 14.5,
    "n": 2
   },
   "저격": {
-   "avg": 6.0,
+   "avg": 18.0,
    "n": 1
   }
  },
@@ -41,12 +41,12 @@
    "n": 8
   },
   "비교": {
-   "avg": 10.0,
+   "avg": 10.1,
    "n": 8
   },
   "이야기": {
-   "avg": 14.2,
-   "n": 10
+   "avg": 16.6,
+   "n": 13
   }
  },
  "hours": {
@@ -55,19 +55,19 @@
    "n": 2
   },
   "08시": {
-   "avg": 19.3,
-   "n": 10
+   "avg": 20.5,
+   "n": 11
   },
   "11시": {
-   "avg": 13.2,
+   "avg": 13.5,
    "n": 4
   },
   "12시": {
-   "avg": 7.8,
-   "n": 9
+   "avg": 8.8,
+   "n": 10
   },
   "14시": {
-   "avg": 42.0,
+   "avg": 43.0,
    "n": 1
   },
   "15시": {
@@ -87,12 +87,12 @@
    "n": 1
   },
   "20시": {
-   "avg": 9.0,
+   "avg": 9.2,
    "n": 4
   },
   "21시": {
-   "avg": 8.0,
-   "n": 12
+   "avg": 9.0,
+   "n": 13
   },
   "23시": {
    "avg": 3.0,
@@ -101,7 +101,7 @@
  },
  "top_posts": [
   {
-   "views": 42,
+   "views": 43,
    "hook_formula": "",
    "topic_source": "",
    "product": "99바이탈 맘편한 마그네슘 360정",
@@ -128,6 +128,15 @@
    "permalink": "https://www.threads.com/@kkul394/post/DeDPrY2lLG2"
   },
   {
+   "views": 32,
+   "hook_formula": "상황 질문",
+   "topic_source": "next.keyword '칼슘' → 쿠팡 '마그네슘' 연관검색어 '칼슘마그네슘' → 판매량순 4위 차일드라이프 액상 칼슘 마그네슘(리뷰 22,043·맛 '단 편이에요' 87%). 1위 종근당 칼슘앤마그네슘(최고 만족도 71%)·5위 뉴트리디데이(69%) 기준 미달, 2위 쏜리서치·6위 99바이탈은 최근 게시 상품",
+   "product": "차일드라이프 액상 칼슘 마그네슘 오렌지맛 473ml",
+   "format": "scene_story",
+   "when": "10/13 08:31",
+   "permalink": "https://www.threads.com/@kkul394/post/Deaa66qj7o7"
+  },
+  {
    "views": 29,
    "hook_formula": "",
    "topic_source": "",
@@ -135,15 +144,6 @@
    "format": "tip_post",
    "when": "10/09 08:04",
    "permalink": "https://www.threads.com/@kkul394/post/DeQErPokfEg"
-  },
-  {
-   "views": 24,
-   "hook_formula": "",
-   "topic_source": "",
-   "product": "고려은단 비타민C 1000 180정",
-   "format": "tip_post",
-   "when": "10/05 07:48",
-   "permalink": "https://www.threads.com/@kkul394/post/DeFvl0KFSAe"
   }
  ]
 }
