@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "모니터 10시간,",
+        false
+      ],
+      [
+        "눈이 뻑뻑한 사람?",
+        true
+      ]
+    ],
+    "sub": "눈 비비는 게 일상이라면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "눈 뻑뻑한 계절\n오메가3 라벨 체크",
+    "items": [
+      "EPA·DHA '합'이 1일 몇 mg?",
+      "기능성에 '건조한 눈' 문구?",
+      "냄새 후기 비율은?"
+    ],
+    "note": "기능성 문구는 제품마다 달라요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "모니터 앞 루틴",
+    "brand": "닥터린",
+    "name": "초임계 알티지 오메가3 알파 30정×2",
+    "sub": "1정당 약 313원 · 1일 1캡슐",
+    "badge_top": "리뷰 45,491",
+    "badge_price": "18,800원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
