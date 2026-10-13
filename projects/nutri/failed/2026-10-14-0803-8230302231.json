@@ -17,5 +17,7 @@
   "publish_after": "2026-10-14T08:27:18+09:00",
   "link": "https://link.coupang.com/a/hPo6OPHDky",
   "price": "",
-  "topic_tag": "영양제"
+  "topic_tag": "영양제",
+  "published_at": "2026-10-13T23:43:34+0000",
+  "error": "POST 26386715651026150/threads_publish -> HTTP 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 18115872151966838 cannot be found.\",\"fbtrace_id\":\"ANVRat1EAvXJdh7Mpr5Rlw0\"}}"
 }
