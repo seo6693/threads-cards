@@ -167,6 +167,7 @@
   "projects/instadeal/done/2026-10-11-0801-7398402281.json",
   "projects/instadeal/done/2026-10-12-0759-7757115239.json",
   "projects/instadeal/skipped/2026-10-13-0809.json",
+  "projects/instadeal/skipped/2026-10-14-0816.json",
   "projects/instadeal/state.json",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card1_hook.jpg",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card2_product.jpg",
@@ -533,6 +534,15 @@
   "projects/nutri/skipped/2026-10-02-1153.json",
   "projects/nutri/state.json"
  ],
- "runs": [],
+ "runs": [
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-10-13T23:03:32Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/38481845987",
+   "event": "push"
+  }
+ ],
  "issues": []
 }
