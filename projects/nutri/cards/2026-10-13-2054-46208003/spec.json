@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "비타민C 3000mg",
+        false
+      ],
+      [
+        "이렇게 먹으면 고생",
+        true
+      ]
+    ],
+    "sub": "찬바람 출근길, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "비타민C 가루\n리뷰에서 나온 팁",
+    "items": [
+      "물 먼저 머금고 가루 넣기",
+      "식사 직후에, 권장량만",
+      "뜯은 포는 바로 먹기"
+    ],
+    "note": "비타민C: 유해산소로부터 세포를 보호하는 데 필요(기능성 표시)",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "환절기 아침",
+    "brand": "고려은단",
+    "name": "메가도스C 3000mg 60포",
+    "sub": "1포당 259원 · 1포 3000mg",
+    "badge_top": "리뷰 8만+",
+    "badge_price": "15,540원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
