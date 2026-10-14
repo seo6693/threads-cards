@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "비싼 비타민B가",
+        false
+      ],
+      [
+        "답인 줄 알았는데",
+        true
+      ]
+    ],
+    "sub": "1정당 가격부터 보면 달라요, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "오후 피곤한 직장인\n비타민B 라벨 체크",
+    "items": [
+      "B군이 몇 종 들었나?",
+      "종합비타민과 함량 겹치나?",
+      "1정당 가격은 얼마?"
+    ],
+    "note": "섭취량은 제품 표시대로 지켜요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "오후 루틴",
+    "brand": "고려은단",
+    "name": "메가도스 B 비타민 컴플렉스 60정",
+    "sub": "1정당 283원 · 비타민B군 8종",
+    "badge_top": "리뷰 11,409",
+    "badge_price": "16,970원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
