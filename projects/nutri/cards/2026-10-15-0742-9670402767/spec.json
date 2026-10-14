@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "야근 3일째 밤 9시",
+        false
+      ],
+      [
+        "물 없이 마그네슘 1병",
+        true
+      ]
+    ],
+    "sub": "알약 삼키기도 귀찮다면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "마그네슘 고를 때\n이 3가지 확인",
+    "items": [
+      "라벨 기능성: 신경·근육 기능 유지, 에너지 이용에 필요",
+      "같이 든 성분(아연·비타민B군)",
+      "1회분 가격: 알약형 vs 액상형"
+    ],
+    "note": "라벨·상품 페이지에서 확인돼요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "야근 후 밤 루틴",
+    "brand": "대웅생명과학",
+    "name": "마시는 젖산 마그네슘 33g×14병",
+    "sub": "1병당 약 2,057원 · 마그네슘·아연·B6",
+    "badge_top": "리뷰 1,440개",
+    "badge_price": "28,800원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
