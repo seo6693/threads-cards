@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "유산균, 균 수만 보고",
+        false
+      ],
+      [
+        "사면 손해예요",
+        true
+      ]
+    ],
+    "sub": "고르기 전 3가지만 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "유산균 고를 때\n이것부터 확인",
+    "items": [
+      "보장균수가 하루 섭취량 기준인지",
+      "같이 든 기능성 원료(아연 등)",
+      "1포·1정당 가격 직접 계산"
+    ],
+    "note": "라벨·상품 페이지에서 확인돼요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "야근 후 저녁 루틴",
+    "brand": "종근당건강",
+    "name": "락토핏 코어 유산균 60포×3통",
+    "sub": "1포당 195원 · 라벨 기준 40억 CFU",
+    "badge_top": "리뷰 85,700개",
+    "badge_price": "35,100원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
