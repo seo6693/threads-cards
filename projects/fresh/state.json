@@ -1,9 +1,9 @@
 {
-  "next_keyword": 0,
+  "next_keyword": 1,
   "recent_formats": [
-    "tip_post",
     "problem_solution",
     "curation",
+    "scene_story",
     "scene_story",
     "scene_story",
     "scene_story",
@@ -11,9 +11,9 @@
     "scene_story"
   ],
   "recent_post_types": [
-    "tip",
     "hero",
     "curation",
+    "story",
     "story",
     "story",
     "story",
@@ -25,6 +25,7 @@
     "\uc800\uaca9",
     "\uc190\ud574 \ud53c\ud558\uae30",
     "\ubc18\uc804",
-    "\uc0c1\ud669 \uc9c8\ubb38"
+    "\uc0c1\ud669 \uc9c8\ubb38",
+    "\uc22b\uc790"
   ]
 }

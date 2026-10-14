@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "밤 11시 퇴근 야식,",
+        false
+      ],
+      [
+        "찜기 12분이면 끝",
+        true
+      ]
+    ],
+    "sub": "배달 고민 전에, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "야식 왕만두\n이렇게 데우세요",
+    "items": [
+      "찜기 10~12분이면 속까지 촉촉",
+      "바삭하게 먹고 싶으면 에어프라이어",
+      "지퍼백 포장, 먹을 만큼만 꺼내기"
+    ],
+    "note": "구매 리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "밤 11시 야식",
+    "brand": "풀무원",
+    "name": "평양왕만두 1.4kg",
+    "sub": "100g당 777원 · 27% 할인",
+    "badge_top": "리뷰 1만2천+",
+    "badge_price": "10,880원"
+  },
+  "theme": "teal2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
