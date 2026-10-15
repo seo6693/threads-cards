@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "모니터 9시간째",
+        false
+      ],
+      [
+        "눈이 뻑뻑한 사람?",
+        true
+      ]
+    ],
+    "sub": "눈 영양제 고르기 전에, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "눈 영양제\n고르기 전 3가지",
+    "items": [
+      "포장 앞 기능성 원료 이름",
+      "건강기능식품 마크 여부",
+      "통 가격 말고 1정당 가격"
+    ],
+    "note": "원료·마크는 포장 앞면에서 확인돼요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "오후 눈 루틴",
+    "brand": "종근당 20100",
+    "name": "루테인 지아잔틴 아스타잔틴",
+    "sub": "60캡슐 · 1정당 약 419원",
+    "badge_top": "리뷰 4,723개",
+    "badge_price": "25,120원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
