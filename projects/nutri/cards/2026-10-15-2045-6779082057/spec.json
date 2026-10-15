@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "출근도 퇴근도",
+        false
+      ],
+      [
+        "깜깜한 직장인만",
+        true
+      ]
+    ],
+    "sub": "요즘 해 본 시간 있나요? 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "비타민D 고를 때\n확인할 3가지",
+    "items": [
+      "라벨의 1정당 함량(IU)",
+      "다른 영양제와 겹치는 양 합산",
+      "지용성이라 식사 후에 챙기기"
+    ],
+    "note": "기능성 문구는 제품 표시 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "환절기 루틴",
+    "brand": "솔가",
+    "name": "면역 비타민D3 2000 위드 아연 60정",
+    "sub": "1정당 약 436원",
+    "badge_top": "리뷰 1,459",
+    "badge_price": "26,140원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
