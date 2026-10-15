@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "영양제 통만 늘고",
+        false
+      ],
+      [
+        "매일 거르는 사람?",
+        true
+      ]
+    ],
+    "sub": "한 번에 챙기는 법, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "한 번에 챙기려면\n이것부터 확인",
+    "items": [
+      "하루분이 1병에 다 들었는지",
+      "먹던 영양제와 성분 겹치는지",
+      "대용량이 1회분도 싼지"
+    ],
+    "note": "이 제품은 30회분이 1회분 가격 더 높았어요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "출근 전 1병",
+    "brand": "아임비타",
+    "name": "멀티비타민 이뮨샷 7",
+    "sub": "7회분×2 · 1회분 약 1,914원",
+    "badge_top": "리뷰 19,020개",
+    "badge_price": "26,800원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
