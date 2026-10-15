@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "영양제 5통 챙기다",
+        false
+      ],
+      [
+        "결국 다 거르는 아침",
+        true
+      ]
+    ],
+    "sub": "한 번에 챙기려면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "아침 한 번에 챙기려면\n이 3가지",
+    "items": [
+      "1병에 하루분이 다 들었는지",
+      "먹던 영양제와 성분 겹치는지",
+      "통 가격 말고 1회분 가격"
+    ],
+    "note": "함량은 포장 앞면 % 표시로 확인돼요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "바쁜 아침 루틴",
+    "brand": "아임비타",
+    "name": "멀티비타민 이뮨샷 7",
+    "sub": "7회분 · 1회분 약 1,921원",
+    "badge_top": "리뷰 19,014개",
+    "badge_price": "13,450원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
