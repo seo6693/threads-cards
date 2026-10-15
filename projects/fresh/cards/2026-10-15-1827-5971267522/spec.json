@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "전자레인지만 돌리면",
+        false
+      ],
+      [
+        "빵이 질겨질 수 있어요",
+        true
+      ]
+    ],
+    "sub": "늦잠 잔 주말 브런치, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "냉동 치아바타\n이렇게 데우세요",
+    "items": [
+      "해동 먼저: 냉장 24시간 또는 700W 1분",
+      "에어프라이어 180℃ 예열, 뒤집어 7~9분",
+      "전자레인지만 쓸 땐 700W 약 2분 30초"
+    ],
+    "note": "상품 페이지 조리법 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "주말 브런치",
+    "brand": "베키아에누보",
+    "name": "바질치즈 치아바타 샌드위치 4개입",
+    "sub": "1개 약 3,700원",
+    "badge_top": "로켓프레시",
+    "badge_price": "14,790원"
+  },
+  "theme": "teal",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
