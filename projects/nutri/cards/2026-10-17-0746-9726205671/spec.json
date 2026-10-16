@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "오후 4시만 되면",
+        false
+      ],
+      [
+        "눈이 뻑뻑한 사람?",
+        true
+      ]
+    ],
+    "sub": "오메가3 고르기 전에, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "오메가3 고를 때\n이 3가지만 확인",
+    "items": [
+      "포장의 기능성 문구 (제품마다 달라요)",
+      "EPA+DHA 합계 mg (하루 섭취량 기준)",
+      "냄새·알 크기 리뷰 (매일 먹을 수 있게)"
+    ],
+    "note": "기능성 내용은 포장의 건강기능식품 표시에서 확인",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "모니터 많은 날",
+    "brand": "에스더포뮬러",
+    "name": "초임계 알티지 오메가3 Daily 30정×6",
+    "sub": "1정당 약 317원",
+    "badge_top": "EPA+DHA 600mg",
+    "badge_price": "57,000원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
