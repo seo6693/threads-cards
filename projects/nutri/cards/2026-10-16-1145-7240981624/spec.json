@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "오후마다 방전인데",
+        false
+      ],
+      [
+        "영양제는 서랍 속이면 손해",
+        true
+      ]
+    ],
+    "sub": "알약 자꾸 까먹는 사람, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "마그네슘 고를 때\n확인할 3가지",
+    "items": [
+      "라벨에 '에너지 이용에 필요' 표시",
+      "함량·1일 섭취량이 포장에 있는지",
+      "알약이 귀찮으면 액상 스틱도"
+    ],
+    "note": "장이 예민하면 식후에 먹는다는 리뷰가 많아요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "오후 루틴",
+    "brand": "일양약품",
+    "name": "마그네슘 스피드액 14포",
+    "sub": "1포당 약 783원",
+    "badge_top": "리뷰 5,261",
+    "badge_price": "10,960원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
