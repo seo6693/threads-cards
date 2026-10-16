@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-16T00:38+09:00",
- "posts_28d": 18,
- "avg_views_28d": 16.2,
+ "updated": "2026-10-17T00:33+09:00",
+ "posts_28d": 19,
+ "avg_views_28d": 16.5,
  "formula_weights": {
-  "상황 질문": 0.96,
-  "손해 피하기": 1.29,
+  "상황 질문": 1.02,
+  "손해 피하기": 1.28,
   "숫자": 1.07,
   "반전": 0.92,
   "저격": 1.1
  },
  "formulas": {
   "상황 질문": {
-   "avg": 14.5,
-   "n": 2
+   "avg": 17.0,
+   "n": 3
   },
   "저격": {
    "avg": 23.0,
@@ -45,8 +45,8 @@
    "n": 2
   },
   "이야기": {
-   "avg": 20.0,
-   "n": 7
+   "avg": 20.2,
+   "n": 8
   }
  },
  "hours": {
@@ -55,8 +55,8 @@
    "n": 11
   },
   "19시": {
-   "avg": 15.3,
-   "n": 7
+   "avg": 16.1,
+   "n": 8
   }
  },
  "top_posts": [
@@ -97,13 +97,13 @@
    "permalink": "https://www.threads.com/@magdungi43/post/DeTzjZqFbke"
   },
   {
-   "views": 21,
-   "hook_formula": "숫자",
-   "topic_source": "10월 '밤 11시 야식' + 이번 회차 세부 분류 '만두' → 쿠팡 '냉동만두' 연관검색어 '왕만두' → 판매량순(saleCountDesc) 5위 로켓프레시(1~4위는 최근 게시 상품) → 쿠팡파트너스 동일 상품번호 1278086708",
-   "product": "풀무원 평양왕만두 1.4kg",
+   "views": 22,
+   "hook_formula": "상황 질문",
+   "topic_source": "10월 '쌀쌀해진 날 국·탕' + 이번 회차 세부 분류 '어묵' → 쿠팡 '어묵탕' 연관검색어 '오뎅탕' → 판매량순(saleCountDesc) 1위 로켓프레시(2위는 최근 게시 상품) → 쿠팡파트너스 동일 상품번호 5694524538",
+   "product": "고래사어묵 가정용 꼬치어묵 296g×2",
    "format": "scene_story",
-   "when": "10/14 18:59",
-   "permalink": "https://www.threads.com/@magdungi43/post/DeeHhRgm66M"
+   "when": "10/16 19:06",
+   "permalink": "https://www.threads.com/@magdungi43/post/DejR6wzFez6"
   }
  ]
 }
