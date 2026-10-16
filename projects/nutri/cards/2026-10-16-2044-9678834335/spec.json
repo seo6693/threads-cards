@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "비싼 비타민C가",
+        false
+      ],
+      [
+        "더 좋은 줄 알았죠",
+        true
+      ]
+    ],
+    "sub": "한 알 값 8배 차이, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "비타민C 고를 때\n확인할 3가지",
+    "items": [
+      "'건강기능식품' 마크·기능성 문구",
+      "1일 섭취량당 함량이 적혀 있는지",
+      "1정당 가격 = 가격 ÷ 정 수"
+    ],
+    "note": "빈속보다 식후에 먹었다는 리뷰가 많아요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "환절기 루틴",
+    "brand": "99바이탈",
+    "name": "간편한 비타민C 1000 360정",
+    "sub": "1정당 약 28원",
+    "badge_top": "리뷰 1,373",
+    "badge_price": "9,900원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
