@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "퇴근길 바람 차가우면",
+        false
+      ],
+      [
+        "어묵 국물 생각나죠?",
+        true
+      ]
+    ],
+    "sub": "육수 안 내도 되는 방법, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "집에서 어묵탕\n이렇게 끓이세요",
+    "items": [
+      "물 1000㎖에 동봉 소스 넣고 강불",
+      "물이 끓으면 꼬치 넣고 10~12분",
+      "대파·무·청양고추 있으면 더 풍성"
+    ],
+    "note": "상품 페이지 조리법 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "쌀쌀한 저녁",
+    "brand": "고래사어묵",
+    "name": "가정용 꼬치어묵 296g×2",
+    "sub": "1팩 7,600원꼴 · 100g당 2,568원",
+    "badge_top": "리뷰 5만3천+",
+    "badge_price": "15,200원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
