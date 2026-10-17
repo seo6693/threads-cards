@@ -1,0 +1,77 @@
+{
+  "theme": "teal3",
+  "product_image": "product.jpg",
+  "cover": {
+    "kicker": "오늘 골드박스 · 쿠폰 제외 일반 판매가",
+    "title": "골드박스 생활 특가 4종,\n할인율 높은 순"
+  },
+  "ranks": [
+    {
+      "name": "스윗토 스테비아 대추방울토마토 1.2kg",
+      "short": "대추방울토마토 1.2kg",
+      "sub": "리뷰 332,792개 · 100g당 958원",
+      "price": "11,490원",
+      "badge": "51% 할인",
+      "cover_value": "51%↓",
+      "rank": 1,
+      "image": "product.jpg"
+    },
+    {
+      "name": "퍼실 딥클린 라벤더젤 드럼용 리필 1.8L",
+      "short": "퍼실 드럼용 세제 1.8L",
+      "sub": "리뷰 16,166개 · 100ml당 약 594원",
+      "price": "10,700원",
+      "badge": "49% 할인",
+      "cover_value": "49%↓",
+      "rank": 2,
+      "image": "p2.jpg"
+    },
+    {
+      "name": "쿠쿠 직수형 비데 CBT-C4031W",
+      "short": "쿠쿠 직수형 비데",
+      "sub": "리뷰 1,313개 · 고객직접설치",
+      "price": "94,000원",
+      "badge": "40% 할인",
+      "cover_value": "40%↓",
+      "rank": 3,
+      "image": "p3.jpg"
+    },
+    {
+      "name": "쿠쿠 스피드팟 멀티쿠커 CMC-A0655FB",
+      "short": "쿠쿠 스피드팟 멀티쿠커",
+      "sub": "리뷰 5,272개 · 고압 멀티쿠커",
+      "price": "54,900원",
+      "badge": "39% 할인",
+      "cover_value": "39%↓",
+      "rank": 4,
+      "image": "p4.jpg"
+    }
+  ],
+  "order": [
+    "scene",
+    "cover",
+    "rank1",
+    "rank2",
+    "rank3",
+    "rank4"
+  ],
+  "scene_image": "scene.jpg",
+  "scene": {
+    "lines": [
+      [
+        "1.2kg 한 팩에",
+        false
+      ],
+      [
+        "11,490원",
+        false
+      ],
+      [
+        "대추토마토 51%↓",
+        true
+      ]
+    ],
+    "sub": "오늘 골드박스 특가 4종 정리",
+    "ai": true
+  }
+}
