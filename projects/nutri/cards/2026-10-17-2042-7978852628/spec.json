@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "환절기 비타민D,",
+        false
+      ],
+      [
+        "함량 안 보면 손해",
+        true
+      ]
+    ],
+    "sub": "출근길마다 훌쩍인다면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "비타민D·아연\n고를 때 볼 3가지",
+    "items": [
+      "포장의 기능성 문구 확인",
+      "먹던 종합비타민과 함량 겹침",
+      "알약 힘들면 씹는 츄어블"
+    ],
+    "note": "기능성은 제품 표시 문구 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "환절기 루틴",
+    "brand": "메디트리",
+    "name": "츄어블 비타민D 4000IU 아연 90정",
+    "sub": "1정당 약 110원",
+    "badge_top": "33% 할인",
+    "badge_price": "9,900원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
