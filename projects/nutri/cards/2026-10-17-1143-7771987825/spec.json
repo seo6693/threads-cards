@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "오후 3시 커피로 버티는",
+        false
+      ],
+      [
+        "직장인만 보세요",
+        true
+      ]
+    ],
+    "sub": "비타민B 고르기 전에, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "비타민B 고를 때\n이 3가지만 확인",
+    "items": [
+      "포장의 기능성 문구 (성분마다 달라요)",
+      "B군 몇 종 들었는지 (B1·B6·B12…)",
+      "1정당 가격 (매일 먹으니까)"
+    ],
+    "note": "기능성 내용은 포장의 건강기능식품 표시에서 확인",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "오후 3시 루틴",
+    "brand": "종근당",
+    "name": "활력비타민B 플러스 60정",
+    "sub": "1정당 약 237원",
+    "badge_top": "B군 8종 표시",
+    "badge_price": "14,230원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
