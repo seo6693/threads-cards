@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "새벽 3시, 또 깼다면",
+        false
+      ],
+      [
+        "마그네슘 체크 3가지",
+        true
+      ]
+    ],
+    "sub": "사기 전에 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "마그네슘 사기 전\n확인할 3가지",
+    "items": [
+      "기능성 문구: 신경·근육 기능 유지에 필요",
+      "칼슘·비타민D 먹는 중이면 합계 확인",
+      "가격은 1정당으로 비교"
+    ],
+    "note": "잠에 대한 기능성 표시는 아니에요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "마그네슘영양제 판매량 1위",
+    "brand": "종근당",
+    "name": "칼슘 앤 마그네슘 비타민D 아연 180정",
+    "sub": "1정당 약 78원",
+    "badge_top": "리뷰 20만+",
+    "badge_price": "14,070원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
