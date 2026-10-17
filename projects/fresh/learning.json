@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-17T00:33+09:00",
- "posts_28d": 19,
- "avg_views_28d": 16.5,
+ "updated": "2026-10-18T00:29+09:00",
+ "posts_28d": 20,
+ "avg_views_28d": 16.1,
  "formula_weights": {
-  "상황 질문": 1.02,
-  "손해 피하기": 1.28,
-  "숫자": 1.07,
+  "상황 질문": 1.03,
+  "손해 피하기": 1.32,
+  "숫자": 0.92,
   "반전": 0.92,
-  "저격": 1.1
+  "저격": 1.11
  },
  "formulas": {
   "상황 질문": {
@@ -19,7 +19,7 @@
    "n": 1
   },
   "손해 피하기": {
-   "avg": 28.0,
+   "avg": 29.0,
    "n": 2
   },
   "반전": {
@@ -27,8 +27,8 @@
    "n": 1
   },
   "숫자": {
-   "avg": 21.0,
-   "n": 1
+   "avg": 13.0,
+   "n": 2
   }
  },
  "types": {
@@ -45,14 +45,14 @@
    "n": 2
   },
   "이야기": {
-   "avg": 20.2,
-   "n": 8
+   "avg": 18.8,
+   "n": 9
   }
  },
  "hours": {
   "18시": {
-   "avg": 16.8,
-   "n": 11
+   "avg": 16.0,
+   "n": 12
   },
   "19시": {
    "avg": 16.1,
@@ -97,13 +97,13 @@
    "permalink": "https://www.threads.com/@magdungi43/post/DeTzjZqFbke"
   },
   {
-   "views": 22,
-   "hook_formula": "상황 질문",
-   "topic_source": "10월 '쌀쌀해진 날 국·탕' + 이번 회차 세부 분류 '어묵' → 쿠팡 '어묵탕' 연관검색어 '오뎅탕' → 판매량순(saleCountDesc) 1위 로켓프레시(2위는 최근 게시 상품) → 쿠팡파트너스 동일 상품번호 5694524538",
-   "product": "고래사어묵 가정용 꼬치어묵 296g×2",
+   "views": 23,
+   "hook_formula": "숫자",
+   "topic_source": "10월 '밤 11시 야식' + 이번 회차 세부 분류 '만두' → 쿠팡 '냉동만두' 연관검색어 '왕만두' → 판매량순(saleCountDesc) 5위 로켓프레시(1~4위는 최근 게시 상품) → 쿠팡파트너스 동일 상품번호 1278086708",
+   "product": "풀무원 평양왕만두 1.4kg",
    "format": "scene_story",
-   "when": "10/16 19:06",
-   "permalink": "https://www.threads.com/@magdungi43/post/DejR6wzFez6"
+   "when": "10/14 18:59",
+   "permalink": "https://www.threads.com/@magdungi43/post/DeeHhRgm66M"
   }
  ]
 }
