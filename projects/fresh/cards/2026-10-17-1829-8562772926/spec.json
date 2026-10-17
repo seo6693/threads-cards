@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "찬바람 부는 캠핑 저녁",
+        false
+      ],
+      [
+        "냄비 1개·버너 1개",
+        true
+      ]
+    ],
+    "sub": "국물 메뉴 하나로 끝내는 법, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "캠핑 곱창전골\n이렇게 챙기세요",
+    "items": [
+      "냉동보관 제품, 이동은 아이스박스에",
+      "당면·우동사리 챙기면 더 푸짐",
+      "남은 국물엔 밥 볶아서 마무리"
+    ],
+    "note": "구매 리뷰에 자주 나온 팁 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "캠핑 저녁",
+    "brand": "오발탄",
+    "name": "푸짐한 소곱창 전골 1kg",
+    "sub": "100g당 998원 · 정가 대비 41%↓",
+    "badge_top": "리뷰 521개",
+    "badge_price": "9,980원"
+  },
+  "theme": "teal",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
