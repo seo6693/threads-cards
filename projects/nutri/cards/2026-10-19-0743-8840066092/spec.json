@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "가을엔 햇볕 넉넉할 줄",
+        false
+      ],
+      [
+        "출퇴근이 다 깜깜",
+        true
+      ]
+    ],
+    "sub": "실내 근무자라면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "비타민D 고를 때\n확인할 3가지",
+    "items": [
+      "함량은 IU·mcg 둘 다 (2000IU=50mcg)",
+      "종합비타민·칼슘제의 D와 합산",
+      "매일 먹을 거면 알 크기·1정당 가격"
+    ],
+    "note": "상품 라벨·상세페이지 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "실내 근무 루틴",
+    "brand": "닥터스베스트",
+    "name": "비타민 D3 2000IU 180정",
+    "sub": "1정당 약 70원",
+    "badge_top": "리뷰 6,437개",
+    "badge_price": "12,630원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
