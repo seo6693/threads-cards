@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "밤 9시, 모니터 앞",
+        false
+      ],
+      [
+        "눈 비비는 사람?",
+        true
+      ]
+    ],
+    "sub": "루테인 고르기 전에, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "루테인 고를 때\n확인할 3가지",
+    "items": [
+      "포장의 '건강기능식품' 표시",
+      "1일 섭취량 기준 함량(mg)",
+      "다른 영양제와 성분 중복"
+    ],
+    "note": "기능성 문구는 포장 표시 범위에서만 확인하세요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "밤 루틴",
+    "brand": "안국건강",
+    "name": "아이원 루테인지아잔틴 미니 180정",
+    "sub": "1정당 약 189원 · 6개월분",
+    "badge_top": "리뷰 44,465",
+    "badge_price": "34,000원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
