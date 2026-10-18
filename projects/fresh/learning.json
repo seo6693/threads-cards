@@ -1,22 +1,22 @@
 {
- "updated": "2026-10-18T00:29+09:00",
- "posts_28d": 20,
- "avg_views_28d": 16.1,
+ "updated": "2026-10-19T00:28+09:00",
+ "posts_28d": 21,
+ "avg_views_28d": 15.7,
  "formula_weights": {
-  "상황 질문": 1.03,
-  "손해 피하기": 1.32,
-  "숫자": 0.92,
-  "반전": 0.92,
-  "저격": 1.11
+  "상황 질문": 1.06,
+  "손해 피하기": 1.34,
+  "숫자": 0.96,
+  "반전": 0.93,
+  "저격": 0.94
  },
  "formulas": {
   "상황 질문": {
-   "avg": 17.0,
+   "avg": 17.7,
    "n": 3
   },
   "저격": {
-   "avg": 23.0,
-   "n": 1
+   "avg": 13.5,
+   "n": 2
   },
   "손해 피하기": {
    "avg": 29.0,
@@ -27,7 +27,7 @@
    "n": 1
   },
   "숫자": {
-   "avg": 13.0,
+   "avg": 14.0,
    "n": 2
   }
  },
@@ -45,17 +45,17 @@
    "n": 2
   },
   "이야기": {
-   "avg": 18.8,
-   "n": 9
+   "avg": 17.7,
+   "n": 10
   }
  },
  "hours": {
   "18시": {
-   "avg": 16.0,
-   "n": 12
+   "avg": 15.2,
+   "n": 13
   },
   "19시": {
-   "avg": 16.1,
+   "avg": 16.4,
    "n": 8
   }
  },
@@ -88,6 +88,15 @@
    "permalink": "https://www.threads.com/@magdungi43/post/Dd04hpAoOwr"
   },
   {
+   "views": 24,
+   "hook_formula": "상황 질문",
+   "topic_source": "10월 '쌀쌀해진 날 국·탕' + 이번 회차 세부 분류 '어묵' → 쿠팡 '어묵탕' 연관검색어 '오뎅탕' → 판매량순(saleCountDesc) 1위 로켓프레시(2위는 최근 게시 상품) → 쿠팡파트너스 동일 상품번호 5694524538",
+   "product": "고래사어묵 가정용 꼬치어묵 296g×2",
+   "format": "scene_story",
+   "when": "10/16 19:06",
+   "permalink": "https://www.threads.com/@magdungi43/post/DejR6wzFez6"
+  },
+  {
    "views": 23,
    "hook_formula": "저격",
    "topic_source": "10월 '밤 11시 야식' → 쿠팡 '야식' 연관검색어 '간편야식' → 판매량순(saleCountDesc) 상위 로켓프레시 볶음밥, 쿠팡파트너스 동일 상품번호 185917305",
@@ -95,15 +104,6 @@
    "format": "scene_story",
    "when": "10/10 18:52",
    "permalink": "https://www.threads.com/@magdungi43/post/DeTzjZqFbke"
-  },
-  {
-   "views": 23,
-   "hook_formula": "숫자",
-   "topic_source": "10월 '밤 11시 야식' + 이번 회차 세부 분류 '만두' → 쿠팡 '냉동만두' 연관검색어 '왕만두' → 판매량순(saleCountDesc) 5위 로켓프레시(1~4위는 최근 게시 상품) → 쿠팡파트너스 동일 상품번호 1278086708",
-   "product": "풀무원 평양왕만두 1.4kg",
-   "format": "scene_story",
-   "when": "10/14 18:59",
-   "permalink": "https://www.threads.com/@magdungi43/post/DeeHhRgm66M"
   }
  ]
 }
