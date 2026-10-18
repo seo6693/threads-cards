@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "밤 11시 퇴근하고",
+        false
+      ],
+      [
+        "라면 물 올리는 사람만",
+        true
+      ]
+    ],
+    "sub": "오늘은 밥으로 바꿔볼까요, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "냉동 김치볶음밥\n이것만 보고 고르세요",
+    "items": [
+      "1봉 양: 280g·504kcal (포장 표기)",
+      "전자레인지 OK, 팬에 볶으면 더 고슬",
+      "계란후라이 하나면 싱거움 보완"
+    ],
+    "note": "포장 표기·구매 리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "밤 11시 야식",
+    "brand": "한우물",
+    "name": "김치볶음밥 280g×6개",
+    "sub": "1봉 1,760원 · 100g당 629원",
+    "badge_top": "리뷰 5,145개",
+    "badge_price": "10,560원"
+  },
+  "theme": "teal2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
