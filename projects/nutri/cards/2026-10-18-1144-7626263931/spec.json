@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "아침 대신 커피만",
+        false
+      ],
+      [
+        "마시는 직장인만",
+        true
+      ]
+    ],
+    "sub": "유산균 챙길 거면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "유산균 사기 전\n확인할 3가지",
+    "items": [
+      "균 수가 '1회 섭취량' 기준인지",
+      "냉장 보관이 필요한 제품인지",
+      "하루 몇 캡슐 → 며칠분인지"
+    ],
+    "note": "포장·상세페이지 표기로 확인",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "아침 루틴",
+    "brand": "Jarrow Formulas",
+    "name": "도피러스 EPS 100억 CFU 120정",
+    "sub": "1정당 약 270원",
+    "badge_top": "판매량순 2위",
+    "badge_price": "32,400원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
