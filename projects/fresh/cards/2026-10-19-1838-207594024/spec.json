@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "냉동 갈비탕 그냥 끓이면",
+        false
+      ],
+      [
+        "국물 짜게 먹을 수도",
+        true
+      ]
+    ],
+    "sub": "쌀쌀한 퇴근길 저녁, 끓이기 전에 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "냉동 갈비탕\n끓이기 전 3가지",
+    "items": [
+      "전날 밤 냉장실로 옮겨 해동",
+      "깜빡했다면 용기째 뜨거운 물에 잠깐",
+      "싱겁게 먹으면 물 조금 더"
+    ],
+    "note": "제품 안내·구매 리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "쌀쌀한 저녁 국물",
+    "brand": "사미헌",
+    "name": "갈비탕 (냉동) 1kg",
+    "sub": "100g당 1,305원 · 로켓프레시",
+    "badge_top": "리뷰 41,519개",
+    "badge_price": "13,050원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
