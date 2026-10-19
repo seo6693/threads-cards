@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "엄마가 오후 3시면",
+        false
+      ],
+      [
+        "소파에 눕는다면",
+        true
+      ]
+    ],
+    "sub": "50대 엄마 영양제, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "엄마 종합비타민\n고를 때 볼 3가지",
+    "items": [
+      "50+ 여성용 구성인지",
+      "하루 몇 정 · 1정당 가격",
+      "알약 크기 (삼키기 편한지)"
+    ],
+    "note": "건강기능식품 인증 마크도 확인",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "엄마 오후 루틴",
+    "brand": "센트룸",
+    "name": "실버 우먼 멀티비타민 50정",
+    "sub": "1정당 480원",
+    "badge_top": "판매량순 상위",
+    "badge_price": "23,990원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
