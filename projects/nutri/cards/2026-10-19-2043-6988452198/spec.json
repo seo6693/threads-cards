@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "배달 야식 먹고 나면",
+        false
+      ],
+      [
+        "속 더부룩한 사람?",
+        true
+      ]
+    ],
+    "sub": "유산균 고를 때 볼 3가지, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "유산균 고를 때\n이 3가지만",
+    "items": [
+      "라벨의 '프로바이오틱스 수'(CFU)",
+      "건강기능식품 마크·기능성 문구",
+      "하루 섭취량 기준 1캡슐당 가격"
+    ],
+    "note": "모두 라벨·상품 페이지에서 확인 가능",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "야식 잦은 날",
+    "brand": "고려은단",
+    "name": "프로바이오틱스 스페셜핏 100억",
+    "sub": "30캡슐×3 · 1캡슐당 약 499원",
+    "badge_top": "리뷰 7,943",
+    "badge_price": "44,900원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
