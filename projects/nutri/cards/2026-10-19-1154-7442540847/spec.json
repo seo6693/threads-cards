@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "큰 알약 앞에서",
+        false
+      ],
+      [
+        "멈칫하는 사람만",
+        true
+      ]
+    ],
+    "sub": "물 없이 챙기는 방법, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "액상 마그네슘\n고를 때 볼 것",
+    "items": [
+      "1포당 마그네슘 함량(mg)",
+      "같이 든 성분: 비타민B군·아연",
+      "하루 1포 기준 1포당 가격"
+    ],
+    "note": "건강기능식품 표시도 꼭 확인",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "물 없는 아침 루틴",
+    "brand": "GC녹십자웰빙",
+    "name": "PNT 액상 마그네슘 플러스 20ml×30포",
+    "sub": "1포당 약 989원 · 마그네슘 160mg",
+    "badge_top": "리뷰 3,081개",
+    "badge_price": "29,680원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
