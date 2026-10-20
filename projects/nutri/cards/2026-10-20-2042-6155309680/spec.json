@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "생선 마지막으로",
+        false
+      ],
+      [
+        "먹은 게 언제예요?",
+        true
+      ]
+    ],
+    "sub": "편의점 도시락이 일상이라면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "오메가3 고를 때\n이것만 보세요",
+    "items": [
+      "EPA+DHA 합계 mg (오일 총량 X)",
+      "rTG·EE 같은 형태 표기",
+      "하루 몇 알 · 1알당 가격"
+    ],
+    "note": "라벨의 '1캡슐당 EPA 및 DHA' 줄을 확인",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "생선 적은 식단",
+    "brand": "내츄럴랩",
+    "name": "초임계 프로 알티지 오메가3 1200",
+    "sub": "60정×3개 · 1정당 약 467원",
+    "badge_top": "리뷰 5,928개",
+    "badge_price": "84,000원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
