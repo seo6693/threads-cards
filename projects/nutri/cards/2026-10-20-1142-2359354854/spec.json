@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "홍삼스틱 살 때",
+        false
+      ],
+      [
+        "이거 안 보면 손해",
+        true
+      ]
+    ],
+    "sub": "환절기마다 홍삼 찾는다면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "홍삼스틱 고르기 전\n확인할 3가지",
+    "items": [
+      "'건강기능식품' 마크 있나",
+      "홍삼농축액 몇 % 들었나",
+      "1포(10g) 가격"
+    ],
+    "note": "포장 앞면 아래 작은 글씨에 다 적혀 있어요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "매일 한 포",
+    "brand": "순수식품",
+    "name": "홍삼정진액 에브리데이 365 스틱 200포",
+    "sub": "1포(10g)당 약 250원",
+    "badge_top": "리뷰 7,984",
+    "badge_price": "49,910원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
