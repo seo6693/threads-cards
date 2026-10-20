@@ -1,13 +1,13 @@
 {
- "collected_at": "2026-10-19T15:36:06+0000",
+ "collected_at": "2026-10-20T15:35:56+0000",
  "projects": {
   "fresh": {
    "account": "로켓프레시 간편식 (@magdungi43)",
    "totals": {
-    "views": 32,
-    "likes": 2,
-    "replies": 1,
-    "followers_count": 0
+    "views": 68,
+    "likes": 0,
+    "replies": 0,
+    "followers_count": 1
    },
    "posts": [
     {
@@ -99,7 +99,7 @@
      "video": false,
      "published_at": "2026-10-03T09:49:32+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/DeBxrzfGxyi",
-     "views": 7,
+     "views": 8,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -355,9 +355,25 @@
      "video": false,
      "published_at": "2026-10-19T10:22:27+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/DerCLIem832",
-     "views": 18,
+     "views": 30,
      "likes": 2,
      "replies": 2,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-20-1828-339192120.json",
+     "product": "곰곰 김말이 400g",
+     "format": "scene_story",
+     "hook_formula": "반전",
+     "topic_source": "10월 '퇴근길 생각나는 분식' → 쿠팡 '떡볶이' 연관검색어 '국물떡볶이' 판매량순(saleCountDesc) 3위 추억의국민학교떡볶이는 '맛있어요' 79%로 기준 미달 → 곁들임 '김말이' 판매량순 2위 로켓프레시 곰곰 김말이 → 쿠팡파트너스 로그인 풀림으로 링크 저장소의 동일 상품번호 339192120 링크 사용",
+     "video": false,
+     "published_at": "2026-10-20T09:49:17+0000",
+     "permalink": "https://www.threads.com/@magdungi43/post/DetjLbUmxIA",
+     "views": 28,
+     "likes": 0,
+     "replies": 1,
      "reposts": 0,
      "quotes": 0,
      "shares": 0
@@ -367,7 +383,7 @@
   "nutri": {
    "account": "영양제 (꿀템짱)",
    "totals": {
-    "views": 45,
+    "views": 53,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -1390,7 +1406,7 @@
      "video": false,
      "published_at": "2026-10-18T03:01:25+0000",
      "permalink": "https://www.threads.com/@kkul394/post/Denq6SrG-of",
-     "views": 13,
+     "views": 14,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -1438,7 +1454,7 @@
      "video": false,
      "published_at": "2026-10-19T03:48:15+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DeqVCiykYQc",
-     "views": 5,
+     "views": 6,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -1454,7 +1470,55 @@
      "video": false,
      "published_at": "2026-10-19T12:30:31+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DerQ04CIJo3",
-     "views": 10,
+     "views": 12,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-20-0742-7763969969.json",
+     "product": "센트룸 실버 우먼 멀티비타민 50정",
+     "format": "scene_story",
+     "hook_formula": "숫자",
+     "topic_source": "10월 season_topics '오후만 되면 피곤(비타민B군)' (최근 2개 액상마그네슘·유산균과 겹치지 않게) → 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용, 저장분에 비타민B 단일제가 없어 B군이 든 종합비타민으로 → 쿠팡 '종합비타민' 판매량순(연관검색어 미노출): 1번째 순수식품은 광고·리뷰 체험단형이라 보류 → 5위 센트룸 실버 우먼 멀티비타민 50정 (리뷰 24,594·최고 81%)",
+     "video": false,
+     "published_at": "2026-10-19T22:54:42+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DesYP2Oifh1",
+     "views": 15,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-20-1142-2359354854.json",
+     "product": "순수식품 홍삼정진액 에브리데이 365 스틱 200포",
+     "format": "scene_story",
+     "hook_formula": "손해 피하기",
+     "topic_source": "10월 season_topics '환절기 관리' (최근 2개 유산균·종합비타민과 겹치지 않게) → 쿠팡 '홍삼' 연관검색어 '홍삼스틱' → '홍삼스틱' 판매량순 상위 15위권, 링크 저장분에 있는 순수식품 홍삼정진액 365 (리뷰 7,984·평점 4.5·7,000명 이상 만족) · 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용",
+     "video": false,
+     "published_at": "2026-10-20T03:13:29+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/Des14h6FN0b",
+     "views": 14,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-10-20-2042-6155309680.json",
+     "product": "내츄럴랩 초임계 프로 알티지 오메가3 1200 60정 3개",
+     "format": "scene_story",
+     "hook_formula": "상황 질문",
+     "topic_source": "10월 season_topics '1정당 가격 비교(오메가3)' + 반응 좋았던 오메가3 주제 (최근 2개 종합비타민·홍삼과 겹치지 않게) → 쿠팡 '오메가3' 연관검색어 1위 '알티지오메가3' → 판매량순 상위는 링크 저장분에 없어, 저장분의 내츄럴랩 초임계 프로 알티지 오메가3 1200 (리뷰 5,928·5,000명 이상 만족) · 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용",
+     "video": false,
+     "published_at": "2026-10-20T12:11:36+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/Detzc12lKNv",
+     "views": 5,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
