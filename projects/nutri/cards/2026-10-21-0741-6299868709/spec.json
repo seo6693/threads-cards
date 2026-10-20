@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "종일 서서 일하고",
+        false
+      ],
+      [
+        "다리 묵직한 사람만",
+        true
+      ]
+    ],
+    "sub": "마그네슘 찾아봤다면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "마그네슘 고를 때\n이것만 보세요",
+    "items": [
+      "1정당 '마그네슘' mg (원료 무게 X)",
+      "표시 기능성 문구 확인",
+      "하루 몇 알 · 1정당 가격"
+    ],
+    "note": "기능성: 에너지 이용, 신경·근육 기능 유지에 필요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "서서 일하는 하루",
+    "brand": "건강헤아림",
+    "name": "프리미엄 산화마그네슘 400",
+    "sub": "90정×2개 · 1정당 약 166원",
+    "badge_top": "리뷰 9,615개",
+    "badge_price": "29,900원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
