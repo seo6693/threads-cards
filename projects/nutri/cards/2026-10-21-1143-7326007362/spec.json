@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "퇴근길 눈 뻑뻑하면",
+        false
+      ],
+      [
+        "20mg 하나만 봐요",
+        true
+      ]
+    ],
+    "sub": "루테인 고르는 숫자 3개, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "루테인 고를 때\n숫자 3개",
+    "items": [
+      "1일 섭취량당 루테인 20mg인지",
+      "비타민A·아연, 종합비타민과 겹침",
+      "묶음 수로 나눈 1알 가격"
+    ],
+    "note": "루테인 20mg은 표시된 1일 최대 함량 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "화면 많은 하루",
+    "brand": "일양약품",
+    "name": "눈건강 루테인 골드",
+    "sub": "30정×6개 · 1알 약 178원",
+    "badge_top": "리뷰 32,468개",
+    "badge_price": "31,980원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
