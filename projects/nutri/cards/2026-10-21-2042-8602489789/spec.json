@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "비타민D 고함량은",
+        false
+      ],
+      [
+        "비쌀 줄 알았는데",
+        true
+      ]
+    ],
+    "sub": "4000IU 1알 약 91원, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "비타민D 고를 때\n볼 것 3가지",
+    "items": [
+      "라벨의 '1일 섭취량당' IU",
+      "종합비타민까지 합친 하루 양",
+      "묶음가 ÷ 총 알 수 = 1알값"
+    ],
+    "note": "4000IU는 제품 라벨 1일 섭취량 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "해 짧은 계절",
+    "brand": "고려은단",
+    "name": "메가도스D 비타민D3 4000IU",
+    "sub": "120정×3통 · 1알 약 91원",
+    "badge_top": "리뷰 16,543개",
+    "badge_price": "32,880원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
