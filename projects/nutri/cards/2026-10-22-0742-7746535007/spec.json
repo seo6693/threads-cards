@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "아침엔 코트, 낮엔 반팔",
+        false
+      ],
+      [
+        "환절기 챙길 거 찾는 사람?",
+        true
+      ]
+    ],
+    "sub": "프로폴리스 고르기 전 볼 3가지 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "프로폴리스\n고르기 전 볼 3가지",
+    "items": [
+      "기능성 문구: 항산화에 도움",
+      "1일 섭취량당 총 플라보노이드",
+      "통 가격 ÷ 포 수 = 1포 가격"
+    ],
+    "note": "제품 라벨 표시 기준으로 확인",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "환절기 루틴",
+    "brand": "뉴팜",
+    "name": "상쾌한 프로폴리스 60포",
+    "sub": "1포당 약 374원 · 30일분",
+    "badge_top": "34% 할인",
+    "badge_price": "22,410원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
