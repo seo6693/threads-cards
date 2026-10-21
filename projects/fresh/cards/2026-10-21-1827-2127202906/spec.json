@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "늦잠 자고 일어나니",
+        false
+      ],
+      [
+        "벌써 점심인 사람?",
+        true
+      ]
+    ],
+    "sub": "1분 브런치 데우는 법, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "냉동 핫도그\n주말 아침에 데우려면",
+    "items": [
+      "전자레인지 800W 약 1분 (포장 벗기고)",
+      "에어프라이어 2개면 160도 14~15분",
+      "바삭함은 에어프라이어 쪽이라는 후기"
+    ],
+    "note": "상세페이지·판매자 답변·리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "주말 늦잠 브런치",
+    "brand": "쟌슨빌",
+    "name": "쟌슨빌 크리스피 쌀 핫도그 7개",
+    "sub": "80g×7개 · 1개당 1,700원",
+    "badge_top": "로켓프레시",
+    "badge_price": "11,900원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
