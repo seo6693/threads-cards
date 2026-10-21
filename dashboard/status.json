@@ -242,6 +242,7 @@
   "projects/instadeal/skipped/2026-10-17-0755.json",
   "projects/instadeal/skipped/2026-10-20-0754.json",
   "projects/instadeal/skipped/2026-10-21-0754.json",
+  "projects/instadeal/skipped/2026-10-22-0754.json",
   "projects/instadeal/state.json",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card1_hook.jpg",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card2_product.jpg",
@@ -764,13 +765,13 @@
   "projects/nutri/done/2026-10-21-0741-6299868709.json",
   "projects/nutri/done/2026-10-21-1143-7326007362.json",
   "projects/nutri/done/2026-10-21-2042-8602489789.json",
+  "projects/nutri/done/2026-10-22-0742-7746535007.json",
   "projects/nutri/failed/2026-09-28-0755-8123061158.json",
   "projects/nutri/failed/2026-09-28-0957-7156986260.json",
   "projects/nutri/failed/2026-10-15-2045-6779082057.json",
   "projects/nutri/failed/2026-10-15-2258-7163887733.json",
   "projects/nutri/learning.json",
   "projects/nutri/linkbank.json",
-  "projects/nutri/queue/2026-10-22-0742-7746535007.json",
   "projects/nutri/skipped/2026-09-28-0756.json",
   "projects/nutri/skipped/2026-09-28-0958.json",
   "projects/nutri/skipped/2026-09-29-0749.json",
@@ -790,6 +791,14 @@
    "name": "Publish Threads posts",
    "status": "completed",
    "conclusion": "success",
+   "created_at": "2026-10-21T22:42:57Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/39688476359",
+   "event": "push"
+  },
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
    "created_at": "2026-10-21T12:46:42Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/39602331497",
    "event": "push"
@@ -801,14 +810,6 @@
    "created_at": "2026-10-21T12:38:25Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/39601207818",
    "event": "workflow_dispatch"
-  },
-  {
-   "name": "Publish Threads posts",
-   "status": "completed",
-   "conclusion": "success",
-   "created_at": "2026-10-21T11:43:00Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/39594007330",
-   "event": "push"
   }
  ],
  "issues": []
