@@ -18,5 +18,7 @@
   "link": "https://link.coupang.com/a/hq3ZCfLe56",
   "price": "9,080원",
   "link_source": "bank",
-  "topic_tag": "냉동식품"
+  "topic_tag": "냉동식품",
+  "published_at": "2026-10-22T10:00:09+0000",
+  "error": "POST 28249749764697687/threads_publish -> HTTP 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":4279009,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with id 17996584934856511 cannot be found.\",\"fbtrace_id\":\"AWc3xXJHKACsHwMJIIHG0eX\"}}"
 }
