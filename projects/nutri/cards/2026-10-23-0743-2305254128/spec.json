@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "밤새 화면 보고",
+        false
+      ],
+      [
+        "눈 비비는 사람?",
+        true
+      ]
+    ],
+    "sub": "루테인 고르기 전, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "루테인 고르기 전\n확인할 3가지",
+    "items": [
+      "'건강기능식품' 표시 있는지",
+      "오메가3 따로 먹으면 구성 확인",
+      "1정당 가격으로 비교"
+    ],
+    "note": "같은 제품도 1통·3통 구성마다 1정당 가격이 달라요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "화면 많이 보는 날",
+    "brand": "뉴트리원",
+    "name": "루테인 지아잔틴 164 50정×3",
+    "sub": "1정당 415원",
+    "badge_top": "리뷰 24,162",
+    "badge_price": "62,300원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
