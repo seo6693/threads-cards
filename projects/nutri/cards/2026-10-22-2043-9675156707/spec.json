@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "오후만 되면 볼 땅기는",
+        false
+      ],
+      [
+        "사무실 건조족만",
+        true
+      ]
+    ],
+    "sub": "콜라겐 고르기 전 볼 3가지 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "환절기 콜라겐\n고르기 전 볼 3가지",
+    "items": [
+      "라벨의 '건강기능식품' 표시·기능성 문구",
+      "분자량(달톤) 표기 여부",
+      "가격 ÷ 포 수 = 1포 가격"
+    ],
+    "note": "제품 라벨·구매 리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "환절기 루틴",
+    "brand": "종근당건강 올앳미",
+    "name": "비타콜라겐 3g×30포",
+    "sub": "1포당 477원 · 콜라겐+비타민C",
+    "badge_top": "하루 1포",
+    "badge_price": "14,310원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
