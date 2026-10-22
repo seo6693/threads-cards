@@ -176,7 +176,7 @@
   "projects/fresh/done/2026-10-19-1838-207594024.json",
   "projects/fresh/done/2026-10-20-1828-339192120.json",
   "projects/fresh/done/2026-10-21-1827-2127202906.json",
-  "projects/fresh/failed/2026-10-22-1827-7515840394.json",
+  "projects/fresh/done/2026-10-22-1827-7515840394.json",
   "projects/fresh/learning.json",
   "projects/fresh/linkbank.json",
   "projects/fresh/state.json",
@@ -804,6 +804,14 @@
   {
    "name": "Publish Threads posts",
    "status": "completed",
+   "conclusion": "failure",
+   "created_at": "2026-10-22T09:59:58Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/39759724949",
+   "event": "schedule"
+  },
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
    "conclusion": "success",
    "created_at": "2026-10-22T09:28:03Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/39755634897",
@@ -815,14 +823,6 @@
    "conclusion": "success",
    "created_at": "2026-10-22T02:42:48Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/39712883166",
-   "event": "push"
-  },
-  {
-   "name": "Publish Threads posts",
-   "status": "completed",
-   "conclusion": "success",
-   "created_at": "2026-10-21T22:54:29Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/39689824420",
    "event": "push"
   }
  ],
