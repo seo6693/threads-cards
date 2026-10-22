@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "커피는 3잔, 비타민은",
+        false
+      ],
+      [
+        "오늘 몇 알?",
+        true
+      ]
+    ],
+    "sub": "종합비타민 고르기 전 볼 3가지 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "종합비타민\n고르기 전 볼 3가지",
+    "items": [
+      "라벨의 비타민·미네랄 '총 몇 종'",
+      "통 가격 ÷ 총 정 수 = 1정 가격",
+      "빈속보다 식사 직후 (리뷰 팁)"
+    ],
+    "note": "제품 라벨·구매 리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "오후 루틴",
+    "brand": "순수식품",
+    "name": "종합 멀티 비타민 미네랄 90정×3",
+    "sub": "1정당 90원 · 비타민·미네랄 23종",
+    "badge_top": "32% 할인",
+    "badge_price": "24,400원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
