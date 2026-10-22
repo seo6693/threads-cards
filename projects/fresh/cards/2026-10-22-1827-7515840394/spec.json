@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "만두 붙여서 찌면",
+        false
+      ],
+      [
+        "피 다 찢어져요",
+        true
+      ]
+    ],
+    "sub": "야식 만두 찌기 전에, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "냉동만두 찔 때\n이것만 확인",
+    "items": [
+      "찜기 바닥에 종이호일 깔기",
+      "찌기 전 겉면에 식용유 살짝",
+      "바삭하게는 기름 두른 팬에"
+    ],
+    "note": "구매자 리뷰에 나온 방법 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "밤 11시 야식",
+    "brand": "해태",
+    "name": "고향만두+잡채가득 세트 2세트(1.2kg)",
+    "sub": "100g당 757원",
+    "badge_top": "리뷰 17,163개",
+    "badge_price": "9,080원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
