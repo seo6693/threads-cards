@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "알약 삼키기 싫어서",
+        false
+      ],
+      [
+        "영양제 미루는 사람?",
+        true
+      ]
+    ],
+    "sub": "물 없이 먹는 방법도 있어요, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "알약이 싫다면\n이 3가지 확인",
+    "items": [
+      "물 없이 녹이는 필름형인지",
+      "라벨 기능성 문구 (구강 항균·아연)",
+      "1매 가격 (6박스 약 828원)"
+    ],
+    "note": "기능성은 제품 표시 문구 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "물 없이 아침 루틴",
+    "brand": "닥터필",
+    "name": "프로폴리스&이뮨 프로 필름 30매×6",
+    "sub": "1매당 약 828원",
+    "badge_top": "30%↓",
+    "badge_price": "149,000원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
