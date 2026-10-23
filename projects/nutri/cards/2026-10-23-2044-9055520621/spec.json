@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "고함량인 줄 알았던",
+        false
+      ],
+      [
+        "그 숫자, 캡슐 무게",
+        true
+      ]
+    ],
+    "sub": "코큐텐 고르기 전, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "코큐텐 담기 전\n이것부터",
+    "items": [
+      "'1일 섭취량 기준' 함량",
+      "라벨 기능성 문구(항산화)",
+      "통 가격 말고 1알 가격"
+    ],
+    "note": "캡슐 무게 ≠ 코엔자임Q10 함량",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "하루 1알",
+    "brand": "뉴트리코어",
+    "name": "하이퍼셀 코엔자임Q10 30정",
+    "sub": "1정당 756원",
+    "badge_top": "리뷰 2,745",
+    "badge_price": "22,670원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
