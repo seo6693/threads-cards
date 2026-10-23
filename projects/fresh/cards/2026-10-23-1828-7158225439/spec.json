@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "캠핑 가서 고기 양념",
+        false
+      ],
+      [
+        "직접 재우는 사람만",
+        true
+      ]
+    ],
+    "sub": "텐트 치면 해가 금방 져요, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "캠핑 고기 메뉴\n챙기기 전 확인",
+    "items": [
+      "냉장 양념육은 아이스박스에",
+      "양파·대파는 따로 챙기기",
+      "다 익힌 뒤 간 보고 추가 양념"
+    ],
+    "note": "상품 페이지·구매자 리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "캠핑 첫 끼",
+    "brand": "고기듬뿍",
+    "name": "양념 소불고기 (냉장) 500g",
+    "sub": "100g당 2,580원",
+    "badge_top": "리뷰 41,248개",
+    "badge_price": "12,900원"
+  },
+  "theme": "teal",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
