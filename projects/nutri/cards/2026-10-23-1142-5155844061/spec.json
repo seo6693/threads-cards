@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "환절기 홍삼 한 포",
+        false
+      ],
+      [
+        "1,048원짜리 있어요",
+        true
+      ]
+    ],
+    "sub": "담기 전 볼 것 3가지, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "홍삼액 담기 전\n이 3가지만",
+    "items": [
+      "원재료에 당류·향료가 있는지",
+      "상자 값 말고 1포 가격",
+      "1포 용량(ml)과 포 수"
+    ],
+    "note": "라벨·상품 페이지에서 확인돼요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "아침 한 포 루틴",
+    "brand": "참좋은 홍삼",
+    "name": "순수 홍삼액 90ml 60포",
+    "sub": "1포당 약 1,048원",
+    "badge_top": "리뷰 490개",
+    "badge_price": "62,900원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
