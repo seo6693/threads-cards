@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "쌀쌀한 주말 저녁",
+        false
+      ],
+      [
+        "어묵탕 끓일 사람?",
+        true
+      ]
+    ],
+    "sub": "국물 맛 살리는 법, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "어묵탕\n이렇게 끓이면 돼요",
+    "items": [
+      "무·대파로 국물 먼저 끓이기",
+      "어묵은 넓적하게 잘라 넣기",
+      "남은 건 한 번 쓸 양씩 냉동"
+    ],
+    "note": "구매자 리뷰에 자주 나온 방법",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "쌀쌀한 저녁",
+    "brand": "삼호어묵",
+    "name": "부산어묵 바른사각 240g×6",
+    "sub": "100g당 510원 · 1봉 약 1,220원",
+    "badge_top": "리뷰 16만+",
+    "badge_price": "7,340원"
+  },
+  "theme": "teal2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
