@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "오후마다 처지는데",
+        false
+      ],
+      [
+        "라벨 안 보면 손해",
+        true
+      ]
+    ],
+    "sub": "철분제 담기 전에, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "철분제 담기 전\n라벨 3가지",
+    "items": [
+      "하루 섭취량 (몇 알인지)",
+      "같이 든 성분 (비타민C 등)",
+      "1정당 가격 계산"
+    ],
+    "note": "철: 산소운반·혈액생성·에너지 생성에 필요 (식약처 고시)",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "오후 루틴",
+    "brand": "뉴트리코어",
+    "name": "철분 프리미엄 60정",
+    "sub": "1정당 930원",
+    "badge_top": "리뷰 2,251",
+    "badge_price": "55,800원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
