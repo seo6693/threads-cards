@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "오메가3만 먹으면",
+        false
+      ],
+      [
+        "비린 트림 나는 사람?",
+        true
+      ]
+    ],
+    "sub": "점심 먹고 민망했다면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "크릴오일 담기 전\n확인할 3가지",
+    "items": [
+      "포장 형태: 병 vs 한 알씩 개별 포장",
+      "1정당 가격 = 총액 ÷ 정 수",
+      "갑각류(새우·게) 알레르기 여부"
+    ],
+    "note": "상품 페이지·리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "비린 트림 고민",
+    "brand": "크릴56 펄세스",
+    "name": "크릴오일 1,000mg 90정",
+    "sub": "1정당 약 878원 · 리뷰 냄새 '거의 안 나요' 79%",
+    "badge_top": "리뷰 6,483개",
+    "badge_price": "79,000원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
