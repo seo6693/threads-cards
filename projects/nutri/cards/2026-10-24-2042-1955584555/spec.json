@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "비오틴, mcg 숫자만",
+        false
+      ],
+      [
+        "보고 고르는 사람만",
+        true
+      ]
+    ],
+    "sub": "담기 전에 3가지만, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "비오틴 담기 전\n확인할 3가지",
+    "items": [
+      "단위 맞추기: 5000mcg = 5mg",
+      "하루 몇 알인지 (1일 섭취량)",
+      "1정당 가격 = 총액 ÷ 정 수"
+    ],
+    "note": "라벨·상품 페이지 표시 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "고르는 기준",
+    "brand": "나우푸드",
+    "name": "비오틴 5000mcg 베지캡슐 120정",
+    "sub": "1정당 91원 · 1일 1알",
+    "badge_top": "리뷰 20,038개",
+    "badge_price": "10,930원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
