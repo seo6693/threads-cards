@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "머리 말리고 나면",
+        false
+      ],
+      [
+        "바닥부터 쓰는 사람만",
+        true
+      ]
+    ],
+    "sub": "모발 영양제 고르기 전, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "모발 콜라겐\n담기 전 볼 3가지",
+    "items": [
+      "라벨의 기능성 원료명 (피쉬콜라겐펩타이드 등)",
+      "비오틴 함량, 먹던 영양제와 겹치는지",
+      "박스 수별 1포당 가격 (1박스 1,409원)"
+    ],
+    "note": "기능성 문구가 '윤기·탄력'인지 '보습'인지도 라벨에서 확인",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "가을 모발 루틴",
+    "brand": "주영엔에스",
+    "name": "모발 콜라겐 3270 4박스 112포",
+    "sub": "1포(20ml)당 1,152원 · 비오틴 1,200μg",
+    "badge_top": "리뷰 3,407개",
+    "badge_price": "128,990원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
