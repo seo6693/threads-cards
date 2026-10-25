@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "크릴오일 1000mg,",
+        false
+      ],
+      [
+        "숫자만 보면 손해",
+        true
+      ]
+    ],
+    "sub": "라벨에서 볼 건 따로 있어요, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "크릴오일 담기 전\n볼 3가지",
+    "items": [
+      "1000mg은 캡슐 한 알 오일 양인지",
+      "인지질·EPA+DHA 함량이 따로 적혔는지",
+      "박스 수별 1정당 가격 (1박스 930원)"
+    ],
+    "note": "기능성 문구는 제품 라벨 표시로 확인",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "라벨 먼저 보는 루틴",
+    "brand": "닥터루템",
+    "name": "THE 크릴오일 1000 6박스 180정",
+    "sub": "1정당 약 833원 · 남극크릴오일 100%",
+    "badge_top": "리뷰 293개",
+    "badge_price": "150,000원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
