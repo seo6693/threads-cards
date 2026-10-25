@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "식탁 위 영양제 통 5개",
+        false
+      ],
+      [
+        "하루 1알로 줄이려면?",
+        true
+      ]
+    ],
+    "sub": "엄마 멀티비타민 고르는 법, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "엄마 멀티비타민\n고를 때 볼 3가지",
+    "items": [
+      "제품명의 연령·성별 표기 (60+ 등)",
+      "하루 몇 정인지 (1정이면 챙기기 쉬움)",
+      "1정당 가격 (같은 검색 70원~400원대)"
+    ],
+    "note": "이미 드시는 단일 영양제와 성분이 겹치는지 라벨도 확인",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "엄마 아침 루틴",
+    "brand": "고려은단",
+    "name": "멀티비타민 올인원 우먼 60+ 60정",
+    "sub": "1정당 366원 · 비타민 13종·미네랄 10종",
+    "badge_top": "리뷰 3,123개",
+    "badge_price": "21,950원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
