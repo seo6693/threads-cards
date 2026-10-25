@@ -274,6 +274,7 @@
   "projects/instadeal/skipped/2026-10-23-0754.json",
   "projects/instadeal/skipped/2026-10-24-0754.json",
   "projects/instadeal/skipped/2026-10-25-0754.json",
+  "projects/instadeal/skipped/2026-10-26-0753.json",
   "projects/instadeal/state.json",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card1_hook.jpg",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card2_product.jpg",
@@ -880,13 +881,13 @@
   "projects/nutri/done/2026-10-25-0741-9335455019.json",
   "projects/nutri/done/2026-10-25-1142-9475022136.json",
   "projects/nutri/done/2026-10-25-2042-9192152086.json",
+  "projects/nutri/done/2026-10-26-0753-7892536938.json",
   "projects/nutri/failed/2026-09-28-0755-8123061158.json",
   "projects/nutri/failed/2026-09-28-0957-7156986260.json",
   "projects/nutri/failed/2026-10-15-2045-6779082057.json",
   "projects/nutri/failed/2026-10-15-2258-7163887733.json",
   "projects/nutri/learning.json",
   "projects/nutri/linkbank.json",
-  "projects/nutri/queue/2026-10-26-0753-7892536938.json",
   "projects/nutri/skipped/2026-09-28-0756.json",
   "projects/nutri/skipped/2026-09-28-0958.json",
   "projects/nutri/skipped/2026-09-29-0749.json",
@@ -901,6 +902,15 @@
   "projects/nutri/skipped/2026-10-15-2315.json",
   "projects/nutri/state.json"
  ],
- "runs": [],
+ "runs": [
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-10-25T22:53:11Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/40242246285",
+   "event": "push"
+  }
+ ],
  "issues": []
 }
