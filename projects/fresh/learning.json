@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-25T00:31+09:00",
- "posts_28d": 27,
- "avg_views_28d": 17.3,
+ "updated": "2026-10-26T00:31+09:00",
+ "posts_28d": 28,
+ "avg_views_28d": 17.0,
  "formula_weights": {
-  "상황 질문": 1.05,
-  "손해 피하기": 1.33,
-  "숫자": 0.96,
-  "반전": 1.07,
+  "상황 질문": 1.08,
+  "손해 피하기": 1.37,
+  "숫자": 0.84,
+  "반전": 1.09,
   "저격": 0.83
  },
  "formulas": {
   "상황 질문": {
-   "avg": 18.8,
+   "avg": 19.2,
    "n": 5
   },
   "저격": {
@@ -19,16 +19,16 @@
    "n": 3
   },
   "손해 피하기": {
-   "avg": 27.2,
+   "avg": 28.0,
    "n": 4
   },
   "반전": {
-   "avg": 20.5,
+   "avg": 21.0,
    "n": 2
   },
   "숫자": {
-   "avg": 15.5,
-   "n": 2
+   "avg": 11.7,
+   "n": 3
   }
  },
  "types": {
@@ -45,23 +45,23 @@
    "n": 2
   },
   "이야기": {
-   "avg": 19.3,
-   "n": 16
+   "avg": 18.8,
+   "n": 17
   }
  },
  "hours": {
   "18시": {
-   "avg": 17.3,
+   "avg": 17.4,
    "n": 15
   },
   "19시": {
-   "avg": 17.2,
-   "n": 12
+   "avg": 16.5,
+   "n": 13
   }
  },
  "top_posts": [
   {
-   "views": 36,
+   "views": 38,
    "hook_formula": "손해 피하기",
    "topic_source": "10월 '가을 캠핑 간편식' → 쿠팡 '캠핑음식' 연관검색어 '닭갈비' → 판매량순(saleCountDesc) 2위 로켓프레시(1위 셰프초이스는 최고 79%로 기준 미달) → 쿠팡파트너스 동일 상품번호 1798091856",
    "product": "맛잽이식품 춘천닭갈비 800g",
@@ -70,7 +70,7 @@
    "permalink": "https://www.threads.com/@magdungi43/post/DeWYffLkUmk"
   },
   {
-   "views": 35,
+   "views": 36,
    "hook_formula": "손해 피하기",
    "topic_source": "10월 '쌀쌀해진 날 국·탕' → 쿠팡 '갈비탕' 연관검색어 '뼈없는갈비탕' 확인 → 판매량순(saleCountDesc) 1위(광고 제외) 로켓프레시 사미헌 갈비탕 → 쿠팡파트너스 로그인 풀림으로 링크 저장소의 동일 상품번호 207594024 링크 사용",
    "product": "사미헌 갈비탕 1kg",
@@ -97,13 +97,13 @@
    "permalink": "https://www.threads.com/@magdungi43/post/DeEZFeyHNK9"
   },
   {
-   "views": 25,
-   "hook_formula": "",
-   "topic_source": "",
-   "product": "비비고 왕교자 1.715kg",
-   "format": "review_digest",
-   "when": "09/28 18:39",
-   "permalink": "https://www.threads.com/@magdungi43/post/Dd04hpAoOwr"
+   "views": 26,
+   "hook_formula": "상황 질문",
+   "topic_source": "10월 '쌀쌀해진 날 국·탕' + 이번 회차 세부 분류 '어묵' → 쿠팡 '어묵탕' 연관검색어 '오뎅탕' → 판매량순(saleCountDesc) 1위 로켓프레시(2위는 최근 게시 상품) → 쿠팡파트너스 동일 상품번호 5694524538",
+   "product": "고래사어묵 가정용 꼬치어묵 296g×2",
+   "format": "scene_story",
+   "when": "10/16 19:06",
+   "permalink": "https://www.threads.com/@magdungi43/post/DejR6wzFez6"
   }
  ]
 }
