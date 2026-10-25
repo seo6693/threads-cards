@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "야식으로 순대 데울 때",
+        false
+      ],
+      [
+        "안 터지게 하는 법 3",
+        true
+      ]
+    ],
+    "sub": "전자레인지 돌리기 전에, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "순대 데우기\n이 3가지만 기억",
+    "items": [
+      "자르지 말고 통째로 데운 뒤 썰기",
+      "여유 있으면 봉지째 중탕",
+      "팬에 살짝 볶으면 겉이 바삭"
+    ],
+    "note": "구매자 리뷰에 나온 방법 · 포장 조리법도 확인",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "밤 11시 야식",
+    "brand": "대림선",
+    "name": "쫄깃 찰순대 1kg",
+    "sub": "100g당 830원 · 냉장 보관",
+    "badge_top": "리뷰 2만+",
+    "badge_price": "8,300원"
+  },
+  "theme": "teal",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
