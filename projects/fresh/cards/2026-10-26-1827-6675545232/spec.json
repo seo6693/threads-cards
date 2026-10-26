@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "양념 제육, 센불에 볶으면",
+        false
+      ],
+      [
+        "팬에 다 눌어붙어요",
+        true
+      ]
+    ],
+    "sub": "퇴근 후 저녁, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "양념 제육 볶을 때\n이 3가지만",
+    "items": [
+      "팬 먼저 예열 → 중불로 볶기",
+      "눌어붙지 않게 자주 뒤적이기",
+      "채소는 조금씩 (많으면 싱거워요)"
+    ],
+    "note": "상품 페이지 조리법·구매 리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "퇴근 후 저녁",
+    "brand": "오늘차림",
+    "name": "한돈 고추장 제육볶음 600g",
+    "sub": "100g당 1,665원 · 로켓프레시 냉장",
+    "badge_top": "23% 할인",
+    "badge_price": "9,990원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
