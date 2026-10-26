@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "히터 켠 오후 4시",
+        false
+      ],
+      [
+        "눈꺼풀 무거운 사람?",
+        true
+      ]
+    ],
+    "sub": "비타민B군 담기 전, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "비오틴 담기 전\n이 3가지만",
+    "items": [
+      "B7 · 기능성은 '에너지 생성에 필요'",
+      "10,000mcg = 10mg, 단위부터 확인",
+      "피검사 전엔 먹고 있다고 알리기"
+    ],
+    "note": "미국 FDA: 고함량 비오틴은 일부 혈액검사 결과에 영향 가능",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "오후 루틴",
+    "brand": "닥터스베스트",
+    "name": "비오틴 10000mcg 120정",
+    "sub": "1정당 약 101원",
+    "badge_top": "리뷰 12,699개",
+    "badge_price": "12,130원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
