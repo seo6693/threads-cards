@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "120정이면 넉넉한 줄",
+        false
+      ],
+      [
+        "딱 한 달분이었어요",
+        true
+      ]
+    ],
+    "sub": "관절 영양제 담기 전, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "관절 영양제\n담기 전 확인 3가지",
+    "items": [
+      "1일 섭취량 몇 정? (4정이면 120정=30일)",
+      "라벨에 기능성 원료 이름(MSM·NAG)",
+      "먹던 영양제와 칼슘·아연 겹치는지"
+    ],
+    "note": "통 크기보다 '1일 섭취량'으로 일수 계산",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "계단 많은 날",
+    "brand": "닥터신",
+    "name": "관절6 MSM·NAG 120정",
+    "sub": "1정 249원 · 하루 4정 약 996원",
+    "badge_top": "리뷰 409",
+    "badge_price": "29,820원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
