@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "편의점으로 저녁 때우는",
+        false
+      ],
+      [
+        "직장인만 보세요",
+        true
+      ]
+    ],
+    "sub": "유산균 담기 전, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "유산균\n담기 전 확인 3가지",
+    "items": [
+      "라벨에 보장균수 숫자(CFU)",
+      "실온보관인지 냉장보관인지",
+      "1포·1알당 가격 계산"
+    ],
+    "note": "회사 서랍에 둘 거면 실온보관이 편해요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "야근하는 날",
+    "brand": "종근당건강",
+    "name": "락토핏 골드 80포",
+    "sub": "1포 약 231원 · 40억 CFU",
+    "badge_top": "리뷰 26만",
+    "badge_price": "18,500원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
