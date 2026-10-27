@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "나들이 도시락 반찬",
+        false
+      ],
+      [
+        "새벽에 안 만들어도 돼요",
+        true
+      ]
+    ],
+    "sub": "가을 나들이 전날이라면, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "냉동 산적 도시락에\n넣기 전 3가지",
+    "items": [
+      "중약불에서 천천히 (센불은 금방 타요)",
+      "1kg 대용량, 지퍼백 아님 → 소분 보관",
+      "계란물 입혀 구우면 도시락용 변신"
+    ],
+    "note": "구매 리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "나들이 도시락",
+    "brand": "비셰프",
+    "name": "고기산적 1kg (냉동)",
+    "sub": "100g당 820원 · 로켓프레시",
+    "badge_top": "리뷰 1.9만",
+    "badge_price": "8,200원"
+  },
+  "theme": "teal2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}

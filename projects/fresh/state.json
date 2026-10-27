@@ -1,5 +1,5 @@
 {
-  "next_keyword": 5,
+  "next_keyword": 6,
   "recent_formats": [
     "scene_story",
     "scene_story",
@@ -21,13 +21,13 @@
     "story"
   ],
   "recent_hook_formulas": [
-    "\uc190\ud574 \ud53c\ud558\uae30",
     "\ubc18\uc804",
     "\uc0c1\ud669 \uc9c8\ubb38",
     "\uc190\ud574 \ud53c\ud558\uae30",
     "\uc800\uaca9",
     "\uc0c1\ud669 \uc9c8\ubb38",
     "\uc22b\uc790",
-    "\uc190\ud574 \ud53c\ud558\uae30"
+    "\uc190\ud574 \ud53c\ud558\uae30",
+    "\ubc18\uc804"
   ]
 }
