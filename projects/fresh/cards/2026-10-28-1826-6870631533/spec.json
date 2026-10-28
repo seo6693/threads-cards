@@ -1,0 +1,42 @@
+{
+  "scene": {
+    "lines": [
+      [
+        "밤 11시, 비 오면",
+        false
+      ],
+      [
+        "김치전 당기는 사람만",
+        true
+      ]
+    ],
+    "sub": "반죽 없이 굽는 법, 넘겨서 확인 →",
+    "ai": true
+  },
+  "hook": {
+    "title": "냉동 김치전\n노릇하게 굽는 법",
+    "items": [
+      "해동 없이 냉동 그대로",
+      "팬: 중약불, 뒤집어가며 4~5분",
+      "에어프라이어: 예열 후 6~8분"
+    ],
+    "note": "에어프라이어 180~200℃ · 상품 페이지 조리법 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "밤 11시 야식",
+    "brand": "사옹원 부침명장",
+    "name": "한입 아삭김치전 510g",
+    "sub": "100g당 1,333원",
+    "badge_top": "로켓프레시",
+    "badge_price": "6,800원"
+  },
+  "theme": "teal2",
+  "product_image": "product.jpg",
+  "order": [
+    "scene",
+    "hook",
+    "product"
+  ],
+  "scene_image": "scene.jpg"
+}
