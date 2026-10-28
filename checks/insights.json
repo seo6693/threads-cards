@@ -1,10 +1,10 @@
 {
- "collected_at": "2026-10-27T15:46:51+0000",
+ "collected_at": "2026-10-28T20:13:12+0000",
  "projects": {
   "fresh": {
    "account": "로켓프레시 간편식 (@magdungi43)",
    "totals": {
-    "views": 28,
+    "views": 20,
     "likes": 0,
     "replies": 0,
     "followers_count": 1
@@ -489,13 +489,29 @@
      "reposts": 0,
      "quotes": 0,
      "shares": 0
+    },
+    {
+     "file": "2026-10-28-1826-6870631533.json",
+     "product": "사옹원 한입 아삭김치전 510g",
+     "format": "scene_story",
+     "hook_formula": "저격",
+     "topic_source": "10월 '밤 11시 야식' + 세부 분류 '전·부침' → 쿠팡 '김치전' 연관검색어 1순위 '사옹원김치전' 확인 → 판매량순(saleCountDesc) 1위 로켓프레시 부침명장 사옹원 한입 아삭김치전(리뷰 25,893, 맛있어요 90%) → 쿠팡파트너스 로그인 풀림으로 링크 저장소의 동일 상품번호 6870631533 링크 사용",
+     "video": false,
+     "published_at": "2026-10-28T10:22:06+0000",
+     "permalink": "https://www.threads.com/@magdungi43/post/DfCNSfxledk",
+     "views": 7,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
     }
    ]
   },
   "nutri": {
    "account": "영양제 (꿀템짱)",
    "totals": {
-    "views": 40,
+    "views": 32,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -670,7 +686,7 @@
      "video": false,
      "published_at": "2026-09-30T03:22:49+0000",
      "permalink": "https://www.threads.com/@kkul394/post/Dd5XASeG4xY",
-     "views": 11,
+     "views": 12,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -1326,7 +1342,7 @@
      "video": false,
      "published_at": "2026-10-13T23:45:01+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DedBQm9mebp",
-     "views": 7,
+     "views": 8,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -1598,7 +1614,7 @@
      "video": false,
      "published_at": "2026-10-19T22:54:42+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DesYP2Oifh1",
-     "views": 15,
+     "views": 16,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -1678,7 +1694,7 @@
      "video": false,
      "published_at": "2026-10-21T12:39:00+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DewbW86nI0C",
-     "views": 17,
+     "views": 18,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -1726,7 +1742,7 @@
      "video": false,
      "published_at": "2026-10-22T12:06:29+0000",
      "permalink": "https://www.threads.com/@kkul394/post/Dey8cgBlZe2",
-     "views": 32,
+     "views": 36,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -1886,7 +1902,7 @@
      "video": false,
      "published_at": "2026-10-25T23:06:31+0000",
      "permalink": "https://www.threads.com/@kkul394/post/De72Yzpj_kG",
-     "views": 9,
+     "views": 10,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -1934,7 +1950,7 @@
      "video": false,
      "published_at": "2026-10-27T12:38:59+0000",
      "permalink": "https://www.threads.com/@kkul394/post/De_4KE6lLfN",
-     "views": 5,
+     "views": 9,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
