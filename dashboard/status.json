@@ -841,6 +841,10 @@
   "projects/nutri/cards/2026-10-27-2043-7458810098/product.jpg",
   "projects/nutri/cards/2026-10-27-2043-7458810098/scene.jpg",
   "projects/nutri/cards/2026-10-27-2043-7458810098/spec.json",
+  "projects/nutri/cards/2026-10-29-2041-6395389697/card1_hook.jpg",
+  "projects/nutri/cards/2026-10-29-2041-6395389697/card2_product.jpg",
+  "projects/nutri/cards/2026-10-29-2041-6395389697/product.jpg",
+  "projects/nutri/cards/2026-10-29-2041-6395389697/spec.json",
   "projects/nutri/config.json",
   "projects/nutri/done/2026-09-27-1754-7458810098.json",
   "projects/nutri/done/2026-09-27-1954-6586372374.json",
@@ -939,6 +943,7 @@
   "projects/nutri/failed/2026-10-15-2258-7163887733.json",
   "projects/nutri/learning.json",
   "projects/nutri/linkbank.json",
+  "projects/nutri/queue/2026-10-29-2041-6395389697.json",
   "projects/nutri/skipped/2026-09-28-0756.json",
   "projects/nutri/skipped/2026-09-28-0958.json",
   "projects/nutri/skipped/2026-09-29-0749.json",
@@ -962,6 +967,14 @@
   "projects/nutri/state.json"
  ],
  "runs": [
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-10-29T10:23:16Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/40857153374",
+   "event": "workflow_dispatch"
+  },
   {
    "name": "Publish Threads posts",
    "status": "completed",
