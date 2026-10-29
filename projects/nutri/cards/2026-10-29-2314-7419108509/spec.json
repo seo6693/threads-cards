@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "아연 살 때\n볼 숫자 3개",
+    "items": [
+      "1정당 값: 1개 326원 · 2개 293원",
+      "기준치 %: 1일 12.75mg = 150%",
+      "원료명: 건조효모(아연 함유)"
+    ],
+    "note": "상품 페이지 표기 기준 (10/29)",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "환절기 루틴",
+    "brand": "뉴트리메이드",
+    "name": "아연 60정 x 2개",
+    "sub": "1정당 약 293원",
+    "badge_top": "55%↓",
+    "badge_price": "35,100원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
