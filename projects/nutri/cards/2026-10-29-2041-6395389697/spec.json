@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "아연 고를 때\n먼저 볼 3가지",
+    "items": [
+      "1정 함량 vs 하루 상한 35mg",
+      "종합비타민 속 아연까지 합산",
+      "빈속 말고 식후에 (후기 다수)"
+    ],
+    "note": "상한섭취량: 한국인 영양소 섭취기준(성인)",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "환절기 루틴",
+    "brand": "NOW Foods 나우푸드",
+    "name": "아연 50mg 250정",
+    "sub": "1정당 약 44원",
+    "badge_top": "27%↓",
+    "badge_price": "10,930원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}

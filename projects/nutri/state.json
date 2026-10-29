@@ -1,5 +1,5 @@
 {
-  "next_keyword": 3,
+  "next_keyword": 4,
   "recent_formats": [
     "scene_story",
     "scene_story",
@@ -8,7 +8,7 @@
     "scene_story",
     "scene_story",
     "scene_story",
-    "scene_story"
+    "tip_post"
   ],
   "recent_video_styles": [
     "slam",
@@ -34,16 +34,16 @@
     "story",
     "story",
     "story",
-    "story"
+    "tip"
   ],
   "recent_hook_formulas": [
-    "\uc800\uaca9",
     "\uc0c1\ud669 \uc9c8\ubb38",
     "\uc22b\uc790",
     "\uc800\uaca9",
     "\uc190\ud574 \ud53c\ud558\uae30",
     "\uc0c1\ud669 \uc9c8\ubb38",
     "\ubc18\uc804",
-    "\uc800\uaca9"
+    "\uc800\uaca9",
+    "\uc190\ud574 \ud53c\ud558\uae30"
   ]
 }
