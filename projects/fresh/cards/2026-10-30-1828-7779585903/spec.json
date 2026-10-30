@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "냉동 떡볶이\n고를 때 볼 3가지",
+    "items": [
+      "봉지값 말고 100g당 가격",
+      "1팩이 몇 인분인지 표기 확인",
+      "밀떡·쌀떡 취향 먼저"
+    ],
+    "note": "예: 100g당 999원 · 1팩 2~3인분 (상품 페이지·포장 표기)",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "퇴근길 분식",
+    "brand": "추억의국민학교떡볶이",
+    "name": "오리지널 밀떡 600g×2",
+    "sub": "100g당 999원 · 1팩 5,995원꼴",
+    "badge_top": "로켓프레시",
+    "badge_price": "11,990원"
+  },
+  "theme": "teal2",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
