@@ -1,10 +1,10 @@
 {
- "collected_at": "2026-10-29T20:13:16+0000",
+ "collected_at": "2026-10-30T19:54:29+0000",
  "projects": {
   "fresh": {
    "account": "로켓프레시 간편식 (@magdungi43)",
    "totals": {
-    "views": 17,
+    "views": 22,
     "likes": 0,
     "replies": 0,
     "followers_count": 1
@@ -355,7 +355,7 @@
      "video": false,
      "published_at": "2026-10-19T10:22:27+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/DerCLIem832",
-     "views": 38,
+     "views": 39,
      "likes": 2,
      "replies": 2,
      "reposts": 0,
@@ -483,7 +483,7 @@
      "video": false,
      "published_at": "2026-10-27T09:41:19+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/De_j0mmG91K",
-     "views": 7,
+     "views": 9,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -499,7 +499,7 @@
      "video": false,
      "published_at": "2026-10-28T10:22:06+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/DfCNSfxledk",
-     "views": 8,
+     "views": 9,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -521,13 +521,29 @@
      "reposts": 0,
      "quotes": 0,
      "shares": 0
+    },
+    {
+     "file": "2026-10-30-1828-7779585903.json",
+     "product": "추억의국민학교떡볶이 오리지널 밀떡 600g×2",
+     "format": "tip_post",
+     "hook_formula": "손해 피하기",
+     "topic_source": "10월 '퇴근길 생각나는 분식' (금요일 저녁) → 쿠팡 '냉장/냉동/간편식' 카테고리 랭킹 1페이지에서 링크 저장소 상품 중 최상위(추억의국민학교떡볶이) → 상품 페이지 리뷰 79,049개·맛있어요 79%로 기준(80%) 1%p 미달, 다음 후보 햇반 김치치즈 주먹밥 78% 미달, 이후 쿠팡 Access Denied로 추가 확인 불가 → 스토리 대신 tip_post(고르는 기준)로 전환, 쿠팡파트너스 로그인 풀림으로 링크 저장소 동일 상품번호 7779585903 링크 사용",
+     "video": false,
+     "published_at": "2026-10-30T10:23:34+0000",
+     "permalink": "https://www.threads.com/@magdungi43/post/DfHXBhCG1nC",
+     "views": 11,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
     }
    ]
   },
   "nutri": {
    "account": "영양제 (꿀템짱)",
    "totals": {
-    "views": 13,
+    "views": 6,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -942,7 +958,7 @@
      "video": false,
      "published_at": "2026-10-05T03:05:12+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DeGNCcnm1uu",
-     "views": 4,
+     "views": 5,
      "likes": 0,
      "replies": 4,
      "reposts": 1,
@@ -1774,7 +1790,7 @@
      "video": false,
      "published_at": "2026-10-22T23:11:23+0000",
      "permalink": "https://www.threads.com/@kkul394/post/De0IlVMGBdT",
-     "views": 14,
+     "views": 15,
      "likes": 0,
      "replies": 1,
      "reposts": 0,

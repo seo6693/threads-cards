@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-30T05:13+09:00",
+ "updated": "2026-10-31T04:55+09:00",
  "posts_28d": 28,
- "avg_views_28d": 16.5,
+ "avg_views_28d": 16.3,
  "formula_weights": {
-  "상황 질문": 1.05,
-  "손해 피하기": 1.33,
-  "숫자": 0.88,
-  "반전": 1.02,
-  "저격": 0.82
+  "상황 질문": 1.06,
+  "손해 피하기": 1.27,
+  "숫자": 0.89,
+  "반전": 1.04,
+  "저격": 0.83
  },
  "formulas": {
   "상황 질문": {
@@ -15,15 +15,15 @@
    "n": 6
   },
   "저격": {
-   "avg": 11.2,
+   "avg": 11.5,
    "n": 4
   },
   "손해 피하기": {
-   "avg": 25.2,
-   "n": 5
+   "avg": 23.0,
+   "n": 6
   },
   "반전": {
-   "avg": 17.0,
+   "avg": 17.7,
    "n": 3
   },
   "숫자": {
@@ -32,34 +32,43 @@
   }
  },
  "types": {
-  "비교": {
-   "avg": 15.7,
-   "n": 3
-  },
   "꿀팁": {
-   "avg": 9.5,
-   "n": 2
+   "avg": 10.0,
+   "n": 3
   },
   "대표": {
    "avg": 15.5,
    "n": 2
   },
+  "비교": {
+   "avg": 13.0,
+   "n": 2
+  },
   "이야기": {
-   "avg": 17.4,
+   "avg": 17.6,
    "n": 21
   }
  },
  "hours": {
   "18시": {
-   "avg": 17.3,
+   "avg": 17.5,
    "n": 12
   },
   "19시": {
-   "avg": 15.9,
+   "avg": 15.4,
    "n": 16
   }
  },
  "top_posts": [
+  {
+   "views": 39,
+   "hook_formula": "손해 피하기",
+   "topic_source": "10월 '쌀쌀해진 날 국·탕' → 쿠팡 '갈비탕' 연관검색어 '뼈없는갈비탕' 확인 → 판매량순(saleCountDesc) 1위(광고 제외) 로켓프레시 사미헌 갈비탕 → 쿠팡파트너스 로그인 풀림으로 링크 저장소의 동일 상품번호 207594024 링크 사용",
+   "product": "사미헌 갈비탕 1kg",
+   "format": "scene_story",
+   "when": "10/19 19:22",
+   "permalink": "https://www.threads.com/@magdungi43/post/DerCLIem832"
+  },
   {
    "views": 38,
    "hook_formula": "손해 피하기",
@@ -68,15 +77,6 @@
    "format": "scene_story",
    "when": "10/11 18:53",
    "permalink": "https://www.threads.com/@magdungi43/post/DeWYffLkUmk"
-  },
-  {
-   "views": 38,
-   "hook_formula": "손해 피하기",
-   "topic_source": "10월 '쌀쌀해진 날 국·탕' → 쿠팡 '갈비탕' 연관검색어 '뼈없는갈비탕' 확인 → 판매량순(saleCountDesc) 1위(광고 제외) 로켓프레시 사미헌 갈비탕 → 쿠팡파트너스 로그인 풀림으로 링크 저장소의 동일 상품번호 207594024 링크 사용",
-   "product": "사미헌 갈비탕 1kg",
-   "format": "scene_story",
-   "when": "10/19 19:22",
-   "permalink": "https://www.threads.com/@magdungi43/post/DerCLIem832"
   },
   {
    "views": 29,
