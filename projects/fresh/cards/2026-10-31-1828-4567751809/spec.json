@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "야식 너겟\n에어프라이어 기준",
+    "items": [
+      "190~200℃로 먼저 예열",
+      "겹치지 않게 5~6개씩",
+      "6분 30초~7분 30초, 중간에 뒤집기"
+    ],
+    "note": "제조사 조리 안내 · 구매 리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "주말 야식",
+    "brand": "하림",
+    "name": "치킨너겟 1.2kg",
+    "sub": "100g당 약 1,113원 · 에어프라이어 조리",
+    "badge_top": "리뷰 17만+",
+    "badge_price": "13,350원"
+  },
+  "theme": "teal",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
