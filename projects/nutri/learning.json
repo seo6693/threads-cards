@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-31T04:55+09:00",
- "posts_28d": 74,
- "avg_views_28d": 12.4,
+ "updated": "2026-11-01T04:15+09:00",
+ "posts_28d": 71,
+ "avg_views_28d": 12.2,
  "formula_weights": {
-  "상황 질문": 0.99,
-  "손해 피하기": 0.88,
-  "숫자": 0.82,
-  "반전": 0.84,
-  "저격": 1.18
+  "상황 질문": 1.01,
+  "손해 피하기": 0.89,
+  "숫자": 0.83,
+  "반전": 0.85,
+  "저격": 1.19
  },
  "formulas": {
   "상황 질문": {
@@ -15,7 +15,7 @@
    "n": 16
   },
   "손해 피하기": {
-   "avg": 10.4,
+   "avg": 10.5,
    "n": 10
   },
   "숫자": {
@@ -33,16 +33,16 @@
  },
  "types": {
   "꿀팁": {
-   "avg": 22.5,
-   "n": 8
+   "avg": 20.4,
+   "n": 7
   },
   "비교": {
-   "avg": 12.1,
-   "n": 7
+   "avg": 12.8,
+   "n": 6
   },
   "대표": {
-   "avg": 4.6,
-   "n": 7
+   "avg": 4.8,
+   "n": 6
   },
   "이야기": {
    "avg": 11.9,
@@ -59,8 +59,8 @@
    "n": 4
   },
   "08시": {
-   "avg": 14.9,
-   "n": 20
+   "avg": 13.7,
+   "n": 19
   },
   "11시": {
    "avg": 13.7,
@@ -68,10 +68,10 @@
   },
   "12시": {
    "avg": 9.1,
-   "n": 20
+   "n": 19
   },
   "14시": {
-   "avg": 47.0,
+   "avg": 48.0,
    "n": 1
   },
   "20시": {
@@ -79,28 +79,19 @@
    "n": 3
   },
   "21시": {
-   "avg": 11.1,
-   "n": 22
+   "avg": 11.5,
+   "n": 21
   }
  },
  "top_posts": [
   {
-   "views": 47,
+   "views": 48,
    "hook_formula": "",
    "topic_source": "",
    "product": "99바이탈 맘편한 마그네슘 360정",
    "format": "curation",
    "when": "10/09 14:23",
    "permalink": "https://www.threads.com/@kkul394/post/DeQwAWhG-vu"
-  },
-  {
-   "views": 37,
-   "hook_formula": "",
-   "topic_source": "",
-   "product": "스포츠리서치 오메가-3 트리플 스트렝스 1040mg 90정",
-   "format": "tip_post",
-   "when": "10/03 08:30",
-   "permalink": "https://www.threads.com/@kkul394/post/DeAq3r-D2WA"
   },
   {
    "views": 36,
@@ -128,6 +119,15 @@
    "format": "scene_story",
    "when": "10/13 08:31",
    "permalink": "https://www.threads.com/@kkul394/post/Deaa66qj7o7"
+  },
+  {
+   "views": 30,
+   "hook_formula": "",
+   "topic_source": "",
+   "product": "순수식품 rTG 오메가3 비타민D 60정 3개",
+   "format": "tip_post",
+   "when": "10/09 08:04",
+   "permalink": "https://www.threads.com/@kkul394/post/DeQErPokfEg"
   }
  ]
 }
