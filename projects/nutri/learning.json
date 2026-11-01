@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-01T04:15+09:00",
- "posts_28d": 71,
+ "updated": "2026-11-02T04:34+09:00",
+ "posts_28d": 68,
  "avg_views_28d": 12.2,
  "formula_weights": {
   "상황 질문": 1.01,
-  "손해 피하기": 0.89,
+  "손해 피하기": 0.9,
   "숫자": 0.83,
   "반전": 0.85,
   "저격": 1.19
  },
  "formulas": {
   "상황 질문": {
-   "avg": 12.3,
+   "avg": 12.4,
    "n": 16
   },
   "손해 피하기": {
-   "avg": 10.5,
+   "avg": 10.6,
    "n": 10
   },
   "숫자": {
@@ -33,16 +33,16 @@
  },
  "types": {
   "꿀팁": {
-   "avg": 20.4,
-   "n": 7
+   "avg": 18.0,
+   "n": 6
   },
   "비교": {
-   "avg": 12.8,
-   "n": 6
+   "avg": 14.6,
+   "n": 5
   },
   "대표": {
-   "avg": 4.8,
-   "n": 6
+   "avg": 5.6,
+   "n": 5
   },
   "이야기": {
    "avg": 11.9,
@@ -59,16 +59,16 @@
    "n": 4
   },
   "08시": {
-   "avg": 13.7,
-   "n": 19
+   "avg": 12.6,
+   "n": 18
   },
   "11시": {
    "avg": 13.7,
    "n": 3
   },
   "12시": {
-   "avg": 9.1,
-   "n": 19
+   "avg": 9.4,
+   "n": 18
   },
   "14시": {
    "avg": 48.0,
@@ -79,8 +79,8 @@
    "n": 3
   },
   "21시": {
-   "avg": 11.5,
-   "n": 21
+   "avg": 12.0,
+   "n": 20
   }
  },
  "top_posts": [
@@ -103,15 +103,6 @@
    "permalink": "https://www.threads.com/@kkul394/post/Dey8cgBlZe2"
   },
   {
-   "views": 35,
-   "hook_formula": "",
-   "topic_source": "",
-   "product": "종근당건강 아이클리어 루테인지아잔틴 30정x3",
-   "format": "tip_post",
-   "when": "10/04 08:30",
-   "permalink": "https://www.threads.com/@kkul394/post/DeDPrY2lLG2"
-  },
-  {
    "views": 32,
    "hook_formula": "상황 질문",
    "topic_source": "next.keyword '칼슘' → 쿠팡 '마그네슘' 연관검색어 '칼슘마그네슘' → 판매량순 4위 차일드라이프 액상 칼슘 마그네슘(리뷰 22,043·맛 '단 편이에요' 87%). 1위 종근당 칼슘앤마그네슘(최고 만족도 71%)·5위 뉴트리디데이(69%) 기준 미달, 2위 쏜리서치·6위 99바이탈은 최근 게시 상품",
@@ -128,6 +119,15 @@
    "format": "tip_post",
    "when": "10/09 08:04",
    "permalink": "https://www.threads.com/@kkul394/post/DeQErPokfEg"
+  },
+  {
+   "views": 29,
+   "hook_formula": "",
+   "topic_source": "",
+   "product": "고려은단 비타민C 1000 180정",
+   "format": "tip_post",
+   "when": "10/05 07:48",
+   "permalink": "https://www.threads.com/@kkul394/post/DeFvl0KFSAe"
   }
  ]
 }

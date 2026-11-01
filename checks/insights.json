@@ -1,5 +1,5 @@
 {
- "collected_at": "2026-10-31T19:14:15+0000",
+ "collected_at": "2026-11-01T19:33:31+0000",
  "projects": {
   "fresh": {
    "account": "로켓프레시 간편식 (@magdungi43)",
@@ -531,7 +531,7 @@
      "video": false,
      "published_at": "2026-10-30T10:23:34+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/DfHXBhCG1nC",
-     "views": 12,
+     "views": 13,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -547,7 +547,23 @@
      "video": false,
      "published_at": "2026-10-31T10:23:22+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/DfJ7zc5FtEs",
-     "views": 16,
+     "views": 17,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-11-01-1826-296139681.json",
+     "product": "곰곰 더 오리지널 부대찌개 1kg×2",
+     "format": "price_drop",
+     "hook_formula": "저격",
+     "topic_source": "11월 '추울수록 국·탕·찌개(부대찌개)' (일요일 저녁) → 쿠팡 '부대찌개' 연관검색어 '부대찌개밀키트·부대찌개양념' 확인 → 판매량순(saleCountDesc) 1위 로켓프레시 곰곰 더 오리지널 부대찌개 1kg×2(리뷰 117,466, 별점 4.5) → 상품 페이지는 쿠팡 접근 제한으로 열지 못함(검색 목록의 가격·100g당 가격·리뷰 수·로켓프레시 배지만 사용), Higgsfield 크레딧 부족(0.21<0.25)으로 장면 사진 생성 불가 → story 대신 정보형(tip_post는 직전 2회 형식과 겹쳐 거절 → 할인율 32%라 price_drop), 쿠팡파트너스 로그인 풀림으로 링크 저장소 동일 상품번호 296139681 링크 사용",
+     "video": false,
+     "published_at": "2026-11-01T10:03:47+0000",
+     "permalink": "https://www.threads.com/@magdungi43/post/DfMeWrhEfM5",
+     "views": 14,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -559,7 +575,7 @@
   "nutri": {
    "account": "영양제 (꿀템짱)",
    "totals": {
-    "views": 6,
+    "views": 7,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -1486,7 +1502,7 @@
      "video": false,
      "published_at": "2026-10-16T03:16:37+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DeijD7BFjBG",
-     "views": 9,
+     "views": 10,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -1902,7 +1918,7 @@
      "video": false,
      "published_at": "2026-10-24T23:10:27+0000",
      "permalink": "https://www.threads.com/@kkul394/post/De5SCxcmlcV",
-     "views": 6,
+     "views": 7,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
