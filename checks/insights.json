@@ -1,10 +1,10 @@
 {
- "collected_at": "2026-11-01T19:33:31+0000",
+ "collected_at": "2026-11-02T23:04:45+0000",
  "projects": {
   "fresh": {
    "account": "로켓프레시 간편식 (@magdungi43)",
    "totals": {
-    "views": 38,
+    "views": 26,
     "likes": 0,
     "replies": 0,
     "followers_count": 1
@@ -291,7 +291,7 @@
      "video": false,
      "published_at": "2026-10-15T09:45:59+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/Degq0naFvmU",
-     "views": 25,
+     "views": 26,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -547,7 +547,7 @@
      "video": false,
      "published_at": "2026-10-31T10:23:22+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/DfJ7zc5FtEs",
-     "views": 17,
+     "views": 18,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -563,7 +563,23 @@
      "video": false,
      "published_at": "2026-11-01T10:03:47+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/DfMeWrhEfM5",
-     "views": 14,
+     "views": 15,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-11-02-1825-185917305.json",
+     "product": "곰곰 김치볶음밥 300g×5",
+     "format": "tip_post",
+     "hook_formula": "숫자",
+     "topic_source": "11월 '퇴근 후 10분 저녁' (월요일 저녁, 직전 2회 너겟·부대찌개와 다른 주제) → 쿠팡 '냉동볶음밥' 연관검색어 '김치볶음밥·냉동볶음밥대용량' 확인 → 판매량순(saleCountDesc) 1위 로켓프레시 곰곰 김치볶음밥(리뷰 148,099, 조리가 간편해요 94%, 맛있어요 78%로 스토리 기준 80% 미달 → 링크 저장소 내 다른 후보 닭갈비볶음밥 70%로 더 낮음) → Higgsfield 크레딧 부족(0.21<0.25)으로 장면 사진 생성 불가 → tip_post(데우는 법)로 대체, 쿠팡파트너스 로그인 풀림으로 링크 저장소 동일 상품번호 185917305 링크 사용",
+     "video": false,
+     "published_at": "2026-11-02T10:03:17+0000",
+     "permalink": "https://www.threads.com/@magdungi43/post/DfPDGUjGwC8",
+     "views": 6,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -575,7 +591,7 @@
   "nutri": {
    "account": "영양제 (꿀템짱)",
    "totals": {
-    "views": 7,
+    "views": 3,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -846,7 +862,7 @@
      "video": false,
      "published_at": "2026-10-02T12:05:41+0000",
      "permalink": "https://www.threads.com/@kkul394/post/Dd_cdp-FIx5",
-     "views": 11,
+     "views": 12,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -1134,7 +1150,7 @@
      "video": false,
      "published_at": "2026-10-08T03:22:52+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DeN9cGElNKD",
-     "views": 9,
+     "views": 10,
      "likes": 0,
      "replies": 2,
      "reposts": 0,
