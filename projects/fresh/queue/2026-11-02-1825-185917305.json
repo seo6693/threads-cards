@@ -1,0 +1,21 @@
+{
+  "account": "fresh",
+  "product_id": "185917305",
+  "product_name": "곰곰 김치볶음밥 300g×5",
+  "keyword": "밥·볶음밥",
+  "text": "냉동 볶음밥 한 팩 1,940원, 데우는 법 따라 평이 갈려요\n\n퇴근하고 10분 안에 저녁 끝내고 싶은 날 많이 꺼내죠.\n리뷰들 보면 맛 차이는 데우는 방법에서 많이 나와요.\n\n1. 시간 없으면 전자레인지. 한 팩 그대로 데우면 설거지도 거의 없어요.\n2. 고슬고슬하게 먹고 싶으면 팬. 리뷰에 따르면 해동 없이 냉동 그대로 달군 팬에 넣고 중불 4분 정도예요.\n3. 계란프라이나 김가루를 올리면 반찬 없이도 한 끼가 돼요.\n\n예로 본 곰곰 김치볶음밥은 300g 5팩 9,700원, 100g당 647원이에요. 로켓프레시, 리뷰 14만 8천 개.\n아쉬운 점: 구매자들은 불향이 부족하다고 하고, '맛있어요' 응답이 78%라 맛 평가는 갈리는 편이에요.\n\n여기 나온 제품은 댓글에 둘게요.\n냉동 볶음밥, 전자레인지파예요 팬파예요?\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "images": [
+    "https://raw.githubusercontent.com/seo6693/threads-cards/main/projects/fresh/cards/2026-11-02-1825-185917305/card1_hook.jpg",
+    "https://raw.githubusercontent.com/seo6693/threads-cards/main/projects/fresh/cards/2026-11-02-1825-185917305/card2_product.jpg"
+  ],
+  "reply": "🛒 구매 링크 → https://link.coupang.com/a/hq4lojVhpQ\n※ 가격·쿠폰은 시점마다 달라질 수 있어요",
+  "format": "tip_post",
+  "post_type": "tip",
+  "hook_formula": "숫자",
+  "topic_source": "11월 '퇴근 후 10분 저녁' (월요일 저녁, 직전 2회 너겟·부대찌개와 다른 주제) → 쿠팡 '냉동볶음밥' 연관검색어 '김치볶음밥·냉동볶음밥대용량' 확인 → 판매량순(saleCountDesc) 1위 로켓프레시 곰곰 김치볶음밥(리뷰 148,099, 조리가 간편해요 94%, 맛있어요 78%로 스토리 기준 80% 미달 → 링크 저장소 내 다른 후보 닭갈비볶음밥 70%로 더 낮음) → Higgsfield 크레딧 부족(0.21<0.25)으로 장면 사진 생성 불가 → tip_post(데우는 법)로 대체, 쿠팡파트너스 로그인 풀림으로 링크 저장소 동일 상품번호 185917305 링크 사용",
+  "publish_after": "2026-11-02T18:39:54+09:00",
+  "link": "https://link.coupang.com/a/hq4lojVhpQ",
+  "price": "9,700원",
+  "link_source": "bank",
+  "topic_tag": "간편식"
+}
