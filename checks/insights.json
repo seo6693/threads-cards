@@ -1,10 +1,10 @@
 {
- "collected_at": "2026-11-02T23:04:45+0000",
+ "collected_at": "2026-11-03T20:56:24+0000",
  "projects": {
   "fresh": {
    "account": "로켓프레시 간편식 (@magdungi43)",
    "totals": {
-    "views": 26,
+    "views": 16,
     "likes": 0,
     "replies": 0,
     "followers_count": 1
@@ -115,7 +115,7 @@
      "video": false,
      "published_at": "2026-10-04T10:12:13+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/DeEZFeyHNK9",
-     "views": 28,
+     "views": 29,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -499,7 +499,7 @@
      "video": false,
      "published_at": "2026-10-28T10:22:06+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/DfCNSfxledk",
-     "views": 9,
+     "views": 11,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -547,7 +547,7 @@
      "video": false,
      "published_at": "2026-10-31T10:23:22+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/DfJ7zc5FtEs",
-     "views": 18,
+     "views": 19,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -585,13 +585,29 @@
      "reposts": 0,
      "quotes": 0,
      "shares": 0
+    },
+    {
+     "file": "2026-11-03-1837-1605341105.json",
+     "product": "비비고 잡채 3~4인분 644g",
+     "format": "buying_guide",
+     "hook_formula": "반전",
+     "topic_source": "11월 '퇴근 후 10분 저녁' (화요일 저녁, 직전 2회 부대찌개·볶음밥과 다른 주제) → 쿠팡파트너스 로그인 풀림으로 링크 저장소 모드: '냉장/냉동/간편식' 랭킹 1페이지에서 저장소에 있는 최상위 상품 비비고 잡채(로켓프레시) → 쿠팡 '냉동잡채' 연관검색어 '비비고냉동잡채·비비고잡채' 확인, 판매량순(saleCountDesc) 1위(리뷰 27,632, 맛있어요 85%) → 링크 저장소 동일 상품번호 1605341105 링크 사용. Higgsfield 크레딧 부족(0.21<0.25)으로 장면 사진 생성 불가 → story 대신 정보형(tip_post는 직전 2회 형식과 겹쳐 buying_guide)",
+     "video": false,
+     "published_at": "2026-11-03T10:23:46+0000",
+     "permalink": "https://www.threads.com/@magdungi43/post/DfRqPPxm7W6",
+     "views": 4,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
     }
    ]
   },
   "nutri": {
    "account": "영양제 (꿀템짱)",
    "totals": {
-    "views": 3,
+    "views": 15,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -1006,7 +1022,7 @@
      "video": false,
      "published_at": "2026-10-05T03:05:12+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DeGNCcnm1uu",
-     "views": 6,
+     "views": 7,
      "likes": 0,
      "replies": 4,
      "reposts": 1,
@@ -1182,7 +1198,7 @@
      "video": false,
      "published_at": "2026-10-08T23:04:54+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DeQErPokfEg",
-     "views": 30,
+     "views": 36,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -1822,7 +1838,7 @@
      "video": false,
      "published_at": "2026-10-22T12:06:29+0000",
      "permalink": "https://www.threads.com/@kkul394/post/Dey8cgBlZe2",
-     "views": 36,
+     "views": 37,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -2063,6 +2079,22 @@
      "published_at": "2026-10-29T15:10:36+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DfFTFk3G4Xx",
      "views": 0,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-11-03-1450-2210839123.json",
+     "product": "자연의품격 건강한 간 밀크씨슬 150정",
+     "format": "problem_solution",
+     "hook_formula": "저격",
+     "topic_source": "11월 season_topics '연말 회식 시즌 대비(밀크씨슬)' · next.keyword 밀크씨슬 · 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용 · 상품 페이지 확인(리뷰 80,219·7만명 이상 만족·복용 편의성 아주편해요 85%·20,520원 42%↓·1정당 137원·1일 1정 실리마린 130mg) · Higgsfield 세션 만료로 scene_story 대신 problem_solution(tip_post·buying_guide는 최근 2회 사용) (보충 회차 07:37)",
+     "video": false,
+     "published_at": "2026-11-03T07:58:42+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DfRZpVPFhMA",
+     "views": 5,
      "likes": 0,
      "replies": 1,
      "reposts": 0,

@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-03T08:06+09:00",
- "posts_28d": 65,
- "avg_views_28d": 12.1,
+ "updated": "2026-11-04T05:57+09:00",
+ "posts_28d": 63,
+ "avg_views_28d": 12.2,
  "formula_weights": {
-  "상황 질문": 1.02,
+  "상황 질문": 1.01,
   "손해 피하기": 0.9,
-  "숫자": 0.84,
+  "숫자": 0.83,
   "반전": 0.85,
-  "저격": 1.2
+  "저격": 1.14
  },
  "formulas": {
   "상황 질문": {
@@ -27,25 +27,25 @@
    "n": 8
   },
   "저격": {
-   "avg": 15.3,
-   "n": 9
+   "avg": 14.4,
+   "n": 10
   }
  },
  "types": {
   "꿀팁": {
-   "avg": 15.8,
-   "n": 5
-  },
-  "비교": {
-   "avg": 17.0,
+   "avg": 16.0,
    "n": 4
   },
+  "비교": {
+   "avg": 21.0,
+   "n": 3
+  },
   "대표": {
-   "avg": 4.5,
+   "avg": 4.2,
    "n": 4
   },
   "이야기": {
-   "avg": 11.9,
+   "avg": 12.0,
    "n": 52
   }
  },
@@ -59,12 +59,12 @@
    "n": 3
   },
   "08시": {
-   "avg": 12.6,
-   "n": 18
+   "avg": 12.5,
+   "n": 17
   },
   "11시": {
-   "avg": 13.7,
-   "n": 3
+   "avg": 18.0,
+   "n": 2
   },
   "12시": {
    "avg": 9.7,
@@ -74,13 +74,17 @@
    "avg": 48.0,
    "n": 1
   },
+  "16시": {
+   "avg": 5.0,
+   "n": 1
+  },
   "20시": {
    "avg": 10.3,
    "n": 3
   },
   "21시": {
-   "avg": 12.1,
-   "n": 19
+   "avg": 12.5,
+   "n": 18
   }
  },
  "top_posts": [
@@ -94,13 +98,22 @@
    "permalink": "https://www.threads.com/@kkul394/post/DeQwAWhG-vu"
   },
   {
-   "views": 36,
+   "views": 37,
    "hook_formula": "저격",
    "topic_source": "10월 환절기(건조) → 쿠팡 '비타민C' 연관검색어(비타민c1000·메가도스 등) → '비타민콜라겐' 연관검색어 '저분자콜라겐' → 판매량순 상위(에버콜라겐·모발콜라겐 등)는 1위 최근 게시·링크 저장분 미보유 → 저장분 중 비타민C 함께 든 올앳미 비타콜라겐 (리뷰 308·효능 아주만족 86%) · 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용",
    "product": "올앳미 비타콜라겐 30포",
    "format": "scene_story",
    "when": "10/22 21:06",
    "permalink": "https://www.threads.com/@kkul394/post/Dey8cgBlZe2"
+  },
+  {
+   "views": 36,
+   "hook_formula": "",
+   "topic_source": "",
+   "product": "순수식품 rTG 오메가3 비타민D 60정 3개",
+   "format": "tip_post",
+   "when": "10/09 08:04",
+   "permalink": "https://www.threads.com/@kkul394/post/DeQErPokfEg"
   },
   {
    "views": 32,
@@ -110,15 +123,6 @@
    "format": "scene_story",
    "when": "10/13 08:31",
    "permalink": "https://www.threads.com/@kkul394/post/Deaa66qj7o7"
-  },
-  {
-   "views": 30,
-   "hook_formula": "",
-   "topic_source": "",
-   "product": "순수식품 rTG 오메가3 비타민D 60정 3개",
-   "format": "tip_post",
-   "when": "10/09 08:04",
-   "permalink": "https://www.threads.com/@kkul394/post/DeQErPokfEg"
   },
   {
    "views": 23,
