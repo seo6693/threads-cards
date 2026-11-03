@@ -1,0 +1,43 @@
+{
+  "hook": {
+    "kicker": "연말 회식 시즌",
+    "question": "밀크씨슬,\n뭐 보고 고르세요?",
+    "answer": "실리마린 mg · 하루 몇 정 · 1정당 가격",
+    "layout": "question"
+  },
+  "product": {
+    "pill": "회식 많은 달",
+    "brand": "자연의품격",
+    "name": "건강한 간 밀크씨슬 150정",
+    "sub": "1정당 137원 · 하루 1정",
+    "badge_top": "리뷰 8만+",
+    "badge_price": "20,520원"
+  },
+  "reviews": {
+    "title": "먼저 먹어본 사람들 반응",
+    "big": "85%",
+    "caption": "복용 편의성 '아주편해요'",
+    "quotes": [
+      [
+        "알이 작아서 목넘김이 편해요",
+        "구매자 리뷰"
+      ],
+      [
+        "하루 한 알이라 챙기기 간편해요",
+        "구매자 리뷰"
+      ],
+      [
+        "며칠 만에 달라지길 기대하긴 어려워요",
+        "구매자 리뷰"
+      ]
+    ],
+    "footer": "상품 리뷰 80,219개 기준"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product",
+    "reviews"
+  ]
+}
