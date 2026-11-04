@@ -254,9 +254,9 @@
   "projects/fresh/done/2026-11-01-1826-296139681.json",
   "projects/fresh/done/2026-11-02-1825-185917305.json",
   "projects/fresh/done/2026-11-03-1837-1605341105.json",
+  "projects/fresh/done/2026-11-04-1826-2202849456.json",
   "projects/fresh/learning.json",
   "projects/fresh/linkbank.json",
-  "projects/fresh/queue/2026-11-04-1826-2202849456.json",
   "projects/fresh/state.json",
   "projects/instadeal/cards/2026-10-09-1624-8327575463/card1_scene.jpg",
   "projects/instadeal/cards/2026-10-09-1624-8327575463/card2_cover.jpg",
@@ -1041,9 +1041,26 @@
   "projects/nutri/skipped/2026-11-03-2300.json",
   "projects/nutri/skipped/2026-11-04-0740.json",
   "projects/nutri/skipped/2026-11-04-1450.json",
+  "projects/nutri/skipped/2026-11-04-2039.json",
   "projects/nutri/state.json"
  ],
  "runs": [
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "failure",
+   "created_at": "2026-11-04T10:12:49Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/41812670999",
+   "event": "workflow_dispatch"
+  },
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-11-04T09:26:36Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/41807534547",
+   "event": "push"
+  },
   {
    "name": "Publish Threads posts",
    "status": "completed",
@@ -1074,14 +1091,6 @@
    "conclusion": "success",
    "created_at": "2026-11-03T22:40:53Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/41732901248",
-   "event": "push"
-  },
-  {
-   "name": "Publish Threads posts",
-   "status": "completed",
-   "conclusion": "success",
-   "created_at": "2026-11-03T14:00:24Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/41649463821",
    "event": "push"
   }
  ],
