@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "비타민C 끊기 전\n확인할 3가지",
+    "items": [
+      "공복에 먹나? → 식사 직후로",
+      "종합비타민 속 C까지 합산",
+      "1정당 가격: 600정 75원"
+    ],
+    "note": "상품 페이지·구매 리뷰 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "식후 루틴",
+    "brand": "고려은단",
+    "name": "비타민C 1000 600정",
+    "sub": "1정당 75원",
+    "badge_top": "리뷰 32만",
+    "badge_price": "44,900원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
