@@ -1,0 +1,15 @@
+{
+  "product": {
+    "pill": "추운 밤 국물 한 그릇",
+    "brand": "신선설농탕",
+    "name": "설농탕 450g + 양지 40g",
+    "sub": "1~2인분 · 둘이면 4,095원꼴",
+    "badge_top": "로켓프레시",
+    "badge_price": "8,190원"
+  },
+  "theme": "teal2",
+  "product_image": "product.jpg",
+  "order": [
+    "product"
+  ]
+}
