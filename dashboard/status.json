@@ -1036,9 +1036,18 @@
   "projects/nutri/skipped/2026-11-03-2039.json",
   "projects/nutri/skipped/2026-11-03-2300.json",
   "projects/nutri/skipped/2026-11-04-0740.json",
+  "projects/nutri/skipped/2026-11-04-1450.json",
   "projects/nutri/state.json"
  ],
  "runs": [
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-11-04T03:36:40Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/41768190537",
+   "event": "workflow_dispatch"
+  },
   {
    "name": "Publish Threads posts",
    "status": "completed",
