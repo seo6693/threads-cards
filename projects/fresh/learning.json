@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-05T06:15+09:00",
+ "updated": "2026-11-06T06:27+09:00",
  "posts_28d": 28,
- "avg_views_28d": 16.1,
+ "avg_views_28d": 15.8,
  "formula_weights": {
-  "상황 질문": 0.99,
-  "손해 피하기": 1.31,
-  "숫자": 0.83,
-  "반전": 0.97,
-  "저격": 0.86
+  "상황 질문": 1.02,
+  "손해 피하기": 1.33,
+  "숫자": 0.84,
+  "반전": 0.98,
+  "저격": 0.79
  },
  "formulas": {
   "상황 질문": {
-   "avg": 15.9,
+   "avg": 16.3,
    "n": 7
   },
   "저격": {
-   "avg": 12.6,
-   "n": 5
+   "avg": 10.8,
+   "n": 6
   },
   "손해 피하기": {
-   "avg": 23.5,
+   "avg": 23.7,
    "n": 6
   },
   "반전": {
@@ -32,31 +32,31 @@
   }
  },
  "types": {
-  "비교": {
-   "avg": 15.0,
-   "n": 1
-  },
   "이야기": {
    "avg": 18.1,
    "n": 21
   },
   "꿀팁": {
-   "avg": 9.5,
-   "n": 2
+   "avg": 7.0,
+   "n": 3
   },
   "대표": {
-   "avg": 9.5,
+   "avg": 10.2,
    "n": 4
   }
  },
  "hours": {
   "18시": {
-   "avg": 20.0,
-   "n": 10
+   "avg": 20.7,
+   "n": 9
   },
   "19시": {
-   "avg": 14.0,
+   "avg": 14.2,
    "n": 18
+  },
+  "23시": {
+   "avg": 2.0,
+   "n": 1
   }
  },
  "top_posts": [
@@ -89,21 +89,21 @@
   },
   {
    "views": 27,
-   "hook_formula": "상황 질문",
-   "topic_source": "10월 '쌀쌀해진 날 국·탕' + 이번 회차 세부 분류 '어묵' → 쿠팡 '어묵탕' 연관검색어 '오뎅탕' → 판매량순(saleCountDesc) 1위 로켓프레시(2위는 최근 게시 상품) → 쿠팡파트너스 동일 상품번호 5694524538",
-   "product": "고래사어묵 가정용 꼬치어묵 296g×2",
-   "format": "scene_story",
-   "when": "10/16 19:06",
-   "permalink": "https://www.threads.com/@magdungi43/post/DejR6wzFez6"
-  },
-  {
-   "views": 26,
    "hook_formula": "손해 피하기",
    "topic_source": "10월 '주말 늦잠 브런치' → 쿠팡 '브런치' 연관검색어 '샌드위치' → 판매량순(saleCountDesc) 1위 로켓프레시 → 쿠팡파트너스 동일 상품번호 5971267522",
    "product": "베키아에누보 바질치즈 치아바타 샌드위치 4개입",
    "format": "scene_story",
    "when": "10/15 18:45",
    "permalink": "https://www.threads.com/@magdungi43/post/Degq0naFvmU"
+  },
+  {
+   "views": 27,
+   "hook_formula": "상황 질문",
+   "topic_source": "10월 '쌀쌀해진 날 국·탕' + 이번 회차 세부 분류 '어묵' → 쿠팡 '어묵탕' 연관검색어 '오뎅탕' → 판매량순(saleCountDesc) 1위 로켓프레시(2위는 최근 게시 상품) → 쿠팡파트너스 동일 상품번호 5694524538",
+   "product": "고래사어묵 가정용 꼬치어묵 296g×2",
+   "format": "scene_story",
+   "when": "10/16 19:06",
+   "permalink": "https://www.threads.com/@magdungi43/post/DejR6wzFez6"
   }
  ]
 }

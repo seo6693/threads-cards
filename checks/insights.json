@@ -1,10 +1,10 @@
 {
- "collected_at": "2026-11-04T21:14:56+0000",
+ "collected_at": "2026-11-05T21:26:58+0000",
  "projects": {
   "fresh": {
    "account": "로켓프레시 간편식 (@magdungi43)",
    "totals": {
-    "views": 9,
+    "views": 8,
     "likes": 0,
     "replies": 0,
     "followers_count": 1
@@ -291,7 +291,7 @@
      "video": false,
      "published_at": "2026-10-15T09:45:59+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/Degq0naFvmU",
-     "views": 26,
+     "views": 27,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -611,7 +611,23 @@
      "video": false,
      "published_at": "2026-11-04T10:14:00+0000",
      "permalink": "https://www.threads.com/@magdungi43/post/DfUNw_jHCkX",
-     "views": 0,
+     "views": 3,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-11-05-2248-1583567802.json",
+     "product": "곰곰 오리지널 부어스트 600g",
+     "format": "tip_post",
+     "hook_formula": "저격",
+     "topic_source": "11월 '바쁜 아침·주말 브런치' → 쿠팡 '냉장/냉동/간편식' 랭킹순 상위(1페이지)에서 링크 저장소에 있는 가장 높은 로켓프레시 상품 곰곰 오리지널 부어스트(리뷰 21,200, 맛있어요 85%) → Higgsfield 이미지 생성 불가(요금제 필요)로 tip_post(먹는 법·보관)로 대체, 쿠팡파트너스 로그인 풀림으로 링크 저장소 동일 상품번호 1583567802 링크 사용 (보충 회차)",
+     "video": false,
+     "published_at": "2026-11-05T14:16:20+0000",
+     "permalink": "https://www.threads.com/@magdungi43/post/DfXObr_ERW9",
+     "views": 2,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -623,7 +639,7 @@
   "nutri": {
    "account": "영양제 (꿀템짱)",
    "totals": {
-    "views": 26,
+    "views": 10,
     "likes": 0,
     "replies": 0,
     "followers_count": 0
@@ -1806,7 +1822,7 @@
      "video": false,
      "published_at": "2026-10-21T12:39:00+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DewbW86nI0C",
-     "views": 20,
+     "views": 21,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
@@ -2127,6 +2143,38 @@
      "published_at": "2026-11-04T03:36:50+0000",
      "permalink": "https://www.threads.com/@kkul394/post/DfTgdXCFfGq",
      "views": 3,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-11-05-1141-9026128415.json",
+     "product": "고려은단 코엔자임Q10 90정 2개",
+     "format": "buying_guide",
+     "hook_formula": "손해 피하기",
+     "topic_source": "링크 저장분(코엔자임Q10) · 쿠팡 '코엔자임Q10' 연관검색어 1순위 '코큐텐' → '코큐텐' 판매량순 2위 고려은단 코엔자임Q10(리뷰 7,140·6,000명 이상 만족·복용 편의성 아주편해요 88%) · 라벨 '1일 섭취량 최대 함량 100mg' · 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용 · Higgsfield 크레딧 소진으로 scene_story 대신 buying_guide(직전 tip_post와 형식 중복 회피)",
+     "video": false,
+     "published_at": "2026-11-05T03:27:51+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DfWEOrBlvG_",
+     "views": 1,
+     "likes": 0,
+     "replies": 1,
+     "reposts": 0,
+     "quotes": 0,
+     "shares": 0
+    },
+    {
+     "file": "2026-11-05-2246-7346382208.json",
+     "product": "고려은단 퓨어 밀크씨슬 120정 2개",
+     "format": "review_digest",
+     "hook_formula": "숫자",
+     "topic_source": "11월 season_topics '연말 회식 시즌 대비(밀크씨슬)' · 쿠팡파트너스 로그인 풀림으로 링크 저장분(남은 1개) 사용 · 상품 페이지 확인(120정×2개 31,900원 11%↓·1정당 133원·리뷰 13,189·효능 아주만족 71%·라벨 1일 섭취량당 실리마린 130mg) · 효능 만족 80% 미만이라 tip 규칙(리뷰 100개 이상 관련 상품)으로 연결 · Higgsfield 크레딧 0.21(필요 0.25) 부족으로 scene_story 대신 review_digest(tip_post·buying_guide 최근 2회 사용)",
+     "video": false,
+     "published_at": "2026-11-05T14:51:39+0000",
+     "permalink": "https://www.threads.com/@kkul394/post/DfXSfeDEYNT",
+     "views": 4,
      "likes": 0,
      "replies": 1,
      "reposts": 0,
