@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "소시지 한 봉\n끝까지 맛있게",
+    "items": [
+      "칼집 내고 데치면 담백하게",
+      "팬에 굴리면 겉이 톡 터지게",
+      "남은 건 밀폐용기에 보관"
+    ],
+    "note": "구매자 리뷰에 나온 방법",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "아침 반찬",
+    "brand": "곰곰",
+    "name": "오리지널 부어스트 600g",
+    "sub": "100g당 1,730원",
+    "badge_top": "리뷰 2만+",
+    "badge_price": "10,380원"
+  },
+  "theme": "teal2",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
