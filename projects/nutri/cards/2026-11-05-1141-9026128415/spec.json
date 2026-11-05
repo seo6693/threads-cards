@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "코큐텐 두 알 먹기 전\n라벨부터 확인",
+    "items": [
+      "1캡슐 함량이 몇 mg인지",
+      "다른 영양제 속 코큐텐 합계",
+      "1정당 가격(1개 vs 2개)"
+    ],
+    "note": "제품 라벨·상품 페이지 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "하루 한 캡슐",
+    "brand": "고려은단",
+    "name": "코엔자임Q10 90정 × 2개",
+    "sub": "1정당 183원 · 1캡슐 100mg",
+    "badge_top": "리뷰 7,140",
+    "badge_price": "32,900원"
+  },
+  "theme": "navy",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
