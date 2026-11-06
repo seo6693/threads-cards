@@ -264,9 +264,9 @@
   "projects/fresh/done/2026-11-03-1837-1605341105.json",
   "projects/fresh/done/2026-11-04-1826-2202849456.json",
   "projects/fresh/done/2026-11-05-2248-1583567802.json",
+  "projects/fresh/done/2026-11-06-1827-6372663695.json",
   "projects/fresh/learning.json",
   "projects/fresh/linkbank.json",
-  "projects/fresh/queue/2026-11-06-1827-6372663695.json",
   "projects/fresh/state.json",
   "projects/instadeal/cards/2026-10-09-1624-8327575463/card1_scene.jpg",
   "projects/instadeal/cards/2026-10-09-1624-8327575463/card2_cover.jpg",
@@ -1074,6 +1074,14 @@
   "projects/nutri/state.json"
  ],
  "runs": [
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-11-06T09:27:13Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/42195159436",
+   "event": "push"
+  },
   {
    "name": "Publish Threads posts",
    "status": "completed",
