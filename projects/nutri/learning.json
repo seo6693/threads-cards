@@ -1,29 +1,29 @@
 {
- "updated": "2026-11-06T06:27+09:00",
- "posts_28d": 60,
- "avg_views_28d": 12.2,
+ "updated": "2026-11-07T05:50+09:00",
+ "posts_28d": 57,
+ "avg_views_28d": 11.2,
  "formula_weights": {
-  "상황 질문": 0.98,
-  "손해 피하기": 0.84,
-  "숫자": 0.8,
-  "반전": 0.87,
-  "저격": 1.18
+  "상황 질문": 1.05,
+  "손해 피하기": 0.9,
+  "숫자": 0.86,
+  "반전": 0.93,
+  "저격": 1.26
  },
  "formulas": {
-  "상황 질문": {
-   "avg": 11.9,
-   "n": 17
-  },
   "손해 피하기": {
-   "avg": 9.7,
+   "avg": 9.8,
    "n": 11
   },
   "숫자": {
    "avg": 9.2,
    "n": 12
   },
+  "상황 질문": {
+   "avg": 11.8,
+   "n": 16
+  },
   "반전": {
-   "avg": 10.0,
+   "avg": 10.1,
    "n": 8
   },
   "저격": {
@@ -32,20 +32,16 @@
   }
  },
  "types": {
-  "꿀팁": {
-   "avg": 14.3,
-   "n": 3
-  },
-  "비교": {
-   "avg": 48.0,
-   "n": 1
-  },
   "이야기": {
    "avg": 12.1,
-   "n": 52
+   "n": 51
+  },
+  "꿀팁": {
+   "avg": 3.5,
+   "n": 2
   },
   "대표": {
-   "avg": 3.8,
+   "avg": 4.2,
    "n": 4
   }
  },
@@ -59,20 +55,16 @@
    "n": 2
   },
   "08시": {
-   "avg": 13.0,
-   "n": 16
+   "avg": 11.5,
+   "n": 15
   },
   "11시": {
    "avg": 18.0,
    "n": 2
   },
   "12시": {
-   "avg": 9.1,
+   "avg": 9.2,
    "n": 17
-  },
-  "14시": {
-   "avg": 48.0,
-   "n": 1
   },
   "16시": {
    "avg": 10.0,
@@ -84,23 +76,14 @@
   },
   "21시": {
    "avg": 13.2,
-   "n": 17
+   "n": 16
   },
   "23시": {
-   "avg": 4.0,
+   "avg": 5.0,
    "n": 1
   }
  },
  "top_posts": [
-  {
-   "views": 48,
-   "hook_formula": "",
-   "topic_source": "",
-   "product": "99바이탈 맘편한 마그네슘 360정",
-   "format": "curation",
-   "when": "10/09 14:23",
-   "permalink": "https://www.threads.com/@kkul394/post/DeQwAWhG-vu"
-  },
   {
    "views": 37,
    "hook_formula": "저격",
@@ -111,16 +94,7 @@
    "permalink": "https://www.threads.com/@kkul394/post/Dey8cgBlZe2"
   },
   {
-   "views": 36,
-   "hook_formula": "",
-   "topic_source": "",
-   "product": "순수식품 rTG 오메가3 비타민D 60정 3개",
-   "format": "tip_post",
-   "when": "10/09 08:04",
-   "permalink": "https://www.threads.com/@kkul394/post/DeQErPokfEg"
-  },
-  {
-   "views": 32,
+   "views": 33,
    "hook_formula": "상황 질문",
    "topic_source": "next.keyword '칼슘' → 쿠팡 '마그네슘' 연관검색어 '칼슘마그네슘' → 판매량순 4위 차일드라이프 액상 칼슘 마그네슘(리뷰 22,043·맛 '단 편이에요' 87%). 1위 종근당 칼슘앤마그네슘(최고 만족도 71%)·5위 뉴트리디데이(69%) 기준 미달, 2위 쏜리서치·6위 99바이탈은 최근 게시 상품",
    "product": "차일드라이프 액상 칼슘 마그네슘 오렌지맛 473ml",
@@ -136,6 +110,24 @@
    "format": "scene_story",
    "when": "10/11 11:57",
    "permalink": "https://www.threads.com/@kkul394/post/DeVo7JSm9Ra"
+  },
+  {
+   "views": 22,
+   "hook_formula": "저격",
+   "topic_source": "10월 season_topics '환절기 면역 관리(아연·유산균)' → 쿠팡 '유산균' 연관검색어 '프로바이오틱스' → 판매량순 4위 락토핏 생유산균 코어맥스(리뷰 34,329·맛 '맛있어요' 85%, 라벨 아연 '정상적인 면역기능'). 1위 락토핏 골드·3위 덴프스는 최근 게시 상품, 2위 자로우는 해외배송",
+   "product": "락토핏 생유산균 코어맥스 60포",
+   "format": "scene_story",
+   "when": "10/12 21:30",
+   "permalink": "https://www.threads.com/@kkul394/post/DeZPQnIlACH"
+  },
+  {
+   "views": 22,
+   "hook_formula": "저격",
+   "topic_source": "10월 가을 환절기 모발 관리 → 쿠팡 '콜라겐' 연관검색어 '저분자콜라겐' → '저분자콜라겐' 판매량순 상위 2위(광고 제외) 주영엔에스 모발 콜라겐 3270 (리뷰 3,407·만족 96%·한 달 2,000명 이상 구매) · 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용",
+   "product": "주영엔에스 모발 콜라겐 3270 4박스(112포)",
+   "format": "scene_story",
+   "when": "10/25 21:51",
+   "permalink": "https://www.threads.com/@kkul394/post/De6wBK_lZQ0"
   }
  ]
 }
