@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "햄 살 때\n이것만 보세요",
+    "items": [
+      "소분 포장인지 (뜯은 만큼만)",
+      "고기 함량 % 확인",
+      "10g당 가격 계산"
+    ],
+    "note": "목우촌 살코기햄: 120g×5팩 · 육함량 93.2%",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "퇴근 후 10분 저녁",
+    "brand": "목우촌",
+    "name": "주부 9단 살코기햄 600g",
+    "sub": "10g당 132원 · 120g×5팩",
+    "badge_top": "15%↓",
+    "badge_price": "7,900원"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
