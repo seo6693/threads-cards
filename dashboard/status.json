@@ -220,6 +220,10 @@
   "projects/fresh/cards/2026-11-05-2248-1583567802/card2_product.jpg",
   "projects/fresh/cards/2026-11-05-2248-1583567802/product.jpg",
   "projects/fresh/cards/2026-11-05-2248-1583567802/spec.json",
+  "projects/fresh/cards/2026-11-06-1827-6372663695/card1_hook.jpg",
+  "projects/fresh/cards/2026-11-06-1827-6372663695/card2_product.jpg",
+  "projects/fresh/cards/2026-11-06-1827-6372663695/product.jpg",
+  "projects/fresh/cards/2026-11-06-1827-6372663695/spec.json",
   "projects/fresh/config.json",
   "projects/fresh/done/2026-09-28-1826-158010844.json",
   "projects/fresh/done/2026-09-29-1825-5057092117.json",
@@ -262,6 +266,7 @@
   "projects/fresh/done/2026-11-05-2248-1583567802.json",
   "projects/fresh/learning.json",
   "projects/fresh/linkbank.json",
+  "projects/fresh/queue/2026-11-06-1827-6372663695.json",
   "projects/fresh/state.json",
   "projects/instadeal/cards/2026-10-09-1624-8327575463/card1_scene.jpg",
   "projects/instadeal/cards/2026-10-09-1624-8327575463/card2_cover.jpg",
@@ -346,6 +351,7 @@
   "projects/instadeal/skipped/2026-11-03-0753.json",
   "projects/instadeal/skipped/2026-11-04-0754.json",
   "projects/instadeal/skipped/2026-11-05-0753.json",
+  "projects/instadeal/skipped/2026-11-06-1508.json",
   "projects/instadeal/state.json",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card1_hook.jpg",
   "projects/nutri/cards/2026-09-27-1754-7458810098/card2_product.jpg",
@@ -1064,9 +1070,18 @@
   "projects/nutri/skipped/2026-11-05-1759.json",
   "projects/nutri/skipped/2026-11-05-2249.json",
   "projects/nutri/skipped/2026-11-06-1449.json",
+  "projects/nutri/skipped/2026-11-06-1509.json",
   "projects/nutri/state.json"
  ],
  "runs": [
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-11-06T05:49:18Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/42170661030",
+   "event": "push"
+  },
   {
    "name": "Publish Threads posts",
    "status": "completed",
@@ -1105,14 +1120,6 @@
    "conclusion": "success",
    "created_at": "2026-11-05T13:47:06Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/42038839308",
-   "event": "push"
-  },
-  {
-   "name": "Publish Threads posts",
-   "status": "completed",
-   "conclusion": "success",
-   "created_at": "2026-11-05T08:59:28Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/41998709989",
    "event": "push"
   }
  ],
