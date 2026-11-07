@@ -1,0 +1,43 @@
+{
+  "hook": {
+    "kicker": "김장철 저녁",
+    "question": "수육 삶긴 귀찮고\n김장김치는 있을 때?",
+    "answer": "훈제오리 굽기 전, 리뷰 팁 3가지",
+    "layout": "question"
+  },
+  "product": {
+    "pill": "쌈 싸는 저녁",
+    "brand": "다향",
+    "name": "1등급 훈제 오리 슬라이스 600g",
+    "sub": "100g당 2,112원",
+    "badge_top": "로켓프레시",
+    "badge_price": "12,670원"
+  },
+  "reviews": {
+    "title": "구매자 리뷰 요약",
+    "big": "91%",
+    "caption": "'조리가 간편해요' (리뷰 33만 5천 개)",
+    "quotes": [
+      [
+        "슬라이스라 칼 없이 바로 구워요",
+        "손질 편함"
+      ],
+      [
+        "부추·마늘이랑 볶으니 잘 어울려요",
+        "곁들임"
+      ],
+      [
+        "간이 짭짤해요, 채소랑 같이",
+        "아쉬운 점"
+      ]
+    ],
+    "footer": "맛있어요 79% · 신선해요 68%"
+  },
+  "theme": "teal",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product",
+    "reviews"
+  ]
+}
