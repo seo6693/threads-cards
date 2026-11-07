@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "글루타치온 '98%'\n라벨에서 확인할 것",
+    "items": [
+      "98% = 1정 중 복합분말 비율",
+      "분류: 기타건강식품인지 확인",
+      "1정당 가격으로 비교"
+    ],
+    "note": "상품 라벨·상품 페이지 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "라벨 확인",
+    "brand": "TRUEME",
+    "name": "리포좀 글루타치온 98% 90정×2",
+    "sub": "1정당 약 121원",
+    "badge_top": "리뷰 3,840개",
+    "badge_price": "21,800원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
