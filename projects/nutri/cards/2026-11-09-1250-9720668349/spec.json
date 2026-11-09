@@ -1,0 +1,43 @@
+{
+  "hook": {
+    "kicker": "라벨 읽는 법",
+    "question": "마그네슘 500mg,\n다 마그네슘일까?",
+    "answer": "500mg은 1정 무게 · 마그네슘은 1일 2정에 315mg",
+    "layout": "question"
+  },
+  "product": {
+    "pill": "라벨 읽는 법",
+    "brand": "99바이탈",
+    "name": "맘편한 마그네슘 360정",
+    "sub": "1일 2정 · 하루 약 55원",
+    "badge_top": "리뷰 1,023개",
+    "badge_price": "9,900원"
+  },
+  "reviews": {
+    "title": "먼저 먹어본 사람들 반응",
+    "big": "95%",
+    "caption": "효능 '아주만족해요' (리뷰 1,023개)",
+    "quotes": [
+      [
+        "알이 크지 않아 목넘김이 수월한 편",
+        "베스트 리뷰"
+      ],
+      [
+        "360정이라 자주 주문 안 해도 돼서 편함",
+        "베스트 리뷰"
+      ],
+      [
+        "가격 대비 품질이 괜찮다",
+        "최근 리뷰"
+      ]
+    ],
+    "footer": "쿠팡 상품 리뷰 요약"
+  },
+  "theme": "navy3",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product",
+    "reviews"
+  ]
+}
