@@ -275,9 +275,9 @@
   "projects/fresh/done/2026-11-05-2248-1583567802.json",
   "projects/fresh/done/2026-11-06-1827-6372663695.json",
   "projects/fresh/done/2026-11-07-1826-8830227246.json",
+  "projects/fresh/done/2026-11-09-1239-6342615745.json",
   "projects/fresh/learning.json",
   "projects/fresh/linkbank.json",
-  "projects/fresh/queue/2026-11-09-1239-6342615745.json",
   "projects/fresh/state.json",
   "projects/instadeal/cards/2026-10-09-1624-8327575463/card1_scene.jpg",
   "projects/instadeal/cards/2026-10-09-1624-8327575463/card2_cover.jpg",
@@ -936,6 +936,11 @@
   "projects/nutri/cards/2026-11-09-1242-5191718214/card2_product.jpg",
   "projects/nutri/cards/2026-11-09-1242-5191718214/product.jpg",
   "projects/nutri/cards/2026-11-09-1242-5191718214/spec.json",
+  "projects/nutri/cards/2026-11-09-1250-9720668349/card1_hook.jpg",
+  "projects/nutri/cards/2026-11-09-1250-9720668349/card2_product.jpg",
+  "projects/nutri/cards/2026-11-09-1250-9720668349/card3_reviews.jpg",
+  "projects/nutri/cards/2026-11-09-1250-9720668349/product.jpg",
+  "projects/nutri/cards/2026-11-09-1250-9720668349/spec.json",
   "projects/nutri/config.json",
   "projects/nutri/done/2026-09-27-1754-7458810098.json",
   "projects/nutri/done/2026-09-27-1954-6586372374.json",
@@ -1042,6 +1047,7 @@
   "projects/nutri/learning.json",
   "projects/nutri/linkbank.json",
   "projects/nutri/queue/2026-11-09-1242-5191718214.json",
+  "projects/nutri/queue/2026-11-09-1250-9720668349.json",
   "projects/nutri/skipped/2026-09-28-0756.json",
   "projects/nutri/skipped/2026-09-28-0958.json",
   "projects/nutri/skipped/2026-09-29-0749.json",
@@ -1107,6 +1113,14 @@
   "projects/nutri/state.json"
  ],
  "runs": [
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
+   "created_at": "2026-11-09T03:43:05Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/42557913471",
+   "event": "push"
+  },
   {
    "name": "Publish Threads posts",
    "status": "completed",
