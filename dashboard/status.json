@@ -1051,13 +1051,13 @@
   "projects/nutri/done/2026-11-07-2301-9743180335.json",
   "projects/nutri/done/2026-11-09-1242-5191718214.json",
   "projects/nutri/done/2026-11-09-1250-9720668349.json",
+  "projects/nutri/done/2026-11-09-2040-1388355334.json",
   "projects/nutri/failed/2026-09-28-0755-8123061158.json",
   "projects/nutri/failed/2026-09-28-0957-7156986260.json",
   "projects/nutri/failed/2026-10-15-2045-6779082057.json",
   "projects/nutri/failed/2026-10-15-2258-7163887733.json",
   "projects/nutri/learning.json",
   "projects/nutri/linkbank.json",
-  "projects/nutri/queue/2026-11-09-2040-1388355334.json",
   "projects/nutri/skipped/2026-09-28-0756.json",
   "projects/nutri/skipped/2026-09-28-0958.json",
   "projects/nutri/skipped/2026-09-29-0749.json",
@@ -1127,6 +1127,14 @@
    "name": "Publish Threads posts",
    "status": "completed",
    "conclusion": "success",
+   "created_at": "2026-11-09T11:40:28Z",
+   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/42610896060",
+   "event": "push"
+  },
+  {
+   "name": "Publish Threads posts",
+   "status": "completed",
+   "conclusion": "success",
    "created_at": "2026-11-09T10:12:21Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/42599164850",
    "event": "workflow_dispatch"
@@ -1177,14 +1185,6 @@
    "conclusion": "success",
    "created_at": "2026-11-09T03:39:55Z",
    "html_url": "https://github.com/seo6693/threads-cards/actions/runs/42557637163",
-   "event": "push"
-  },
-  {
-   "name": "Publish Threads posts",
-   "status": "completed",
-   "conclusion": "success",
-   "created_at": "2026-11-09T03:39:03Z",
-   "html_url": "https://github.com/seo6693/threads-cards/actions/runs/42557563495",
    "event": "push"
   }
  ],
