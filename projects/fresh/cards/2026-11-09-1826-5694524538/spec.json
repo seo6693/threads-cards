@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "냉동 꼬치어묵\n고를 때 볼 것",
+    "items": [
+      "육수 소스까지 들었나",
+      "봉지값 말고 100g당 가격",
+      "오래 끓여도 안 퍼지나(리뷰)"
+    ],
+    "note": "상품 안내: 물 1L + 소스, 끓으면 꼬치 넣고 10~12분",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "추운 날 어묵탕",
+    "brand": "고래사어묵",
+    "name": "가정용 꼬치어묵 밀가루 0%",
+    "sub": "296g×2봉 · 꼬치 20개 · 1꼬치 684원꼴",
+    "badge_top": "100g당 2,311원",
+    "badge_price": "13,680원"
+  },
+  "theme": "teal",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
