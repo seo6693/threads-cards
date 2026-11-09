@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "오메가3+비타민D 복합제\n라벨에서 확인할 것",
+    "items": [
+      "오메가3 말고 든 비타민 확인",
+      "종합비타민과 비타민D 겹침",
+      "1정당 가격으로 비교"
+    ],
+    "note": "제품 라벨·판매자 답변 기준",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "겹침 확인",
+    "brand": "순수식품",
+    "name": "rTG 오메가3 비타민D 60정×3",
+    "sub": "1정당 165원",
+    "badge_top": "리뷰 14,727개",
+    "badge_price": "29,760원"
+  },
+  "theme": "navy2",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
