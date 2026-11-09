@@ -1,33 +1,33 @@
 {
-  "next_keyword": 1,
+  "next_keyword": 2,
   "recent_formats": [
-    "buying_guide",
     "price_drop",
     "tip_post",
     "buying_guide",
     "quick_pick",
     "tip_post",
     "buying_guide",
-    "problem_solution"
+    "problem_solution",
+    "tip_post"
   ],
   "recent_post_types": [
     "hero",
-    "hero",
     "tip",
     "hero",
     "hero",
     "tip",
     "hero",
-    "hero"
+    "hero",
+    "tip"
   ],
   "recent_hook_formulas": [
-    "\ubc18\uc804",
     "\uc800\uaca9",
     "\uc22b\uc790",
     "\ubc18\uc804",
     "\uc0c1\ud669 \uc9c8\ubb38",
     "\uc800\uaca9",
     "\uc190\ud574 \ud53c\ud558\uae30",
-    "\uc22b\uc790"
+    "\uc22b\uc790",
+    "\ubc18\uc804"
   ]
 }

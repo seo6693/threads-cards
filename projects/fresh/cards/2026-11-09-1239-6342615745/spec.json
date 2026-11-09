@@ -1,0 +1,26 @@
+{
+  "hook": {
+    "title": "냉동 주먹밥\n이렇게 데워요",
+    "items": [
+      "빨리 먹을 땐 렌지 약 2분",
+      "바삭: 렌지 살짝 → 에프 180도 5~6분",
+      "먹을 만큼만 꺼내고 냉동 보관"
+    ],
+    "note": "구매자 리뷰에 나온 방법이에요",
+    "layout": "checklist"
+  },
+  "product": {
+    "pill": "밤 출출할 때",
+    "brand": "햇반",
+    "name": "김치치즈 주먹밥 500g",
+    "sub": "100g당 1,418원 · 로켓프레시",
+    "badge_top": "21%↓",
+    "badge_price": "7,090원"
+  },
+  "theme": "teal",
+  "product_image": "product.jpg",
+  "order": [
+    "hook",
+    "product"
+  ]
+}
