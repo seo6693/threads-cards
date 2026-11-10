@@ -1,47 +1,47 @@
 {
- "updated": "2026-11-10T08:45+09:00",
- "posts_28d": 51,
- "avg_views_28d": 9.9,
+ "updated": "2026-11-11T06:16+09:00",
+ "posts_28d": 49,
+ "avg_views_28d": 9.8,
  "formula_weights": {
-  "상황 질문": 1.0,
+  "상황 질문": 1.01,
   "손해 피하기": 0.97,
-  "숫자": 0.8,
-  "반전": 0.88,
-  "저격": 1.27
+  "숫자": 0.72,
+  "반전": 0.89,
+  "저격": 1.3
  },
  "formulas": {
-  "숫자": {
-   "avg": 7.3,
-   "n": 10
-  },
-  "손해 피하기": {
-   "avg": 9.4,
-   "n": 9
-  },
   "상황 질문": {
    "avg": 9.9,
    "n": 13
   },
   "반전": {
-   "avg": 8.1,
+   "avg": 8.3,
    "n": 7
   },
+  "손해 피하기": {
+   "avg": 9.4,
+   "n": 8
+  },
+  "숫자": {
+   "avg": 6.1,
+   "n": 9
+  },
   "저격": {
-   "avg": 13.4,
+   "avg": 13.6,
    "n": 10
   }
  },
  "types": {
   "이야기": {
-   "avg": 10.7,
-   "n": 41
+   "avg": 10.5,
+   "n": 39
   },
   "꿀팁": {
-   "avg": 8.5,
+   "avg": 9.2,
    "n": 4
   },
   "대표": {
-   "avg": 5.0,
+   "avg": 5.7,
    "n": 6
   }
  },
@@ -51,11 +51,11 @@
    "n": 1
   },
   "03시": {
-   "avg": 19.0,
+   "avg": 20.0,
    "n": 1
   },
   "05시": {
-   "avg": 7.0,
+   "avg": 8.0,
    "n": 1
   },
   "07시": {
@@ -67,11 +67,11 @@
    "n": 11
   },
   "12시": {
-   "avg": 9.1,
-   "n": 16
+   "avg": 8.5,
+   "n": 15
   },
   "13시": {
-   "avg": 4.5,
+   "avg": 6.0,
    "n": 2
   },
   "16시": {
@@ -83,8 +83,8 @@
    "n": 1
   },
   "21시": {
-   "avg": 13.0,
-   "n": 14
+   "avg": 13.2,
+   "n": 13
   },
   "23시": {
    "avg": 6.0,
@@ -120,6 +120,15 @@
    "permalink": "https://www.threads.com/@kkul394/post/De6wBK_lZQ0"
   },
   {
+   "views": 20,
+   "hook_formula": "",
+   "topic_source": "make-up(07:37 story 회차) · 파트너스 로그인 풀림 → 링크 저장분 · Higgsfield 요금제 오류 2회 → tip_post",
+   "product": "TRUEME 리포좀 글루타치온 98% 90정 2개",
+   "format": "tip_post",
+   "when": "11/08 03:48",
+   "permalink": "https://www.threads.com/@kkul394/post/Dfc3LYvIHEn"
+  },
+  {
    "views": 19,
    "hook_formula": "손해 피하기",
    "topic_source": "10월 season_topics '오후만 되면 피곤' (최근 2개 코큐텐·프로폴리스와 겹치지 않게, 백업 키워드 철분) → 쿠팡 '철분' 연관검색어 1위 '철분제' → '철분제' 판매량순 1~10위(솔가·헤모키즈·종근당 등)는 링크 저장분 미보유 → 링크 저장분의 뉴트리코어 철분 프리미엄(리뷰 2,251·별점 90%·한 달 300명 이상 구매) 선택 · 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용",
@@ -127,15 +136,6 @@
    "format": "scene_story",
    "when": "10/24 12:45",
    "permalink": "https://www.threads.com/@kkul394/post/De3MrnhlOA6"
-  },
-  {
-   "views": 19,
-   "hook_formula": "",
-   "topic_source": "make-up(07:37 story 회차) · 파트너스 로그인 풀림 → 링크 저장분 · Higgsfield 요금제 오류 2회 → tip_post",
-   "product": "TRUEME 리포좀 글루타치온 98% 90정 2개",
-   "format": "tip_post",
-   "when": "11/08 03:48",
-   "permalink": "https://www.threads.com/@kkul394/post/Dfc3LYvIHEn"
   }
  ]
 }
