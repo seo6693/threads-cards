@@ -1,29 +1,29 @@
 {
- "updated": "2026-11-21T07:13+09:00",
- "posts_28d": 20,
- "avg_views_28d": 9.1,
+ "updated": "2026-11-22T05:53+09:00",
+ "posts_28d": 17,
+ "avg_views_28d": 8.4,
  "formula_weights": {
-  "상황 질문": 0.82,
-  "손해 피하기": 1.07,
-  "숫자": 0.63,
-  "반전": 0.89,
-  "저격": 1.27
+  "상황 질문": 0.9,
+  "손해 피하기": 0.94,
+  "숫자": 0.64,
+  "반전": 0.91,
+  "저격": 1.28
  },
  "formulas": {
   "상황 질문": {
-   "avg": 6.2,
-   "n": 4
-  },
-  "손해 피하기": {
-   "avg": 10.2,
-   "n": 4
-  },
-  "저격": {
-   "avg": 13.0,
-   "n": 5
+   "avg": 6.7,
+   "n": 3
   },
   "숫자": {
    "avg": 2.3,
+   "n": 3
+  },
+  "저격": {
+   "avg": 12.5,
+   "n": 4
+  },
+  "손해 피하기": {
+   "avg": 7.3,
    "n": 3
   },
   "반전": {
@@ -33,8 +33,8 @@
  },
  "types": {
   "이야기": {
-   "avg": 10.6,
-   "n": 10
+   "avg": 9.6,
+   "n": 7
   },
   "꿀팁": {
    "avg": 10.0,
@@ -59,12 +59,12 @@
    "n": 1
   },
   "08시": {
-   "avg": 7.3,
-   "n": 3
+   "avg": 8.5,
+   "n": 2
   },
   "12시": {
-   "avg": 7.8,
-   "n": 5
+   "avg": 5.0,
+   "n": 4
   },
   "13시": {
    "avg": 6.5,
@@ -75,8 +75,8 @@
    "n": 1
   },
   "21시": {
-   "avg": 12.2,
-   "n": 5
+   "avg": 11.5,
+   "n": 4
   },
   "23시": {
    "avg": 6.0,
@@ -103,24 +103,6 @@
    "permalink": "https://www.threads.com/@kkul394/post/Dfc3LYvIHEn"
   },
   {
-   "views": 19,
-   "hook_formula": "손해 피하기",
-   "topic_source": "10월 season_topics '오후만 되면 피곤' (최근 2개 코큐텐·프로폴리스와 겹치지 않게, 백업 키워드 철분) → 쿠팡 '철분' 연관검색어 1위 '철분제' → '철분제' 판매량순 1~10위(솔가·헤모키즈·종근당 등)는 링크 저장분 미보유 → 링크 저장분의 뉴트리코어 철분 프리미엄(리뷰 2,251·별점 90%·한 달 300명 이상 구매) 선택 · 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용",
-   "product": "뉴트리코어 철분 프리미엄 60정",
-   "format": "scene_story",
-   "when": "10/24 12:45",
-   "permalink": "https://www.threads.com/@kkul394/post/De3MrnhlOA6"
-  },
-  {
-   "views": 15,
-   "hook_formula": "저격",
-   "topic_source": "이번 회차 키워드 칼슘 → 쿠팡 '칼슘' 연관검색어 '칼슘마그네슘' 판매량순 상위는 링크 저장분 미보유, 저장분 칼슘 상품(닥터신 관절6)은 별점 기준 미달 → 백업 키워드 비오틴 → 쿠팡 '비오틴' 연관검색어 '나우푸드비오틴' → '비오틴' 판매량순 3위 나우푸드 비오틴 5000mcg (리뷰 20,038·별점 4.8·한 달 600명 이상 구매) · 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용",
-   "product": "나우푸드 비오틴 5000mcg 베지 캡슐 120정",
-   "format": "scene_story",
-   "when": "10/24 21:14",
-   "permalink": "https://www.threads.com/@kkul394/post/De4G8adm1Kp"
-  },
-  {
    "views": 10,
    "hook_formula": "손해 피하기",
    "topic_source": "10월 season_topics '오메가3 1정당 가격' → 쿠팡 '크릴오일' 연관검색어 '크릴오일인지질56'(인지질 함량 관심) → '크릴오일' 판매량순 상위(크릴56·순수식품·FHC)는 링크 저장분 미보유 → 링크 저장분의 닥터루템 THE 크릴오일 1000(리뷰 293·효능 아주만족 89%·200명 이상 만족) 선택 · 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용",
@@ -128,6 +110,24 @@
    "format": "scene_story",
    "when": "10/26 08:06",
    "permalink": "https://www.threads.com/@kkul394/post/De72Yzpj_kG"
+  },
+  {
+   "views": 10,
+   "hook_formula": "저격",
+   "topic_source": "11월 season_topics '연말 회식 시즌 대비(밀크씨슬)' · next.keyword 밀크씨슬 · 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용 · 상품 페이지 확인(리뷰 80,219·7만명 이상 만족·복용 편의성 아주편해요 85%·20,520원 42%↓·1정당 137원·1일 1정 실리마린 130mg) · Higgsfield 세션 만료로 scene_story 대신 problem_solution(tip_post·buying_guide는 최근 2회 사용) (보충 회차 07:37)",
+   "product": "자연의품격 건강한 간 밀크씨슬 150정",
+   "format": "problem_solution",
+   "when": "11/03 16:58",
+   "permalink": "https://www.threads.com/@kkul394/post/DfRZpVPFhMA"
+  },
+  {
+   "views": 10,
+   "hook_formula": "",
+   "topic_source": "story 회차 · 쿠팡파트너스 로그인 풀림 → 링크 저장분(유일한 미사용분) 순수식품 rTG 오메가3 비타민D(리뷰 14,727·한 달 2,000명+ 구매) · Higgsfield 요금제 오류(Requires basic plan) 2회 → tip_post · 정보 출처: 제품 라벨·판매자 Q&A 답변",
+   "product": "순수식품 rTG 오메가3 비타민D 60정×3",
+   "format": "tip_post",
+   "when": "11/10 05:01",
+   "permalink": "https://www.threads.com/@kkul394/post/DfiJJWNlAwc"
   }
  ]
 }
