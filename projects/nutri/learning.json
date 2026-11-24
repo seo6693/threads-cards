@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-24T11:09+09:00",
- "posts_28d": 11,
+ "updated": "2026-11-25T08:51+09:00",
+ "posts_28d": 10,
  "avg_views_28d": 7.6,
  "formula_weights": {
   "상황 질문": 0.88,
-  "손해 피하기": 0.92,
+  "손해 피하기": 0.94,
   "숫자": 0.76,
   "반전": 0.88,
-  "저격": 1.11
+  "저격": 1.1
  },
  "formulas": {
-  "저격": {
-   "avg": 9.3,
-   "n": 3
-  },
   "손해 피하기": {
-   "avg": 6.0,
+   "avg": 6.5,
    "n": 2
   },
   "숫자": {
    "avg": 3.0,
+   "n": 2
+  },
+  "저격": {
+   "avg": 9.5,
    "n": 2
   },
   "상황 질문": {
@@ -32,12 +32,8 @@
   }
  },
  "types": {
-  "이야기": {
-   "avg": 9.0,
-   "n": 1
-  },
   "꿀팁": {
-   "avg": 10.0,
+   "avg": 10.2,
    "n": 4
   },
   "대표": {
@@ -71,8 +67,8 @@
    "n": 1
   },
   "21시": {
-   "avg": 7.5,
-   "n": 2
+   "avg": 7.0,
+   "n": 1
   },
   "23시": {
    "avg": 6.0,
@@ -110,20 +106,20 @@
   {
    "views": 9,
    "hook_formula": "저격",
-   "topic_source": "10월 season_topics '환절기 면역 관리(유산균)' → 쿠팡 '유산균' 연관검색어 '락토핏생유산균골드' → '유산균' 판매량순 1위 락토핏 골드 80포 (리뷰 262,483·20만명 이상 만족·한 달 3만명 이상 구매·맛있어요 87%) · 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용",
-   "product": "종근당건강 락토핏 골드 80포",
-   "format": "scene_story",
-   "when": "10/27 21:38",
-   "permalink": "https://www.threads.com/@kkul394/post/De_4KE6lLfN"
-  },
-  {
-   "views": 9,
-   "hook_formula": "저격",
    "topic_source": "11월 season_topics '해 짧아진 겨울, 출퇴근길이 깜깜(비타민D)' → 쿠팡 '비타민D' 연관검색어 '비타민d2000' → 판매량순 2위 종근당건강 비타민D 2000IU(리뷰 54,840·최고 83%·10,900원·1정당 121원). 1위 종근당 칼슘앤마그네슘은 최근 게시 상품 · 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용 · Higgsfield 'Requires basic plan' 오류 2회 → scene_story 대신 buying_guide(tip_post는 직전 게시 형식)",
    "product": "종근당건강 비타민D 2000IU 90정",
    "format": "buying_guide",
    "when": "11/09 13:29",
    "permalink": "https://www.threads.com/@kkul394/post/DfgebyWliOA"
+  },
+  {
+   "views": 7,
+   "hook_formula": "손해 피하기",
+   "topic_source": "10월 season_topics '환절기 면역 관리(아연)' → 쿠팡 '아연' 연관검색어 'zinc50mg'·'아연영양제' → '아연' 판매량순 1위 나우푸드 아연 50mg 250정 (리뷰 28,337·10,930원 27%↓·1정당 44원, 검색 목록 기준) · 쿠팡파트너스 로그인 풀림으로 링크 저장분 사용 · 상품 페이지 접근 제한(Access Denied) · Higgsfield 크레딧 소진으로 scene_story 대신 tip_post",
+   "product": "나우푸드 아연 50mg 250정",
+   "format": "tip_post",
+   "when": "10/29 21:27",
+   "permalink": "https://www.threads.com/@kkul394/post/DfFAc33FGmf"
   }
  ]
 }
